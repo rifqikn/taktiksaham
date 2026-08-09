@@ -1,0 +1,1591 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a36">
+<meta name="description" content="Morning Stock Picks dan berita saham pilihan TaktikSaham. Lihat area entry, take profit, cut loss, alasan, katalis, dan risiko.">
+<title>TaktikSaham — Morning Stock Picks & Berita Saham</title>
+<style>
+:root{
+  --navy:#071a36;--navy2:#0b2a55;--navy3:#123d73;
+  --orange:#ff8a00;--orange2:#ffb13b;--white:#fff;
+  --ink:#12213a;--muted:#687386;--surface:#f5f7fb;
+  --line:#dfe5ee;--green:#15945e;--red:#d84a4a;--blue:#2d7fd3;
+  --shadow:0 18px 50px rgba(5,26,58,.12);--radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color:var(--ink);background:#fff;line-height:1.6
+}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:100;background:rgba(7,26,54,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)
+}
+.nav-wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;line-height:1.1}
+.brand-mark{width:42px;height:42px;display:grid;place-items:center}
+.brand-mark svg{width:100%;height:100%;fill:#fff}.brand-mark .arrow{fill:var(--orange)}
+.brand b{font-size:18px;letter-spacing:.7px}
+.brand small{display:block;font-size:9px;color:#b9c8dd;letter-spacing:1.1px;margin-top:4px;text-transform:uppercase}
+.desktop-nav{display:flex;gap:25px;color:#d5deeb;font-weight:750;font-size:14px}
+.desktop-nav a:hover,.desktop-nav a.active{color:#fff}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;
+  border-radius:13px;border:1px solid transparent;font-weight:850;cursor:pointer;transition:.2s ease
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#10213d}
+.btn-outline{border-color:rgba(255,255,255,.26);color:#fff;background:rgba(255,255,255,.05)}
+.mobile-menu-button{
+  display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.06);color:#fff;cursor:pointer;font-size:21px
+}
+.mobile-nav{
+  display:none;position:absolute;left:0;right:0;top:100%;padding:10px 13px 16px;
+  background:rgba(7,26,54,.99);box-shadow:0 20px 40px rgba(0,0,0,.25)
+}
+.mobile-nav.open{display:grid}
+.mobile-nav a{padding:14px 16px;color:#fff;font-weight:800;border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-nav a.active{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#10213d;border-radius:10px;border:0}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;color:#fff;padding:74px 0 62px;
+  background:linear-gradient(135deg,#06162f 0%,#0b2f62 60%,#071a36 100%)
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 92%)
+}
+.hero-glow{position:absolute;width:430px;height:430px;border-radius:50%;right:-150px;top:-210px;background:#ff8a00;filter:blur(18px);opacity:.22}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:900;letter-spacing:.8px;
+  text-transform:uppercase;color:#ffd08d;margin-bottom:15px
+}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#ff4747;box-shadow:0 0 0 6px rgba(255,71,71,.13)}
+.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:0 0 20px}
+.hero h1 span{color:var(--orange)}
+.hero p{color:#c9d5e7;font-size:18px;max-width:680px;margin:0 0 26px}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap}
+.hero-panel{
+  background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.13);
+  border-radius:28px;padding:28px;backdrop-filter:blur(10px);box-shadow:0 28px 70px rgba(0,0,0,.18)
+}
+.hero-panel small{color:#9fb0c9}
+.hero-panel h3{font-size:25px;line-height:1.15;margin:6px 0 18px}
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.level-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:14px}
+.level-box span{display:block;color:#aebed2;font-size:10px;text-transform:uppercase;letter-spacing:.65px;font-weight:850}
+.level-box b{display:block;margin-top:4px;font-size:17px}
+.level-box.entry b{color:#80bfff}.level-box.tp b{color:#6ee0a3}.level-box.cl b{color:#ff8d8d}
+.update-row{display:flex;justify-content:space-between;gap:12px;margin-top:17px;padding-top:15px;border-top:1px solid rgba(255,255,255,.10);font-size:12px;color:#b8c7db}
+.update-row b{color:#fff}
+
+/* Sections */
+.section{padding:82px 0}
+.section-soft{background:var(--surface)}
+.section-heading{max-width:760px;margin:0 0 34px}
+.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-heading .eyebrow{color:#c96800;margin-bottom:9px}
+.section-heading h2{font-size:clamp(34px,4.4vw,50px);line-height:1.08;letter-spacing:-1.5px;margin:0 0 12px}
+.section-heading p{margin:0;color:var(--muted);font-size:16px}
+
+/* How to read */
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.guide-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fff}
+.guide-card .guide-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:12px;font-weight:900}
+.guide-card:nth-child(1) .guide-icon{background:#e9f3ff;color:#1d6db5}
+.guide-card:nth-child(2) .guide-icon{background:#eaf9f1;color:#168258}
+.guide-card:nth-child(3) .guide-icon{background:#ffefef;color:#be3a3a}
+.guide-card:nth-child(4) .guide-icon{background:#fff3e3;color:#b56600}
+.guide-card b{display:block;font-size:17px;margin-bottom:4px}
+.guide-card p{margin:0;color:var(--muted);font-size:13px}
+
+/* Toolbar */
+.pick-toolbar{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}
+.filter-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{
+  border:1px solid var(--line);background:#fff;color:#4c5a70;border-radius:999px;padding:8px 13px;
+  cursor:pointer;font-size:12px;font-weight:850
+}
+.filter-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search-box{position:relative;min-width:230px}
+.search-box input{width:100%;height:42px;border:1px solid var(--line);border-radius:12px;padding:0 13px;background:#fff;color:var(--ink);outline:none}
+.search-box input:focus{border-color:#a9bfd8;box-shadow:0 0 0 3px #edf4fb}
+
+/* Pick cards */
+.picks-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.pick-card{
+  position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;
+  box-shadow:0 14px 36px rgba(13,36,70,.06);transition:.2s ease
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pick-top{padding:22px 22px 17px;border-bottom:1px solid var(--line)}
+.pick-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.ticker-wrap{display:flex;align-items:center;gap:12px}
+.ticker-mark{
+  width:54px;height:54px;border-radius:15px;display:grid;place-items:center;
+  background:linear-gradient(145deg,#0c315f,#071a36);color:#fff;font-weight:950;font-size:14px;letter-spacing:.4px
+}
+.ticker-name b{display:block;font-size:22px;color:var(--navy);line-height:1.1}
+.ticker-name small{display:block;color:var(--muted);margin-top:4px;font-size:12px}
+.status{
+  display:inline-flex;padding:7px 10px;border-radius:999px;font-size:10px;font-weight:950;letter-spacing:.6px;text-transform:uppercase
+}
+.status.watchlist{background:#edf4ff;color:#27649f}
+.status.buy{background:#e9f8f0;color:#167348}
+.status.wait{background:#fff3df;color:#a96100}
+.status.done{background:#f0f1f4;color:#626b79}
+.demo-badge{position:absolute;right:0;top:0;background:#ffb13b;color:#4c3000;padding:7px 12px;border-radius:0 22px 0 14px;font-size:9px;font-weight:950;letter-spacing:.7px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}
+.price-box{border-radius:14px;padding:12px;border:1px solid var(--line);background:#f8fafc}
+.price-box span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;font-weight:850;letter-spacing:.55px}
+.price-box strong{display:block;margin-top:3px;font-size:17px;line-height:1.2}
+.price-box.entry strong{color:#1c6cad}.price-box.tp strong{color:#158259}.price-box.cl strong{color:#c84141}
+.pick-body{padding:20px 22px 22px}
+.pick-body h4{margin:0 0 8px;font-size:14px;color:var(--navy)}
+.reason-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.reason-list li{display:flex;gap:9px;color:#5c687a;font-size:13px}
+.reason-list li::before{content:"•";color:var(--orange);font-weight:950}
+.pick-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:17px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;color:#8792a4}
+.pick-meta b{color:#425068}
+.empty-note{
+  border:1px dashed #cfd8e5;background:#fff;border-radius:22px;padding:24px;text-align:center;color:var(--muted);margin-top:18px
+}
+
+/* News */
+.news-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.news-main{border-radius:26px;background:linear-gradient(145deg,#0b2e5d,#071a36);padding:30px;color:#fff;min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.news-main::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-120px;top:-130px;background:#ff8a00;opacity:.16}
+.news-main>*{position:relative;z-index:1}
+.news-main .news-tag,.news-card .news-tag{font-size:10px;font-weight:900;letter-spacing:.65px;text-transform:uppercase;color:#ffbd5d}
+.news-main h3{font-size:32px;line-height:1.14;margin:8px 0 10px}
+.news-main p{color:#c4d2e5;margin:0;max-width:650px}
+.news-main .news-meta{color:#9fb0c9;font-size:11px;margin-top:18px}
+.news-stack{display:grid;gap:14px}
+.news-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fff}
+.news-card h4{font-size:19px;line-height:1.3;margin:6px 0 7px;color:var(--navy)}
+.news-card p{margin:0;color:var(--muted);font-size:13px}
+.news-card .news-meta{font-size:10px;color:#8a95a6;margin-top:13px}
+
+/* Morning flow */
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.flow-step{position:relative;border:1px solid var(--line);border-radius:20px;background:#fff;padding:20px}
+.flow-step small{color:#c96800;font-weight:900}.flow-step h3{margin:5px 0 7px;font-size:18px}.flow-step p{margin:0;color:var(--muted);font-size:13px}
+
+/* CTA */
+.cta-section{padding:0 0 82px}
+.cta-box{
+  border-radius:30px;padding:36px;background:
+  radial-gradient(circle at 85% 12%,rgba(255,138,0,.18),transparent 25%),
+  linear-gradient(135deg,#06162f,#0b2e5d);color:#fff;box-shadow:0 24px 60px rgba(7,26,54,.18)
+}
+.cta-box h2{font-size:clamp(30px,4vw,45px);line-height:1.08;margin:0 0 10px}
+.cta-box p{color:#c6d3e5;max-width:720px;margin:0 0 22px}
+.cta-actions{display:flex;gap:11px;flex-wrap:wrap}
+
+/* Disclaimer/footer */
+.disclaimer{font-size:12px;color:#7b8798;background:#fff7e9;border:1px solid #ffe2b8;border-radius:16px;padding:15px 17px;margin-top:22px}
+footer{background:#05152e;color:#aebed3;padding:42px 0 90px}
+.footer-grid{display:grid;grid-template-columns:.4fr .6fr;gap:50px}
+.footer-title{color:#fff;font-weight:900;font-size:18px}
+footer p{font-size:12px;margin:7px 0 0}
+.copyright{border-top:1px solid rgba(255,255,255,.09);padding-top:18px;margin-top:24px;font-size:11px;color:#7f90aa}
+
+@media(max-width:980px){
+  .desktop-nav{display:none}.mobile-menu-button{display:block}
+  .hero-grid,.news-layout{grid-template-columns:1fr}
+  .guide-grid,.flow-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .container{width:min(100% - 26px,1160px)}
+  .site-header .btn-outline{display:none}
+  .nav-wrap{height:68px}.brand b{font-size:15px}
+  .hero{padding:50px 0 44px}.hero h1{font-size:43px;letter-spacing:-1.6px}
+  .hero p{font-size:16px}
+  .hero-actions{display:grid}.hero-actions .btn{width:100%}
+  .level-row,.levels{grid-template-columns:1fr 1fr}
+  .level-row .cl,.levels .cl{grid-column:1/-1}
+  .guide-grid,.flow-grid,.picks-grid{grid-template-columns:1fr}
+  .pick-toolbar{align-items:stretch;flex-direction:column}.search-box{min-width:0}
+  .news-main{min-height:270px;padding:24px}.news-main h3{font-size:27px}
+  .cta-box{padding:27px 20px}.cta-actions{display:grid}.cta-actions .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+/* ===== Morning News Update Board ===== */
+.news-toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin:0 0 22px;
+  flex-wrap:wrap;
+}
+.news-filter-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.news-filter-btn{
+  border:1px solid var(--line);
+  background:#fff;
+  color:#536075;
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:12px;
+  font-weight:850;
+  cursor:pointer;
+}
+.news-filter-btn.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.news-update-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:9px 13px;
+  border-radius:999px;
+  background:#eef9f2;
+  border:1px solid #ccebd8;
+  color:#17633a;
+  font-size:11px;
+  font-weight:900;
+}
+.news-update-badge .dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#20b15a;
+  box-shadow:0 0 0 5px rgba(32,177,90,.10);
+}
+.news-board{
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  gap:20px;
+}
+.news-featured{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  padding:30px;
+  min-height:360px;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,138,0,.18),transparent 26%),
+    linear-gradient(145deg,#0b2e5d,#071a36);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  box-shadow:0 20px 55px rgba(7,26,54,.14);
+}
+.news-featured .news-cat,
+.news-mini .news-cat{
+  display:inline-flex;
+  width:max-content;
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(255,138,0,.13);
+  color:#ffbd5d;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+.news-featured h3{
+  font-size:32px;
+  line-height:1.14;
+  margin:10px 0 10px;
+  max-width:760px;
+}
+.news-featured p{
+  margin:0;
+  color:#c3d0e3;
+  font-size:14px;
+  max-width:720px;
+}
+.news-impact{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:18px;
+}
+.news-impact div{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  padding:12px;
+}
+.news-impact small{
+  display:block;
+  color:#9fb0c9;
+  font-size:9px;
+  text-transform:uppercase;
+  font-weight:850;
+  letter-spacing:.6px;
+}
+.news-impact b{
+  display:block;
+  margin-top:3px;
+  color:#fff;
+  font-size:13px;
+}
+.news-source{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.10);
+  color:#9fb0c9;
+  font-size:10px;
+}
+.news-list{display:grid;gap:13px}
+.news-mini{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(13,36,70,.05);
+}
+.news-mini h4{
+  font-size:19px;
+  line-height:1.3;
+  margin:7px 0 7px;
+  color:var(--navy);
+}
+.news-mini p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.news-mini-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:13px;
+  padding-top:11px;
+  border-top:1px solid var(--line);
+  color:#8c97a8;
+  font-size:10px;
+}
+.news-empty{
+  grid-column:1/-1;
+  border:1px dashed #cfd8e5;
+  background:#fff;
+  color:var(--muted);
+  border-radius:20px;
+  padding:24px;
+  text-align:center;
+}
+.news-daily-note{
+  margin-top:18px;
+  border:1px solid #d9e5f1;
+  background:#f8fbff;
+  border-radius:18px;
+  padding:16px 18px;
+  font-size:12px;
+  color:#667387;
+}
+.news-daily-note b{color:var(--navy)}
+@media(max-width:980px){
+  .news-board{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .news-featured{min-height:300px;padding:24px 20px}
+  .news-featured h3{font-size:26px}
+  .news-impact{grid-template-columns:1fr}
+}
+
+
+.stock-date-strip{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin:-8px 0 22px;
+  padding:13px 16px;
+  border:1px solid #d9e5f1;
+  background:#fff;
+  border-radius:16px;
+  color:#5d6a7e;
+  font-size:12px;
+}
+.stock-date-strip b{color:var(--navy)}
+.stock-date-strip .active-market{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#167348;
+  font-weight:900;
+}
+.stock-date-strip .active-market::before{
+  content:"";
+  width:8px;height:8px;border-radius:50%;
+  background:#1db768;
+  box-shadow:0 0 0 5px rgba(29,183,104,.10);
+}
+@media(max-width:640px){
+  .stock-date-strip{align-items:flex-start;flex-direction:column}
+}
+
+
+/* ===== Recommendation Pro Upgrade ===== */
+.market-view{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin:0 0 24px}
+.market-view-main{position:relative;overflow:hidden;border-radius:22px;padding:22px;color:#fff;background:radial-gradient(circle at 92% 0%,rgba(255,138,0,.20),transparent 27%),linear-gradient(145deg,#0b2e5d,#071a36);box-shadow:0 14px 36px rgba(7,26,54,.10)}
+.market-view-main .mv-kicker{display:inline-flex;align-items:center;gap:8px;color:#ffc66f;font-size:10px;font-weight:950;letter-spacing:.75px;text-transform:uppercase}
+.market-view-main h3{margin:8px 0 7px;font-size:26px;line-height:1.15}
+.market-view-main p{margin:0;color:#c6d3e4;font-size:13px}
+.market-view-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
+.market-view-stat{border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.06);border-radius:14px;padding:12px}
+.market-view-stat span{display:block;color:#9fb0c9;font-size:9px;font-weight:900;letter-spacing:.6px;text-transform:uppercase}
+.market-view-stat b{display:block;margin-top:3px;color:#fff;font-size:13px}
+.market-view-side{display:grid;gap:10px}
+.market-note-card{border:1px solid var(--line);background:#fff;border-radius:18px;padding:17px 18px}
+.market-note-card span{display:block;color:#c96800;font-size:9px;font-weight:950;letter-spacing:.65px;text-transform:uppercase}
+.market-note-card b{display:block;margin-top:4px;color:var(--navy);font-size:16px}
+.market-note-card p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.pick-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.pick-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:999px;font-size:9px;font-weight:950;letter-spacing:.45px;text-transform:uppercase;border:1px solid var(--line);color:#526075;background:#f8fafc}
+.pick-tag.active{background:#eaf8f1;border-color:#cdebd9;color:#167348}
+.pick-tag.swing{background:#edf4ff;border-color:#d9e7f6;color:#27649f}
+.rr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}
+.rr-box{border-radius:13px;padding:10px 11px;border:1px solid var(--line);background:#fbfcfe}
+.rr-box span{display:block;color:#8994a5;font-size:8px;font-weight:900;letter-spacing:.55px;text-transform:uppercase}
+.rr-box b{display:block;margin-top:3px;font-size:14px}
+.rr-box.potential b{color:#168258}.rr-box.risk b{color:#c84141}.rr-box.ratio b{color:#27649f}
+.why-now{margin-top:16px;padding:13px 14px;border-radius:14px;background:#f5f8fc;border-left:3px solid var(--orange)}
+.why-now span{display:block;color:#c96800;font-size:9px;font-weight:950;letter-spacing:.6px;text-transform:uppercase}
+.why-now p{margin:4px 0 0;color:#4f5e73;font-size:12px}
+.last-update{display:inline-flex;align-items:center;gap:7px}
+.last-update::before{content:"";width:7px;height:7px;border-radius:50%;background:#20b15a;box-shadow:0 0 0 4px rgba(32,177,90,.09)}
+@media(max-width:860px){.market-view{grid-template-columns:1fr}}
+@media(max-width:640px){.market-view-grid,.rr-grid{grid-template-columns:1fr}}
+
+
+/* ===== Performance Pie Chart ===== */
+.performance-wrap{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:18px;
+  margin:0 0 26px;
+}
+.performance-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 10px 28px rgba(10,28,52,.06);
+}
+.performance-card .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.performance-card h3{
+  margin:8px 0 6px;
+  font-size:28px;
+  line-height:1.1;
+  color:var(--navy);
+}
+.performance-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.performance-grid{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:18px;
+  align-items:center;
+  margin-top:18px;
+}
+.chart-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:260px;
+}
+.pie-legend{
+  display:grid;
+  gap:10px;
+}
+.legend-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border:1px solid var(--line);
+  background:#fbfcfe;
+  border-radius:14px;
+  padding:12px 14px;
+}
+.legend-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.legend-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  flex:0 0 12px;
+}
+.legend-item b{
+  color:var(--navy);
+  font-size:15px;
+}
+.legend-item span{
+  color:#5e6b7f;
+  font-size:12px;
+}
+.win-dot{background:#20b15a}
+.lose-dot{background:#e45757}
+.performance-mini{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+.performance-stat{
+  border-radius:14px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  background:#f7fafc;
+}
+.performance-stat span{
+  display:block;
+  color:#8791a1;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.65px;
+  text-transform:uppercase;
+}
+.performance-stat b{
+  display:block;
+  margin-top:4px;
+  color:var(--navy);
+  font-size:18px;
+}
+.performance-note{
+  margin-top:16px;
+  padding:14px 15px;
+  border-radius:14px;
+  background:#f5f8fc;
+  border-left:3px solid var(--orange);
+  color:#56657a;
+  font-size:12px;
+}
+.performance-side{
+  display:grid;
+  gap:14px;
+}
+.performance-side-card{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:20px;
+  padding:18px;
+}
+.performance-side-card h4{
+  margin:0 0 8px;
+  font-size:18px;
+  color:var(--navy);
+}
+.performance-side-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.performance-side-card ul{
+  margin:12px 0 0;
+  padding-left:18px;
+  color:#516176;
+  font-size:13px;
+}
+.performance-side-card li+li{margin-top:6px}
+@media(max-width:960px){
+  .performance-wrap{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .performance-grid{grid-template-columns:1fr}
+  .chart-box{min-height:220px}
+  .performance-mini{grid-template-columns:1fr}
+}
+
+
+/* ===== News background illustrations by headline ===== */
+.news-featured.themed,
+.news-mini.themed {
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background-size:cover;
+  background-position:center;
+  border-color:rgba(255,255,255,.08);
+}
+.news-featured.themed::before,
+.news-mini.themed::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(6,18,38,.18) 0%, rgba(6,18,38,.55) 45%, rgba(6,18,38,.86) 100%);
+  pointer-events:none;
+}
+.news-featured.themed > *,
+.news-mini.themed > * {
+  position:relative;
+  z-index:1;
+}
+.news-mini.themed {
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  box-shadow:0 14px 36px rgba(7,26,54,.08);
+}
+.news-mini.themed h4,
+.news-featured.themed h3 {
+  color:#fff;
+}
+.news-mini.themed p,
+.news-featured.themed p {
+  color:#d7e1ef;
+}
+.news-mini.themed .news-mini-meta,
+.news-featured.themed .news-source {
+  color:#b7c7da;
+}
+.news-mini.themed .news-cat,
+.news-featured.themed .news-cat {
+  background:rgba(255,255,255,.10);
+  color:#ffd08d;
+  border:1px solid rgba(255,255,255,.10);
+}
+.bg-hormuz {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2308172f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2760%25%27%20stop-color%3D%27%230c315f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%233a0f0f%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27sea%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4575%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23082642%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Ccircle%20cx%3D%271030%27%20cy%3D%27140%27%20r%3D%2790%27%20fill%3D%27%23ff8a00%27%20opacity%3D%27.22%27/%3E%0A%20%20%3Crect%20y%3D%27430%27%20width%3D%271200%27%20height%3D%27270%27%20fill%3D%27url%28%23sea%29%27/%3E%0A%20%20%3Cpath%20d%3D%27M0%20490%20C120%20470%20230%20530%20360%20500%20S620%20455%20760%20495%20S1020%20530%201200%20495%27%20fill%3D%27none%27%20stroke%3D%27%234ba3d9%27%20stroke-width%3D%275%27%20opacity%3D%27.30%27/%3E%0A%20%20%3Cpath%20d%3D%27M0%20545%20C120%20525%20230%20585%20360%20555%20S620%20510%20760%20550%20S1020%20585%201200%20550%27%20fill%3D%27none%27%20stroke%3D%27%238fd3ff%27%20stroke-width%3D%274%27%20opacity%3D%27.18%27/%3E%0A%20%20%3Cg%20transform%3D%27translate%28470%20315%29%27%3E%0A%20%20%20%20%3Crect%20x%3D%27120%27%20y%3D%27-75%27%20width%3D%2716%27%20height%3D%2778%27%20fill%3D%27%23f3f6f9%27%20opacity%3D%27.90%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M136%20-65%20L258%20-20%20L136%205%20Z%27%20fill%3D%27%23d84a4a%27%20opacity%3D%27.92%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M55%200%20H345%20L315%2082%20H102%20L55%200%20Z%27%20fill%3D%27%23e9eef5%27%20opacity%3D%27.92%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27185%27%20y%3D%27-18%27%20width%3D%2775%27%20height%3D%2718%27%20fill%3D%27%23bfc9d6%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27198%27%20y%3D%27-42%27%20width%3D%2750%27%20height%3D%2724%27%20fill%3D%27%23bfc9d6%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2780%27%20y%3D%27120%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3ESTRAIT%20OF%20HORMUZ%3C/text%3E%0A%3C/svg%3E%0A");
+}
+.bg-usjobs {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2308172f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%23123d73%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%233b1020%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20opacity%3D%27.18%27%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%2760%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27144%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27228%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27312%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27396%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Crect%20x%3D%270%27%20y%3D%270%27%20width%3D%27420%27%20height%3D%27270%27%20fill%3D%27%231b3160%27%20opacity%3D%27.55%27/%3E%0A%20%20%3Cg%20fill%3D%27%23ffffff%27%20opacity%3D%27.55%27%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2762%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27138%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27176%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2781%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27119%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27157%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20transform%3D%27translate%28565%20180%29%27%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27220%27%20width%3D%27520%27%20height%3D%275%27%20fill%3D%27%23dce6f2%27%20opacity%3D%27.28%27/%3E%0A%20%20%20%20%3Crect%20x%3D%2725%27%20y%3D%27150%27%20width%3D%2765%27%20height%3D%2770%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27130%27%20y%3D%27110%27%20width%3D%2765%27%20height%3D%27110%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27235%27%20y%3D%27155%27%20width%3D%2765%27%20height%3D%2765%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27340%27%20y%3D%2770%27%20width%3D%2765%27%20height%3D%27150%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27445%27%20y%3D%2795%27%20width%3D%2765%27%20height%3D%27125%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M55%2096%20L160%20142%20L265%20118%20L370%20196%20L475%20150%27%20fill%3D%27none%27%20stroke%3D%27%23ff8a00%27%20stroke-width%3D%278%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2755%27%20cy%3D%2796%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27160%27%20cy%3D%27142%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27265%27%20cy%3D%27118%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27370%27%20cy%3D%27196%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27475%27%20cy%3D%27150%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2780%27%20y%3D%27620%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3EUS%20JOBS%3C/text%3E%0A%3C/svg%3E%0A");
+}
+.bg-rupiah {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23062030%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%230e6d65%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230a3a5c%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20opacity%3D%27.20%27%3E%0A%20%20%20%20%3Crect%20x%3D%2770%27%20y%3D%27155%27%20width%3D%27330%27%20height%3D%27190%27%20rx%3D%2722%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27130%27%20y%3D%27210%27%20width%3D%27140%27%20height%3D%2780%27%20rx%3D%2710%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%27330%27%20cy%3D%27250%27%20r%3D%2734%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27820%27%20y%3D%2795%27%20width%3D%27280%27%20height%3D%27165%27%20rx%3D%2720%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27865%27%20y%3D%27135%27%20width%3D%27100%27%20height%3D%2758%27%20rx%3D%278%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cpath%20d%3D%27M200%20540%20C355%20530%20455%20500%20555%20438%20C672%20364%20742%20300%20860%20260%27%20fill%3D%27none%27%20stroke%3D%27%238bffca%27%20stroke-width%3D%2712%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%3Cpath%20d%3D%27M818%20240%20L900%20248%20L870%20176%27%20fill%3D%27none%27%20stroke%3D%27%238bffca%27%20stroke-width%3D%2712%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%3Cg%20fill%3D%27white%27%20opacity%3D%27.15%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20font-size%3D%2788%27%3E%0A%20%20%20%20%3Ctext%20x%3D%2788%27%20y%3D%27110%27%3ERUPIAH%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%27705%27%20y%3D%27620%27%3EIDR%3C/text%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+}
+.bg-ihsg {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23071a36%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2758%25%27%20stop-color%3D%27%23104b73%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230a6b53%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20stroke%3D%27%23ffffff%27%20opacity%3D%27.10%27%3E%0A%20%20%20%20%3Cpath%20d%3D%27M90%20130%20H1110%27/%3E%3Cpath%20d%3D%27M90%20240%20H1110%27/%3E%3Cpath%20d%3D%27M90%20350%20H1110%27/%3E%3Cpath%20d%3D%27M90%20460%20H1110%27/%3E%3Cpath%20d%3D%27M90%20570%20H1110%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20transform%3D%27translate%28170%20170%29%27%3E%0A%20%20%20%20%3Cg%20stroke%3D%27%238fd3ff%27%20stroke-width%3D%276%27%20stroke-linecap%3D%27round%27%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2740%27%20y1%3D%27235%27%20x2%3D%2740%27%20y2%3D%27128%27/%3E%3Cline%20x1%3D%27150%27%20y1%3D%27210%27%20x2%3D%27150%27%20y2%3D%2792%27/%3E%3Cline%20x1%3D%27260%27%20y1%3D%27250%27%20x2%3D%27260%27%20y2%3D%27140%27/%3E%3Cline%20x1%3D%27370%27%20y1%3D%27198%27%20x2%3D%27370%27%20y2%3D%2778%27/%3E%3Cline%20x1%3D%27480%27%20y1%3D%27182%27%20x2%3D%27480%27%20y2%3D%2758%27/%3E%3Cline%20x1%3D%27590%27%20y1%3D%27145%27%20x2%3D%27590%27%20y2%3D%2742%27/%3E%3Cline%20x1%3D%27700%27%20y1%3D%27168%27%20x2%3D%27700%27%20y2%3D%2785%27/%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2720%27%20y%3D%27155%27%20width%3D%2740%27%20height%3D%2754%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27130%27%20y%3D%27110%27%20width%3D%2740%27%20height%3D%2770%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27240%27%20y%3D%27180%27%20width%3D%2740%27%20height%3D%2748%27%20fill%3D%27%23e45757%27/%3E%3Crect%20x%3D%27350%27%20y%3D%27102%27%20width%3D%2740%27%20height%3D%2762%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27460%27%20y%3D%2784%27%20width%3D%2740%27%20height%3D%2770%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27570%27%20y%3D%2760%27%20width%3D%2740%27%20height%3D%2755%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27680%27%20y%3D%27112%27%20width%3D%2740%27%20height%3D%2742%27%20fill%3D%27%2320b15a%27/%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%20%20%3Cpath%20d%3D%27M40%20235%20C120%20205%20180%20210%20260%20185%20C355%20155%20430%20138%20520%20112%20C610%2086%20685%2075%20760%2042%27%20fill%3D%27none%27%20stroke%3D%27%23ffb13b%27%20stroke-width%3D%279%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M720%2034%20L778%2042%20L748%20-10%27%20fill%3D%27none%27%20stroke%3D%27%23ffb13b%27%20stroke-width%3D%279%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2790%27%20y%3D%27110%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3EIHSG%206500%3C/text%3E%0A%3C/svg%3E%0A");
+}
+@media(max-width:640px){
+  .news-mini.themed{min-height:165px}
+}
+
+
+/* ===== Share Recommendation ===== */
+.pick-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.share-pick-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:40px;padding:0 13px;border-radius:11px;border:1px solid #dbe4ef;
+  background:#fff;color:#17365f;font-size:11px;font-weight:900;cursor:pointer;
+  transition:.2s ease
+}
+.share-pick-btn:hover{transform:translateY(-1px);border-color:#b9c9db;box-shadow:0 8px 20px rgba(7,26,54,.08)}
+.share-pick-btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+.share-toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  padding:10px 14px;border-radius:999px;background:#071a36;color:#fff;
+  font-size:11px;font-weight:850;opacity:0;pointer-events:none;transition:.25s ease;
+  z-index:300;box-shadow:0 14px 30px rgba(7,26,54,.20)
+}
+.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== Recommendation History ===== */
+.history-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 18px}
+.history-stat{border:1px solid var(--line);background:#fff;border-radius:17px;padding:16px}
+.history-stat span{display:block;color:#8792a4;font-size:9px;font-weight:900;letter-spacing:.65px;text-transform:uppercase}
+.history-stat b{display:block;margin-top:5px;color:var(--navy);font-size:22px}
+.history-table-wrap{
+  border:1px solid var(--line);border-radius:22px;background:#fff;overflow:auto;
+  box-shadow:0 12px 30px rgba(7,26,54,.05)
+}
+.history-table{width:100%;min-width:900px;border-collapse:collapse}
+.history-table th{
+  padding:13px 15px;text-align:left;background:#f6f8fb;color:#6f7c90;
+  font-size:9px;text-transform:uppercase;letter-spacing:.65px;font-weight:950;
+  border-bottom:1px solid var(--line)
+}
+.history-table td{padding:14px 15px;border-bottom:1px solid #edf1f5;font-size:12px;color:#566378}
+.history-table tr:last-child td{border-bottom:0}
+.history-ticker{color:var(--navy);font-weight:950;font-size:13px}
+.history-status{
+  display:inline-flex;align-items:center;justify-content:center;padding:6px 9px;
+  border-radius:999px;font-size:9px;font-weight:950;text-transform:uppercase;letter-spacing:.45px
+}
+.history-status.ongoing{background:#edf4ff;color:#27649f}
+.history-status.win{background:#eaf8f1;color:#167348}
+.history-status.lose{background:#ffeded;color:#be3e3e}
+.history-return.positive{color:#158259;font-weight:900}
+.history-return.negative{color:#c84141;font-weight:900}
+.history-return.neutral{color:#8591a2;font-weight:850}
+.history-note{margin-top:13px;font-size:11px;color:#7a8798}
+
+/* ===== Tomorrow Watchlist ===== */
+.tomorrow-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.tomorrow-main{
+  border-radius:25px;padding:26px;color:#fff;
+  background:radial-gradient(circle at 90% 10%,rgba(255,138,0,.18),transparent 26%),
+             linear-gradient(145deg,#071a36,#0c315f);
+  box-shadow:0 18px 44px rgba(7,26,54,.12)
+}
+.tomorrow-main .eyebrow{color:#ffcb82}
+.tomorrow-main h3{margin:7px 0 8px;font-size:29px;line-height:1.15}
+.tomorrow-main p{margin:0;color:#c6d3e4;font-size:13px}
+.tomorrow-status{
+  display:inline-flex;align-items:center;gap:8px;margin-top:17px;padding:8px 10px;
+  border-radius:999px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.10);color:#fff;font-size:10px;font-weight:900
+}
+.tomorrow-status::before{
+  content:"";width:8px;height:8px;border-radius:50%;background:#ffb13b;
+  box-shadow:0 0 0 5px rgba(255,177,59,.11)
+}
+.tomorrow-slots{display:grid;gap:10px}
+.tomorrow-slot{
+  border:1px solid var(--line);background:#fff;border-radius:18px;padding:16px 17px;
+  display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center
+}
+.tomorrow-number{
+  width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+  background:#f3f6fa;color:#8a95a5;font-size:11px;font-weight:950
+}
+.tomorrow-slot b{display:block;color:var(--navy);font-size:14px}
+.tomorrow-slot span{display:block;margin-top:2px;color:#8a95a6;font-size:10px}
+.tomorrow-badge{
+  padding:6px 8px;border-radius:999px;background:#fff4e6;color:#a76000;
+  font-size:8px;font-weight:950;text-transform:uppercase;letter-spacing:.5px
+}
+
+/* ===== Performance empty state refinement ===== */
+.performance-empty{
+  display:none;margin-top:12px;padding:12px 14px;border-radius:13px;
+  background:#f7f9fc;border:1px solid var(--line);color:#738095;font-size:11px
+}
+
+@media(max-width:900px){
+  .history-summary{grid-template-columns:repeat(2,1fr)}
+  .tomorrow-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .history-summary{grid-template-columns:1fr 1fr}
+  .pick-actions{display:grid}.share-pick-btn{width:100%}
+  .tomorrow-slot{grid-template-columns:42px 1fr}.tomorrow-badge{grid-column:2}
+}
+
+</style>
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="TaktikSaham">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M8 36V25h7v11H8Zm12 0V18h7v18h-7Zm12 0V10h7v26h-7Z"/><path class="arrow" d="M7 18 18 9l8 6L40 3l2 5-16 15-8-6-8 7Z"/></svg>
+      </span>
+      <span><b>TAKTIKSAHAM</b><small>Strategi. Disiplin. Tujuan.</small></span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="index.html">VIP Group</a>
+      <a class="active" href="saham.html">Rekom Saham</a>
+      <a href="#history-rekomendasi">History</a>
+      <a href="reksadana.html">Reksa Dana</a>
+      <a href="#berita">Berita Saham</a>
+    </nav>
+
+    <a class="btn btn-outline" href="https://wa.me/6285697486266?text=Halo%20Kak%20Rifqi%2C%20saya%20ingin%20bertanya%20mengenai%20TaktikSaham." target="_blank" rel="noopener">WhatsApp</a>
+
+    <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Buka menu">☰</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">VIP Group</a>
+    <a class="active" href="saham.html">Rekom Saham & Berita</a>
+    <a href="#history-rekomendasi">History Rekomendasi</a>
+    <a href="reksadana.html">Reksa Dana</a>
+    <a href="#rekomendasi">Rekomendasi</a>
+    <a href="#berita">Berita Saham</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="live-dot"></span> Morning Market Brief</span>
+      <h1>Rekom saham pagi.<br><span>Levelnya jelas.</span></h1>
+      <p>
+        Pilihan saham yang sedang menarik untuk dipantau, lengkap dengan area entry,
+        target profit, cut loss, alasan, katalis, serta berita saham yang perlu diperhatikan.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#rekomendasi">Lihat Stock Picks</a>
+        <a class="btn btn-outline" href="#berita">Berita Saham Hari Ini</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel">
+      <small>Format rekomendasi TaktikSaham</small>
+      <h3>Satu kartu. Semua level penting langsung terbaca.</h3>
+      <div class="level-row">
+        <div class="level-box entry"><span>Entry Buy</span><b>Area beli</b></div>
+        <div class="level-box tp"><span>Take Profit</span><b>Target</b></div>
+        <div class="level-box cl"><span>Cut Loss</span><b>Batas risiko</b></div>
+      </div>
+      <div class="update-row">
+        <span>Update</span>
+        <b>Pagi & saat ada perubahan penting</b>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading center">
+      <span class="eyebrow">Cara membaca rekomendasi</span>
+      <h2>Lebih simpel. Lebih terukur.</h2>
+      <p>Setiap rekomendasi dibuat supaya kamu langsung memahami skenario entry, target, dan batas risiko sebelum mengambil keputusan.</p>
+    </div>
+    <div class="guide-grid">
+      <article class="guide-card"><div class="guide-icon">↘</div><b>Entry Buy</b><p>Area harga yang menarik untuk dipantau sebagai rencana masuk.</p></article>
+      <article class="guide-card"><div class="guide-icon">↗</div><b>Take Profit</b><p>Area target untuk mengevaluasi atau mengamankan profit.</p></article>
+      <article class="guide-card"><div class="guide-icon">!</div><b>Cut Loss</b><p>Batas risiko jika skenario awal tidak berjalan sesuai rencana.</p></article>
+      <article class="guide-card"><div class="guide-icon">◎</div><b>Alasan & Katalis</b><p>Kenapa saham menarik, apa pemicunya, dan risiko apa yang perlu dipantau.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="rekomendasi">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Morning Stock Picks • 10 Agustus 2026</span>
+      <h2>Rekomendasi saham pagi ini.</h2>
+      <p>Stock picks pilihan TaktikSaham untuk 10 Agustus 2026, lengkap dengan area entry, take profit, cut loss, serta katalis yang perlu diperhatikan.</p>
+    </div>
+
+
+
+    <div class="performance-wrap">
+      <div class="performance-card">
+        <span class="eyebrow">Performance Summary</span>
+        <h3>Statistik rekomendasi saham.</h3>
+        <p>Pantau hasil rekomendasi yang sudah selesai. Posisi ongoing belum dihitung sebagai win atau lose sampai trading plan ditutup.</p>
+
+        <div class="performance-grid">
+          <div class="chart-box">
+            <canvas id="performancePie" width="240" height="240" aria-label="Pie chart win lose"></canvas>
+          </div>
+
+          <div class="pie-legend">
+            <div class="legend-item">
+              <div class="legend-left">
+                <span class="legend-dot win-dot"></span>
+                <div>
+                  <b>Win</b>
+                  <span>Rekomendasi mencapai target / profit</span>
+                </div>
+              </div>
+              <strong id="winCountText">0</strong>
+            </div>
+
+            <div class="legend-item">
+              <div class="legend-left">
+                <span class="legend-dot lose-dot"></span>
+                <div>
+                  <b>Lose</b>
+                  <span>Rekomendasi terkena cut loss</span>
+                </div>
+              </div>
+              <strong id="loseCountText">0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="performance-mini">
+          <div class="performance-stat">
+            <span>Total Rekomendasi</span>
+            <b id="totalRekomText">0</b>
+          </div>
+          <div class="performance-stat">
+            <span>Win Rate</span>
+            <b id="winRateText">0%</b>
+          </div>
+          <div class="performance-stat">
+            <span>Lose Rate</span>
+            <b id="loseRateText">0%</b>
+          </div>
+        </div>
+
+        <div class="performance-note">
+          <b>Catatan:</b> Angka ini bisa kamu update kapan saja sesuai hasil rekomendasi. Jadi nanti halaman saham bukan cuma menampilkan stock pick hari ini, tapi juga track record secara visual.
+        </div>
+      </div>
+
+      <div class="performance-side">
+        <div class="performance-side-card">
+          <h4>Kenapa ini penting?</h4>
+          <p>Pie chart membuat pengunjung langsung melihat performa rekomendasi secara cepat tanpa harus membaca satu per satu histori saham.</p>
+          <ul>
+            <li>Lebih meyakinkan untuk calon member baru</li>
+            <li>Mudah dipakai sebagai bahan promosi atau live TikTok</li>
+            <li>Bisa terus diupdate seiring hasil rekomendasi berjalan</li>
+          </ul>
+        </div>
+
+        <div class="performance-side-card">
+          <h4>Cara update datanya</h4>
+          <p>Win dan lose sekarang mengikuti data <b>History Rekomendasi</b>. Saat status history diubah menjadi WIN atau LOSE, pie chart ikut berubah otomatis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="market-view">
+      <div class="market-view-main">
+        <span class="mv-kicker">Morning Market View • 10 Agustus 2026</span>
+        <h3>Fokus pada stock picking, bukan mengejar harga.</h3>
+        <p>Sentimen Senin cenderung positif, didukung pelemahan dolar AS, penguatan rupiah, dan momentum IHSG. Risiko utama tetap berasal dari Iran–Selat Hormuz dan potensi lonjakan harga minyak.</p>
+        <div class="market-view-grid">
+          <div class="market-view-stat"><span>Market Stance</span><b>🟢 Cenderung Positif</b></div>
+          <div class="market-view-stat"><span>Strategi</span><b>Buy on Area • Tetap Waspada Geopolitik</b></div>
+        </div>
+      </div>
+      <div class="market-view-side">
+        <div class="market-note-card">
+          <span>Sektor Dipantau</span>
+          <b>Petrochemical • Commodities • Nickel</b>
+          <p>Fokus pada emiten dengan katalis spesifik dan level trading yang jelas.</p>
+        </div>
+        <div class="market-note-card">
+          <span>Stock Picks</span>
+          <b>TPIA • CUAN • MBMA</b>
+          <p>Gunakan trading plan masing-masing saham di bawah sebelum mengambil keputusan.</p>
+        </div>
+        <div class="market-note-card">
+          <span>Kesimpulan Sentimen Senin</span>
+          <b>🟢 Cenderung Positif</b>
+          <p>Pelemahan dolar AS, rupiah yang menguat, dan momentum IHSG menjadi penopang. Risiko utama tetap Iran–Selat Hormuz dan harga minyak.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="stock-date-strip">
+      <span><b>Rekomendasi:</b> Senin, 10 Agustus 2026</span>
+      <span class="active-market">Morning Stock Picks</span>
+    </div>
+
+    <div class="pick-toolbar">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="buy">Buy</button>
+        <button class="filter-btn" data-filter="watchlist">Watchlist</button>
+        <button class="filter-btn" data-filter="wait">Wait & See</button>
+      </div>
+      <div class="search-box">
+        <input id="tickerSearch" type="search" placeholder="Cari kode saham...">
+      </div>
+    </div>
+
+    <div class="picks-grid" id="picksGrid"></div>
+
+    <div class="disclaimer">
+      <b>Disclaimer:</b> Rekomendasi tanggal 10 Agustus 2026 ini merupakan bahan informasi dan edukasi, bukan jaminan keuntungan.
+      Harga saham dapat bergerak berlawanan dengan skenario. Tetap disiplin terhadap area entry, target, cut loss, dan sesuaikan keputusan dengan profil risiko masing-masing.
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="history-rekomendasi">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Track Record</span>
+      <h2>History rekomendasi.</h2>
+      <p>Riwayat trading plan disimpan supaya statusnya transparan: masih berjalan, mencapai target, atau terkena cut loss.</p>
+    </div>
+
+    <div class="history-summary">
+      <div class="history-stat"><span>Total Rekomendasi</span><b id="historyTotal">0</b></div>
+      <div class="history-stat"><span>Win</span><b id="historyWin">0</b></div>
+      <div class="history-stat"><span>Lose</span><b id="historyLose">0</b></div>
+      <div class="history-stat"><span>Ongoing</span><b id="historyOngoing">0</b></div>
+    </div>
+
+    <div class="history-table-wrap">
+      <table class="history-table">
+        <thead>
+          <tr>
+            <th>Tanggal</th><th>Saham</th><th>Entry</th><th>Target</th>
+            <th>Cut Loss</th><th>Exit / Last</th><th>Return</th><th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+    </div>
+
+    <div class="history-note">
+      Posisi yang masih aktif ditandai <b>ONGOING</b>. Win rate hanya dihitung dari rekomendasi yang sudah selesai.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="berita">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Morning Stock News • 10 Agustus 2026</span>
+      <h2>Berita saham pilihan pagi ini.</h2>
+      <p>
+        Ringkasan berita yang berpotensi memengaruhi sentimen, fundamental, corporate action,
+        atau pergerakan harga saham. Fokus pada apa yang terjadi dan apa dampaknya ke emiten.
+      </p>
+    </div>
+
+    <div class="news-toolbar">
+      <div class="news-filter-tabs">
+        <button class="news-filter-btn active" data-news-filter="all">Semua</button>
+        <button class="news-filter-btn" data-news-filter="corporate-action">Corporate Action</button>
+        <button class="news-filter-btn" data-news-filter="earnings">Kinerja Emiten</button>
+        <button class="news-filter-btn" data-news-filter="sector">Sektor & Komoditas</button>
+        <button class="news-filter-btn" data-news-filter="macro">Makro & Regulasi</button>
+      </div>
+      <span class="news-update-badge"><span class="dot"></span> Update Pagi</span>
+    </div>
+
+    <div class="news-board" id="newsBoard"></div>
+
+    <div class="news-daily-note">
+      <b>Untuk update harian:</b> cukup ubah daftar <code>STOCK_NEWS</code> di bagian paling bawah file
+      <code>saham.html</code>. Judul, kategori, ticker terdampak, ringkasan, dampak, sumber, dan waktu update
+      akan otomatis masuk ke tampilan berita.
+    </div>
+
+    <div class="disclaimer">
+      <b>Catatan berita:</b> Ringkasan berita bersifat informasi dan edukasi. Dampak terhadap harga saham
+      tidak selalu langsung atau sesuai ekspektasi. Cantumkan sumber asli setiap kali memperbarui berita.
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-heading center">
+      <span class="eyebrow">Rutinitas pagi</span>
+      <h2>Dari live TikTok ke trading plan.</h2>
+      <p>Halaman ini bisa menjadi tempat member dan penonton live mengecek ulang rekomendasi setelah sesi pagi selesai.</p>
+    </div>
+
+    <div class="flow-grid">
+      <article class="flow-step"><small>01</small><h3>Morning Scan</h3><p>Pilih saham yang menarik dari momentum, sentimen, katalis, dan kondisi market.</p></article>
+      <article class="flow-step"><small>02</small><h3>Live TikTok</h3><p>Bahas market dan saham pilihan secara ringkas pada sesi pagi.</p></article>
+      <article class="flow-step"><small>03</small><h3>Level Trading</h3><p>Catat entry, TP, cut loss, serta skenario yang perlu diperhatikan.</p></article>
+      <article class="flow-step"><small>04</small><h3>Follow Up</h3><p>Update jika ada perubahan penting pada harga, berita, atau tesis awal.</p></article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-soft" id="besok-dipantau">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Next Watch</span>
+      <h2>Saham besok dipantau.</h2>
+      <p>Watchlist awal untuk sesi berikutnya. Ticker baru ditampilkan setelah screening momentum, katalis, volume, dan kondisi market selesai.</p>
+    </div>
+
+    <div class="tomorrow-grid">
+      <div class="tomorrow-main">
+        <span class="eyebrow">11 Agustus 2026</span>
+        <h3>Watchlist besok belum dirilis.</h3>
+        <p>Setelah market close, TaktikSaham akan melakukan screening ulang. Saham yang lolos screening akan muncul di bagian ini sebelum sesi pagi berikutnya.</p>
+        <span class="tomorrow-status">Menunggu update setelah market close</span>
+      </div>
+
+      <div class="tomorrow-slots">
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">01</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">02</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">03</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <span class="eyebrow">TaktikSaham</span>
+      <h2>Mau pembahasan yang lebih lengkap?</h2>
+      <p>Halaman rekomendasi pagi membantu kamu melihat ide dan level penting. Untuk diskusi, edukasi, evaluasi, dan aktivitas komunitas yang lebih lengkap, lihat VIP Group TaktikSaham.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="index.html#cara-gabung">Lihat VIP Group</a>
+        <a class="btn btn-outline" href="https://wa.me/6285697486266?text=Halo%20Kak%20Rifqi%2C%20saya%20ingin%20bertanya%20mengenai%20rekomendasi%20saham%20TaktikSaham." target="_blank" rel="noopener">Tanya via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">TAKTIKSAHAM</div>
+        <p>Morning Stock Picks • Berita Saham • Edukasi • Trading Plan</p>
+      </div>
+      <div>
+        <p>
+          Informasi di halaman ini bersifat edukasi dan bahan referensi. Investasi saham memiliki risiko
+          dan harga dapat bergerak berlawanan dengan skenario. Entry, target, dan cut loss bukan jaminan
+          keuntungan. Selalu sesuaikan keputusan dengan profil risiko dan kondisi keuangan masing-masing.
+        </p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 TaktikSaham. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+/*
+====================================================================
+UPDATE HARIAN:
+Cukup ganti isi STOCK_PICKS di bawah ini.
+Nanti card akan dibuat otomatis.
+====================================================================
+*/
+
+/*
+====================================================================
+BERITA SAHAM HARIAN:
+Cukup ganti isi STOCK_NEWS di bawah ini setiap pagi.
+Urutkan berita terpenting di paling atas.
+====================================================================
+*/
+const STOCK_NEWS = [
+  {
+    title:"IRAN – Selat Hormuz Belum Dibuka",
+    category:"sector",
+    categoryLabel:"Geopolitik & Energi",
+    tickers:"MEDC • ENRG • ELSA",
+    summary:"Iran menyatakan Selat Hormuz tidak akan dibuka kembali sebelum sejumlah tuntutan terhadap AS dipenuhi. Risiko gangguan suplai minyak masih tinggi.",
+    impact:"Positif untuk saham migas seperti MEDC, ENRG, dan ELSA. Namun kenaikan harga minyak dapat menjadi tekanan bagi sektor yang sensitif terhadap biaya energi.",
+    source:"Update pagi TaktikSaham",
+    time:"10 Agustus 2026",
+    bgClass:"bg-hormuz",
+    featured:true
+  },
+  {
+    title:"US JOBS – AS Kehilangan 23.000 Pekerjaan",
+    bgClass:"bg-usjobs",
+    category:"macro",
+    categoryLabel:"Makro Global",
+    tickers:"IHSG • Rupiah • Obligasi",
+    summary:"Nonfarm payroll AS Juli turun 23 ribu, jauh di bawah ekspektasi pasar. Data ini membuat ekspektasi kenaikan suku bunga The Fed melemah dan dolar AS ikut tertekan.",
+    impact:"Cenderung positif bagi emerging market, rupiah, obligasi, dan saham Indonesia.",
+    source:"Update pagi TaktikSaham",
+    time:"10 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"RUPIAH – Menguat ke Rp17.897/US$",
+    bgClass:"bg-rupiah",
+    category:"macro",
+    categoryLabel:"Rupiah & Makro",
+    tickers:"IHSG • Rupiah",
+    summary:"Rupiah menguat sekitar 0,55% dalam sepekan, dari Rp17.997 menjadi Rp17.897 per US$. Penguatan rupiah dapat membantu sentimen IHSG.",
+    impact:"Sentimen positif bagi pasar saham domestik, meski volatilitas dari harga minyak dan geopolitik tetap perlu dipantau.",
+    source:"Update pagi TaktikSaham",
+    time:"10 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"IHSG – Berpeluang Uji 6.500",
+    bgClass:"bg-ihsg",
+    category:"macro",
+    categoryLabel:"IHSG & Foreign Flow",
+    tickers:"IHSG • BBRI",
+    summary:"IHSG terakhir ditutup +1,04% di 6.409,6. Secara teknikal, jika mampu melewati area MA20 weekly sekitar 6.488, indeks berpeluang menguji 6.500–6.544.",
+    impact:"Momentum indeks masih konstruktif. BBRI ikut menarik perhatian setelah asing mencatat net buy Rp559 miliar selama 3–7 Agustus.",
+    source:"Update pagi TaktikSaham",
+    time:"10 Agustus 2026",
+    featured:false
+  }
+];
+
+function newsCategoryClass(cat){
+  return cat || "all";
+}
+
+function renderNews(filter="all"){
+  const board=document.getElementById("newsBoard");
+  const filtered=STOCK_NEWS.filter(n=>filter==="all" || n.category===filter);
+
+  if(!filtered.length){
+    board.innerHTML='<div class="news-empty">Belum ada berita pada kategori ini.</div>';
+    return;
+  }
+
+  const featured = filtered.find(n=>n.featured) || filtered[0];
+  const others = filtered.filter(n=>n!==featured).slice(0,4);
+
+  board.innerHTML=`
+    <article class="news-featured themed ${escapeHTML(featured.bgClass || "")}">
+      <span class="news-cat">${escapeHTML(featured.categoryLabel)}</span>
+      <h3>${escapeHTML(featured.title)}</h3>
+      <p>${escapeHTML(featured.summary)}</p>
+
+      <div class="news-impact">
+        <div>
+          <small>Ticker terdampak</small>
+          <b>${escapeHTML(featured.tickers)}</b>
+        </div>
+        <div>
+          <small>Dampak yang dipantau</small>
+          <b>${escapeHTML(featured.impact)}</b>
+        </div>
+      </div>
+
+      <div class="news-source">
+        <span>Sumber: ${escapeHTML(featured.source)}</span>
+        <span>${escapeHTML(featured.time)}</span>
+      </div>
+    </article>
+
+    <div class="news-list">
+      ${others.map(n=>`
+        <article class="news-mini themed ${escapeHTML(n.bgClass || "")}">
+          <span class="news-cat">${escapeHTML(n.categoryLabel)}</span>
+          <h4>${escapeHTML(n.title)}</h4>
+          <p>${escapeHTML(n.summary)}</p>
+          <div class="news-mini-meta">
+            <span>${escapeHTML(n.tickers)} • ${escapeHTML(n.source)}</span>
+            <span>${escapeHTML(n.time)}</span>
+          </div>
+        </article>
+      `).join("")}
+    </div>
+  `;
+}
+
+let activeNewsFilter="all";
+document.querySelectorAll(".news-filter-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".news-filter-btn").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    activeNewsFilter=btn.dataset.newsFilter;
+    renderNews(activeNewsFilter);
+  });
+});
+
+
+/*
+====================================================================
+HISTORY REKOMENDASI
+Ubah status menjadi: "ongoing", "win", atau "lose".
+Untuk rekomendasi selesai, isi exit dan returnText.
+====================================================================
+*/
+const RECOMMENDATION_HISTORY = [
+  {date:"10 Agustus 2026",ticker:"TPIA",entry:"2.200",target:"2.500",cutloss:"2.100",exit:"—",returnText:"—",status:"ongoing"},
+  {date:"10 Agustus 2026",ticker:"CUAN",entry:"740",target:"800",cutloss:"690",exit:"—",returnText:"—",status:"ongoing"},
+  {date:"10 Agustus 2026",ticker:"MBMA",entry:"550",target:"600",cutloss:"510",exit:"—",returnText:"—",status:"ongoing"}
+];
+
+function renderHistory(){
+  const body=document.getElementById("historyBody");
+  if(!body) return;
+
+  body.innerHTML=RECOMMENDATION_HISTORY.map(r=>{
+    const label=r.status==="win" ? "WIN" : r.status==="lose" ? "LOSE" : "ONGOING";
+    const returnClass=r.status==="win" ? "positive" : r.status==="lose" ? "negative" : "neutral";
+    return `<tr>
+      <td>${escapeHTML(r.date)}</td>
+      <td><span class="history-ticker">${escapeHTML(r.ticker)}</span></td>
+      <td>${escapeHTML(r.entry)}</td>
+      <td>${escapeHTML(r.target)}</td>
+      <td>${escapeHTML(r.cutloss)}</td>
+      <td>${escapeHTML(r.exit)}</td>
+      <td><span class="history-return ${returnClass}">${escapeHTML(r.returnText)}</span></td>
+      <td><span class="history-status ${escapeHTML(r.status)}">${label}</span></td>
+    </tr>`;
+  }).join("");
+
+  const total=RECOMMENDATION_HISTORY.length;
+  const win=RECOMMENDATION_HISTORY.filter(x=>x.status==="win").length;
+  const lose=RECOMMENDATION_HISTORY.filter(x=>x.status==="lose").length;
+  const ongoing=RECOMMENDATION_HISTORY.filter(x=>x.status==="ongoing").length;
+
+  document.getElementById("historyTotal").textContent=total;
+  document.getElementById("historyWin").textContent=win;
+  document.getElementById("historyLose").textContent=lose;
+  document.getElementById("historyOngoing").textContent=ongoing;
+}
+
+
+const WIN_COUNT = RECOMMENDATION_HISTORY.filter(x=>x.status==='win').length;
+const LOSE_COUNT = RECOMMENDATION_HISTORY.filter(x=>x.status==='lose').length;
+
+const STOCK_PICKS = [
+  {
+    ticker:"TPIA", company:"PT Chandra Asri Pacific Tbk",
+    status:"buy", statusLabel:"Buy Area", planStatus:"Active", timeframe:"Swing",
+    entry:"2.200", entryNum:2200, tp:"2.500", tpNum:2500, cl:"2.100", clNum:2100,
+    whyNow:"Dipantau karena kombinasi katalis pertumbuhan CAP2, ekspansi bisnis, dan potensi perbaikan margin petrokimia.",
+    reasons:[
+      "🚀 Proyek CAP2 (Chandra Asri Petrochemical Complex 2) yang menjadi motor pertumbuhan jangka panjang.",
+      "⚡ Ekspansi ke bisnis energi, utilitas, logistik, dan infrastruktur melalui berbagai aksi korporasi.",
+      "💰 Potensi peningkatan margin apabila harga bahan baku (nafta) melemah dan permintaan petrokimia membaik.",
+      "🇮🇩 Berpotensi memperoleh sentimen positif dari pertumbuhan industri hilirisasi dan manufaktur nasional."
+    ],
+    updated:"10 Agustus 2026 • Morning Plan"
+  },
+  {
+    ticker:"CUAN", company:"PT Petrindo Jaya Kreasi Tbk",
+    status:"buy", statusLabel:"Buy Area", planStatus:"Active", timeframe:"Swing",
+    entry:"740", entryNum:740, tp:"800", tpNum:800, cl:"690", clNum:690,
+    whyNow:"Dipantau karena peningkatan free float, sentimen insider buying, serta eksposur terhadap siklus komoditas.",
+    reasons:[
+      "📈 Free float meningkat setelah Prajogo Pangestu melepas sebagian saham, sehingga likuiditas CUAN berpotensi membaik.",
+      "💰 Erwin Ciputra membeli sekitar 1 juta saham CUAN pada awal Juli 2026, memberi sentimen positif dari sisi insider buying.",
+      "⛏️ Eksposur ke berbagai komoditas memberi peluang saat siklus harga batu bara maupun logam membaik."
+    ],
+    updated:"10 Agustus 2026 • Morning Plan"
+  },
+  {
+    ticker:"MBMA", company:"PT Merdeka Battery Materials Tbk",
+    status:"buy", statusLabel:"Buy Area", planStatus:"Active", timeframe:"Swing",
+    entry:"550", entryNum:550, tp:"600", tpNum:600, cl:"510", clNum:510,
+    whyNow:"Dipantau karena pertumbuhan cadangan nikel, pengembangan HPAL/MHP, dan peluang monetisasi aset dalam rantai pasok baterai.",
+    reasons:[
+      "⛏️ Cadangan nikel meningkat signifikan, memperpanjang visibility produksi jangka panjang.",
+      "🔋 Pengembangan HPAL/MHP mendukung eksposur MBMA ke bahan baku baterai kendaraan listrik.",
+      "📈 Pemanfaatan bijih residual untuk rantai pasok baterai berpotensi meningkatkan efisiensi dan monetisasi aset."
+    ],
+    updated:"10 Agustus 2026 • Morning Plan"
+  }
+];
+
+function escapeHTML(str){
+  return String(str).replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+}
+
+
+function getRecommendationText(ticker){
+  const x=STOCK_PICKS.find(p=>p.ticker===ticker);
+  if(!x) return "";
+
+  return `📈 TAKTIKSAHAM — ${x.ticker}
+
+Entry Buy: ${x.entry}
+Take Profit: ${x.tp}
+Cut Loss: ${x.cl}
+Timeframe: ${x.timeframe}
+
+Kenapa dipantau:
+${x.whyNow}
+
+Disclaimer: Informasi ini bersifat edukasi dan bukan jaminan keuntungan. Tetap sesuaikan keputusan dengan profil risiko.
+
+${window.location.href}`;
+}
+
+async function shareRecommendation(ticker){
+  const text=getRecommendationText(ticker);
+  if(!text) return;
+
+  if(navigator.share){
+    try{
+      await navigator.share({title:`TaktikSaham — ${ticker}`,text});
+      return;
+    }catch(e){
+      if(e && e.name==="AbortError") return;
+    }
+  }
+  window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank","noopener");
+}
+
+async function copyRecommendation(ticker){
+  const text=getRecommendationText(ticker);
+  if(!text) return;
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch(e){
+    const ta=document.createElement("textarea");
+    ta.value=text;document.body.appendChild(ta);ta.select();
+    document.execCommand("copy");ta.remove();
+  }
+  showShareToast("Teks rekomendasi berhasil dicopy");
+}
+
+function showShareToast(message){
+  let toast=document.getElementById("shareToast");
+  if(!toast){
+    toast=document.createElement("div");
+    toast.id="shareToast";
+    toast.className="share-toast";
+    document.body.appendChild(toast);
+  }
+  toast.textContent=message;
+  toast.classList.add("show");
+  setTimeout(()=>toast.classList.remove("show"),1800);
+}
+
+
+
+function drawPerformancePie(){
+  const canvas=document.getElementById("performancePie");
+  if(!canvas) return;
+  const ctx=canvas.getContext("2d");
+  const win=WIN_COUNT, lose=LOSE_COUNT, total=win+lose;
+  const fullTotal=RECOMMENDATION_HISTORY.length;
+
+  document.getElementById("winCountText").textContent=win;
+  document.getElementById("loseCountText").textContent=lose;
+  document.getElementById("totalRekomText").textContent=fullTotal;
+  document.getElementById("winRateText").textContent=total ? ((win/total)*100).toFixed(1)+"%" : "—";
+  document.getElementById("loseRateText").textContent=total ? ((lose/total)*100).toFixed(1)+"%" : "—";
+
+  const w=canvas.width,h=canvas.height,cx=w/2,cy=h/2,r=92,inner=57;
+  ctx.clearRect(0,0,w,h);
+
+  if(total===0){
+    ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.fillStyle="#e7edf4";ctx.fill();
+    ctx.beginPath();ctx.arc(cx,cy,inner,0,Math.PI*2);ctx.fillStyle="#fff";ctx.fill();
+    ctx.fillStyle="#7c899b";ctx.textAlign="center";ctx.font="bold 13px Arial";ctx.fillText("BELUM ADA",cx,cy-4);
+    ctx.fillStyle="#0b2e5d";ctx.font="bold 19px Arial";ctx.fillText("HASIL CLOSED",cx,cy+20);
+    return;
+  }
+
+  let start=-Math.PI/2;
+  [{v:win,c:"#20b15a"},{v:lose,c:"#e45757"}].forEach(s=>{
+    const a=(s.v/total)*Math.PI*2;
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,r,start,start+a);ctx.closePath();
+    ctx.fillStyle=s.c;ctx.fill();start+=a;
+  });
+  ctx.beginPath();ctx.arc(cx,cy,inner,0,Math.PI*2);ctx.fillStyle="#fff";ctx.fill();
+  const rate=(win/total)*100;
+  ctx.fillStyle="#7a8799";ctx.textAlign="center";ctx.font="bold 11px Arial";ctx.fillText("WIN RATE",cx,cy-8);
+  ctx.fillStyle="#0b2e5d";ctx.font="bold 28px Arial";ctx.fillText(rate.toFixed(0)+"%",cx,cy+24);
+}
+
+
+function renderPicks(filter="all", query=""){
+  const grid=document.getElementById("picksGrid");
+  const q=query.trim().toUpperCase();
+  const data=STOCK_PICKS.filter(x=>{
+    const matchFilter=filter==="all" || x.status===filter;
+    const matchSearch=!q || x.ticker.toUpperCase().includes(q) || x.company.toUpperCase().includes(q);
+    return matchFilter && matchSearch;
+  });
+
+  if(!data.length){
+    grid.innerHTML='<div class="empty-note">Tidak ada saham yang cocok dengan filter pencarian.</div>';
+    return;
+  }
+
+  grid.innerHTML=data.map(x=>{
+    const potential=((x.tpNum-x.entryNum)/x.entryNum)*100;
+    const risk=((x.entryNum-x.clNum)/x.entryNum)*100;
+    const rr=risk>0 ? potential/risk : 0;
+    return `
+    <article class="pick-card" data-status="${escapeHTML(x.status)}">
+      <div class="pick-top">
+        <div class="pick-head">
+          <div class="ticker-wrap">
+            <div class="ticker-mark">${escapeHTML(x.ticker)}</div>
+            <div class="ticker-name">
+              <b>${escapeHTML(x.ticker)}</b>
+              <small>${escapeHTML(x.company)}</small>
+            </div>
+          </div>
+          <span class="status ${escapeHTML(x.status)}">${escapeHTML(x.statusLabel)}</span>
+        </div>
+
+        <div class="pick-tags">
+          <span class="pick-tag active">● ${escapeHTML(x.planStatus)}</span>
+          <span class="pick-tag swing">${escapeHTML(x.timeframe)}</span>
+        </div>
+
+        <div class="levels">
+          <div class="price-box entry"><span>Entry Buy</span><strong>${escapeHTML(x.entry)}</strong></div>
+          <div class="price-box tp"><span>Take Profit</span><strong>${escapeHTML(x.tp)}</strong></div>
+          <div class="price-box cl"><span>Cut Loss</span><strong>${escapeHTML(x.cl)}</strong></div>
+        </div>
+
+        <div class="rr-grid">
+          <div class="rr-box potential"><span>Potential</span><b>+${potential.toFixed(1)}%</b></div>
+          <div class="rr-box risk"><span>Risk</span><b>-${risk.toFixed(1)}%</b></div>
+          <div class="rr-box ratio"><span>Risk : Reward</span><b>1 : ${rr.toFixed(1)}</b></div>
+        </div>
+      </div>
+
+      <div class="pick-body">
+        <div class="why-now">
+          <span>Kenapa Dipantau?</span>
+          <p>${escapeHTML(x.whyNow)}</p>
+        </div>
+        <h4 style="margin-top:16px">Katalis positif</h4>
+        <ul class="reason-list">${x.reasons.map(r=>`<li>${escapeHTML(r)}</li>`).join("")}</ul>
+        <div class="pick-meta">
+          <span>Status: <b>${escapeHTML(x.planStatus)}</b></span>
+          <span class="last-update">${escapeHTML(x.updated)}</span>
+        </div>
+
+        <div class="pick-actions">
+          <button class="share-pick-btn primary" type="button" onclick="shareRecommendation('${escapeHTML(x.ticker)}')">↗ Bagikan Rekomendasi</button>
+          <button class="share-pick-btn" type="button" onclick="copyRecommendation('${escapeHTML(x.ticker)}')">⧉ Copy Teks</button>
+        </div>
+      </div>
+    </article>
+  `;
+  }).join("");
+}
+
+let activeFilter="all";
+document.querySelectorAll(".filter-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filter-btn").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    activeFilter=btn.dataset.filter;
+    renderPicks(activeFilter,document.getElementById("tickerSearch").value);
+  });
+});
+document.getElementById("tickerSearch").addEventListener("input",e=>renderPicks(activeFilter,e.target.value));
+renderPicks();
+renderNews();
+renderHistory();
+drawPerformancePie();
+
+const menuBtn=document.getElementById("mobileMenuButton");
+const mobileNav=document.getElementById("mobileNav");
+menuBtn.addEventListener("click",()=>mobileNav.classList.toggle("open"));
+mobileNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>mobileNav.classList.remove("open")));
+</script>
+</body>
+</html>
