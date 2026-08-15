@@ -1,0 +1,3724 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a36">
+<meta name="description" content="Morning Stock Picks dan berita saham pilihan TaktikSaham. Lihat area entry, take profit, cut loss, alasan, katalis, dan risiko.">
+<title>TaktikSaham — Morning Stock Picks & Berita Saham</title>
+<style>
+:root{
+  --navy:#071a36;--navy2:#0b2a55;--navy3:#123d73;
+  --orange:#ff8a00;--orange2:#ffb13b;--white:#fff;
+  --ink:#12213a;--muted:#687386;--surface:#f5f7fb;
+  --line:#dfe5ee;--green:#15945e;--red:#d84a4a;--blue:#2d7fd3;
+  --shadow:0 18px 50px rgba(5,26,58,.12);--radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color:var(--ink);background:#fff;line-height:1.6
+}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:100;background:rgba(7,26,54,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)
+}
+.nav-wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;line-height:1.1}
+.brand-mark{width:42px;height:42px;display:grid;place-items:center}
+.brand-mark svg{width:100%;height:100%;fill:#fff}.brand-mark .arrow{fill:var(--orange)}
+.brand b{font-size:18px;letter-spacing:.7px}
+.brand small{display:block;font-size:9px;color:#b9c8dd;letter-spacing:1.1px;margin-top:4px;text-transform:uppercase}
+.desktop-nav{display:flex;gap:25px;color:#d5deeb;font-weight:750;font-size:14px}
+.desktop-nav a:hover,.desktop-nav a.active{color:#fff}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;
+  border-radius:13px;border:1px solid transparent;font-weight:850;cursor:pointer;transition:.2s ease
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#10213d}
+.btn-outline{border-color:rgba(255,255,255,.26);color:#fff;background:rgba(255,255,255,.05)}
+.mobile-menu-button{
+  display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.06);color:#fff;cursor:pointer;font-size:21px
+}
+.mobile-nav{
+  display:none;position:absolute;left:0;right:0;top:100%;padding:10px 13px 16px;
+  background:rgba(7,26,54,.99);box-shadow:0 20px 40px rgba(0,0,0,.25)
+}
+.mobile-nav.open{display:grid}
+.mobile-nav a{padding:14px 16px;color:#fff;font-weight:800;border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-nav a.active{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#10213d;border-radius:10px;border:0}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;color:#fff;padding:74px 0 62px;
+  background:linear-gradient(135deg,#06162f 0%,#0b2f62 60%,#071a36 100%)
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 92%)
+}
+.hero-glow{position:absolute;width:430px;height:430px;border-radius:50%;right:-150px;top:-210px;background:#ff8a00;filter:blur(18px);opacity:.22}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:900;letter-spacing:.8px;
+  text-transform:uppercase;color:#ffd08d;margin-bottom:15px
+}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#ff4747;box-shadow:0 0 0 6px rgba(255,71,71,.13)}
+.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:0 0 20px}
+.hero h1 span{color:var(--orange)}
+.hero p{color:#c9d5e7;font-size:18px;max-width:680px;margin:0 0 26px}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap}
+.hero-panel{
+  background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.13);
+  border-radius:28px;padding:28px;backdrop-filter:blur(10px);box-shadow:0 28px 70px rgba(0,0,0,.18)
+}
+.hero-panel small{color:#9fb0c9}
+.hero-panel h3{font-size:25px;line-height:1.15;margin:6px 0 18px}
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.level-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:14px}
+.level-box span{display:block;color:#aebed2;font-size:10px;text-transform:uppercase;letter-spacing:.65px;font-weight:850}
+.level-box b{display:block;margin-top:4px;font-size:17px}
+.level-box.entry b{color:#80bfff}.level-box.tp b{color:#6ee0a3}.level-box.cl b{color:#ff8d8d}
+.update-row{display:flex;justify-content:space-between;gap:12px;margin-top:17px;padding-top:15px;border-top:1px solid rgba(255,255,255,.10);font-size:12px;color:#b8c7db}
+.update-row b{color:#fff}
+
+/* Sections */
+.section{padding:82px 0}
+.section-soft{background:var(--surface)}
+.section-heading{max-width:760px;margin:0 0 34px}
+.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-heading .eyebrow{color:#c96800;margin-bottom:9px}
+.section-heading h2{font-size:clamp(34px,4.4vw,50px);line-height:1.08;letter-spacing:-1.5px;margin:0 0 12px}
+.section-heading p{margin:0;color:var(--muted);font-size:16px}
+
+/* How to read */
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.guide-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fff}
+.guide-card .guide-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:12px;font-weight:900}
+.guide-card:nth-child(1) .guide-icon{background:#e9f3ff;color:#1d6db5}
+.guide-card:nth-child(2) .guide-icon{background:#eaf9f1;color:#168258}
+.guide-card:nth-child(3) .guide-icon{background:#ffefef;color:#be3a3a}
+.guide-card:nth-child(4) .guide-icon{background:#fff3e3;color:#b56600}
+.guide-card b{display:block;font-size:17px;margin-bottom:4px}
+.guide-card p{margin:0;color:var(--muted);font-size:13px}
+
+/* Toolbar */
+.pick-toolbar{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}
+.filter-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{
+  border:1px solid var(--line);background:#fff;color:#4c5a70;border-radius:999px;padding:8px 13px;
+  cursor:pointer;font-size:12px;font-weight:850
+}
+.filter-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.search-box{position:relative;min-width:230px}
+.search-box input{width:100%;height:42px;border:1px solid var(--line);border-radius:12px;padding:0 13px;background:#fff;color:var(--ink);outline:none}
+.search-box input:focus{border-color:#a9bfd8;box-shadow:0 0 0 3px #edf4fb}
+
+/* Pick cards */
+.picks-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.pick-card{
+  position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;
+  box-shadow:0 14px 36px rgba(13,36,70,.06);transition:.2s ease
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pick-top{padding:22px 22px 17px;border-bottom:1px solid var(--line)}
+.pick-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.ticker-wrap{display:flex;align-items:center;gap:12px}
+.ticker-mark{
+  width:54px;height:54px;border-radius:15px;display:grid;place-items:center;
+  background:linear-gradient(145deg,#0c315f,#071a36);color:#fff;font-weight:950;font-size:14px;letter-spacing:.4px
+}
+.ticker-name b{display:block;font-size:22px;color:var(--navy);line-height:1.1}
+.ticker-name small{display:block;color:var(--muted);margin-top:4px;font-size:12px}
+.status{
+  display:inline-flex;padding:7px 10px;border-radius:999px;font-size:10px;font-weight:950;letter-spacing:.6px;text-transform:uppercase
+}
+.status.watchlist{background:#edf4ff;color:#27649f}
+.status.buy{background:#e9f8f0;color:#167348}
+.status.wait{background:#fff3df;color:#a96100}
+.status.done{background:#f0f1f4;color:#626b79}
+.demo-badge{position:absolute;right:0;top:0;background:#ffb13b;color:#4c3000;padding:7px 12px;border-radius:0 22px 0 14px;font-size:9px;font-weight:950;letter-spacing:.7px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}
+.price-box{border-radius:14px;padding:12px;border:1px solid var(--line);background:#f8fafc}
+.price-box span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;font-weight:850;letter-spacing:.55px}
+.price-box strong{display:block;margin-top:3px;font-size:17px;line-height:1.2}
+.price-box.entry strong{color:#1c6cad}.price-box.tp strong{color:#158259}.price-box.cl strong{color:#c84141}
+.pick-body{padding:20px 22px 22px}
+.pick-body h4{margin:0 0 8px;font-size:14px;color:var(--navy)}
+.reason-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.reason-list li{display:flex;gap:9px;color:#5c687a;font-size:13px}
+.reason-list li::before{content:"•";color:var(--orange);font-weight:950}
+.pick-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:17px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;color:#8792a4}
+.pick-meta b{color:#425068}
+.empty-note{
+  border:1px dashed #cfd8e5;background:#fff;border-radius:22px;padding:24px;text-align:center;color:var(--muted);margin-top:18px
+}
+
+/* News */
+.news-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.news-main{border-radius:26px;background:linear-gradient(145deg,#0b2e5d,#071a36);padding:30px;color:#fff;min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.news-main::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-120px;top:-130px;background:#ff8a00;opacity:.16}
+.news-main>*{position:relative;z-index:1}
+.news-main .news-tag,.news-card .news-tag{font-size:10px;font-weight:900;letter-spacing:.65px;text-transform:uppercase;color:#ffbd5d}
+.news-main h3{font-size:32px;line-height:1.14;margin:8px 0 10px}
+.news-main p{color:#c4d2e5;margin:0;max-width:650px}
+.news-main .news-meta{color:#9fb0c9;font-size:11px;margin-top:18px}
+.news-stack{display:grid;gap:14px}
+.news-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fff}
+.news-card h4{font-size:19px;line-height:1.3;margin:6px 0 7px;color:var(--navy)}
+.news-card p{margin:0;color:var(--muted);font-size:13px}
+.news-card .news-meta{font-size:10px;color:#8a95a6;margin-top:13px}
+
+/* Morning flow */
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.flow-step{position:relative;border:1px solid var(--line);border-radius:20px;background:#fff;padding:20px}
+.flow-step small{color:#c96800;font-weight:900}.flow-step h3{margin:5px 0 7px;font-size:18px}.flow-step p{margin:0;color:var(--muted);font-size:13px}
+
+/* CTA */
+.cta-section{padding:0 0 82px}
+.cta-box{
+  border-radius:30px;padding:36px;background:
+  radial-gradient(circle at 85% 12%,rgba(255,138,0,.18),transparent 25%),
+  linear-gradient(135deg,#06162f,#0b2e5d);color:#fff;box-shadow:0 24px 60px rgba(7,26,54,.18)
+}
+.cta-box h2{font-size:clamp(30px,4vw,45px);line-height:1.08;margin:0 0 10px}
+.cta-box p{color:#c6d3e5;max-width:720px;margin:0 0 22px}
+.cta-actions{display:flex;gap:11px;flex-wrap:wrap}
+
+/* Disclaimer/footer */
+.disclaimer{font-size:12px;color:#7b8798;background:#fff7e9;border:1px solid #ffe2b8;border-radius:16px;padding:15px 17px;margin-top:22px}
+footer{background:#05152e;color:#aebed3;padding:42px 0 90px}
+.footer-grid{display:grid;grid-template-columns:.4fr .6fr;gap:50px}
+.footer-title{color:#fff;font-weight:900;font-size:18px}
+footer p{font-size:12px;margin:7px 0 0}
+.copyright{border-top:1px solid rgba(255,255,255,.09);padding-top:18px;margin-top:24px;font-size:11px;color:#7f90aa}
+
+@media(max-width:980px){
+  .desktop-nav{display:none}.mobile-menu-button{display:block}
+  .hero-grid,.news-layout{grid-template-columns:1fr}
+  .guide-grid,.flow-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .container{width:min(100% - 26px,1160px)}
+  .site-header .btn-outline{display:none}
+  .nav-wrap{height:68px}.brand b{font-size:15px}
+  .hero{padding:50px 0 44px}.hero h1{font-size:43px;letter-spacing:-1.6px}
+  .hero p{font-size:16px}
+  .hero-actions{display:grid}.hero-actions .btn{width:100%}
+  .level-row,.levels{grid-template-columns:1fr 1fr}
+  .level-row .cl,.levels .cl{grid-column:1/-1}
+  .guide-grid,.flow-grid,.picks-grid{grid-template-columns:1fr}
+  .pick-toolbar{align-items:stretch;flex-direction:column}.search-box{min-width:0}
+  .news-main{min-height:270px;padding:24px}.news-main h3{font-size:27px}
+  .cta-box{padding:27px 20px}.cta-actions{display:grid}.cta-actions .btn{width:100%}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+/* ===== Morning News Update Board ===== */
+.news-toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin:0 0 22px;
+  flex-wrap:wrap;
+}
+.news-filter-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.news-filter-btn{
+  border:1px solid var(--line);
+  background:#fff;
+  color:#536075;
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:12px;
+  font-weight:850;
+  cursor:pointer;
+}
+.news-filter-btn.active{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.news-update-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:9px 13px;
+  border-radius:999px;
+  background:#eef9f2;
+  border:1px solid #ccebd8;
+  color:#17633a;
+  font-size:11px;
+  font-weight:900;
+}
+.news-update-badge .dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#20b15a;
+  box-shadow:0 0 0 5px rgba(32,177,90,.10);
+}
+.news-board{
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  gap:20px;
+}
+.news-featured{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  padding:30px;
+  min-height:360px;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,138,0,.18),transparent 26%),
+    linear-gradient(145deg,#0b2e5d,#071a36);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  box-shadow:0 20px 55px rgba(7,26,54,.14);
+}
+.news-featured .news-cat,
+.news-mini .news-cat{
+  display:inline-flex;
+  width:max-content;
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(255,138,0,.13);
+  color:#ffbd5d;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+.news-featured h3{
+  font-size:32px;
+  line-height:1.14;
+  margin:10px 0 10px;
+  max-width:760px;
+}
+.news-featured p{
+  margin:0;
+  color:#c3d0e3;
+  font-size:14px;
+  max-width:720px;
+}
+.news-impact{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:18px;
+}
+.news-impact div{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  padding:12px;
+}
+.news-impact small{
+  display:block;
+  color:#9fb0c9;
+  font-size:9px;
+  text-transform:uppercase;
+  font-weight:850;
+  letter-spacing:.6px;
+}
+.news-impact b{
+  display:block;
+  margin-top:3px;
+  color:#fff;
+  font-size:13px;
+}
+.news-source{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.10);
+  color:#9fb0c9;
+  font-size:10px;
+}
+.news-list{display:grid;gap:13px}
+.news-mini{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(13,36,70,.05);
+}
+.news-mini h4{
+  font-size:19px;
+  line-height:1.3;
+  margin:7px 0 7px;
+  color:var(--navy);
+}
+.news-mini p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.news-mini-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:13px;
+  padding-top:11px;
+  border-top:1px solid var(--line);
+  color:#8c97a8;
+  font-size:10px;
+}
+.news-empty{
+  grid-column:1/-1;
+  border:1px dashed #cfd8e5;
+  background:#fff;
+  color:var(--muted);
+  border-radius:20px;
+  padding:24px;
+  text-align:center;
+}
+.news-daily-note{
+  margin-top:18px;
+  border:1px solid #d9e5f1;
+  background:#f8fbff;
+  border-radius:18px;
+  padding:16px 18px;
+  font-size:12px;
+  color:#667387;
+}
+.news-daily-note b{color:var(--navy)}
+@media(max-width:980px){
+  .news-board{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .news-featured{min-height:300px;padding:24px 20px}
+  .news-featured h3{font-size:26px}
+  .news-impact{grid-template-columns:1fr}
+}
+
+
+.stock-date-strip{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin:-8px 0 22px;
+  padding:13px 16px;
+  border:1px solid #d9e5f1;
+  background:#fff;
+  border-radius:16px;
+  color:#5d6a7e;
+  font-size:12px;
+}
+.stock-date-strip b{color:var(--navy)}
+.stock-date-strip .active-market{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#167348;
+  font-weight:900;
+}
+.stock-date-strip .active-market::before{
+  content:"";
+  width:8px;height:8px;border-radius:50%;
+  background:#1db768;
+  box-shadow:0 0 0 5px rgba(29,183,104,.10);
+}
+@media(max-width:640px){
+  .stock-date-strip{align-items:flex-start;flex-direction:column}
+}
+
+
+/* ===== Recommendation Pro Upgrade ===== */
+.market-view{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin:0 0 24px}
+.market-view-main{position:relative;overflow:hidden;border-radius:22px;padding:22px;color:#fff;background:radial-gradient(circle at 92% 0%,rgba(255,138,0,.20),transparent 27%),linear-gradient(145deg,#0b2e5d,#071a36);box-shadow:0 14px 36px rgba(7,26,54,.10)}
+.market-view-main .mv-kicker{display:inline-flex;align-items:center;gap:8px;color:#ffc66f;font-size:10px;font-weight:950;letter-spacing:.75px;text-transform:uppercase}
+.market-view-main h3{margin:8px 0 7px;font-size:26px;line-height:1.15}
+.market-view-main p{margin:0;color:#c6d3e4;font-size:13px}
+.market-view-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
+.market-view-stat{border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.06);border-radius:14px;padding:12px}
+.market-view-stat span{display:block;color:#9fb0c9;font-size:9px;font-weight:900;letter-spacing:.6px;text-transform:uppercase}
+.market-view-stat b{display:block;margin-top:3px;color:#fff;font-size:13px}
+.market-view-side{display:grid;gap:10px}
+.market-note-card{border:1px solid var(--line);background:#fff;border-radius:18px;padding:17px 18px}
+.market-note-card span{display:block;color:#c96800;font-size:9px;font-weight:950;letter-spacing:.65px;text-transform:uppercase}
+.market-note-card b{display:block;margin-top:4px;color:var(--navy);font-size:16px}
+.market-note-card p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.pick-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.pick-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:999px;font-size:9px;font-weight:950;letter-spacing:.45px;text-transform:uppercase;border:1px solid var(--line);color:#526075;background:#f8fafc}
+.pick-tag.active{background:#eaf8f1;border-color:#cdebd9;color:#167348}
+.pick-tag.swing{background:#edf4ff;border-color:#d9e7f6;color:#27649f}
+.rr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}
+.rr-box{border-radius:13px;padding:10px 11px;border:1px solid var(--line);background:#fbfcfe}
+.rr-box span{display:block;color:#8994a5;font-size:8px;font-weight:900;letter-spacing:.55px;text-transform:uppercase}
+.rr-box b{display:block;margin-top:3px;font-size:14px}
+.rr-box.potential b{color:#168258}.rr-box.risk b{color:#c84141}.rr-box.ratio b{color:#27649f}
+.why-now{margin-top:16px;padding:13px 14px;border-radius:14px;background:#f5f8fc;border-left:3px solid var(--orange)}
+.why-now span{display:block;color:#c96800;font-size:9px;font-weight:950;letter-spacing:.6px;text-transform:uppercase}
+.why-now p{margin:4px 0 0;color:#4f5e73;font-size:12px}
+.last-update{display:inline-flex;align-items:center;gap:7px}
+.last-update::before{content:"";width:7px;height:7px;border-radius:50%;background:#20b15a;box-shadow:0 0 0 4px rgba(32,177,90,.09)}
+@media(max-width:860px){.market-view{grid-template-columns:1fr}}
+@media(max-width:640px){.market-view-grid,.rr-grid{grid-template-columns:1fr}}
+
+
+/* ===== Performance Pie Chart ===== */
+.performance-wrap{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:18px;
+  margin:0 0 26px;
+}
+.performance-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 10px 28px rgba(10,28,52,.06);
+}
+.performance-card .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.performance-card h3{
+  margin:8px 0 6px;
+  font-size:28px;
+  line-height:1.1;
+  color:var(--navy);
+}
+.performance-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.performance-grid{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:18px;
+  align-items:center;
+  margin-top:18px;
+}
+.chart-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:260px;
+}
+.pie-legend{
+  display:grid;
+  gap:10px;
+}
+.legend-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border:1px solid var(--line);
+  background:#fbfcfe;
+  border-radius:14px;
+  padding:12px 14px;
+}
+.legend-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.legend-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  flex:0 0 12px;
+}
+.legend-item b{
+  color:var(--navy);
+  font-size:15px;
+}
+.legend-item span{
+  color:#5e6b7f;
+  font-size:12px;
+}
+.win-dot{background:#20b15a}
+.lose-dot{background:#e45757}
+.performance-mini{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+.performance-stat{
+  border-radius:14px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  background:#f7fafc;
+}
+.performance-stat span{
+  display:block;
+  color:#8791a1;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.65px;
+  text-transform:uppercase;
+}
+.performance-stat b{
+  display:block;
+  margin-top:4px;
+  color:var(--navy);
+  font-size:18px;
+}
+.performance-note{
+  margin-top:16px;
+  padding:14px 15px;
+  border-radius:14px;
+  background:#f5f8fc;
+  border-left:3px solid var(--orange);
+  color:#56657a;
+  font-size:12px;
+}
+.performance-side{
+  display:grid;
+  gap:14px;
+}
+.performance-side-card{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:20px;
+  padding:18px;
+}
+.performance-side-card h4{
+  margin:0 0 8px;
+  font-size:18px;
+  color:var(--navy);
+}
+.performance-side-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+.performance-side-card ul{
+  margin:12px 0 0;
+  padding-left:18px;
+  color:#516176;
+  font-size:13px;
+}
+.performance-side-card li+li{margin-top:6px}
+@media(max-width:960px){
+  .performance-wrap{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .performance-grid{grid-template-columns:1fr}
+  .chart-box{min-height:220px}
+  .performance-mini{grid-template-columns:1fr}
+}
+
+
+/* ===== News background illustrations by headline ===== */
+.news-featured.themed,
+.news-mini.themed {
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background-size:cover;
+  background-position:center;
+  border-color:rgba(255,255,255,.08);
+}
+.news-featured.themed::before,
+.news-mini.themed::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(6,18,38,.18) 0%, rgba(6,18,38,.55) 45%, rgba(6,18,38,.86) 100%);
+  pointer-events:none;
+}
+.news-featured.themed > *,
+.news-mini.themed > * {
+  position:relative;
+  z-index:1;
+}
+.news-mini.themed {
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  box-shadow:0 14px 36px rgba(7,26,54,.08);
+}
+.news-mini.themed h4,
+.news-featured.themed h3 {
+  color:#fff;
+}
+.news-mini.themed p,
+.news-featured.themed p {
+  color:#d7e1ef;
+}
+.news-mini.themed .news-mini-meta,
+.news-featured.themed .news-source {
+  color:#b7c7da;
+}
+.news-mini.themed .news-cat,
+.news-featured.themed .news-cat {
+  background:rgba(255,255,255,.10);
+  color:#ffd08d;
+  border:1px solid rgba(255,255,255,.10);
+}
+.bg-hormuz {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2308172f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2760%25%27%20stop-color%3D%27%230c315f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%233a0f0f%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27sea%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4575%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23082642%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Ccircle%20cx%3D%271030%27%20cy%3D%27140%27%20r%3D%2790%27%20fill%3D%27%23ff8a00%27%20opacity%3D%27.22%27/%3E%0A%20%20%3Crect%20y%3D%27430%27%20width%3D%271200%27%20height%3D%27270%27%20fill%3D%27url%28%23sea%29%27/%3E%0A%20%20%3Cpath%20d%3D%27M0%20490%20C120%20470%20230%20530%20360%20500%20S620%20455%20760%20495%20S1020%20530%201200%20495%27%20fill%3D%27none%27%20stroke%3D%27%234ba3d9%27%20stroke-width%3D%275%27%20opacity%3D%27.30%27/%3E%0A%20%20%3Cpath%20d%3D%27M0%20545%20C120%20525%20230%20585%20360%20555%20S620%20510%20760%20550%20S1020%20585%201200%20550%27%20fill%3D%27none%27%20stroke%3D%27%238fd3ff%27%20stroke-width%3D%274%27%20opacity%3D%27.18%27/%3E%0A%20%20%3Cg%20transform%3D%27translate%28470%20315%29%27%3E%0A%20%20%20%20%3Crect%20x%3D%27120%27%20y%3D%27-75%27%20width%3D%2716%27%20height%3D%2778%27%20fill%3D%27%23f3f6f9%27%20opacity%3D%27.90%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M136%20-65%20L258%20-20%20L136%205%20Z%27%20fill%3D%27%23d84a4a%27%20opacity%3D%27.92%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M55%200%20H345%20L315%2082%20H102%20L55%200%20Z%27%20fill%3D%27%23e9eef5%27%20opacity%3D%27.92%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27185%27%20y%3D%27-18%27%20width%3D%2775%27%20height%3D%2718%27%20fill%3D%27%23bfc9d6%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27198%27%20y%3D%27-42%27%20width%3D%2750%27%20height%3D%2724%27%20fill%3D%27%23bfc9d6%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2780%27%20y%3D%27120%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3ESTRAIT%20OF%20HORMUZ%3C/text%3E%0A%3C/svg%3E%0A");
+}
+.bg-usjobs {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2308172f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%23123d73%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%233b1020%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20opacity%3D%27.18%27%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%2760%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27144%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27228%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27312%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27396%27%20width%3D%271200%27%20height%3D%2742%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Crect%20x%3D%270%27%20y%3D%270%27%20width%3D%27420%27%20height%3D%27270%27%20fill%3D%27%231b3160%27%20opacity%3D%27.55%27/%3E%0A%20%20%3Cg%20fill%3D%27%23ffffff%27%20opacity%3D%27.55%27%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2762%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27138%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27176%27%20cy%3D%2756%27%20r%3D%2710%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2781%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27119%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27157%27%20cy%3D%2790%27%20r%3D%2710%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20transform%3D%27translate%28565%20180%29%27%3E%0A%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27220%27%20width%3D%27520%27%20height%3D%275%27%20fill%3D%27%23dce6f2%27%20opacity%3D%27.28%27/%3E%0A%20%20%20%20%3Crect%20x%3D%2725%27%20y%3D%27150%27%20width%3D%2765%27%20height%3D%2770%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27130%27%20y%3D%27110%27%20width%3D%2765%27%20height%3D%27110%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27235%27%20y%3D%27155%27%20width%3D%2765%27%20height%3D%2765%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27340%27%20y%3D%2770%27%20width%3D%2765%27%20height%3D%27150%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27445%27%20y%3D%2795%27%20width%3D%2765%27%20height%3D%27125%27%20rx%3D%278%27%20fill%3D%27%238dc3ff%27%20opacity%3D%27.70%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M55%2096%20L160%20142%20L265%20118%20L370%20196%20L475%20150%27%20fill%3D%27none%27%20stroke%3D%27%23ff8a00%27%20stroke-width%3D%278%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2755%27%20cy%3D%2796%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27160%27%20cy%3D%27142%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27265%27%20cy%3D%27118%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27370%27%20cy%3D%27196%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%3Ccircle%20cx%3D%27475%27%20cy%3D%27150%27%20r%3D%277%27%20fill%3D%27%23ff8a00%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2780%27%20y%3D%27620%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3EUS%20JOBS%3C/text%3E%0A%3C/svg%3E%0A");
+}
+.bg-rupiah {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23062030%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%230e6d65%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230a3a5c%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20opacity%3D%27.20%27%3E%0A%20%20%20%20%3Crect%20x%3D%2770%27%20y%3D%27155%27%20width%3D%27330%27%20height%3D%27190%27%20rx%3D%2722%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27130%27%20y%3D%27210%27%20width%3D%27140%27%20height%3D%2780%27%20rx%3D%2710%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%27330%27%20cy%3D%27250%27%20r%3D%2734%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27820%27%20y%3D%2795%27%20width%3D%27280%27%20height%3D%27165%27%20rx%3D%2720%27%20fill%3D%27%23ffffff%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27865%27%20y%3D%27135%27%20width%3D%27100%27%20height%3D%2758%27%20rx%3D%278%27%20fill%3D%27%230e6d65%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cpath%20d%3D%27M200%20540%20C355%20530%20455%20500%20555%20438%20C672%20364%20742%20300%20860%20260%27%20fill%3D%27none%27%20stroke%3D%27%238bffca%27%20stroke-width%3D%2712%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%3Cpath%20d%3D%27M818%20240%20L900%20248%20L870%20176%27%20fill%3D%27none%27%20stroke%3D%27%238bffca%27%20stroke-width%3D%2712%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%3Cg%20fill%3D%27white%27%20opacity%3D%27.15%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20font-size%3D%2788%27%3E%0A%20%20%20%20%3Ctext%20x%3D%2788%27%20y%3D%27110%27%3ERUPIAH%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%27705%27%20y%3D%27620%27%3EIDR%3C/text%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+}
+.bg-ihsg {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23071a36%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2758%25%27%20stop-color%3D%27%23104b73%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230a6b53%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20stroke%3D%27%23ffffff%27%20opacity%3D%27.10%27%3E%0A%20%20%20%20%3Cpath%20d%3D%27M90%20130%20H1110%27/%3E%3Cpath%20d%3D%27M90%20240%20H1110%27/%3E%3Cpath%20d%3D%27M90%20350%20H1110%27/%3E%3Cpath%20d%3D%27M90%20460%20H1110%27/%3E%3Cpath%20d%3D%27M90%20570%20H1110%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20transform%3D%27translate%28170%20170%29%27%3E%0A%20%20%20%20%3Cg%20stroke%3D%27%238fd3ff%27%20stroke-width%3D%276%27%20stroke-linecap%3D%27round%27%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2740%27%20y1%3D%27235%27%20x2%3D%2740%27%20y2%3D%27128%27/%3E%3Cline%20x1%3D%27150%27%20y1%3D%27210%27%20x2%3D%27150%27%20y2%3D%2792%27/%3E%3Cline%20x1%3D%27260%27%20y1%3D%27250%27%20x2%3D%27260%27%20y2%3D%27140%27/%3E%3Cline%20x1%3D%27370%27%20y1%3D%27198%27%20x2%3D%27370%27%20y2%3D%2778%27/%3E%3Cline%20x1%3D%27480%27%20y1%3D%27182%27%20x2%3D%27480%27%20y2%3D%2758%27/%3E%3Cline%20x1%3D%27590%27%20y1%3D%27145%27%20x2%3D%27590%27%20y2%3D%2742%27/%3E%3Cline%20x1%3D%27700%27%20y1%3D%27168%27%20x2%3D%27700%27%20y2%3D%2785%27/%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2720%27%20y%3D%27155%27%20width%3D%2740%27%20height%3D%2754%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27130%27%20y%3D%27110%27%20width%3D%2740%27%20height%3D%2770%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27240%27%20y%3D%27180%27%20width%3D%2740%27%20height%3D%2748%27%20fill%3D%27%23e45757%27/%3E%3Crect%20x%3D%27350%27%20y%3D%27102%27%20width%3D%2740%27%20height%3D%2762%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27460%27%20y%3D%2784%27%20width%3D%2740%27%20height%3D%2770%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27570%27%20y%3D%2760%27%20width%3D%2740%27%20height%3D%2755%27%20fill%3D%27%2320b15a%27/%3E%3Crect%20x%3D%27680%27%20y%3D%27112%27%20width%3D%2740%27%20height%3D%2742%27%20fill%3D%27%2320b15a%27/%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%20%20%3Cpath%20d%3D%27M40%20235%20C120%20205%20180%20210%20260%20185%20C355%20155%20430%20138%20520%20112%20C610%2086%20685%2075%20760%2042%27%20fill%3D%27none%27%20stroke%3D%27%23ffb13b%27%20stroke-width%3D%279%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%20%20%3Cpath%20d%3D%27M720%2034%20L778%2042%20L748%20-10%27%20fill%3D%27none%27%20stroke%3D%27%23ffb13b%27%20stroke-width%3D%279%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%2790%27%20y%3D%27110%27%20fill%3D%27white%27%20opacity%3D%27.08%27%20font-size%3D%2786%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3EIHSG%206500%3C/text%3E%0A%3C/svg%3E%0A");
+}
+@media(max-width:640px){
+  .news-mini.themed{min-height:165px}
+}
+
+
+/* ===== Share Recommendation ===== */
+.pick-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.share-pick-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:40px;padding:0 13px;border-radius:11px;border:1px solid #dbe4ef;
+  background:#fff;color:#17365f;font-size:11px;font-weight:900;cursor:pointer;
+  transition:.2s ease
+}
+.share-pick-btn:hover{transform:translateY(-1px);border-color:#b9c9db;box-shadow:0 8px 20px rgba(7,26,54,.08)}
+.share-pick-btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+.share-toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  padding:10px 14px;border-radius:999px;background:#071a36;color:#fff;
+  font-size:11px;font-weight:850;opacity:0;pointer-events:none;transition:.25s ease;
+  z-index:300;box-shadow:0 14px 30px rgba(7,26,54,.20)
+}
+.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== Recommendation History ===== */
+.history-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 18px}
+.history-stat{border:1px solid var(--line);background:#fff;border-radius:17px;padding:16px}
+.history-stat span{display:block;color:#8792a4;font-size:9px;font-weight:900;letter-spacing:.65px;text-transform:uppercase}
+.history-stat b{display:block;margin-top:5px;color:var(--navy);font-size:22px}
+.history-table-wrap{
+  border:1px solid var(--line);border-radius:22px;background:#fff;overflow:auto;
+  box-shadow:0 12px 30px rgba(7,26,54,.05)
+}
+.history-table{width:100%;min-width:900px;border-collapse:collapse}
+.history-table th{
+  padding:13px 15px;text-align:left;background:#f6f8fb;color:#6f7c90;
+  font-size:9px;text-transform:uppercase;letter-spacing:.65px;font-weight:950;
+  border-bottom:1px solid var(--line)
+}
+.history-table td{padding:14px 15px;border-bottom:1px solid #edf1f5;font-size:12px;color:#566378}
+.history-table tr:last-child td{border-bottom:0}
+.history-ticker{color:var(--navy);font-weight:950;font-size:13px}
+.history-status{
+  display:inline-flex;align-items:center;justify-content:center;padding:6px 9px;
+  border-radius:999px;font-size:9px;font-weight:950;text-transform:uppercase;letter-spacing:.45px
+}
+.history-status.ongoing{background:#edf4ff;color:#27649f}
+.history-status.win{background:#eaf8f1;color:#167348}
+.history-status.lose{background:#ffeded;color:#be3e3e}
+.history-return.positive{color:#158259;font-weight:900}
+.history-return.negative{color:#c84141;font-weight:900}
+.history-return.neutral{color:#8591a2;font-weight:850}
+.history-note{margin-top:13px;font-size:11px;color:#7a8798}
+
+/* ===== Tomorrow Watchlist ===== */
+.tomorrow-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.tomorrow-main{
+  border-radius:25px;padding:26px;color:#fff;
+  background:radial-gradient(circle at 90% 10%,rgba(255,138,0,.18),transparent 26%),
+             linear-gradient(145deg,#071a36,#0c315f);
+  box-shadow:0 18px 44px rgba(7,26,54,.12)
+}
+.tomorrow-main .eyebrow{color:#ffcb82}
+.tomorrow-main h3{margin:7px 0 8px;font-size:29px;line-height:1.15}
+.tomorrow-main p{margin:0;color:#c6d3e4;font-size:13px}
+.tomorrow-status{
+  display:inline-flex;align-items:center;gap:8px;margin-top:17px;padding:8px 10px;
+  border-radius:999px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.10);color:#fff;font-size:10px;font-weight:900
+}
+.tomorrow-status::before{
+  content:"";width:8px;height:8px;border-radius:50%;background:#ffb13b;
+  box-shadow:0 0 0 5px rgba(255,177,59,.11)
+}
+.tomorrow-slots{display:grid;gap:10px}
+.tomorrow-slot{
+  border:1px solid var(--line);background:#fff;border-radius:18px;padding:16px 17px;
+  display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center
+}
+.tomorrow-number{
+  width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+  background:#f3f6fa;color:#8a95a5;font-size:11px;font-weight:950
+}
+.tomorrow-slot b{display:block;color:var(--navy);font-size:14px}
+.tomorrow-slot span{display:block;margin-top:2px;color:#8a95a6;font-size:10px}
+.tomorrow-badge{
+  padding:6px 8px;border-radius:999px;background:#fff4e6;color:#a76000;
+  font-size:8px;font-weight:950;text-transform:uppercase;letter-spacing:.5px
+}
+
+/* ===== Performance empty state refinement ===== */
+.performance-empty{
+  display:none;margin-top:12px;padding:12px 14px;border-radius:13px;
+  background:#f7f9fc;border:1px solid var(--line);color:#738095;font-size:11px
+}
+
+@media(max-width:900px){
+  .history-summary{grid-template-columns:repeat(2,1fr)}
+  .tomorrow-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .history-summary{grid-template-columns:1fr 1fr}
+  .pick-actions{display:grid}.share-pick-btn{width:100%}
+  .tomorrow-slot{grid-template-columns:42px 1fr}.tomorrow-badge{grid-column:2}
+}
+
+
+/* ===== History Performance V2 ===== */
+.history-performance{
+  margin-top:28px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 14px 34px rgba(7,26,54,.06);
+}
+.history-performance-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  padding-bottom:18px;
+  border-bottom:1px solid var(--line);
+}
+.history-performance-head span{
+  display:block;
+  color:#c96800;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.8px;
+}
+.history-performance-head h3{
+  margin:5px 0 5px;
+  color:var(--navy);
+  font-size:27px;
+  line-height:1.15;
+}
+.history-performance-head p{
+  margin:0;
+  max-width:650px;
+  color:var(--muted);
+  font-size:12px;
+}
+.history-performance-badge{
+  flex:0 0 auto;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#edf4ff;
+  color:#27649f;
+  border:1px solid #d8e7f7;
+  font-size:9px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+.history-performance-content{
+  display:grid;
+  grid-template-columns:310px 1fr;
+  gap:24px;
+  align-items:center;
+  padding-top:20px;
+}
+.history-chart-column{
+  min-height:265px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.history-performance-data{
+  display:grid;
+  gap:10px;
+}
+.history-result-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:13px 15px;
+  background:#fbfcfe;
+}
+.history-result-row span{
+  display:block;
+  font-size:11px;
+  font-weight:950;
+}
+.history-result-row small{
+  display:block;
+  margin-top:2px;
+  color:#8994a5;
+  font-size:10px;
+}
+.history-result-row strong{
+  font-size:25px;
+  color:var(--navy);
+}
+.history-result-row.win span{color:#158259}
+.history-result-row.lose span{color:#c84141}
+.history-rate-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+}
+.history-rate-grid div{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:12px;
+  background:#f7f9fc;
+}
+.history-rate-grid span{
+  display:block;
+  color:#8792a4;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.55px;
+  text-transform:uppercase;
+}
+.history-rate-grid b{
+  display:block;
+  margin-top:4px;
+  color:var(--navy);
+  font-size:18px;
+}
+.history-performance-note{
+  margin-top:18px;
+  padding:13px 14px;
+  border-radius:13px;
+  border-left:3px solid var(--orange);
+  background:#f6f8fb;
+  color:#68758a;
+  font-size:11px;
+}
+@media(max-width:760px){
+  .history-performance{padding:18px}
+  .history-performance-head{flex-direction:column}
+  .history-performance-content{grid-template-columns:1fr}
+  .history-rate-grid{grid-template-columns:1fr}
+}
+
+
+.history-highlight{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:-6px 0 18px;
+}
+.history-highlight span{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid #dce7e1;
+  background:#f1faf5;
+  color:#176c45;
+  font-size:10px;
+  font-weight:850;
+}
+
+
+/* ===== Added News Themes: MSCI + China ===== */
+.bg-msci {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23071a36%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%23173f70%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%234a245f%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Cg%20opacity%3D%27.18%27%20fill%3D%27%23fff%27%3E%0A%20%20%20%20%3Crect%20x%3D%27100%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27220%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27340%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27460%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27580%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27700%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27820%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27940%27%20y%3D%27135%27%20width%3D%2795%27%20height%3D%2795%27%20rx%3D%2712%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cpath%20d%3D%27M130%20510%20C260%20470%20350%20500%20475%20420%20C590%20350%20690%20410%20805%20300%20C895%20215%20990%20230%201070%20170%27%0A%20%20%20%20%20%20%20%20fill%3D%27none%27%20stroke%3D%27%23ffb13b%27%20stroke-width%3D%2711%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%3Ccircle%20cx%3D%271070%27%20cy%3D%27170%27%20r%3D%2714%27%20fill%3D%27%23ffb13b%27/%3E%0A%20%20%3Ctext%20x%3D%2795%27%20y%3D%27610%27%20fill%3D%27white%27%20opacity%3D%27.10%27%20font-size%3D%2792%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3EMSCI%20REVIEW%3C/text%3E%0A%3C/svg%3E%0A");
+}
+.bg-china {
+  background-image:url("data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201200%20700%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23411414%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2755%25%27%20stop-color%3D%27%237f1f1f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23c27a15%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271200%27%20height%3D%27700%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%3Ccircle%20cx%3D%27170%27%20cy%3D%27150%27%20r%3D%2742%27%20fill%3D%27%23ffd35c%27%20opacity%3D%27.85%27/%3E%0A%20%20%3Cg%20fill%3D%27%23ffd35c%27%20opacity%3D%27.8%27%3E%0A%20%20%20%20%3Ccircle%20cx%3D%27250%27%20cy%3D%27105%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27278%27%20cy%3D%27137%27%20r%3D%2710%27/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%27275%27%20cy%3D%27178%27%20r%3D%2710%27/%3E%3Ccircle%20cx%3D%27238%27%20cy%3D%27205%27%20r%3D%2710%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20opacity%3D%27.35%27%3E%0A%20%20%20%20%3Crect%20x%3D%27630%27%20y%3D%27350%27%20width%3D%2772%27%20height%3D%27160%27%20rx%3D%278%27%20fill%3D%27%23f7c967%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27735%27%20y%3D%27290%27%20width%3D%2772%27%20height%3D%27220%27%20rx%3D%278%27%20fill%3D%27%23f7c967%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27840%27%20y%3D%27230%27%20width%3D%2772%27%20height%3D%27280%27%20rx%3D%278%27%20fill%3D%27%23f7c967%27/%3E%0A%20%20%20%20%3Crect%20x%3D%27945%27%20y%3D%27175%27%20width%3D%2772%27%20height%3D%27335%27%20rx%3D%278%27%20fill%3D%27%23f7c967%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cpath%20d%3D%27M620%20430%20C710%20390%20780%20350%20860%20300%20C930%20255%20980%20220%201060%20145%27%0A%20%20%20%20%20%20%20%20fill%3D%27none%27%20stroke%3D%27%23fff3b0%27%20stroke-width%3D%2710%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%3Ctext%20x%3D%2790%27%20y%3D%27610%27%20fill%3D%27white%27%20opacity%3D%27.10%27%20font-size%3D%2788%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%3ECHINA%20%E2%80%A2%20COMMODITIES%3C/text%3E%0A%3C/svg%3E%0A");
+}
+
+
+/* ===== IHSG Outlook Strip ===== */
+.ihsg-outlook{
+  display:grid;
+  grid-template-columns:1.25fr repeat(3,.55fr);
+  gap:10px;
+  margin:0 0 22px;
+}
+.ihsg-outlook-main,
+.ihsg-level{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:17px;
+  padding:15px 16px;
+}
+.ihsg-outlook-main span,
+.ihsg-level span{
+  display:block;
+  color:#8792a4;
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.65px;
+  text-transform:uppercase;
+}
+.ihsg-outlook-main b{
+  display:block;
+  margin-top:4px;
+  color:#158259;
+  font-size:18px;
+}
+.ihsg-outlook-main p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:11px;
+}
+.ihsg-level b{
+  display:block;
+  margin-top:5px;
+  color:var(--navy);
+  font-size:19px;
+}
+.ihsg-level.target b{color:#158259}
+@media(max-width:800px){
+  .ihsg-outlook{grid-template-columns:1fr 1fr}
+  .ihsg-outlook-main{grid-column:1/-1}
+}
+
+
+/* ===== Morning Conviction Ranking ===== */
+.conviction-board{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:14px;
+  margin:0 0 22px;
+}
+.conviction-headline{
+  border-radius:21px;
+  padding:20px;
+  color:#fff;
+  background:radial-gradient(circle at 90% 10%,rgba(255,138,0,.22),transparent 26%),linear-gradient(145deg,#071a36,#0d3768);
+}
+.conviction-headline span{
+  display:block;color:#ffc66f;font-size:9px;font-weight:950;letter-spacing:.7px;text-transform:uppercase
+}
+.conviction-headline h3{margin:6px 0 6px;font-size:25px;line-height:1.15}
+.conviction-headline p{margin:0;color:#c7d4e5;font-size:12px}
+.conviction-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.conviction-item{
+  border:1px solid var(--line);background:#fff;border-radius:15px;padding:11px 12px
+}
+.conviction-item b{display:block;color:var(--navy);font-size:12px}
+.conviction-item span{display:block;margin-top:2px;color:#8994a5;font-size:9px}
+@media(max-width:820px){.conviction-board{grid-template-columns:1fr}}
+@media(max-width:540px){.conviction-list{grid-template-columns:1fr}}
+
+
+/* ===== Recommendation Calendar — only recommendation section ===== */
+.rekom-calendar-layout{
+  display:grid;
+  grid-template-columns:360px 1fr;
+  gap:20px;
+  align-items:start;
+}
+.rekom-calendar-card{
+  position:sticky;
+  top:96px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+  padding:18px;
+  box-shadow:0 12px 30px rgba(7,26,54,.05);
+}
+.rekom-calendar-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:14px;
+}
+.rekom-calendar-top h3{
+  margin:0;
+  color:var(--navy);
+  font-size:20px;
+  line-height:1.2;
+}
+.rekom-month-btn{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--navy);
+  font-weight:950;
+  cursor:pointer;
+}
+.rekom-month-btn:hover{
+  border-color:#b9c9db;
+  background:#f8fafc;
+}
+.rekom-weekdays,
+.rekom-days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:6px;
+}
+.rekom-weekday{
+  padding:5px 0;
+  text-align:center;
+  color:#8a95a6;
+  font-size:8px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.45px;
+}
+.rekom-day{
+  position:relative;
+  aspect-ratio:1/1;
+  border:1px solid transparent;
+  border-radius:11px;
+  background:#f7f9fc;
+  color:#a2acba;
+  display:grid;
+  place-items:center;
+  font-size:11px;
+  font-weight:850;
+}
+button.rekom-day{
+  cursor:pointer;
+}
+.rekom-day.empty{
+  background:transparent;
+}
+.rekom-day.has-picks{
+  background:#fff;
+  color:var(--navy);
+  border-color:#f2d5b6;
+}
+.rekom-day.has-picks::after{
+  content:"";
+  position:absolute;
+  bottom:6px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--orange);
+}
+.rekom-day.has-picks:hover{
+  border-color:var(--orange);
+  transform:translateY(-1px);
+}
+.rekom-day.selected{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+  box-shadow:0 9px 22px rgba(7,26,54,.14);
+}
+.rekom-day.selected::after{
+  background:var(--orange2);
+}
+.rekom-calendar-legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 14px;
+  margin-top:14px;
+  padding-top:13px;
+  border-top:1px solid var(--line);
+}
+.rekom-legend{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:#748196;
+  font-size:9px;
+}
+.rekom-legend-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#cbd2dc;
+}
+.rekom-legend-dot.orange{background:var(--orange)}
+.rekom-legend-dot.navy{background:var(--navy)}
+.rekom-calendar-tip{
+  margin-top:12px;
+  padding:11px 12px;
+  border-radius:12px;
+  background:#f7f9fc;
+  color:#69768a;
+  font-size:10px;
+}
+.rekom-calendar-content{
+  min-width:0;
+}
+.rekom-day-panel{
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(7,26,54,.05);
+}
+.rekom-day-panel-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:18px 20px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,138,0,.20),transparent 26%),
+    linear-gradient(145deg,#071a36,#0c315f);
+}
+.rekom-day-panel-head span{
+  display:block;
+  color:#ffc66f;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+.rekom-day-panel-head h3{
+  margin:4px 0 0;
+  color:#fff;
+  font-size:23px;
+  line-height:1.15;
+}
+.rekom-day-panel-head p{
+  margin:3px 0 0;
+  color:#c7d4e5;
+  font-size:10px;
+}
+.rekom-hide-btn{
+  flex:0 0 auto;
+  min-height:38px;
+  padding:0 12px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.17);
+  color:#fff;
+  background:rgba(255,255,255,.08);
+  cursor:pointer;
+  font-size:10px;
+  font-weight:900;
+}
+.rekom-day-body{
+  padding:18px;
+}
+.rekom-day-body .conviction-board{
+  margin-top:0;
+}
+.rekom-day-body .stock-date-strip{
+  margin-top:0;
+}
+.rekom-empty-panel{
+  min-height:460px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  border:1px dashed #cfd8e5;
+  border-radius:22px;
+  background:#fff;
+  padding:36px;
+}
+.rekom-empty-panel .icon{
+  font-size:34px;
+}
+.rekom-empty-panel h3{
+  margin:8px 0 5px;
+  color:var(--navy);
+  font-size:24px;
+}
+.rekom-empty-panel p{
+  max-width:470px;
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+}
+.rekom-historical-note{
+  margin-bottom:14px;
+  padding:12px 14px;
+  border-radius:14px;
+  background:#f5f8fc;
+  border-left:3px solid var(--orange);
+  color:#56657a;
+  font-size:11px;
+}
+@media(max-width:920px){
+  .rekom-calendar-layout{grid-template-columns:1fr}
+  .rekom-calendar-card{position:relative;top:auto}
+}
+@media(max-width:640px){
+  .rekom-day-panel-head{align-items:flex-start;flex-direction:column}
+  .rekom-days,.rekom-weekdays{gap:4px}
+  .rekom-day{border-radius:9px}
+  .rekom-day-body{padding:13px}
+}
+
+
+/* ===== Gold News Theme ===== */
+.bg-gold{
+  background-image:
+    radial-gradient(circle at 80% 22%,rgba(255,210,86,.38),transparent 18%),
+    linear-gradient(145deg,#3b2505 0%,#81540b 52%,#151d2d 100%);
+}
+
+
+/* ===== FINAL HEADER: HOME | REKOM SAHAM | REKSADANA ===== */
+.site-header{position:sticky;top:0;z-index:500}
+.ts-main-nav{
+  display:flex;align-items:center;justify-content:center;gap:42px;
+  color:#d5deeb;font-weight:800;font-size:14px;white-space:nowrap
+}
+.ts-main-nav a{position:relative;color:#d5deeb;text-decoration:none;transition:.18s ease}
+.ts-main-nav a:hover,.ts-main-nav a.active{color:#fff}
+.ts-main-nav a.active::after{
+  content:"";position:absolute;left:0;right:0;bottom:-14px;height:3px;
+  border-radius:999px;background:#ff8a00
+}
+.ts-header-wa{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:42px;padding:0 18px;border-radius:11px;
+  border:1px solid rgba(255,255,255,.30);color:#fff;
+  background:rgba(255,255,255,.04);font-weight:850;white-space:nowrap
+}
+.ts-mobile-menu-btn{
+  display:none;min-width:92px;height:44px;padding:0 14px;
+  border:1px solid rgba(255,255,255,.30);border-radius:12px;
+  background:rgba(255,255,255,.08);color:#fff;font-weight:850;
+  cursor:pointer;align-items:center;justify-content:center;gap:8px
+}
+.ts-mobile-menu-btn .icon{font-size:22px;line-height:1}
+.ts-mobile-menu-btn[aria-expanded="true"] .icon{font-size:0}
+.ts-mobile-menu-btn[aria-expanded="true"] .icon::after{content:"✕";font-size:20px}
+.ts-mobile-nav{
+  display:none;position:absolute;z-index:510;top:100%;left:0;right:0;
+  padding:10px 13px 16px;background:rgba(7,26,54,.99);
+  border-top:1px solid rgba(255,255,255,.08);
+  box-shadow:0 20px 38px rgba(0,0,0,.24)
+}
+.ts-mobile-nav.open{display:grid}
+.ts-mobile-nav a{
+  color:#fff;font-weight:800;padding:14px 16px;
+  border-bottom:1px solid rgba(255,255,255,.09);border-radius:10px
+}
+.ts-mobile-nav a.active{
+  color:#10213d;background:linear-gradient(135deg,#ff8a00,#ffb13b);
+  border-bottom-color:transparent
+}
+@media(max-width:980px){
+  .ts-main-nav,.ts-header-wa{display:none!important}
+  .ts-mobile-menu-btn{display:inline-flex!important}
+}
+@media(min-width:981px){.ts-mobile-nav{display:none!important}}
+
+
+/* ===== COLLAPSIBLE SECTIONS ===== */
+.ts-collapse-section{position:relative}
+.ts-hide-btn{
+  position:absolute;z-index:80;top:12px;
+  right:max(14px,calc((100% - 1160px)/2 + 20px));
+  display:inline-flex;align-items:center;gap:6px;min-height:33px;
+  padding:0 11px;border:1px solid rgba(7,26,54,.13);border-radius:999px;
+  background:rgba(255,255,255,.94);color:#526075;
+  box-shadow:0 7px 20px rgba(7,26,54,.08);font-size:10px;font-weight:900;
+  cursor:pointer;backdrop-filter:blur(8px)
+}
+.ts-hide-btn:hover{color:#071a36;border-color:rgba(7,26,54,.25)}
+.section-dark .ts-hide-btn,.hero .ts-hide-btn,.testi-premium .ts-hide-btn,.final-cta .ts-hide-btn{
+  background:rgba(7,26,54,.90);color:#fff;border-color:rgba(255,255,255,.18)
+}
+.ts-collapse-section.ts-hidden-section{
+  min-height:0!important;height:auto!important;padding:0!important;
+  margin-top:10px!important;margin-bottom:10px!important;
+  overflow:visible!important;background:transparent!important;
+  border:0!important;box-shadow:none!important
+}
+.ts-collapse-section.ts-hidden-section::before,
+.ts-collapse-section.ts-hidden-section::after{display:none!important}
+.ts-collapse-section.ts-hidden-section > :not(.ts-collapsed-bar){display:none!important}
+.ts-collapsed-bar{display:none}
+.ts-collapse-section.ts-hidden-section > .ts-collapsed-bar{
+  width:min(1160px,calc(100% - 40px));margin:0 auto;min-height:58px;
+  padding:10px 13px 10px 17px;border:1px solid #dfe5ee;border-radius:16px;
+  background:#fff;box-shadow:0 8px 22px rgba(7,26,54,.055);
+  display:flex!important;align-items:center;justify-content:space-between;gap:14px
+}
+.ts-collapsed-left{display:flex;align-items:center;gap:10px;min-width:0}
+.ts-collapsed-dot{
+  width:9px;height:9px;flex:0 0 9px;border-radius:50%;
+  background:#ff8a00;box-shadow:0 0 0 5px rgba(255,138,0,.10)
+}
+.ts-collapsed-title{
+  color:#071a36;font-size:13px;font-weight:900;line-height:1.2;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+}
+.ts-collapsed-note{display:block;color:#8b96a6;font-size:9px;margin-top:2px}
+.ts-restore-btn{
+  flex:0 0 auto;min-height:33px;padding:0 11px;border:1px solid #dfe5ee;
+  border-radius:999px;background:#f7f9fc;color:#17365f;font-size:10px;
+  font-weight:900;cursor:pointer
+}
+.ts-page-tools{position:fixed;right:16px;bottom:18px;z-index:650;display:flex;gap:7px;align-items:center}
+.ts-show-all{
+  display:none;min-height:39px;padding:0 13px;border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;background:#071a36;color:#fff;box-shadow:0 12px 30px rgba(7,26,54,.20);
+  font-size:10px;font-weight:900;cursor:pointer
+}
+.ts-show-all.show{display:inline-flex}
+.ts-hidden-count{
+  display:none;width:26px;height:26px;border-radius:50%;align-items:center;justify-content:center;
+  background:#ff8a00;color:#10213d;font-size:9px;font-weight:950
+}
+.ts-hidden-count.show{display:flex}
+@media(max-width:680px){
+  .ts-hide-btn{right:10px;top:9px;min-height:31px;padding:0 9px;font-size:9px}
+  .ts-collapse-section.ts-hidden-section > .ts-collapsed-bar{
+    width:min(100% - 20px,1160px);min-height:54px;border-radius:14px
+  }
+  .ts-collapsed-title{font-size:11px}.ts-collapsed-note{font-size:8px}
+  .ts-restore-btn{min-height:31px;padding:0 9px;font-size:9px}
+  .ts-page-tools{right:10px;bottom:82px}
+}
+
+
+/* ===== SMART UX PREVIEW: Quick Nav + Focus Mode + What's New ===== */
+.ts-whats-new{
+  position:relative;z-index:85;background:#fff;border-bottom:1px solid #dfe5ee;
+  box-shadow:0 8px 24px rgba(7,26,54,.045)
+}
+.ts-whats-new-inner{
+  min-height:72px;display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:12px 0
+}
+.ts-whats-new-label{display:flex;align-items:center;gap:11px;min-width:0}
+.ts-whats-new-dot{
+  width:10px;height:10px;flex:0 0 10px;border-radius:50%;
+  background:#20b15a;box-shadow:0 0 0 6px rgba(32,177,90,.10)
+}
+.ts-whats-new-title small{
+  display:block;color:#8a95a6;font-size:9px;font-weight:900;
+  letter-spacing:.7px;text-transform:uppercase
+}
+.ts-whats-new-title b{
+  display:block;margin-top:2px;color:#071a36;font-size:15px;line-height:1.25
+}
+.ts-whats-new-links{
+  display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap
+}
+.ts-whats-new-link{
+  display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 11px;
+  border:1px solid #dfe5ee;border-radius:999px;background:#f8fafc;color:#17365f;
+  font-size:10px;font-weight:900;transition:.18s ease
+}
+.ts-whats-new-link:hover{transform:translateY(-1px);border-color:#bfcddd;background:#eef4fb}
+.ts-whats-new-link.primary{background:#071a36;color:#fff;border-color:#071a36}
+
+.ts-smart-nav{position:fixed;z-index:780;left:16px;bottom:18px}
+.ts-smart-nav-trigger{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:44px;padding:0 15px;border:1px solid rgba(255,255,255,.15);
+  border-radius:999px;background:#071a36;color:#fff;
+  box-shadow:0 14px 34px rgba(7,26,54,.22);font-size:11px;font-weight:900;
+  cursor:pointer;transition:.18s ease
+}
+.ts-smart-nav-trigger:hover{transform:translateY(-2px)}
+.ts-smart-nav-trigger .ts-nav-icon{font-size:15px}
+.ts-smart-panel{
+  position:absolute;left:0;bottom:56px;width:min(340px,calc(100vw - 32px));
+  max-height:min(610px,calc(100vh - 125px));overflow:auto;display:none;padding:14px;
+  border:1px solid #dfe5ee;border-radius:20px;background:rgba(255,255,255,.98);
+  box-shadow:0 24px 64px rgba(7,26,54,.22);backdrop-filter:blur(16px)
+}
+.ts-smart-panel.open{display:block}
+.ts-smart-panel-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+  padding:3px 3px 12px;border-bottom:1px solid #edf1f5
+}
+.ts-smart-panel-head small{
+  display:block;color:#8b96a7;font-size:9px;font-weight:900;
+  letter-spacing:.65px;text-transform:uppercase
+}
+.ts-smart-panel-head b{display:block;margin-top:2px;color:#071a36;font-size:16px}
+.ts-smart-close{
+  width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;
+  border:1px solid #e1e6ee;border-radius:50%;background:#f8fafc;color:#536075;cursor:pointer
+}
+.ts-focus-box{
+  margin:12px 0;padding:13px;border-radius:15px;
+  background:linear-gradient(135deg,#071a36,#0b315f);color:#fff
+}
+.ts-focus-box small{
+  display:block;color:#aebed2;font-size:9px;font-weight:900;
+  letter-spacing:.65px;text-transform:uppercase
+}
+.ts-focus-box b{display:block;margin-top:3px;font-size:14px}
+.ts-focus-box p{margin:4px 0 10px;color:#c9d5e5;font-size:10px;line-height:1.5}
+.ts-focus-actions{display:flex;gap:7px}
+.ts-focus-btn,.ts-reset-view{
+  min-height:34px;border-radius:10px;padding:0 10px;font-size:9px;font-weight:900;cursor:pointer
+}
+.ts-focus-btn{border:0;background:linear-gradient(135deg,#ff8a00,#ffb13b);color:#10213d}
+.ts-reset-view{
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);color:#fff
+}
+.ts-nav-caption{
+  margin:14px 3px 7px;color:#8b96a7;font-size:9px;font-weight:900;
+  letter-spacing:.65px;text-transform:uppercase
+}
+.ts-nav-list{display:grid;gap:5px}
+.ts-nav-item{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:10px 11px;border-radius:11px;color:#253a59;font-size:11px;font-weight:850;
+  cursor:pointer;border:1px solid transparent;background:#fff;text-align:left
+}
+.ts-nav-item:hover{background:#f5f8fc;border-color:#e3e9f0}
+.ts-nav-item span:last-child{color:#9aa5b4;font-size:12px}
+.ts-smart-note{margin:11px 3px 2px;color:#909bab;font-size:9px;line-height:1.5}
+
+@keyframes tsFlashSection{
+  0%{box-shadow:inset 0 0 0 0 rgba(255,138,0,0)}
+  30%{box-shadow:inset 0 0 0 3px rgba(255,138,0,.35)}
+  100%{box-shadow:inset 0 0 0 0 rgba(255,138,0,0)}
+}
+.ts-section-flash{animation:tsFlashSection 1.15s ease}
+
+@media(max-width:760px){
+  .ts-whats-new-inner{align-items:flex-start;flex-direction:column;gap:10px}
+  .ts-whats-new-links{
+    width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px
+  }
+  .ts-whats-new-link{white-space:nowrap}
+}
+@media(max-width:680px){
+  .ts-smart-nav{left:10px;bottom:82px}
+  .ts-smart-nav-trigger{min-height:40px;padding:0 12px;font-size:10px}
+  .ts-smart-panel{bottom:50px;max-height:calc(100vh - 155px)}
+}
+/* ===== END SMART UX PREVIEW ===== */
+
+
+
+
+/* SCREENING NAV FIT */
+@media(min-width:981px) and (max-width:1180px){.ts-main-nav{gap:20px!important;font-size:12px!important}.ts-header-wa{padding:0 12px!important}}
+
+
+/* ===== SCREENING SAHAM CTA ===== */
+.ts-screening-cta{
+  margin:0 auto 8px;
+  max-width:1180px;
+  padding:0 24px;
+}
+.ts-screening-cta-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:18px 20px;
+  border:1px solid #dfe7ef;
+  border-radius:18px;
+  background:linear-gradient(135deg,#f8fafc,#fff7ee);
+  box-shadow:0 8px 24px rgba(7,31,62,.045);
+}
+.ts-screening-cta-copy small{
+  display:block;
+  margin-bottom:4px;
+  color:#f58220;
+  font-size:9px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.65px;
+}
+.ts-screening-cta-copy b{
+  display:block;
+  color:#0b2749;
+  font-size:16px;
+}
+.ts-screening-cta-copy span{
+  display:block;
+  margin-top:4px;
+  color:#758398;
+  font-size:10px;
+  line-height:1.5;
+}
+.ts-screening-cta-btn{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:0 14px;
+  border-radius:999px;
+  background:#0b315f;
+  color:#fff;
+  text-decoration:none;
+  font-size:9px;
+  font-weight:950;
+  white-space:nowrap;
+}
+.ts-screening-cta-btn:hover{background:#f58220;color:#fff}
+@media(max-width:640px){
+  .ts-screening-cta{padding:0 16px}
+  .ts-screening-cta-card{align-items:flex-start;flex-direction:column}
+  .ts-screening-cta-btn{width:100%}
+}
+/* ===== END SCREENING SAHAM CTA ===== */
+
+
+/* ===== TRADINGVIEW ADVANCED CHART ===== */
+.ts-tv-section{
+  background:#fff;
+}
+.ts-tv-shell{
+  border:1px solid #dfe7ef;
+  border-radius:22px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 12px 34px rgba(9,37,69,.055);
+}
+.ts-tv-toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:16px 18px;
+  border-bottom:1px solid #e8edf3;
+  background:#f8fafc;
+}
+.ts-tv-symbol-info{
+  min-width:0;
+}
+.ts-tv-symbol-info small{
+  display:block;
+  color:#f58220;
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.65px;
+  text-transform:uppercase;
+}
+.ts-tv-symbol-info b{
+  display:block;
+  margin-top:4px;
+  color:#0b315f;
+  font-size:18px;
+}
+.ts-tv-controls{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:7px;
+  flex-wrap:wrap;
+}
+.ts-tv-quick{
+  display:inline-flex;
+  min-height:34px;
+  align-items:center;
+  justify-content:center;
+  padding:0 11px;
+  border:1px solid #dce5ee;
+  border-radius:999px;
+  background:#fff;
+  color:#61738a;
+  font-size:8px;
+  font-weight:950;
+  cursor:pointer;
+  transition:.18s ease;
+}
+.ts-tv-quick:hover{
+  border-color:#f58220;
+  color:#c66211;
+}
+.ts-tv-quick.active{
+  background:#0b315f;
+  border-color:#0b315f;
+  color:#fff;
+}
+.ts-tv-input-wrap{
+  display:grid;
+  grid-template-columns:minmax(135px,1fr) auto;
+  gap:7px;
+}
+.ts-tv-input{
+  min-height:36px;
+  border:1px solid #dce5ee;
+  border-radius:10px;
+  padding:0 11px;
+  color:#173953;
+  font-size:9px;
+  outline:none;
+  text-transform:uppercase;
+}
+.ts-tv-input:focus{
+  border-color:#f58220;
+  box-shadow:0 0 0 3px rgba(245,130,32,.08);
+}
+.ts-tv-open{
+  min-height:36px;
+  border:1px solid #0b315f;
+  border-radius:10px;
+  padding:0 12px;
+  background:#0b315f;
+  color:#fff;
+  font-size:8px;
+  font-weight:950;
+  cursor:pointer;
+}
+.ts-tv-open:hover{background:#f58220;border-color:#f58220}
+.ts-tv-widget-wrap{
+  position:relative;
+  width:100%;
+  height:620px;
+  background:#fff;
+}
+#tsTradingViewWidget{
+  width:100%;
+  height:100%;
+}
+#tsTradingViewWidget .tradingview-widget-container,
+#tsTradingViewWidget .tradingview-widget-container__widget{
+  width:100%!important;
+  height:100%!important;
+}
+.ts-tv-foot{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:center;
+  padding:10px 18px 13px;
+  border-top:1px solid #e9eef3;
+  background:#fff;
+  color:#7b899a;
+  font-size:8px;
+  line-height:1.55;
+}
+.ts-tv-foot b{color:#42586f}
+.ts-tv-status{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+}
+.ts-tv-status i{
+  width:7px;height:7px;border-radius:50%;display:inline-block;background:#f58220;
+}
+@media(max-width:760px){
+  .ts-tv-toolbar{display:block;padding:14px}
+  .ts-tv-symbol-info{margin-bottom:12px}
+  .ts-tv-controls{justify-content:flex-start}
+  .ts-tv-input-wrap{width:100%;grid-template-columns:1fr auto;margin-top:3px}
+  .ts-tv-widget-wrap{height:520px}
+  .ts-tv-foot{display:block;padding:10px 14px 13px}
+  .ts-tv-status{margin-bottom:5px}
+}
+@media(max-width:420px){
+  .ts-tv-widget-wrap{height:480px}
+  .ts-tv-quick{padding:0 9px}
+}
+/* ===== END TRADINGVIEW ADVANCED CHART ===== */
+
+</style>
+</head>
+<body id="top">
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="TaktikSaham beranda">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M8 36V25h7v11H8Zm12 0V18h7v18h-7Zm12 0V10h7v26h-7Z"/>
+          <path class="arrow" d="M7 18 18 9l8 6L40 3l2 5-16 15-8-6-8 7Z"/>
+        </svg>
+      </span>
+      <span><b>TAKTIKSAHAM</b><small>Strategi. Disiplin. Tujuan.</small></span>
+    </a>
+
+    <nav class="ts-main-nav" aria-label="Navigasi utama">
+      <a href="index.html">HOME</a>
+      <a class="active" href="saham.html">REKOM SAHAM</a>
+      <a href="screening.html">SCREENING SAHAM</a>
+      <a href="reksadana.html">REKSADANA</a>
+    </nav>
+
+    <a class="ts-header-wa" href="https://wa.me/6285697486266" target="_blank" rel="noopener">WhatsApp</a>
+
+    <button class="ts-mobile-menu-btn" type="button" aria-controls="tsMobileNav" aria-expanded="false">
+      <span class="icon">☰</span><span>Menu</span>
+    </button>
+  </div>
+
+  <nav class="ts-mobile-nav" id="tsMobileNav" aria-label="Navigasi mobile">
+    <a href="index.html">HOME</a>
+    <a class="active" href="saham.html">REKOM SAHAM</a>
+    <a href="screening.html">SCREENING SAHAM</a>
+    <a href="reksadana.html">REKSADANA</a>
+    <a href="https://wa.me/6285697486266" target="_blank" rel="noopener">WHATSAPP</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="live-dot"></span> Morning Market Brief</span>
+      <h1>Rekom saham pagi.<br><span>Levelnya jelas.</span></h1>
+      <p>
+        Pilihan saham yang sedang menarik untuk dipantau, lengkap dengan area entry,
+        target profit, cut loss, alasan, katalis, serta berita saham yang perlu diperhatikan.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#rekomendasi">Lihat Stock Picks</a>
+        <a class="btn btn-outline" href="#berita">Berita Saham Hari Ini</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel">
+      <small>Format rekomendasi TaktikSaham</small>
+      <h3>Satu kartu. Semua level penting langsung terbaca.</h3>
+      <div class="level-row">
+        <div class="level-box entry"><span>Entry Buy</span><b>Area beli</b></div>
+        <div class="level-box tp"><span>Take Profit</span><b>Target</b></div>
+        <div class="level-box cl"><span>Cut Loss</span><b>Batas risiko</b></div>
+      </div>
+      <div class="update-row">
+        <span>Update</span>
+        <b>Pagi & saat ada perubahan penting</b>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading center">
+      <span class="eyebrow">Cara membaca rekomendasi</span>
+      <h2>Lebih simpel. Lebih terukur.</h2>
+      <p>Setiap rekomendasi dibuat supaya kamu langsung memahami skenario entry, target, dan batas risiko sebelum mengambil keputusan.</p>
+    </div>
+    <div class="guide-grid">
+      <article class="guide-card"><div class="guide-icon">↘</div><b>Entry Buy</b><p>Area harga yang menarik untuk dipantau sebagai rencana masuk.</p></article>
+      <article class="guide-card"><div class="guide-icon">↗</div><b>Take Profit</b><p>Area target untuk mengevaluasi atau mengamankan profit.</p></article>
+      <article class="guide-card"><div class="guide-icon">!</div><b>Cut Loss</b><p>Batas risiko jika skenario awal tidak berjalan sesuai rencana.</p></article>
+      <article class="guide-card"><div class="guide-icon">◎</div><b>Alasan & Katalis</b><p>Kenapa saham menarik, apa pemicunya, dan risiko apa yang perlu dipantau.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="berita">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Morning Stock News • Jumat, 14 Agustus 2026 • ±07.54 WIB</span>
+      <h2>Berita saham penting pagi ini.</h2>
+      <p>Pasar pagi ini lebih cocok untuk selective buy / technical rebound. Fokus utama ada pada overhang MSCI, pidato Presiden + RAPBN 2027, sentimen positif Wall Street, serta profit taking pada minyak dan emas.</p>
+    </div>
+
+    <div class="market-view">
+      <div class="market-view-main">
+        <span class="mv-kicker">Morning Market View • Jumat, 14 Agustus 2026</span>
+        <h3>Selective buy / technical rebound, jangan agresif di opening.</h3>
+        <p>
+          IHSG kemarin terkoreksi setelah reaksi negatif terhadap MSCI. Pagi ini Wall Street memberi sentimen positif,
+          tetapi pasar domestik masih menunggu pidato Presiden dan detail RAPBN 2027. Strategi lebih ideal adalah
+          menunggu konfirmasi buyer dan memilih saham dengan katalis yang jelas.
+        </p>
+
+        <div class="market-view-grid">
+          <div class="market-view-stat"><span>Bias Hari Ini</span><b>🟡🟢 Sideways → Rebound</b></div>
+          <div class="market-view-stat"><span>IHSG Kamis</span><b>6.301,77 • -1,13%</b></div>
+          <div class="market-view-stat"><span>Event Domestik</span><b>Pidato Presiden • RAPBN 2027</b></div>
+          <div class="market-view-stat"><span>Top Attention</span><b>RAPBN • Big Banks • MSCI</b></div>
+        </div>
+      </div>
+
+      <div class="market-view-side">
+        <div class="market-note-card">
+          <span>Berita #1 Pagi Ini</span>
+          <b>🇮🇩 RAPBN 2027 Jadi Event Utama</b>
+          <p>Pasar menunggu asumsi pertumbuhan, defisit, belanja pemerintah, subsidi, infrastruktur, dan arah kebijakan fiskal 2027.</p>
+        </div>
+
+        <div class="market-note-card">
+          <span>Global & Komoditas</span>
+          <b>🇺🇸 Wall Street positif • 🛢️ Oil turun • 🥇 Gold profit taking</b>
+          <p>S&P 500 dan Nasdaq menguat, sementara minyak dan emas terkoreksi. Sentimen global membaik tetapi saham komoditas perlu lebih selektif.</p>
+        </div>
+
+        <div class="market-note-card">
+          <span>Trading Approach</span>
+          <b>⚠️ Tunggu Konfirmasi Buyer</b>
+          <p>Gunakan weakness untuk saham berkatalis kuat. Hindari mengejar saham yang sudah gap-up atau masih menghadapi passive outflow MSCI.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ihsg-outlook">
+      <div class="ihsg-outlook-main">
+        <span>ARAH IHSG HARI INI — 14 AGUSTUS 2026</span>
+        <b>🟡🟢 SIDEWAYS → REBOUND TERBATAS</b>
+        <p>
+          IHSG kemarin ditutup 6.301,77 (-1,13%) dan masih berada di sekitar area MA20. Range yang dipantau berada
+          di 6.230–6.370, sementara skenario rebound berikutnya masih membuka ruang menuju 6.440–6.544. Karena pasar
+          menunggu RAPBN 2027, pendekatan selective buy lebih ideal daripada agresif di opening.
+        </p>
+      </div>
+      <div class="ihsg-level">
+        <span>Previous Close</span>
+        <b>6.301,77</b>
+      </div>
+      <div class="ihsg-level">
+        <span>Range Dipantau</span>
+        <b>6.230–6.370</b>
+      </div>
+      <div class="ihsg-level target">
+        <span>Rebound Scenario</span>
+        <b>6.440–6.544</b>
+      </div>
+    </div>
+
+    <div class="news-toolbar">
+      <div class="news-filter-tabs">
+        <button class="news-filter-btn active" data-news-filter="all">Semua</button>
+        <button class="news-filter-btn" data-news-filter="corporate-action">Corporate Action</button>
+        <button class="news-filter-btn" data-news-filter="earnings">Kinerja Emiten</button>
+        <button class="news-filter-btn" data-news-filter="sector">Sektor & Komoditas</button>
+        <button class="news-filter-btn" data-news-filter="macro">Makro & Regulasi</button>
+      </div>
+      <span class="news-update-badge"><span class="dot"></span> Update Pagi • 14 Agustus</span>
+    </div>
+
+    <div class="news-board" id="newsBoard"></div>
+
+    <div class="news-daily-note">
+      <b>Kesimpulan TaktikSaham:</b>
+      Bias pasar pagi ini sideways menuju rebound terbatas. Wall Street memberi dukungan, tetapi RAPBN 2027 dapat menjadi
+      pemicu volatilitas intraday. MSCI masih menjadi overhang untuk GOTO, CPIN dan ESSA; big banks tetap menarik dipantau
+      karena foreign buy masih selektif, sementara saham emas dan migas perlu mengantisipasi profit taking komoditas.
+    </div>
+
+    <div class="disclaimer">
+      <b>Catatan berita:</b> Ringkasan berita bersifat informasi dan edukasi, bukan ajakan membeli atau menjual saham.
+      Dampak terhadap harga tidak selalu langsung atau sesuai ekspektasi. Data dan angka pada bagian ini mengikuti market update
+      pagi 14 Agustus 2026 yang diberikan untuk pembaruan halaman TaktikSaham.
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="rekomendasi">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Setelah Market News • Calendar Stock Picks</span>
+      <h2>Rekomendasi saham berdasarkan tanggal.</h2>
+      <p>Klik tanggal yang memiliki titik orange untuk membuka rekomendasi. Klik tanggal yang sama lagi atau tombol Hide untuk menutupnya.</p>
+    </div>
+
+    <div class="rekom-calendar-layout">
+      <aside class="rekom-calendar-card">
+        <div class="rekom-calendar-top">
+          <button class="rekom-month-btn" id="rekomPrevMonth" type="button" aria-label="Bulan sebelumnya">‹</button>
+          <h3 id="rekomCalendarTitle">Agustus 2026</h3>
+          <button class="rekom-month-btn" id="rekomNextMonth" type="button" aria-label="Bulan berikutnya">›</button>
+        </div>
+
+        <div class="rekom-weekdays">
+          <div class="rekom-weekday">Sen</div>
+          <div class="rekom-weekday">Sel</div>
+          <div class="rekom-weekday">Rab</div>
+          <div class="rekom-weekday">Kam</div>
+          <div class="rekom-weekday">Jum</div>
+          <div class="rekom-weekday">Sab</div>
+          <div class="rekom-weekday">Min</div>
+        </div>
+        <div class="rekom-days" id="rekomCalendarDays"></div>
+
+        <div class="rekom-calendar-legend">
+          <div class="rekom-legend"><span class="rekom-legend-dot orange"></span>Ada rekomendasi</div>
+          <div class="rekom-legend"><span class="rekom-legend-dot navy"></span>Sedang dibuka</div>
+          <div class="rekom-legend"><span class="rekom-legend-dot"></span>Tidak ada data</div>
+        </div>
+
+        <div class="rekom-calendar-tip">
+          💡 Klik tanggal bertanda titik orange. <b>14 Agustus</b> berisi empat rekomendasi terbaru: DSSA, ESSA, EXCL, dan ASPR.
+        </div>
+      </aside>
+
+      <div class="rekom-calendar-content" id="rekomCalendarContent"></div>
+    </div>
+
+    <div class="disclaimer">
+      <b>Disclaimer:</b> Rekomendasi pada kalender merupakan bahan informasi dan edukasi, bukan jaminan keuntungan.
+      Harga saham dapat bergerak berlawanan dengan skenario. Tetap disiplin terhadap area entry, target, cut loss,
+      dan sesuaikan keputusan dengan profil risiko masing-masing.
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section ts-tv-section" id="tradingview-chart">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Interactive Chart • Powered by TradingView</span>
+      <h2>Chart saham Indonesia.</h2>
+      <p>Pilih saham rekomendasi atau ketik ticker IDX lainnya. Chart dapat di-zoom, digeser, diganti timeframe, ditambahkan indikator, dan dibuka langsung di TradingView.</p>
+    </div>
+
+    <div class="ts-tv-shell">
+      <div class="ts-tv-toolbar">
+        <div class="ts-tv-symbol-info">
+          <small>TradingView Advanced Chart</small>
+          <b id="tsTvCurrentLabel">DSSA • IDX</b>
+        </div>
+
+        <div class="ts-tv-controls">
+          <button class="ts-tv-quick active" type="button" data-tv-symbol="DSSA">DSSA</button>
+          <button class="ts-tv-quick" type="button" data-tv-symbol="ESSA">ESSA</button>
+          <button class="ts-tv-quick" type="button" data-tv-symbol="EXCL">EXCL</button>
+          <button class="ts-tv-quick" type="button" data-tv-symbol="ASPR">ASPR</button>
+
+          <div class="ts-tv-input-wrap">
+            <input class="ts-tv-input" id="tsTvTickerInput" autocomplete="off" maxlength="12" placeholder="Ticker: ANTM">
+            <button class="ts-tv-open" id="tsTvTickerBtn" type="button">BUKA</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ts-tv-widget-wrap">
+        <div id="tsTradingViewWidget" aria-label="TradingView chart saham Indonesia"></div>
+      </div>
+
+      <div class="ts-tv-foot">
+        <span class="ts-tv-status"><i></i><b>Data TradingView IDX:</b>&nbsp;EOD untuk saham & indeks Indonesia pada financial widgets.</span>
+        <span>Chart berasal dari TradingView. Ketersediaan simbol/fitur mengikuti layanan TradingView dan koneksi pengguna.</span>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <b>Catatan:</b> Chart ini merupakan alat bantu analisis teknikal dari TradingView dan bukan data transaksi dari TaktikSaham.
+      Jangan menganggap tampilan chart sebagai harga real-time BEI. Untuk keputusan transaksi, konfirmasi kembali harga pada platform broker.
+    </div>
+  </div>
+</section>
+
+<div class="ts-screening-cta">
+  <div class="ts-screening-cta-card">
+    <div class="ts-screening-cta-copy">
+      <small>Ownership Intelligence</small>
+      <b>Mau cek pemegang saham & koneksi antar emiten?</b>
+      <span>Fitur pencarian nama investor, holder &gt;1% / &gt;5%, Local–Foreign, dan bubble network sekarang tersedia khusus di halaman SCREENING SAHAM.</span>
+    </div>
+    <a class="ts-screening-cta-btn" href="screening.html">BUKA SCREENING SAHAM →</a>
+  </div>
+</div>
+
+<section class="section" id="history-rekomendasi">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Track Record</span>
+      <h2>History rekomendasi.</h2>
+      <p>Riwayat trading plan disimpan supaya statusnya transparan: masih berjalan, mencapai target, atau terkena cut loss.</p>
+    </div>
+
+    <div class="history-summary">
+      <div class="history-stat"><span>Total Rekomendasi</span><b id="historyTotal">0</b></div>
+      <div class="history-stat"><span>Win</span><b id="historyWin">0</b></div>
+      <div class="history-stat"><span>Lose</span><b id="historyLose">0</b></div>
+      <div class="history-stat"><span>Ongoing</span><b id="historyOngoing">0</b></div>
+    </div>
+
+    <div class="history-highlight">
+      <span>✓ BKSL +16,67%</span>
+      <span>✓ SOLA +11,11%</span>
+      <span>✓ BKSL Re-Entry +14,29%</span>
+      <span>✓ CUAN +13,85%</span>
+      <span>✓ CDIA +5,97%</span>
+    </div>
+
+    <div class="history-table-wrap">
+      <table class="history-table">
+        <thead>
+          <tr>
+            <th>Entry Date</th>
+            <th>Exit Date</th>
+            <th>Saham</th>
+            <th>Entry</th>
+            <th>Target</th>
+            <th>Cut Loss</th>
+            <th>Exit / Last</th>
+            <th>Return</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+    </div>
+
+    <div class="history-note">
+      Posisi yang masih aktif ditandai <b>ONGOING</b>. Win rate hanya dihitung dari rekomendasi yang sudah selesai.
+      History closed saat ini: <b>5 rekomendasi WIN</b> — BKSL +16,67%, SOLA +11,11%, BKSL Re-Entry +14,29%, CUAN +13,85%, dan CDIA +5,97%.
+    </div>
+
+
+    <div class="history-performance">
+      <div class="history-performance-head">
+        <div>
+          <span>PERFORMANCE HISTORY</span>
+          <h3>Win vs Lose Rekomendasi</h3>
+          <p>Pie chart membaca langsung History Rekomendasi di atas. Saat ini terdapat 5 WIN, 0 LOSE, 7 rekomendasi 10 Agustus ONGOING, 4 rekomendasi 11 Agustus ONGOING, 4 rekomendasi 13 Agustus ONGOING, dan 4 rekomendasi 14 Agustus ONGOING.</p>
+        </div>
+        <div class="history-performance-badge">Auto dari History</div>
+      </div>
+
+      <div class="history-performance-content">
+        <div class="history-chart-column">
+          <div class="chart-box">
+            <canvas id="performancePie" width="240" height="240" aria-label="Pie chart win lose rekomendasi"></canvas>
+          </div>
+        </div>
+
+        <div class="history-performance-data">
+          <div class="history-result-row win">
+            <div>
+              <span>WIN</span>
+              <small>Mencapai target / ditutup profit</small>
+            </div>
+            <strong id="winCountText">0</strong>
+          </div>
+
+          <div class="history-result-row lose">
+            <div>
+              <span>LOSE</span>
+              <small>Trading plan terkena cut loss</small>
+            </div>
+            <strong id="loseCountText">0</strong>
+          </div>
+
+          <div class="history-rate-grid">
+            <div>
+              <span>Total Rekomendasi</span>
+              <b id="totalRekomText">0</b>
+            </div>
+            <div>
+              <span>Win Rate</span>
+              <b id="winRateText">—</b>
+            </div>
+            <div>
+              <span>Lose Rate</span>
+              <b id="loseRateText">—</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="history-performance-note">
+        <b>Catatan:</b> Win rate hanya memakai rekomendasi yang sudah selesai. Saat status pada tabel history diubah menjadi <b>WIN</b> atau <b>LOSE</b>, pie chart ikut berubah otomatis.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-heading center">
+      <span class="eyebrow">Rutinitas pagi</span>
+      <h2>Dari live TikTok ke trading plan.</h2>
+      <p>Halaman ini bisa menjadi tempat member dan penonton live mengecek ulang rekomendasi setelah sesi pagi selesai.</p>
+    </div>
+
+    <div class="flow-grid">
+      <article class="flow-step"><small>01</small><h3>Morning Scan</h3><p>Pilih saham yang menarik dari momentum, sentimen, katalis, dan kondisi market.</p></article>
+      <article class="flow-step"><small>02</small><h3>Live TikTok</h3><p>Bahas market dan saham pilihan secara ringkas pada sesi pagi.</p></article>
+      <article class="flow-step"><small>03</small><h3>Level Trading</h3><p>Catat entry, TP, cut loss, serta skenario yang perlu diperhatikan.</p></article>
+      <article class="flow-step"><small>04</small><h3>Follow Up</h3><p>Update jika ada perubahan penting pada harga, berita, atau tesis awal.</p></article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-soft" id="besok-dipantau">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Next Watch</span>
+      <h2>Saham besok dipantau.</h2>
+      <p>Watchlist awal untuk sesi berikutnya. Ticker baru ditampilkan setelah screening momentum, katalis, volume, dan kondisi market selesai.</p>
+    </div>
+
+    <div class="tomorrow-grid">
+      <div class="tomorrow-main">
+        <span class="eyebrow">Next Market Update</span>
+        <h3>Watchlist sesi berikutnya belum dirilis.</h3>
+        <p>Setelah market close, TaktikSaham akan melakukan screening ulang. Saham yang lolos screening akan muncul di bagian ini sebelum sesi pagi berikutnya.</p>
+        <span class="tomorrow-status">Menunggu update setelah market close</span>
+      </div>
+
+      <div class="tomorrow-slots">
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">01</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">02</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+        <div class="tomorrow-slot">
+          <div class="tomorrow-number">03</div>
+          <div><b>Watchlist Slot</b><span>Menunggu hasil screening</span></div>
+          <span class="tomorrow-badge">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <span class="eyebrow">TaktikSaham</span>
+      <h2>Mau pembahasan yang lebih lengkap?</h2>
+      <p>Halaman rekomendasi pagi membantu kamu melihat ide dan level penting. Untuk diskusi, edukasi, evaluasi, dan aktivitas komunitas yang lebih lengkap, lihat VIP Group TaktikSaham.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="index.html#cara-gabung">Lihat VIP Group</a>
+        <a class="btn btn-outline" href="https://wa.me/6285697486266?text=Halo%20Kak%20Rifqi%2C%20saya%20ingin%20bertanya%20mengenai%20rekomendasi%20saham%20TaktikSaham." target="_blank" rel="noopener">Tanya via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">TAKTIKSAHAM</div>
+        <p>Morning Stock Picks • Berita Saham • Edukasi • Trading Plan</p>
+      </div>
+      <div>
+        <p>
+          Informasi di halaman ini bersifat edukasi dan bahan referensi. Investasi saham memiliki risiko
+          dan harga dapat bergerak berlawanan dengan skenario. Entry, target, dan cut loss bukan jaminan
+          keuntungan. Selalu sesuaikan keputusan dengan profil risiko dan kondisi keuangan masing-masing.
+        </p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 TaktikSaham. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+/*
+====================================================================
+UPDATE HARIAN:
+Cukup ganti isi STOCK_PICKS di bawah ini.
+Nanti card akan dibuat otomatis.
+====================================================================
+*/
+
+/*
+====================================================================
+BERITA SAHAM HARIAN:
+Cukup ganti isi STOCK_NEWS di bawah ini setiap pagi.
+Urutkan berita terpenting di paling atas.
+====================================================================
+*/
+const STOCK_NEWS = [
+  {
+    title:"MSCI Masih Menjadi Overhang Utama",
+    bgClass:"bg-msci",
+    category:"macro",
+    categoryLabel:"MSCI August 2026 Review",
+    tickers:"GOTO • CPIN • ESSA",
+    summary:"Indonesia tetap berstatus Emerging Market, tetapi pembatasan MSCI belum dicabut. GOTO keluar dari MSCI Indonesia Global Standard, sementara CPIN turun ke Small Cap. Perubahan efektif setelah penutupan 31 Agustus 2026. IHSG kemarin merespons negatif dan ditutup 6.301,77 (-1,13%).",
+    impact:"🔴 Waspadai passive outflow dan volatilitas pada saham terdampak MSCI menjelang implementasi akhir bulan.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:true
+  },
+  {
+    title:"Pasar Menunggu Pidato Presiden + RAPBN 2027",
+    bgClass:"bg-ihsg",
+    category:"macro",
+    categoryLabel:"RAPBN 2027",
+    tickers:"IHSG • Infrastruktur • Konsumer • BUMN",
+    summary:"Pidato Presiden dan penyampaian RAPBN 2027 menjadi event domestik terpenting hari ini. Investor akan memperhatikan asumsi pertumbuhan, defisit, belanja pemerintah, subsidi, infrastruktur, dan arah kebijakan fiskal 2027.",
+    impact:"🟡 Pasar berpotensi wait-and-see sebelum detail kebijakan muncul. Sektor yang berkaitan dengan belanja pemerintah dapat bergerak cepat setelah detail RAPBN dibaca pasar.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"Wall Street Positif — Risk Appetite Mendapat Dukungan",
+    bgClass:"bg-usjobs",
+    category:"macro",
+    categoryLabel:"US Market & Rates",
+    tickers:"BBCA • BBRI • BMRI • Growth Stocks",
+    summary:"PPI AS Juli tidak naik secara bulanan sehingga tekanan ekspektasi kenaikan suku bunga The Fed September mereda. S&P 500 +0,65% mencetak rekor, Nasdaq +0,81%, dan Dow +0,13%.",
+    impact:"🟢 Menjadi sentimen positif untuk risk asset dan emerging markets, termasuk big banks dan saham growth.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"Minyak Turun Lebih dari 2% Setelah Rally",
+    bgClass:"bg-hormuz",
+    category:"sector",
+    categoryLabel:"Oil & Gas",
+    tickers:"MEDC • ENRG • ELSA",
+    summary:"Brent turun ke sekitar US$87,07/barel dan WTI ke US$81,25. Penurunan ini mengurangi sedikit tekanan inflasi global, tetapi membuat katalis jangka sangat pendek saham migas tidak sekuat beberapa hari sebelumnya.",
+    impact:"🟡 MEDC dan saham migas masih punya cerita fundamental, tetapi untuk trading harian momentum komoditas mulai lebih moderat.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"Emas Profit Taking Setelah Menyentuh Level Tinggi",
+    bgClass:"bg-gold",
+    category:"sector",
+    categoryLabel:"Gold & Precious Metals",
+    tickers:"BRMS • EMAS • HRTA • ANTM",
+    summary:"Spot gold turun sekitar 1,2% ke US$4.354,58/oz setelah sebelumnya menyentuh US$4.449. Cerita gold jangka menengah masih ada, tetapi momentum jangka pendek mengalami profit taking.",
+    impact:"🟡 BRMS, EMAS, HRTA dan ANTM tetap menarik dipantau, tetapi hindari mengejar jika opening terlalu tinggi.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"MDKA Kembali Menambah Kepemilikan EMAS",
+    bgClass:"bg-gold",
+    category:"corporate-action",
+    categoryLabel:"Corporate Catalyst",
+    tickers:"MDKA • EMAS",
+    summary:"MDKA membeli lagi sekitar 100,56 juta saham EMAS sehingga kepemilikannya naik menjadi 64,013%. Estimasi rata-rata pembelian sekitar Rp6.539, dibanding penutupan EMAS kemarin Rp7.600.",
+    impact:"🟢 Positif secara sentimen karena MDKA terus memperkuat kontrol di EMAS. Namun EMAS sudah naik sekitar 32,75% dalam sebulan sehingga risiko chase tetap tinggi.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  },
+  {
+    title:"Foreign Buy Masih Selektif — Big Banks Tetap Dipantau",
+    bgClass:"bg-rupiah",
+    category:"macro",
+    categoryLabel:"Foreign Flow",
+    tickers:"KOTA • BBCA • DMAS • ERAA • BBRI",
+    summary:"Berdasarkan jumlah saham pada 13 Agustus, net foreign buy terbesar antara lain KOTA 30,98 juta saham, BBCA 20,36 juta, DMAS 16,83 juta, ERAA 12,72 juta, dan BBRI 12,33 juta.",
+    impact:"🟢 Aktivitas asing masih selektif dan big banks tetap layak dipantau. Angka berbasis jumlah saham perlu dibaca bersama nilai transaksi dan price action.",
+    source:"TaktikSaham Market Update",
+    time:"14 Agustus 2026",
+    featured:false
+  }
+];
+
+function newsCategoryClass(cat){
+  return cat || "all";
+}
+
+function renderNews(filter="all"){
+  const board=document.getElementById("newsBoard");
+  const filtered=STOCK_NEWS.filter(n=>filter==="all" || n.category===filter);
+
+  if(!filtered.length){
+    board.innerHTML='<div class="news-empty">Belum ada berita pada kategori ini.</div>';
+    return;
+  }
+
+  const featured = filtered.find(n=>n.featured) || filtered[0];
+  const others = filtered.filter(n=>n!==featured).slice(0,6);
+
+  board.innerHTML=`
+    <article class="news-featured themed ${escapeHTML(featured.bgClass || "")}">
+      <span class="news-cat">${escapeHTML(featured.categoryLabel)}</span>
+      <h3>${escapeHTML(featured.title)}</h3>
+      <p>${escapeHTML(featured.summary)}</p>
+
+      <div class="news-impact">
+        <div>
+          <small>Ticker terdampak</small>
+          <b>${escapeHTML(featured.tickers)}</b>
+        </div>
+        <div>
+          <small>Dampak yang dipantau</small>
+          <b>${escapeHTML(featured.impact)}</b>
+        </div>
+      </div>
+
+      <div class="news-source">
+        <span>Sumber: ${escapeHTML(featured.source)}</span>
+        <span>${escapeHTML(featured.time)}</span>
+      </div>
+    </article>
+
+    <div class="news-list">
+      ${others.map(n=>`
+        <article class="news-mini themed ${escapeHTML(n.bgClass || "")}">
+          <span class="news-cat">${escapeHTML(n.categoryLabel)}</span>
+          <h4>${escapeHTML(n.title)}</h4>
+          <p>${escapeHTML(n.summary)}</p>
+          <div class="news-mini-meta">
+            <span>${escapeHTML(n.tickers)} • ${escapeHTML(n.source)}</span>
+            <span>${escapeHTML(n.time)}</span>
+          </div>
+        </article>
+      `).join("")}
+    </div>
+  `;
+}
+
+let activeNewsFilter="all";
+document.querySelectorAll(".news-filter-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".news-filter-btn").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    activeNewsFilter=btn.dataset.newsFilter;
+    renderNews(activeNewsFilter);
+  });
+});
+
+
+/*
+====================================================================
+HISTORY REKOMENDASI
+Ubah status menjadi: "ongoing", "win", atau "lose".
+Untuk rekomendasi selesai, isi exit dan returnText.
+====================================================================
+*/
+const RECOMMENDATION_HISTORY = [
+  {
+    entryDate:"6 Juli 2026", exitDate:"21 Juli 2026",
+    ticker:"BKSL", entry:"60", target:"70", cutloss:"56",
+    exit:"70", returnText:"+16,67%", status:"win"
+  },
+  {
+    entryDate:"5 Agustus 2026", exitDate:"6 Agustus 2026",
+    ticker:"SOLA", entry:"90", target:"100 / 110", cutloss:"87",
+    exit:"100", returnText:"+11,11%", status:"win"
+  },
+  {
+    entryDate:"6 Agustus 2026", exitDate:"7 Agustus 2026",
+    ticker:"BKSL", entry:"70", target:"75 / 80", cutloss:"65",
+    exit:"80", returnText:"+14,29%", status:"win"
+  },
+  {
+    entryDate:"3 Agustus 2026", exitDate:"7 Agustus 2026",
+    ticker:"CUAN", entry:"650", target:"710 / 750", cutloss:"600",
+    exit:"740", returnText:"+13,85%", status:"win"
+  },
+  {
+    entryDate:"6 Agustus 2026", exitDate:"10 Agustus 2026",
+    ticker:"CDIA", entry:"670", target:"720 / 750", cutloss:"640",
+    exit:"710", returnText:"+5,97%", status:"win"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"TPIA", entry:"2.150–2.200", target:"2.300", cutloss:"2.100",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"MBMA", entry:"Break 555", target:"600", cutloss:"500",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"NICL", entry:"470–478", target:"520", cutloss:"450",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"BRMS", entry:"Break 620", target:"710", cutloss:"600",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"DEWA", entry:"480", target:"500", cutloss:"450",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"BBRI", entry:"3.130", target:"3.285", cutloss:"NO CL",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"10 Agustus 2026", exitDate:"—",
+    ticker:"MEDC", entry:"Break 1.335", target:"1.400", cutloss:"1.280",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"11 Agustus 2026", exitDate:"—",
+    ticker:"MTEL", entry:"430 bertahan", target:"480", cutloss:"400",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"11 Agustus 2026", exitDate:"—",
+    ticker:"ARKO", entry:"4.950", target:"5.300", cutloss:"4.900",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"11 Agustus 2026", exitDate:"—",
+    ticker:"ESSA", entry:"Koreksi 670", target:"780", cutloss:"640",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"11 Agustus 2026", exitDate:"—",
+    ticker:"BBKP", entry:"55", target:"60 / 65", cutloss:"53",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"13 Agustus 2026", exitDate:"—",
+    ticker:"NCKL", entry:"935", target:"980–1.000", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"13 Agustus 2026", exitDate:"—",
+    ticker:"BRMS", entry:"Break 645", target:"700", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"13 Agustus 2026", exitDate:"—",
+    ticker:"NICL", entry:"464", target:"500", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"13 Agustus 2026", exitDate:"—",
+    ticker:"GTSI", entry:"185", target:"200", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"14 Agustus 2026", exitDate:"—",
+    ticker:"DSSA", entry:"950", target:"1.050", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"14 Agustus 2026", exitDate:"—",
+    ticker:"ESSA", entry:"650", target:"700", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"14 Agustus 2026", exitDate:"—",
+    ticker:"EXCL", entry:"2.610", target:"2.700", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+  {
+    entryDate:"14 Agustus 2026", exitDate:"—",
+    ticker:"ASPR", entry:"Break 160", target:"170", cutloss:"5–6%",
+    exit:"—", returnText:"—", status:"ongoing"
+  },
+];
+
+function renderHistory(){
+  const body=document.getElementById("historyBody");
+  if(!body) return;
+
+  body.innerHTML=RECOMMENDATION_HISTORY.map(r=>{
+    const label=r.status==="win" ? "WIN" : r.status==="lose" ? "LOSE" : "ONGOING";
+    const returnClass=r.status==="win" ? "positive" : r.status==="lose" ? "negative" : "neutral";
+    return `<tr>
+      <td>${escapeHTML(r.entryDate)}</td>
+      <td>${escapeHTML(r.exitDate)}</td>
+      <td><span class="history-ticker">${escapeHTML(r.ticker)}</span></td>
+      <td>${escapeHTML(r.entry)}</td>
+      <td>${escapeHTML(r.target)}</td>
+      <td>${escapeHTML(r.cutloss)}</td>
+      <td>${escapeHTML(r.exit)}</td>
+      <td><span class="history-return ${returnClass}">${escapeHTML(r.returnText)}</span></td>
+      <td><span class="history-status ${escapeHTML(r.status)}">${label}</span></td>
+    </tr>`;
+  }).join("");
+
+  const total=RECOMMENDATION_HISTORY.length;
+  const win=RECOMMENDATION_HISTORY.filter(x=>x.status==="win").length;
+  const lose=RECOMMENDATION_HISTORY.filter(x=>x.status==="lose").length;
+  const ongoing=RECOMMENDATION_HISTORY.filter(x=>x.status==="ongoing").length;
+
+  document.getElementById("historyTotal").textContent=total;
+  document.getElementById("historyWin").textContent=win;
+  document.getElementById("historyLose").textContent=lose;
+  document.getElementById("historyOngoing").textContent=ongoing;
+}
+
+
+const WIN_COUNT = RECOMMENDATION_HISTORY.filter(x=>x.status==="win").length;
+const LOSE_COUNT = RECOMMENDATION_HISTORY.filter(x=>x.status==="lose").length;
+
+const STOCK_PICKS = [
+  {
+    ticker:"TPIA", company:"PT Chandra Asri Pacific Tbk",
+    status:"buy", statusLabel:"Buy on Weakness", planStatus:"Active", timeframe:"Swing",
+    entry:"2.150 – 2.200", entryNum:2200, tp:"2.300", tpNum:2300, cl:"2.100", clNum:2100,
+    whyNow:"Momentum mulai kuat dan pada perdagangan terakhir asing mencatat net buy TPIA sekitar Rp275,8 miliar.",
+    reasons:[
+      "📈 Foreign flow menjadi dukungan tambahan untuk momentum TPIA.",
+      "🏭 Pendapatan 1Q26 melonjak sekitar 286% YoY menjadi US$2,4 miliar.",
+      "💰 Kinerja berbalik mencetak laba bersih sekitar US$140,7 juta.",
+      "🚀 Transformasi bisnis pasca-akuisisi dan peningkatan kapasitas grup hingga 2027 menjadi katalis lanjutan."
+    ],
+    updated:"10 Agustus 2026 • Bullish / Buy on Weakness"
+  },
+  {
+    ticker:"MBMA", company:"PT Merdeka Battery Materials Tbk",
+    status:"wait", statusLabel:"Break > 555", planStatus:"Wait Breakout", timeframe:"Trading / Swing",
+    entry:"Tunggu break 555", entryNum:555, tp:"600", tpNum:600, cl:"500", clNum:500,
+    whyNow:"Lebih aman menunggu breakout 555 karena saham sedang mencoba membentuk momentum baru pada tema nikel.",
+    reasons:[
+      "⛏️ Produksi saprolit SCM Q2 naik sekitar 130% YoY dan produksi limonit naik sekitar 87% YoY.",
+      "💵 ASP saprolit naik sekitar 135% YoY menjadi US$58,9/wmt.",
+      "🇮🇩 Kebijakan menjaga kuota produksi nikel 2026 sekitar 250–260 juta ton berpotensi membantu menahan oversupply.",
+      "🔋 Perbaikan operasional memberi dukungan tambahan terhadap tema battery materials."
+    ],
+    updated:"10 Agustus 2026 • Buy on Breakout"
+  },
+  {
+    ticker:"NICL", company:"PT PAM Mineral Tbk",
+    status:"buy", statusLabel:"Speculative Buy", planStatus:"Active", timeframe:"Trading",
+    entry:"470 – 478", entryNum:478, tp:"520", tpNum:520, cl:"450", clNum:450,
+    whyNow:"Menarik sebagai nickel momentum play apabila sektor nikel kembali mendapatkan rotasi dana.",
+    reasons:[
+      "⛏️ Pembatasan produksi nikel nasional dapat memberi dukungan terhadap harga komoditas.",
+      "📦 NICL menargetkan produksi/penjualan sekitar 2,6 juta wmt pada 2026.",
+      "⚠️ Fundamental 1H26 belum kuat; laba bersih turun sekitar 66,1% YoY menjadi Rp121,2 miliar.",
+      "🎯 Karena itu NICL lebih cocok sebagai trading momentum dibanding fundamental play."
+    ],
+    updated:"10 Agustus 2026 • Speculative Buy"
+  },
+  {
+    ticker:"BRMS", company:"PT Bumi Resources Minerals Tbk",
+    status:"wait", statusLabel:"Break > 620", planStatus:"Wait Breakout", timeframe:"Swing",
+    entry:"Tunggu break 620", entryNum:620, tp:"710", tpNum:710, cl:"600", clNum:600,
+    whyNow:"Break 620 dibutuhkan sebagai konfirmasi bahwa market mulai pricing-in pemulihan produksi semester II.",
+    reasons:[
+      "⛏️ River Reef pushback telah selesai pada Juli sehingga produksi diperkirakan mulai normal kembali di 2H26.",
+      "🥇 CPM memiliki kontrak offtake dengan ANTM hingga 120 kg emas per bulan sampai Juni 2028.",
+      "🏗️ Ekspansi CIL 2.000 tpd menjadi salah satu katalis pertumbuhan berikutnya.",
+      "⛏️ Proyek underground memberi opsi pertumbuhan produksi jangka lebih panjang."
+    ],
+    updated:"10 Agustus 2026 • Buy on Breakout"
+  },
+  {
+    ticker:"DEWA", company:"PT Darma Henwa Tbk",
+    status:"buy", statusLabel:"Positive Earnings", planStatus:"High Conviction", timeframe:"Trading",
+    entry:"480", entryNum:480, tp:"500", tpNum:500, cl:"450", clNum:450,
+    whyNow:"Laporan keuangan semester I 2026 menjadi katalis segar dan berpotensi menciptakan earnings momentum saat market membuka perdagangan.",
+    reasons:[
+      "🔥 Laba bersih 1H26 melonjak sekitar 89% YoY menjadi ±Rp354,3 miliar.",
+      "📈 Laba operasional meningkat sekitar 11,4% menjadi Rp409,7 miliar.",
+      "⭐ Fresh earnings catalyst membuat DEWA menjadi headline watchlist pagi ini.",
+      "⚠️ Liabilitas meningkat dan DER sekitar 1,17x, sehingga batas risiko tetap perlu dijaga."
+    ],
+    updated:"10 Agustus 2026 • Positive Earnings Play"
+  },
+  {
+    ticker:"BBRI", company:"PT Bank Rakyat Indonesia (Persero) Tbk",
+    status:"buy", statusLabel:"Strong Buy / Swing", planStatus:"Active", timeframe:"Swing Hold",
+    entry:"3.130", entryNum:3130, tp:"3.285", tpNum:3285, cl:"NO CL — HOLD SWING", clNum:null,
+    riskLabel:"Swing Hold",
+    whyNow:"Salah satu foreign flow play terbaik pagi ini setelah asing kembali mengakumulasi BBRI.",
+    reasons:[
+      "💰 Foreign net buy Jumat sekitar Rp506,9 miliar dan akumulasi 3–7 Agustus sekitar Rp559 miliar.",
+      "🏦 Laba 1Q26 tumbuh sekitar 13,7% YoY menjadi Rp15,5 triliun.",
+      "📈 Kredit tumbuh sekitar 13,7%, sementara LAR turun menjadi sekitar 9,7%.",
+      "💵 Cost of fund membaik menjadi sekitar 2,3%. Jika foreign flow berlanjut, BBRI berpotensi menjadi motor IHSG."
+    ],
+    updated:"10 Agustus 2026 • Strong Buy / Swing"
+  },
+  {
+    ticker:"MEDC", company:"PT Medco Energi Internasional Tbk",
+    status:"wait", statusLabel:"Break > 1.335", planStatus:"Wait Breakout", timeframe:"Swing",
+    entry:"Tunggu break 1.335", entryNum:1335, tp:"1.400", tpNum:1400, cl:"1.280", clNum:1280,
+    whyNow:"Breakout dibutuhkan sebagai konfirmasi momentum, sementara sentimen minyak dan Hormuz menjadi katalis langsung pagi ini.",
+    reasons:[
+      "🛢️ Brent pagi ini naik ke sekitar US$84/barel akibat ketidakpastian pembukaan Selat Hormuz.",
+      "📈 Produksi O&G 1Q26 mencapai sekitar 169 mboepd, naik sekitar 18,1% YoY.",
+      "🎯 Target produksi FY26 tetap sekitar 165–170 mboepd.",
+      "🔥 Kombinasi oil momentum dan fundamental produksi membuat MEDC menarik untuk buy on breakout."
+    ],
+    updated:"10 Agustus 2026 • Oil Momentum / Buy on Breakout"
+  }
+];
+
+const STOCK_PICKS_11_AUG = [
+  {
+    ticker:"MTEL", company:"PT Dayamitra Telekomunikasi Tbk",
+    status:"buy", statusLabel:"Defensive Buy", planStatus:"430 Harus Bertahan", timeframe:"Trading / Swing",
+    entry:"Jika 430 bertahan", entryNum:430, tp:"480", tpNum:480, cl:"400", clNum:400,
+    whyNow:"MTEL cocok sebagai defensive recovery play. Fundamental relatif stabil dan ekspansi bisnis non-tower memberi ruang rerating jika area 430 mampu menjadi support.",
+    reasons:[
+      "📊 Pendapatan semester I-2026 sekitar Rp4,69 triliun, tumbuh 2,1% YoY, dengan laba bersih sekitar Rp1,11 triliun (+1,5%).",
+      "🧵 Jaringan fiber billable mencapai 74.779 km, naik 13,9%, sementara tenant tumbuh 10,3% menjadi 23.303.",
+      "💪 EBITDA margin masih sangat tinggi sekitar 82,9%.",
+      "📡 Fiber-to-the-tower, FWA, dan kebutuhan infrastruktur digital menjadi katalis pertumbuhan berikutnya.",
+      "🌐 MTEL mengelola sekitar 40.563 tower dan sekitar 59% berada di luar Jawa, memberi exposure besar terhadap ekspansi broadband daerah."
+    ],
+    updated:"11 Agustus 2026 • Defensive Buy jika 430 bertahan"
+  },
+  {
+    ticker:"ARKO", company:"PT Arkora Hydro Tbk",
+    status:"buy", statusLabel:"Speculative Momentum Buy", planStatus:"High Momentum", timeframe:"Trading",
+    entry:"4.950", entryNum:4950, tp:"5.300", tpNum:5300, cl:"4.900", clNum:4900,
+    whyNow:"ARKO lebih tepat dimainkan sebagai momentum + renewable energy expansion play. Kenaikan harga perlu ditopang ekspektasi proyek baru dan momentum pasar.",
+    reasons:[
+      "⚡ Semester I-2026 pendapatan sekitar Rp133 miliar, turun 6,7% YoY, sementara laba bersih relatif flat sekitar Rp36,6 miliar.",
+      "🏗️ Kukusan II 5,4 MW sudah beroperasi, sementara Tomoni 10 MW dan Pongbembe 20 MW berada dalam tahap pengembangan/konstruksi.",
+      "🔌 PPA Pongbembe dengan PLN berdurasi 30 tahun dan berpotensi menambah recurring revenue ketika proyek mulai beroperasi.",
+      "💚 Obligasi hijau sekitar Rp318,06 miliar jatuh tempo 10 Agustus 2026; perusahaan sebelumnya menyampaikan kesiapan dana pelunasan dan memiliki fasilitas pinjaman Rp450 miliar dari IIF.",
+      "⚠️ Debt/equity sekitar 1,53x dan valuasi sudah tinggi, sehingga CL 4.900 perlu disiplin."
+    ],
+    updated:"11 Agustus 2026 • Speculative Momentum Buy"
+  },
+  {
+    ticker:"ESSA", company:"PT ESSA Industries Indonesia Tbk",
+    status:"wait", statusLabel:"Top Pick / Wait Correction", planStatus:"Tunggu Koreksi", timeframe:"Trading / Swing",
+    entry:"Tunggu koreksi 670", entryNum:670, tp:"780", tpNum:780, cl:"640", clNum:640,
+    whyNow:"ESSA menjadi salah satu pilihan dengan fundamental catalyst paling kuat. Earnings improvement nyata, tetapi karena harga sudah bergerak cepat strategi yang lebih disiplin adalah menunggu koreksi ke area 670.",
+    reasons:[
+      "🔥 Laba bersih semester I-2026 sekitar US$30 juta, naik 103% YoY, dengan pendapatan sekitar US$186,5 juta atau naik 36% YoY.",
+      "📈 Pada Q1, laba bersih mencapai sekitar US$18,75 juta (+130,9% YoY).",
+      "🧪 Pendorong kinerja antara lain kenaikan harga amonia sekitar 34% YoY serta utilisasi pabrik mencapai 121%.",
+      "🏭 Normalisasi operasi Banggai Ammonia Plant, volume LPG/amonia, dan tren harga amonia menjadi katalis jangka pendek.",
+      "🌱 Opsi pengembangan blue ammonia berbasis CCUS memberi tema pertumbuhan jangka panjang tambahan."
+    ],
+    updated:"11 Agustus 2026 • Top Pick / Earnings Momentum"
+  },
+  {
+    ticker:"BBKP", company:"PT Bank KB Indonesia Tbk",
+    status:"buy", statusLabel:"Speculative Turnaround", planStatus:"Active", timeframe:"Trading",
+    entry:"55", entryNum:55, tp:"60 – 65", tpNum:60, cl:"53", clNum:53,
+    whyNow:"BBKP merupakan turnaround banking play. Perbaikan NII, NIM, CASA, dan PPOP menunjukkan tanda pemulihan operasional, meski kualitas kredit dan permodalan masih perlu dipantau.",
+    reasons:[
+      "🏦 Kredit Q1-2026 sekitar Rp43,19 triliun, tumbuh 2,61% YoY, sementara kredit lancar naik 4,76%.",
+      "💰 NII melonjak sekitar 97,28% menjadi Rp363 miliar.",
+      "📊 NIM meningkat dari sekitar 1,09% menjadi 2,09%.",
+      "💵 CASA naik sekitar 5,74% menjadi Rp13,09 triliun, mendukung potensi perbaikan cost of fund.",
+      "✅ PPOP Q1 sudah positif sekitar Rp9 miliar, sementara dukungan KB Financial Group tetap menjadi katalis transformasi.",
+      "⚠️ Masih ada pekerjaan rumah pada kualitas kredit dan permodalan, sehingga tetap masuk kategori spekulatif."
+    ],
+    updated:"11 Agustus 2026 • Turnaround Banking Play"
+  }
+];
+
+
+const STOCK_PICKS_13_AUG = [
+  {
+    ticker:"NCKL", company:"PT Trimegah Bangun Persada Tbk (Harita Nickel)",
+    status:"buy", statusLabel:"Fundamental + Nickel Play", planStatus:"Active", timeframe:"Swing",
+    entry:"935", entryNum:935, tp:"980 – 1.000", tpNum:980, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"Fundamental NCKL termasuk yang kuat di sektor nikel. Semester I-2026 pendapatan naik 21,28% YoY menjadi Rp17,10 triliun dan laba bersih attributable naik 41,71% menjadi Rp5,81 triliun. Pendapatan segmen tambang melonjak 122,33% menjadi Rp6,67 triliun.",
+    reasons:[
+      "⛏️ Tambang baru Gane Tambang Sentosa yang mulai beroperasi sejak Q3-2025 sudah mulai berkontribusi.",
+      "🏭 Tambahan lini RKEF Karunia Permai Sentosa meningkatkan output feronikel.",
+      "📦 Kapasitas produksi feronikel ditargetkan mencapai sekitar 305.000 ton nickel contained per tahun pada akhir 2026.",
+      "🇮🇩 Kebijakan pemerintah menahan kuota produksi nikel 2026 sekitar 250–260 juta ton, jauh di bawah sekitar 379 juta ton pada 2025, membantu tema supply discipline.",
+      "🎯 Selama 935 mampu menjadi area support, setup swing menuju 980–1.000 tetap menarik."
+    ],
+    updated:"13 Agustus 2026 • Fundamental + Nickel Play"
+  },
+  {
+    ticker:"BRMS", company:"PT Bumi Resources Minerals Tbk",
+    status:"wait", statusLabel:"Break > 645", planStatus:"Wait Breakout", timeframe:"Swing",
+    entry:"Tunggu break 645", entryNum:645, tp:"700", tpNum:700, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"BRMS tidak perlu dikejar sebelum breakout 645. Fundamental 1H26 melemah dengan laba turun sekitar 44%, tetapi pasar mulai melihat potensi recovery produksi semester II setelah pekerjaan pushback River Reef selesai pada Juli.",
+    reasons:[
+      "🥇 Spot gold naik ke sekitar US$4.406/oz, level tertinggi lebih dari dua bulan, menjadi tailwind bagi sentimen produsen emas.",
+      "🤝 CPM memiliki kontrak offtake dengan ANTM hingga 120 kg emas per bulan sampai Juni 2028, mengamankan sekitar 60–80% produksi normal bulanan.",
+      "🏗️ Ekspansi CIL 2.000 tpd menjadi katalis peningkatan produksi.",
+      "⛏️ Proyek tambang bawah tanah dengan grade sekitar 3,5–4,9 g/t ditargetkan mulai memberi kontribusi dari 2H27.",
+      "⚠️ Target produksi FY26 sekitar 70–75 koz masih menantang karena 1H baru menghasilkan sekitar 21,1 koz. Break 645 diperlukan sebagai konfirmasi buyer."
+    ],
+    updated:"13 Agustus 2026 • Gold Recovery Play / Buy on Breakout"
+  },
+  {
+    ticker:"NICL", company:"PT PAM Mineral Tbk",
+    status:"buy", statusLabel:"Speculative Nickel Swing", planStatus:"Active", timeframe:"Swing",
+    entry:"464", entryNum:464, tp:"500", tpNum:500, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"NICL lebih cocok dibaca sebagai nickel momentum play. Semester I-2026 pendapatan turun 55,1% YoY menjadi Rp474,4 miliar dan laba bersih turun 66,1% menjadi Rp121,2 miliar, tetapi neracanya relatif bersih dengan tidak ada utang jangka pendek maupun jangka panjang pada laporan 2Q26.",
+    reasons:[
+      "📦 NICL menargetkan produksi dan penjualan sekitar 2,6 juta WMT sepanjang 2026, didukung tambang di Morowali dan Konawe Utara.",
+      "🇮🇩 Pembatasan RKAB nasional memberi peluang supply discipline yang lebih baik bagi harga bijih nikel domestik.",
+      "📈 LME nickel 12 Agustus berada sekitar US$16.940/ton untuk kontrak 3 bulan, sedikit membaik dari 11 Agustus.",
+      "💰 Kas sekitar Rp245,1 miliar dan net margin masih sekitar 25,5% pada laporan 2Q26.",
+      "⚠️ Karena earnings 1H masih turun tajam, setup ini lebih cocok untuk swing/momentum dibanding fundamental investment."
+    ],
+    updated:"13 Agustus 2026 • Speculative Nickel Swing"
+  },
+  {
+    ticker:"GTSI", company:"PT GTS Internasional Tbk",
+    status:"buy", statusLabel:"LNG Momentum Play", planStatus:"Active / High Risk", timeframe:"Swing",
+    entry:"185", entryNum:185, tp:"200", tpNum:200, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"GTSI lebih tepat disebut LNG catalyst + momentum play, bukan earnings play. Area 185 berada dekat area breakout/pullback pendek setelah saham ditutup sekitar 188 pada 12 Agustus.",
+    reasons:[
+      "🚢 GTSI memenangkan tender BP untuk Time Charter Party Tangguh Domestic LNG Tanker.",
+      "🛳️ Kapal Danaputri 1 berkapasitas 145.000 m³ digunakan mengangkut LNG Tangguh dari Bintuni menuju berbagai terminal domestik.",
+      "📑 Manajemen menyebut kontrak tersebut sebagai kontrak jangka panjang yang memperkuat utilisasi aset dan visibility pendapatan.",
+      "🔥 Sepanjang 2026 GTSI juga mengembangkan proyek regasifikasi dan mengevaluasi akuisisi/kerja sama LNG Carrier tambahan.",
+      "🌏 Permintaan gas Asia Pasifik diproyeksikan tumbuh >4% pada 2026, memberi backdrop positif bagi bisnis transportasi LNG.",
+      "⚠️ Fundamental 1H26 belum kuat: pendapatan sekitar US$17,69 juta tetapi perusahaan berbalik rugi sekitar US$1,9 juta. Cut loss perlu disiplin."
+    ],
+    updated:"13 Agustus 2026 • LNG Momentum Play"
+  }
+];
+
+
+const STOCK_PICKS_14_AUG = [
+  {
+    ticker:"DSSA", company:"PT Dian Swastatika Sentosa Tbk",
+    status:"buy", statusLabel:"Digital Infrastructure / Recovery Play", planStatus:"Active", timeframe:"Swing",
+    entry:"950", entryNum:950, tp:"1.050", tpNum:1050, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"DSSA masih menarik sebagai digital infrastructure + diversification play. Q1 2026 mencatat pendapatan sekitar US$693,2 juta dan laba periode berjalan US$118,5 juta. Laba bersih attributable masih tumbuh sekitar 2% YoY meskipun pendapatan terdampak normalisasi bisnis batubara.",
+    reasons:[
+      "🌐 Anak usaha MoraRepublic agresif mengembangkan FTTH dan FWA, dengan target tambahan sekitar 5 juta homepass.",
+      "🏙️ Ekspansi FTTH ditargetkan menjangkau 186 kota/kabupaten dan lebih dari 1.000 site FWA.",
+      "⚡ DSSA terus mengembangkan energi terbarukan dan infrastruktur digital untuk mengurangi ketergantungan terhadap batubara.",
+      "🔄 Stock split 1:25 yang efektif April 2026 menjadi katalis likuiditas.",
+      "⚖️ DSSA mulai mengalihkan maksimal 9,63 miliar saham treasury sejak 10 Agustus. Ini dapat membantu free float dan likuiditas, tetapi juga berpotensi menambah supply saham di pasar.",
+      "🎯 Area 950 menarik selama buyer mampu menjaga support tersebut."
+    ],
+    updated:"14 Agustus 2026 • Digital Infrastructure / Recovery Play"
+  },
+  {
+    ticker:"ESSA", company:"PT ESSA Industries Indonesia Tbk",
+    status:"buy", statusLabel:"Strong Earnings + MSCI Overhang", planStatus:"Buy on Weakness", timeframe:"Swing",
+    entry:"650", entryNum:650, tp:"700", tpNum:700, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"Semester I-2026 ESSA mencatat laba bersih sekitar US$30 juta, tumbuh 103% YoY, ditopang harga jual amonia yang kuat. Harga amonia terealisasi Q2 naik 42% QoQ menjadi US$646/ton, sedangkan LPG naik 43% QoQ menjadi US$770/ton.",
+    reasons:[
+      "🏭 Banggai Ammonia Plant telah menyelesaikan planned turnaround pada Juni sehingga operasi kembali normal.",
+      "🌍 Ketatnya supply amonia global dan tensi geopolitik masih menjadi supportive factor bagi harga jual produk ESSA.",
+      "💵 Kas perusahaan meningkat menjadi sekitar US$189 juta sehingga posisi neraca lebih kuat.",
+      "⚠️ ESSA resmi dihapus dari MSCI Indonesia Small Cap dalam review Agustus, efektif setelah penutupan 31 Agustus.",
+      "📉 Menjelang akhir bulan masih ada risiko passive outflow. Strategi buy di weakness area 650 lebih masuk akal daripada mengejar kenaikan."
+    ],
+    updated:"14 Agustus 2026 • Strong Earnings, MSCI Overhang"
+  },
+  {
+    ticker:"EXCL", company:"PT XLSMART Telecom Sejahtera Tbk",
+    status:"buy", statusLabel:"Merger Synergy + 5G Growth Play", planStatus:"Quick Swing", timeframe:"Quick Swing",
+    entry:"2.610", entryNum:2610, tp:"2.700", tpNum:2700, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"Semester I-2026 XLSMART mencatat pendapatan Rp24,03 triliun, tumbuh 26% YoY, sedangkan normalized EBITDA mencapai Rp11,05 triliun, tumbuh 19% YoY, dengan margin sekitar 46%.",
+    reasons:[
+      "📶 Blended ARPU meningkat dari Rp38,2 ribu menjadi Rp47,1 ribu.",
+      "📊 Traffic data tumbuh sekitar 19% menjadi 7.934 Petabytes, menunjukkan merger XL–Smartfren mulai menghasilkan skala yang lebih besar.",
+      "🚀 XLSMART berpeluang memperluas jaringan 5G dari sekitar 88 kota menjadi lebih dari 100 kota hingga akhir 2026.",
+      "📡 Tambahan spektrum 700 MHz dan 2,6 GHz dapat memperkuat kualitas jaringan dan monetisasi pelanggan.",
+      "🤝 Sinergi jaringan dan spektrum pascamerger berpotensi meningkatkan efisiensi capex.",
+      "⚠️ Target 2.700 relatif dekat dibanding ruang CL 5–6%, sehingga setup ini lebih cocok quick swing/trading dan harus cepat dievaluasi jika momentum tidak berjalan."
+    ],
+    updated:"14 Agustus 2026 • Merger Synergy + 5G Growth Play"
+  },
+  {
+    ticker:"ASPR", company:"PT Asia Pramulia Tbk",
+    status:"wait", statusLabel:"Break > 160", planStatus:"Wait Breakout", timeframe:"Momentum",
+    entry:"Tunggu break 160", entryNum:160, tp:"170", tpNum:170, cl:"5–6% dari entry", clNum:null,
+    riskLabel:"5–6%",
+    whyNow:"ASPR lebih cocok disebut momentum + expansion play. Semester I-2026 pendapatan naik 44,2% YoY menjadi Rp167,8 miliar dan gross profit tumbuh 17,1%, tetapi laba bersih turun 28,1% menjadi Rp2,3 miliar.",
+    reasons:[
+      "🥤 Permintaan kemasan untuk air minum dalam kemasan (AMDK) dan minyak goreng masih menjadi driver utama.",
+      "📈 Manajemen menargetkan pertumbuhan bisnis sekitar 20–30% pada 2026.",
+      "🏭 Capex sekitar Rp48 miliar disiapkan untuk menambah kapasitas produksi, terutama kemasan galon 15 dan 19 liter.",
+      "⚠️ Karena laba bersih masih turun, ASPR belum bisa disebut earnings play yang bersih.",
+      "🚦 Entry hanya setelah break 160 agar ada konfirmasi momentum buyer."
+    ],
+    updated:"14 Agustus 2026 • Momentum + Expansion Play"
+  }
+];
+
+
+/*
+====================================================================
+KALENDER REKOMENDASI
+Tanggal yang punya data akan otomatis diberi titik orange.
+STOCK_PICKS tetap menjadi rekomendasi 10 Agustus 2026.
+====================================================================
+*/
+const HISTORICAL_PICKS = {
+  "2026-07-06":[
+    {
+      ticker:"BKSL",
+      company:"Sentul City Tbk",
+      status:"done",
+      statusLabel:"Closed WIN",
+      planStatus:"Target Tercapai",
+      timeframe:"Historical",
+      entry:"60",
+      entryNum:60,
+      tp:"70",
+      tpNum:70,
+      cl:"56",
+      clNum:56,
+      whyNow:"Arsip rekomendasi TaktikSaham tanggal 6 Juli 2026.",
+      reasons:[
+        "✅ Target 70 tercapai pada 21 Juli 2026.",
+        "📈 Return closed sekitar +16,67%."
+      ],
+      updated:"6 Juli 2026 • Closed WIN"
+    }
+  ],
+  "2026-08-05":[
+    {
+      ticker:"SOLA",
+      company:"Xolare RCR Energy Tbk",
+      status:"done",
+      statusLabel:"Closed WIN",
+      planStatus:"Target Tercapai",
+      timeframe:"Historical",
+      entry:"90",
+      entryNum:90,
+      tp:"100 / 110",
+      tpNum:100,
+      cl:"87",
+      clNum:87,
+      whyNow:"Arsip rekomendasi TaktikSaham tanggal 5 Agustus 2026.",
+      reasons:[
+        "✅ Target pertama 100 tercapai pada 6 Agustus 2026.",
+        "📈 Return closed sekitar +11,11%."
+      ],
+      updated:"5 Agustus 2026 • Closed WIN"
+    }
+  ]
+};
+
+const PICKS_BY_DATE = {
+  ...HISTORICAL_PICKS,
+  "2026-08-10": STOCK_PICKS,
+  "2026-08-11": STOCK_PICKS_11_AUG,
+  "2026-08-13": STOCK_PICKS_13_AUG,
+  "2026-08-14": STOCK_PICKS_14_AUG
+};
+
+const REKOM_MONTH_NAMES=[
+  "Januari","Februari","Maret","April","Mei","Juni",
+  "Juli","Agustus","September","Oktober","November","Desember"
+];
+
+let rekomCalendarYear=2026;
+let rekomCalendarMonth=7;
+let rekomSelectedDate="2026-08-14";
+
+
+function escapeHTML(str){
+  return String(str).replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+}
+
+
+function getRecommendationText(ticker){
+  const x=STOCK_PICKS.find(p=>p.ticker===ticker);
+  if(!x) return "";
+
+  return `📈 TAKTIKSAHAM — ${x.ticker}
+
+Entry Buy: ${x.entry}
+Take Profit: ${x.tp}
+Cut Loss: ${x.cl}
+Timeframe: ${x.timeframe}
+
+Kenapa dipantau:
+${x.whyNow}
+
+Disclaimer: Informasi ini bersifat edukasi dan bukan jaminan keuntungan. Tetap sesuaikan keputusan dengan profil risiko.
+
+${window.location.href}`;
+}
+
+async function shareRecommendation(ticker){
+  const text=getRecommendationText(ticker);
+  if(!text) return;
+
+  if(navigator.share){
+    try{
+      await navigator.share({title:`TaktikSaham — ${ticker}`,text});
+      return;
+    }catch(e){
+      if(e && e.name==="AbortError") return;
+    }
+  }
+  window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank","noopener");
+}
+
+async function copyRecommendation(ticker){
+  const text=getRecommendationText(ticker);
+  if(!text) return;
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch(e){
+    const ta=document.createElement("textarea");
+    ta.value=text;document.body.appendChild(ta);ta.select();
+    document.execCommand("copy");ta.remove();
+  }
+  showShareToast("Teks rekomendasi berhasil dicopy");
+}
+
+function showShareToast(message){
+  let toast=document.getElementById("shareToast");
+  if(!toast){
+    toast=document.createElement("div");
+    toast.id="shareToast";
+    toast.className="share-toast";
+    document.body.appendChild(toast);
+  }
+  toast.textContent=message;
+  toast.classList.add("show");
+  setTimeout(()=>toast.classList.remove("show"),1800);
+}
+
+
+
+function drawPerformancePie(){
+  const canvas=document.getElementById("performancePie");
+  if(!canvas) return;
+
+  const ctx=canvas.getContext("2d");
+  const win=RECOMMENDATION_HISTORY.filter(x=>x.status==="win").length;
+  const lose=RECOMMENDATION_HISTORY.filter(x=>x.status==="lose").length;
+  const totalClosed=win+lose;
+  const totalAll=RECOMMENDATION_HISTORY.length;
+
+  const set=(id,value)=>{
+    const el=document.getElementById(id);
+    if(el) el.textContent=value;
+  };
+
+  set("winCountText",win);
+  set("loseCountText",lose);
+  set("totalRekomText",totalAll);
+  set("winRateText",totalClosed ? ((win/totalClosed)*100).toFixed(1)+"%" : "—");
+  set("loseRateText",totalClosed ? ((lose/totalClosed)*100).toFixed(1)+"%" : "—");
+
+  const w=canvas.width,h=canvas.height,cx=w/2,cy=h/2,r=92,inner=56;
+  ctx.clearRect(0,0,w,h);
+
+  if(totalClosed===0){
+    ctx.beginPath();
+    ctx.arc(cx,cy,r,0,Math.PI*2);
+    ctx.fillStyle="#e8edf4";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(cx,cy,inner,0,Math.PI*2);
+    ctx.fillStyle="#ffffff";
+    ctx.fill();
+
+    ctx.textAlign="center";
+    ctx.fillStyle="#7d899a";
+    ctx.font="bold 11px Arial";
+    ctx.fillText("BELUM ADA",cx,cy-7);
+    ctx.fillStyle="#0b2e5d";
+    ctx.font="bold 18px Arial";
+    ctx.fillText("HASIL CLOSED",cx,cy+18);
+    return;
+  }
+
+  const segments=[
+    {value:win,color:"#20b15a"},
+    {value:lose,color:"#e45757"}
+  ];
+
+  let start=-Math.PI/2;
+  segments.forEach(seg=>{
+    if(seg.value<=0) return;
+    const angle=(seg.value/totalClosed)*Math.PI*2;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,start,start+angle);
+    ctx.closePath();
+    ctx.fillStyle=seg.color;
+    ctx.fill();
+    start+=angle;
+  });
+
+  ctx.beginPath();
+  ctx.arc(cx,cy,inner,0,Math.PI*2);
+  ctx.fillStyle="#ffffff";
+  ctx.fill();
+
+  const winRate=(win/totalClosed)*100;
+  ctx.textAlign="center";
+  ctx.fillStyle="#7a8799";
+  ctx.font="bold 11px Arial";
+  ctx.fillText("WIN RATE",cx,cy-8);
+  ctx.fillStyle="#0b2e5d";
+  ctx.font="bold 28px Arial";
+  ctx.fillText(winRate.toFixed(0)+"%",cx,cy+24);
+}
+
+
+function renderRecommendationCards(data, targetId="rekomPicksGrid"){
+  const grid=document.getElementById(targetId);
+  if(!grid) return;
+
+  if(!data || !data.length){
+    grid.innerHTML='<div class="empty-note">Belum ada rekomendasi pada tanggal ini.</div>';
+    return;
+  }
+
+  grid.innerHTML=data.map(x=>{
+    const potential=(Number.isFinite(x.entryNum) && Number.isFinite(x.tpNum))
+      ? ((x.tpNum-x.entryNum)/x.entryNum)*100 : null;
+    const hasRisk=Number.isFinite(x.entryNum) && Number.isFinite(x.clNum);
+    const risk=hasRisk ? ((x.entryNum-x.clNum)/x.entryNum)*100 : null;
+    const rr=(risk!==null && risk>0 && potential!==null) ? potential/risk : null;
+    const potentialText=potential!==null ? `+${potential.toFixed(1)}%` : "—";
+    const riskText=risk!==null ? `-${risk.toFixed(1)}%` : (x.riskLabel || "—");
+    const rrText=rr!==null ? `1 : ${rr.toFixed(1)}` : "—";
+
+    return `
+    <article class="pick-card" data-status="${escapeHTML(x.status)}">
+      <div class="pick-top">
+        <div class="pick-head">
+          <div class="ticker-wrap">
+            <div class="ticker-mark">${escapeHTML(x.ticker)}</div>
+            <div class="ticker-name">
+              <b>${escapeHTML(x.ticker)}</b>
+              <small>${escapeHTML(x.company)}</small>
+            </div>
+          </div>
+          <span class="status ${escapeHTML(x.status)}">${escapeHTML(x.statusLabel)}</span>
+        </div>
+
+        <div class="pick-tags">
+          <span class="pick-tag active">● ${escapeHTML(x.planStatus)}</span>
+          <span class="pick-tag swing">${escapeHTML(x.timeframe)}</span>
+        </div>
+
+        <div class="levels">
+          <div class="price-box entry"><span>Entry Buy</span><strong>${escapeHTML(x.entry)}</strong></div>
+          <div class="price-box tp"><span>Take Profit</span><strong>${escapeHTML(x.tp)}</strong></div>
+          <div class="price-box cl"><span>Cut Loss</span><strong>${escapeHTML(x.cl)}</strong></div>
+        </div>
+
+        <div class="rr-grid">
+          <div class="rr-box potential"><span>Potential</span><b>${potentialText}</b></div>
+          <div class="rr-box risk"><span>Risk</span><b>${escapeHTML(riskText)}</b></div>
+          <div class="rr-box ratio"><span>Risk : Reward</span><b>${rrText}</b></div>
+        </div>
+      </div>
+
+      <div class="pick-body">
+        <div class="why-now">
+          <span>Kenapa Dipantau?</span>
+          <p>${escapeHTML(x.whyNow)}</p>
+        </div>
+        <h4 style="margin-top:16px">Alasan, katalis & risiko</h4>
+        <ul class="reason-list">${x.reasons.map(r=>`<li>${escapeHTML(r)}</li>`).join("")}</ul>
+        <div class="pick-meta">
+          <span>Status: <b>${escapeHTML(x.planStatus)}</b></span>
+          <span class="last-update">${escapeHTML(x.updated)}</span>
+        </div>
+
+        <div class="pick-actions">
+          <button class="share-pick-btn primary" type="button" onclick="shareCalendarRecommendation('${escapeHTML(x.ticker)}')">↗ Bagikan Rekomendasi</button>
+          <button class="share-pick-btn" type="button" onclick="copyCalendarRecommendation('${escapeHTML(x.ticker)}')">⧉ Copy Teks</button>
+          <button class="share-pick-btn" type="button" onclick="openTradingViewChart('${escapeHTML(x.ticker)}')">▥ Lihat Chart</button>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function rekomDateKey(year,monthIndex,day){
+  return `${year}-${String(monthIndex+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+}
+
+function rekomHumanDate(key){
+  if(!key) return "";
+  const parts=key.split("-").map(Number);
+  const d=new Date(parts[0],parts[1]-1,parts[2]);
+  const dayNames=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+  return `${dayNames[d.getDay()]}, ${parts[2]} ${REKOM_MONTH_NAMES[parts[1]-1]} ${parts[0]}`;
+}
+
+function renderRecommendationCalendar(){
+  const title=document.getElementById("rekomCalendarTitle");
+  const days=document.getElementById("rekomCalendarDays");
+  if(!title || !days) return;
+
+  title.textContent=`${REKOM_MONTH_NAMES[rekomCalendarMonth]} ${rekomCalendarYear}`;
+
+  const first=new Date(rekomCalendarYear,rekomCalendarMonth,1);
+  const totalDays=new Date(rekomCalendarYear,rekomCalendarMonth+1,0).getDate();
+  const mondayOffset=(first.getDay()+6)%7;
+
+  let out="";
+  for(let i=0;i<mondayOffset;i++){
+    out+='<div class="rekom-day empty"></div>';
+  }
+
+  for(let day=1;day<=totalDays;day++){
+    const key=rekomDateKey(rekomCalendarYear,rekomCalendarMonth,day);
+    const has=Array.isArray(PICKS_BY_DATE[key]);
+    const selected=rekomSelectedDate===key;
+
+    if(has){
+      out+=`<button class="rekom-day has-picks ${selected?"selected":""}" type="button" data-rekom-date="${key}" aria-label="${day} ${REKOM_MONTH_NAMES[rekomCalendarMonth]} ${rekomCalendarYear}">${day}</button>`;
+    }else{
+      out+=`<div class="rekom-day">${day}</div>`;
+    }
+  }
+
+  days.innerHTML=out;
+
+  days.querySelectorAll("[data-rekom-date]").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const key=btn.dataset.rekomDate;
+      rekomSelectedDate = rekomSelectedDate===key ? null : key;
+      renderRecommendationCalendar();
+      renderRecommendationDay();
+    });
+  });
+}
+
+function renderRecommendationDay(){
+  const container=document.getElementById("rekomCalendarContent");
+  if(!container) return;
+
+  if(!rekomSelectedDate || !PICKS_BY_DATE[rekomSelectedDate]){
+    container.innerHTML=`
+      <div class="rekom-empty-panel">
+        <div>
+          <div class="icon">📅</div>
+          <h3>Rekomendasi sedang di-hide.</h3>
+          <p>Klik tanggal yang memiliki titik orange pada kalender untuk menampilkan stock picks hari tersebut.</p>
+        </div>
+      </div>`;
+    return;
+  }
+
+  const data=PICKS_BY_DATE[rekomSelectedDate];
+  const isToday=rekomSelectedDate==="2026-08-14";
+  const isAug13=rekomSelectedDate==="2026-08-13";
+  const isAug11=rekomSelectedDate==="2026-08-11";
+  const isAug10=rekomSelectedDate==="2026-08-10";
+
+  let extra="";
+  if(isToday){
+    extra=`
+      <div class="conviction-board">
+        <div class="conviction-headline">
+          <span>Rekomendasi Hari Ini • 14 Agustus 2026</span>
+          <h3>⭐ DSSA — Digital Infrastructure / Recovery Play</h3>
+          <p>DSSA membawa tema digital infrastructure dan recovery, ESSA memiliki earnings kuat tetapi dibayangi MSCI outflow, EXCL fokus pada merger synergy + 5G, sedangkan ASPR menunggu breakout 160.</p>
+        </div>
+        <div class="conviction-list">
+          <div class="conviction-item"><b>DSSA</b><span>Buy 950 • TP 1.050</span></div>
+          <div class="conviction-item"><b>ESSA</b><span>Buy 650 • TP 700</span></div>
+          <div class="conviction-item"><b>EXCL</b><span>Buy 2.610 • TP 2.700</span></div>
+          <div class="conviction-item"><b>ASPR</b><span>Break 160 • TP 170</span></div>
+        </div>
+      </div>`;
+  }else if(isAug13){
+    extra=`
+      <div class="conviction-board">
+        <div class="conviction-headline">
+          <span>Rekomendasi • 13 Agustus 2026</span>
+          <h3>⭐ NCKL — Fundamental + Nickel Play</h3>
+          <p>NCKL menjadi pilihan fundamental nikel, BRMS fokus pada breakout 645 dan gold recovery, NICL untuk speculative nickel swing, sedangkan GTSI membawa tema LNG catalyst + momentum.</p>
+        </div>
+        <div class="conviction-list">
+          <div class="conviction-item"><b>NCKL</b><span>Buy 935 • TP 980–1.000</span></div>
+          <div class="conviction-item"><b>BRMS</b><span>Break 645 • TP 700</span></div>
+          <div class="conviction-item"><b>NICL</b><span>Buy 464 • TP 500</span></div>
+          <div class="conviction-item"><b>GTSI</b><span>Buy 185 • TP 200</span></div>
+        </div>
+      </div>`;
+  }else if(isAug11){
+    extra=`
+      <div class="conviction-board">
+        <div class="conviction-headline">
+          <span>Rekomendasi • 11 Agustus 2026</span>
+          <h3>⭐ ESSA — Top Pick / Earnings Momentum</h3>
+          <p>ESSA memiliki earnings catalyst paling kuat, sementara MTEL menawarkan defensive recovery, ARKO momentum renewable energy, dan BBKP turnaround banking.</p>
+        </div>
+        <div class="conviction-list">
+          <div class="conviction-item"><b>ESSA</b><span>Top Pick • Earnings Momentum</span></div>
+          <div class="conviction-item"><b>MTEL</b><span>Defensive Recovery</span></div>
+          <div class="conviction-item"><b>ARKO</b><span>Speculative Momentum</span></div>
+          <div class="conviction-item"><b>BBKP</b><span>Turnaround Banking</span></div>
+        </div>
+      </div>`;
+  }else if(isAug10){
+    extra=`
+      <div class="conviction-board">
+        <div class="conviction-headline">
+          <span>Headline Watchlist • 10 Agustus 2026</span>
+          <h3>⭐ DEWA — Positive Earnings Play</h3>
+          <p>Laporan 1H26 menjadi katalis paling segar. BBRI dan MEDC melengkapi tiga nama dengan sentimen paling kuat pada sesi tersebut.</p>
+        </div>
+        <div class="conviction-list">
+          <div class="conviction-item"><b>DEWA ⭐⭐⭐⭐⭐</b><span>Fresh earnings catalyst</span></div>
+          <div class="conviction-item"><b>BBRI ⭐⭐⭐⭐⭐</b><span>Foreign accumulation</span></div>
+          <div class="conviction-item"><b>MEDC ⭐⭐⭐⭐⭐</b><span>Oil / Hormuz catalyst</span></div>
+          <div class="conviction-item"><b>MBMA ⭐⭐⭐⭐½</b><span>Nickel + Q2 operations</span></div>
+          <div class="conviction-item"><b>BRMS ⭐⭐⭐⭐</b><span>H2 recovery play</span></div>
+          <div class="conviction-item"><b>TPIA ⭐⭐⭐⭐</b><span>Foreign flow + turnaround</span></div>
+          <div class="conviction-item"><b>NICL ⭐⭐⭐½</b><span>Nickel momentum</span></div>
+        </div>
+      </div>`;
+  }else{
+    extra=`<div class="rekom-historical-note"><b>Arsip rekomendasi:</b> data pada tanggal ini ditampilkan sebagai rekam jejak historis TaktikSaham.</div>`;
+  }
+
+  container.innerHTML=`
+    <div class="rekom-day-panel">
+      <div class="rekom-day-panel-head">
+        <div>
+          <span>Calendar Stock Picks</span>
+          <h3>${escapeHTML(rekomHumanDate(rekomSelectedDate))}</h3>
+          <p>${data.length} rekomendasi tersimpan pada tanggal ini.</p>
+        </div>
+        <button class="rekom-hide-btn" id="rekomHideDay" type="button">Tutup / Hide ↑</button>
+      </div>
+
+      <div class="rekom-day-body">
+        ${extra}
+
+        <div class="stock-date-strip">
+          <span><b>Rekomendasi:</b> ${escapeHTML(rekomHumanDate(rekomSelectedDate))}</span>
+          <span class="active-market">${isToday?"Morning Stock Picks":"Historical Pick"}</span>
+        </div>
+
+        <div class="picks-grid" id="rekomPicksGrid"></div>
+      </div>
+    </div>`;
+
+  renderRecommendationCards(data);
+
+  document.getElementById("rekomHideDay").addEventListener("click",()=>{
+    rekomSelectedDate=null;
+    renderRecommendationCalendar();
+    renderRecommendationDay();
+  });
+}
+
+function getCalendarRecommendationText(ticker){
+  if(!rekomSelectedDate || !PICKS_BY_DATE[rekomSelectedDate]) return "";
+  const x=PICKS_BY_DATE[rekomSelectedDate].find(p=>p.ticker===ticker);
+  if(!x) return "";
+
+  return `📈 TAKTIKSAHAM — ${x.ticker}
+
+Tanggal: ${rekomHumanDate(rekomSelectedDate)}
+Entry Buy: ${x.entry}
+Take Profit: ${x.tp}
+Cut Loss: ${x.cl}
+Timeframe: ${x.timeframe}
+
+Kenapa dipantau:
+${x.whyNow}
+
+Disclaimer: Informasi ini bersifat edukasi dan bukan jaminan keuntungan. Tetap sesuaikan keputusan dengan profil risiko.
+
+${window.location.href}`;
+}
+
+async function shareCalendarRecommendation(ticker){
+  const text=getCalendarRecommendationText(ticker);
+  if(!text) return;
+
+  if(navigator.share){
+    try{
+      await navigator.share({title:`TaktikSaham — ${ticker}`,text});
+      return;
+    }catch(e){
+      if(e && e.name==="AbortError") return;
+    }
+  }
+  window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank","noopener");
+}
+
+async function copyCalendarRecommendation(ticker){
+  const text=getCalendarRecommendationText(ticker);
+  if(!text) return;
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch(e){
+    const ta=document.createElement("textarea");
+    ta.value=text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    ta.remove();
+  }
+  showShareToast("Teks rekomendasi berhasil dicopy");
+}
+
+const rekomPrevMonth=document.getElementById("rekomPrevMonth");
+const rekomNextMonth=document.getElementById("rekomNextMonth");
+
+if(rekomPrevMonth){
+  rekomPrevMonth.addEventListener("click",()=>{
+    rekomCalendarMonth--;
+    if(rekomCalendarMonth<0){
+      rekomCalendarMonth=11;
+      rekomCalendarYear--;
+    }
+    renderRecommendationCalendar();
+  });
+}
+
+if(rekomNextMonth){
+  rekomNextMonth.addEventListener("click",()=>{
+    rekomCalendarMonth++;
+    if(rekomCalendarMonth>11){
+      rekomCalendarMonth=0;
+      rekomCalendarYear++;
+    }
+    renderRecommendationCalendar();
+  });
+}
+
+
+renderNews();
+renderHistory();
+drawPerformancePie();
+renderRecommendationCalendar();
+renderRecommendationDay();
+
+const menuBtn=document.getElementById("mobileMenuButton");
+const mobileNav=document.getElementById("mobileNav");
+menuBtn.addEventListener("click",()=>mobileNav.classList.toggle("open"));
+mobileNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>mobileNav.classList.remove("open")));
+</script>
+
+<script id="tsUnifiedHeaderJs">
+(()=>{
+ const b=document.querySelector('.ts-mobile-menu-btn'),n=document.getElementById('tsMobileNav');
+ if(!b||!n)return;
+ const close=()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')};
+ b.addEventListener('click',e=>{e.stopPropagation();const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
+ n.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+ document.addEventListener('click',e=>{if(!n.contains(e.target)&&!b.contains(e.target))close()});
+ window.addEventListener('resize',()=>{if(innerWidth>980)close()});
+})();
+</script>
+
+
+<script id="tsCollapsibleJs">
+(()=>{
+ const page=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+ const key='taktiksaham_hidden_sections_v2::'+page;
+ const load=()=>{try{const x=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(x)?x:[]}catch(e){return[]}};
+ const save=a=>{try{localStorage.setItem(key,JSON.stringify(a))}catch(e){}};
+ const txt=s=>(s||'').replace(/\s+/g,' ').trim();
+
+ const items=[...document.querySelectorAll('body > section, main > section')].filter((x,i,a)=>a.indexOf(x)===i);
+
+ const titleOf=(s,i)=>{
+   const h=s.querySelector(':scope > .container h1,:scope > .container h2,:scope > .container h3,:scope h1,:scope h2');
+   if(h&&txt(h.textContent))return txt(h.textContent);
+   if(txt(s.getAttribute('aria-label')))return txt(s.getAttribute('aria-label'));
+   const map={
+    'benefit':'Benefit VIP Group','cara-gabung':'Cara Bergabung','tentang':'Tentang TaktikSaham',
+    'bukti-vip':'Bukti Rekomendasi','aktivitas-vip':'Aktivitas VIP Group','testimoni':'Testimoni Member',
+    'faq':'FAQ','lucky-wheel':'Lucky Wheel','berita':'Berita Saham','rekomendasi':'Rekomendasi Saham',
+    'tradingview-chart':'TradingView Chart','history-rekomendasi':'History Rekomendasi','besok-dipantau':'Saham Besok Dipantau',
+    'jenis':'Jenis Reksa Dana','pilih-tujuan':'Pilih Tujuan Investasi','simulasi':'Simulasi Reksa Dana',
+    'target-investasi':'Progress Target Investasi','profil-risiko':'Profil Risiko','panduan':'Panduan Investasi'
+   };
+   if(map[s.id])return map[s.id];
+   if(s.classList.contains('cashback-bar'))return 'Cashback RDN Rp250.000';
+   if(s.classList.contains('hero'))return page==='saham.html'?'Morning Stock Picks':page==='reksadana.html'?'Perencanaan Reksa Dana':'VIP Group Saham';
+   if(s.classList.contains('final-cta'))return 'Mulai Investasi / Call to Action';
+   return 'Bagian '+(i+1);
+ };
+
+ items.forEach((s,i)=>{
+   if(!s.id){
+     let slug=titleOf(s,i).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+       .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,44);
+     s.id='ts-section-'+(slug||i+1);
+   }
+ });
+
+ const tools=document.createElement('div');
+ tools.className='ts-page-tools';
+ tools.innerHTML='<span class="ts-hidden-count">0</span><button class="ts-show-all" type="button">Tampilkan Semua</button>';
+ document.body.appendChild(tools);
+ const count=tools.querySelector('.ts-hidden-count'), showAll=tools.querySelector('.ts-show-all');
+
+ const stored=new Set(load());
+
+ const refresh=()=>{
+   const hidden=items.filter(s=>s.classList.contains('ts-hidden-section'));
+   count.textContent=hidden.length;
+   count.classList.toggle('show',hidden.length>0);
+   showAll.classList.toggle('show',hidden.length>0);
+ };
+ const persist=()=>{save(items.filter(s=>s.classList.contains('ts-hidden-section')).map(s=>s.id));refresh()};
+
+ const setHidden=(s,hidden,p=true)=>{
+   s.classList.toggle('ts-hidden-section',hidden);
+   const b=s.querySelector(':scope > .ts-hide-btn');
+   if(b)b.innerHTML=hidden?'＋ Tampilkan':'− Sembunyikan';
+   if(p)persist();
+ };
+
+ items.forEach((s,i)=>{
+   s.classList.add('ts-collapse-section');
+   const title=titleOf(s,i);
+
+   const hide=document.createElement('button');
+   hide.type='button';hide.className='ts-hide-btn';hide.textContent='− Sembunyikan';
+   hide.setAttribute('aria-label','Sembunyikan '+title);
+   s.appendChild(hide);
+
+   const bar=document.createElement('div');
+   bar.className='ts-collapsed-bar';
+   bar.innerHTML=`<div class="ts-collapsed-left"><span class="ts-collapsed-dot"></span><div><div class="ts-collapsed-title">${title.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><span class="ts-collapsed-note">Bagian ini sedang disembunyikan</span></div></div><button class="ts-restore-btn" type="button">Tampilkan ＋</button>`;
+   s.appendChild(bar);
+
+   hide.addEventListener('click',()=>setHidden(s,!s.classList.contains('ts-hidden-section')));
+   bar.querySelector('.ts-restore-btn').addEventListener('click',()=>{setHidden(s,false);s.scrollIntoView({behavior:'smooth',block:'start'})});
+
+   if(stored.has(s.id))setHidden(s,true,false);
+ });
+
+ showAll.addEventListener('click',()=>{
+   items.forEach(s=>setHidden(s,false,false));save([]);refresh();window.scrollTo({top:0,behavior:'smooth'})
+ });
+ refresh();
+})();
+</script>
+
+
+<script id="tsSmartUxScript">
+(()=>{
+  const CONFIG = {"pageTitle": "REKOM SAHAM", "focusTitle": "Fokus: Hari Ini", "focusDesc": "Tampilkan berita pagi, rekomendasi saham, dan chart TradingView. History dan bagian lanjutan disembunyikan sementara.", "keep": ["berita", "rekomendasi", "tradingview-chart"], "nav": [["berita", "Berita Saham Hari Ini"], ["rekomendasi", "Rekomendasi Saham"], ["tradingview-chart", "TradingView Chart"], ["history-rekomendasi", "History Rekomendasi"], ["besok-dipantau", "Saham Besok Dipantau"]]};
+
+  const root=document.createElement('div');
+  root.className='ts-smart-nav';
+  root.innerHTML=`
+    <button type="button" class="ts-smart-nav-trigger" aria-expanded="false">
+      <span class="ts-nav-icon">☰</span><span>Navigasi</span>
+    </button>
+    <div class="ts-smart-panel" aria-hidden="true">
+      <div class="ts-smart-panel-head">
+        <div><small>Menu Cepat</small><b>${CONFIG.pageTitle}</b></div>
+        <button type="button" class="ts-smart-close" aria-label="Tutup">×</button>
+      </div>
+      <div class="ts-focus-box">
+        <small>Mode Fokus</small>
+        <b>${CONFIG.focusTitle}</b>
+        <p>${CONFIG.focusDesc}</p>
+        <div class="ts-focus-actions">
+          <button type="button" class="ts-focus-btn">Aktifkan Mode Fokus</button>
+          <button type="button" class="ts-reset-view">Tampilkan Semua</button>
+        </div>
+      </div>
+      <div class="ts-nav-caption">Lompat ke bagian</div>
+      <div class="ts-nav-list"></div>
+      <div class="ts-smart-note">Jika bagian yang dituju sedang di-hide, bagian tersebut otomatis dibuka kembali.</div>
+    </div>`;
+  document.body.appendChild(root);
+
+  const trigger=root.querySelector('.ts-smart-nav-trigger');
+  const panel=root.querySelector('.ts-smart-panel');
+  const closeBtn=root.querySelector('.ts-smart-close');
+  const list=root.querySelector('.ts-nav-list');
+
+  const setPanel=open=>{
+    panel.classList.toggle('open',open);
+    panel.setAttribute('aria-hidden',String(!open));
+    trigger.setAttribute('aria-expanded',String(open));
+  };
+
+  trigger.addEventListener('click',e=>{
+    e.stopPropagation();
+    setPanel(!panel.classList.contains('open'));
+  });
+  closeBtn.addEventListener('click',()=>setPanel(false));
+  document.addEventListener('click',e=>{
+    if(!root.contains(e.target)) setPanel(false);
+  });
+
+  const ensureOpen=section=>{
+    if(section && section.classList.contains('ts-hidden-section')){
+      const restore=section.querySelector(':scope > .ts-collapsed-bar .ts-restore-btn');
+      if(restore) restore.click();
+    }
+  };
+
+  const goTo=id=>{
+    const section=document.getElementById(id);
+    if(!section) return;
+    ensureOpen(section);
+    setTimeout(()=>{
+      section.scrollIntoView({behavior:'smooth',block:'start'});
+      section.classList.remove('ts-section-flash');
+      void section.offsetWidth;
+      section.classList.add('ts-section-flash');
+      setTimeout(()=>section.classList.remove('ts-section-flash'),1250);
+    },90);
+    setPanel(false);
+  };
+
+  CONFIG.nav.forEach(([id,label])=>{
+    if(!document.getElementById(id)) return;
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='ts-nav-item';
+    btn.innerHTML=`<span>${label}</span><span>→</span>`;
+    btn.addEventListener('click',()=>goTo(id));
+    list.appendChild(btn);
+  });
+
+  const topLevel=()=>[
+    ...document.querySelectorAll('body > section.ts-collapse-section, main > section.ts-collapse-section')
+  ];
+
+  const hideSection=section=>{
+    if(!section || section.classList.contains('ts-hidden-section')) return;
+    const btn=section.querySelector(':scope > .ts-hide-btn');
+    if(btn) btn.click();
+  };
+  const showSection=section=>{
+    if(!section || !section.classList.contains('ts-hidden-section')) return;
+    const btn=section.querySelector(':scope > .ts-collapsed-bar .ts-restore-btn');
+    if(btn) btn.click();
+  };
+
+  root.querySelector('.ts-focus-btn').addEventListener('click',()=>{
+    topLevel().forEach(section=>{
+      if(CONFIG.keep.includes(section.id)) showSection(section);
+      else hideSection(section);
+    });
+    setPanel(false);
+    const target=document.getElementById(CONFIG.keep[0]);
+    if(target) setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),120);
+  });
+
+  root.querySelector('.ts-reset-view').addEventListener('click',()=>{
+    const existing=document.querySelector('.ts-show-all.show');
+    if(existing) existing.click();
+    else topLevel().forEach(showSection);
+    setPanel(false);
+  });
+
+  if(location.hash){
+    const id=decodeURIComponent(location.hash.slice(1));
+    setTimeout(()=>{
+      const section=document.getElementById(id);
+      if(section) ensureOpen(section);
+    },180);
+  }
+})();
+</script>
+
+
+
+
+<script id="tsTradingViewChartJs">
+(function(){
+  const host=document.getElementById("tsTradingViewWidget");
+  if(!host)return;
+
+  const requestedTicker=new URLSearchParams(window.location.search).get("tv");
+  let currentTicker=requestedTicker ? String(requestedTicker).toUpperCase() : "DSSA";
+
+  function cleanTicker(raw){
+    const t=String(raw||"").toUpperCase().replace(/^IDX:/,"").replace(/[^A-Z0-9]/g,"").slice(0,12);
+    return t || "DSSA";
+  }
+
+  function setQuickActive(ticker){
+    document.querySelectorAll("[data-tv-symbol]").forEach(btn=>{
+      btn.classList.toggle("active",btn.dataset.tvSymbol===ticker);
+    });
+  }
+
+  function renderTradingView(ticker){
+    ticker=cleanTicker(ticker);
+    currentTicker=ticker;
+
+    const label=document.getElementById("tsTvCurrentLabel");
+    if(label)label.textContent=`${ticker} • IDX`;
+
+    const input=document.getElementById("tsTvTickerInput");
+    if(input)input.value=ticker;
+
+    setQuickActive(ticker);
+
+    host.innerHTML="";
+    const container=document.createElement("div");
+    container.className="tradingview-widget-container";
+    container.style.height="100%";
+    container.style.width="100%";
+
+    const widget=document.createElement("div");
+    widget.className="tradingview-widget-container__widget";
+    widget.style.height="100%";
+    widget.style.width="100%";
+    container.appendChild(widget);
+
+    const script=document.createElement("script");
+    script.type="text/javascript";
+    script.src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+    script.async=true;
+    script.text=JSON.stringify({
+      autosize:true,
+      symbol:`IDX:${ticker}`,
+      interval:"D",
+      timezone:"exchange",
+      theme:"light",
+      backgroundColor:"rgba(255, 255, 255, 1)",
+      style:"1",
+      locale:"id",
+      withdateranges:true,
+      hide_side_toolbar:false,
+      allow_symbol_change:true,
+      save_image:false,
+      details:true,
+      calendar:false,
+      support_host:"https://www.tradingview.com"
+    });
+
+    container.appendChild(script);
+    host.appendChild(container);
+  }
+
+  window.openTradingViewChart=function(ticker){
+    renderTradingView(ticker);
+    document.getElementById("tradingview-chart")?.scrollIntoView({behavior:"smooth",block:"start"});
+  };
+
+  document.querySelectorAll("[data-tv-symbol]").forEach(btn=>{
+    btn.addEventListener("click",()=>renderTradingView(btn.dataset.tvSymbol));
+  });
+
+  document.getElementById("tsTvTickerBtn")?.addEventListener("click",()=>{
+    renderTradingView(document.getElementById("tsTvTickerInput")?.value);
+  });
+
+  document.getElementById("tsTvTickerInput")?.addEventListener("keydown",e=>{
+    if(e.key==="Enter"){
+      e.preventDefault();
+      renderTradingView(e.currentTarget.value);
+    }
+  });
+
+  renderTradingView(currentTicker);
+})();
+</script>
+
+</body>
+</html>
