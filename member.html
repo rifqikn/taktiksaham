@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Member Area • TaktikSaham</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f3f6fa;color:#17375d}
+a{text-decoration:none}.top{background:#071a36;color:#fff;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:950;letter-spacing:.5px}.brand span{color:#f58220}.top a{color:#dbe7f5;font-size:12px;font-weight:850}
+.wrap{width:min(1040px,calc(100% - 28px));margin:36px auto 70px}
+.hero{padding:28px;border-radius:22px;background:linear-gradient(135deg,#0b2c56,#123f73);color:#fff;box-shadow:0 20px 50px rgba(12,49,95,.16)}
+.hero small{color:#f7b06c;font-size:10px;font-weight:950;letter-spacing:.8px}.hero h1{margin:8px 0 8px;font-size:34px}.hero p{margin:0;color:#d3e0ee;line-height:1.6;font-size:13px}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:16px}
+.card{background:#fff;border:1px solid #e0e7ef;border-radius:18px;padding:20px;box-shadow:0 8px 26px rgba(19,51,88,.05)}
+.card h2{margin:0 0 16px;font-size:18px}.status{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px;border-radius:14px;background:#f5f8fb}
+.status strong{font-size:18px}.pill{padding:6px 10px;border-radius:999px;background:#fff2dc;color:#a7670b;font-size:9px;font-weight:950}
+.pill.active{background:#e6f8f0;color:#197b54}.pill.expired,.pill.suspended{background:#ffeded;color:#a54444}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.stat{padding:13px;border:1px solid #e7edf3;border-radius:12px}.stat span{display:block;color:#8595a8;font-size:9px;text-transform:uppercase;font-weight:950;margin-bottom:4px}.stat b{font-size:12px}
+.actions{display:grid;gap:9px;margin-top:14px}.btn{min-height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:950}.primary{background:#f58220;color:#10213d}.secondary{background:#edf3f8;color:#0c315f}
+.notice{margin-top:14px;padding:13px;border-radius:12px;background:#fff8eb;border:1px solid #f0d09a;color:#806039;font-size:10px;line-height:1.6}.notice a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 11px;margin:9px 6px 0 0;border-radius:9px;background:#f58220;color:#10213d;font-size:9px;font-weight:950;text-decoration:none}.notice a.secondary{background:#eef3f8;color:#0c315f}
+.vipbox{display:none}.vipbox.show{display:block}.lock{padding:18px;border:1px dashed #cad5e1;border-radius:14px;text-align:center;color:#7d8da0;line-height:1.6;font-size:11px}
+.feed{display:grid;gap:10px}.feeditem{padding:13px;border:1px solid #e3eaf2;border-radius:12px}.feeditem small{color:#e8740e;font-weight:950}.feeditem h3{font-size:14px;margin:5px 0}.feeditem p{font-size:10px;color:#6f8094;margin:0;line-height:1.55}
+.config{padding:14px;border-radius:12px;background:#fff4e1;border:1px dashed #efb96d;color:#815819;font-size:10px;line-height:1.6}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand">TAKTIK<span>SAHAM</span> • MEMBER</div><a href="index.html">← Kembali ke Website</a></header>
+<main class="wrap">
+  <section class="hero">
+    <small>VIP MEMBER CENTER</small>
+    <h1 id="memberHello">Member Area</h1>
+    <p>Cek status membership, masa aktif, dan akses konten premium yang tersimpan aman di database.</p>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Status Membership</h2>
+      <div id="memberConfig" class="config" style="display:none">
+        Supabase belum dikonfigurasi. Isi <b>supabase-config.js</b> dan jalankan <b>SUPABASE_SETUP.sql</b>.
+      </div>
+      <div id="memberLoggedOut" class="lock">Kamu belum login.<br><br><a class="btn primary" href="index.html#cara-gabung">LOGIN / DAFTAR DARI WEBSITE</a></div>
+      <div id="memberLoggedIn" style="display:none">
+        <div class="status">
+          <div><small style="display:block;color:#8797aa;margin-bottom:4px">PAKET AKTIF / DIPILIH</small><strong id="memberPlan">—</strong></div>
+          <span class="pill" id="memberPill">PENDING</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><span>Email</span><b id="memberEmail">—</b></div>
+          <div class="stat"><span>Status</span><b id="memberStatus">—</b></div>
+          <div class="stat"><span>Mulai</span><b id="memberStart">—</b></div>
+          <div class="stat"><span>Berakhir</span><b id="memberExpiry">—</b></div>
+        </div>
+        <div id="memberPending" class="notice" style="display:none"></div>
+        <div class="actions">
+          <a class="btn primary" href="saham.html">BUKA REKOM SAHAM →</a>
+          <a class="btn secondary" href="screening.html?tab=technical">BUKA SCREENING →</a>
+          <button class="btn secondary" id="memberLogout" type="button" style="border:0;cursor:pointer">LOGOUT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>VIP Content Test</h2>
+      <div id="vipLocked" class="lock">Konten database hanya akan tampil jika membership berstatus <b>ACTIVE</b> dan belum expired.</div>
+      <div id="vipFeed" class="vipbox feed"></div>
+    </section>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script>
+(function(){
+  const plans={"4m":"VIP 4 Bulan","6m":"VIP 6 Bulan","12m":"VIP 1 Tahun","lifetime":"VIP Lifetime • Mirae Asset"};
+  const prices={"4m":"Rp499.000","6m":"Rp699.000","12m":"Rp1.200.000","lifetime":"Jalur Mirae Asset"};
+  const checkout={
+    "4m":"https://lynk.id/taktiksaham/jy46v4g94jqn",
+    "6m":"https://lynk.id/taktiksaham/je6yv6jrjvr9",
+    "12m":"https://lynk.id/taktiksaham/vk3zklnjk1jl",
+    "lifetime":"https://login.miraeasset.co.id/registration/oe?referralcode=3103248"
+  };
+  const cfg=window.TS_SUPABASE_CONFIG||{};
+  const configured=cfg.url&&cfg.anonKey&&!String(cfg.url).includes("PASTE_")&&!String(cfg.anonKey).includes("PASTE_");
+  if(!configured){document.getElementById("memberConfig").style.display="block";return}
+  const sb=window.supabase.createClient(cfg.url,cfg.anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+  const fd=v=>v?new Intl.DateTimeFormat("id-ID",{day:"2-digit",month:"short",year:"numeric"}).format(new Date(v)):"—";
+
+  async function load(){
+    const {data:{session}}=await sb.auth.getSession();
+    if(!session){document.getElementById("memberLoggedOut").style.display="block";return}
+    document.getElementById("memberLoggedOut").style.display="none";
+    document.getElementById("memberLoggedIn").style.display="block";
+    document.getElementById("memberEmail").textContent=session.user.email||"—";
+    const [{data:p},{data:m}]=await Promise.all([
+      sb.from("profiles").select("full_name").eq("id",session.user.id).maybeSingle(),
+      sb.from("memberships").select("plan,status,start_at,expires_at,lifetime").eq("user_id",session.user.id).maybeSingle()
+    ]);
+    const meta=session.user.user_metadata||{};
+    document.getElementById("memberHello").textContent=`Halo, ${p?.full_name||meta.full_name||"Member"}`;
+    const plan=m?.plan||meta.plan||"—";
+    const status=(m?.status||"pending").toLowerCase();
+    document.getElementById("memberPlan").textContent=plans[plan]||plan;
+    document.getElementById("memberStatus").textContent=status.toUpperCase();
+    document.getElementById("memberStart").textContent=fd(m?.start_at);
+    document.getElementById("memberExpiry").textContent=m?.lifetime?"Lifetime":fd(m?.expires_at);
+    const pill=document.getElementById("memberPill");pill.textContent=status.toUpperCase();pill.className=`pill ${status}`;
+    if(status==="pending"){
+      const pn=document.getElementById("memberPending");
+      pn.style.display="block";
+      const waBase="https://wa.me/6285697486266?text=";
+      if(plan==="lifetime"){
+        pn.innerHTML='Aktivasi Lifetime masih <b>PENDING</b>. Selesaikan pendaftaran Mirae Asset dengan referral <b>3103248</b>, lalu konfirmasi ke admin.'
+          +`<br><a href="${checkout.lifetime}" target="_blank" rel="noopener">DAFTAR MIRAE →</a>`
+          +`<a class="secondary" href="${waBase+encodeURIComponent("Halo Kak Rifqi, saya ingin konfirmasi aktivasi VIP Lifetime TaktikSaham melalui Mirae Asset.")}" target="_blank" rel="noopener">KONFIRMASI WA</a>`;
+      }else{
+        const label=plans[plan]||plan;
+        const price=prices[plan]||"";
+        pn.innerHTML=`Membership <b>${label}</b> masih PENDING. Selesaikan pembayaran <b>${price}</b>, lalu konfirmasi ke admin.`
+          +`<br><a href="${checkout[plan]}" target="_blank" rel="noopener">BAYAR ${label.toUpperCase()} →</a>`
+          +`<a class="secondary" href="${waBase+encodeURIComponent("Halo Kak Rifqi, saya sudah mendaftar "+label+" ("+price+") dan ingin konfirmasi pembayaran/aktivasi.")}" target="_blank" rel="noopener">KONFIRMASI WA</a>`;
+      }
+    }
+    const {data:vip,error}=await sb.from("vip_content").select("id,title,body,content_type,published_at").order("published_at",{ascending:false}).limit(10);
+    if(!error&&vip?.length){
+      document.getElementById("vipLocked").style.display="none";
+      const box=document.getElementById("vipFeed");box.classList.add("show");
+      box.innerHTML=vip.map(x=>`<article class="feeditem"><small>${x.content_type||"VIP"}</small><h3>${x.title}</h3><p>${x.body}</p></article>`).join("");
+    }
+  }
+  document.getElementById("memberLogout").addEventListener("click",async()=>{await sb.auth.signOut();location.reload()});
+  load();
+})();
+</script>
+</body>
+</html>
