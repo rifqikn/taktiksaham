@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#071a36" />
+<title>TaktikSaham — Live Notes Display</title>
+<style>
+:root{--navy:#071a36;--navy2:#0b2a55;--orange:#ff8a00;--green:#18a66d;--red:#e5484d;--yellow:#d49a14;--blue:#3182ce}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;overflow:hidden;background:#071a36;color:#fff}.board{width:100%;height:100%;padding:clamp(22px,3vw,48px);display:flex;flex-direction:column;position:relative;background:linear-gradient(145deg,#06162f 0%,#0d315f 100%)}.board::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:42px 42px;pointer-events:none}.head,.notes,.foot{position:relative;z-index:2}.head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:clamp(15px,2vw,25px);border-bottom:1px solid rgba(255,255,255,.14)}.label{display:inline-flex;align-items:center;gap:8px;font-size:clamp(10px,1vw,14px);font-weight:950;letter-spacing:1.5px;color:#ffd18e;text-transform:uppercase}.dot{width:9px;height:9px;border-radius:50%;background:#ff4147;box-shadow:0 0 0 7px rgba(255,65,71,.13)}.title{font-size:clamp(30px,4vw,66px);line-height:1.02;letter-spacing:-1.7px;font-weight:1000;margin:clamp(10px,1.2vw,16px) 0 8px}.subtitle{font-size:clamp(12px,1.35vw,21px);color:#b9c8da;max-width:1050px;line-height:1.45}.clock{text-align:right;font-size:clamp(10px,1vw,14px);color:#99acc4;white-space:nowrap}.clock b{display:block;color:inherit;font-size:clamp(17px,1.65vw,26px);margin-bottom:3px}.notes{display:grid;gap:clamp(10px,1.2vw,16px);margin-top:clamp(18px,2vw,30px);overflow:auto;flex:1;align-content:start;padding-right:4px}.note{display:grid;grid-template-columns:minmax(100px,.52fr) minmax(110px,.55fr) minmax(130px,.75fr) 2.8fr;gap:clamp(10px,1.5vw,22px);align-items:center;padding:clamp(12px,1.5vw,20px);border-radius:clamp(14px,1.6vw,22px);background:rgba(255,255,255,.068);border:1px solid rgba(255,255,255,.11);backdrop-filter:blur(8px)}.ticker{font-size:clamp(24px,2.7vw,46px);font-weight:1000;letter-spacing:.5px}.stance{font-size:clamp(10px,1.05vw,16px);font-weight:950;border-radius:999px;padding:clamp(7px,.8vw,11px) clamp(9px,1vw,14px);text-align:center;white-space:nowrap}.s-buy{background:#e8f8f1;color:#087a4c}.s-watch{background:#eaf3ff;color:#2566a7}.s-wait{background:#fff6df;color:#9b6c00}.s-sell{background:#fff0f0;color:#b63236}.s-info{background:#f0efff;color:#6554c0}.level{font-size:clamp(13px,1.35vw,21px);font-weight:900;color:#ffd18e;line-height:1.25}.note-text{font-size:clamp(14px,1.55vw,25px);color:#dce5f0;line-height:1.38}.empty{display:grid;place-items:center;min-height:35vh;border:1px dashed rgba(255,255,255,.18);border-radius:22px;color:#93a7c1;font-size:clamp(14px,1.5vw,22px);text-align:center;padding:24px}.foot{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:clamp(15px,1.8vw,24px);padding-top:clamp(12px,1.4vw,18px);border-top:1px solid rgba(255,255,255,.12);font-size:clamp(9px,.85vw,13px);color:#8fa4be}.brand{font-weight:900;color:#c6d3e4}.brand strong{color:#ff9c29}.offline .dot{background:#8fa4be;box-shadow:none}.break .dot{background:#ffb13b;box-shadow:0 0 0 7px rgba(255,177,59,.13)}
+body.light{background:#f6f8fb;color:#10213d}.light .board{background:#f6f8fb}.light .board::before{background-image:linear-gradient(rgba(7,26,54,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(7,26,54,.035) 1px,transparent 1px)}.light .head,.light .foot{border-color:#dce4ee}.light .subtitle,.light .foot,.light .clock{color:#667085}.light .label{color:#a65700}.light .note{background:#fff;border-color:#dfe6ef;box-shadow:0 10px 28px rgba(7,26,54,.06)}.light .note-text{color:#47556a}.light .level{color:#a65a00}.light .brand{color:#31435b}
+body.transparent{background:transparent}.transparent .board{background:linear-gradient(90deg,rgba(5,18,39,.9),rgba(7,26,54,.62) 72%,rgba(7,26,54,.14))}.transparent .note{background:rgba(5,18,39,.68);border-color:rgba(255,255,255,.12)}
+@media(max-width:760px){.board{padding:18px}.head{gap:12px}.clock{display:none}.title{font-size:34px}.subtitle{font-size:13px}.notes{gap:8px;margin-top:14px}.note{grid-template-columns:72px 92px 1fr;padding:11px;gap:8px}.ticker{font-size:22px}.stance{font-size:9px}.level{font-size:12px}.note-text{grid-column:1/4;font-size:13px}.foot{font-size:8px}.foot span:first-child{display:none}}
+</style>
+</head>
+<body>
+<div class="board" id="board">
+  <header class="head">
+    <div><div class="label"><span class="dot"></span><span id="status">LIVE</span> • TAKTIKSAHAM</div><div class="title" id="title">LIVE MARKET NOTES</div><div class="subtitle" id="subtitle">Saham yang sedang dibahas — bukan ajakan beli/jual</div></div>
+    <div class="clock"><b id="clock">--:--:-- WIB</b><span id="date">--</span></div>
+  </header>
+  <main class="notes" id="notes"></main>
+  <footer class="foot"><span>Update otomatis dari Host Control Panel</span><span class="brand"><strong>TAKTIK</strong>SAHAM • Materi edukasi, lakukan analisis mandiri</span></footer>
+</div>
+<script>
+(() => {
+  const KEY='taktiksaham_live_notes_v1',CHANNEL='taktiksaham-live-notes';
+  const bc=('BroadcastChannel' in window)?new BroadcastChannel(CHANNEL):null;
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const cls=s=>'s-'+String(s||'INFO').toLowerCase();
+  let state={title:'LIVE MARKET NOTES',subtitle:'Saham yang sedang dibahas — bukan ajakan beli/jual',theme:'dark',status:'live',notes:[]};
+  function read(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x&&Array.isArray(x.notes))state={...state,...x};}catch(e){}render();}
+  function render(){document.body.className=state.theme==='light'?'light':state.theme==='transparent'?'transparent':'';document.getElementById('board').classList.toggle('offline',state.status==='offline');document.getElementById('board').classList.toggle('break',state.status==='break');document.getElementById('status').textContent=state.status.toUpperCase();document.getElementById('title').textContent=state.title||'LIVE MARKET NOTES';document.getElementById('subtitle').textContent=state.subtitle||'';const n=document.getElementById('notes');n.innerHTML=state.notes.length?state.notes.map(x=>`<article class="note"><div class="ticker">${esc(x.ticker)}</div><div class="stance ${cls(x.stance)}">${esc(x.stance)}</div><div class="level">${esc(x.level||'—')}</div><div class="note-text">${esc(x.note||'')}</div></article>`).join(''):'<div class="empty">Menunggu catatan dari host…</div>';}
+  function tick(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Jakarta'}).replace(/\./g,':')+' WIB';document.getElementById('date').textContent=d.toLocaleDateString('id-ID',{weekday:'long',day:'2-digit',month:'long',year:'numeric',timeZone:'Asia/Jakarta'});}tick();setInterval(tick,250);
+  if(bc)bc.onmessage=e=>{if(e.data&&Array.isArray(e.data.notes)){state={...state,...e.data};render();}};
+  window.addEventListener('storage',e=>{if(e.key===KEY&&e.newValue){try{state={...state,...JSON.parse(e.newValue)};render();}catch(_){}}});
+  read();
+})();
+</script>
+</body>
+</html>
