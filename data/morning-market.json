@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "date": "2026-08-20",
+  "display_date": "Kamis, 20 Agustus 2026",
+  "generated_at": "2026-08-20T09:08:00+07:00",
+  "generated_at_wib": "20 Agu 2026 • 09:08 WIB",
+  "headline": "Auto Morning siap dijalankan.",
+  "summary": "File awal untuk TaktikSaham Auto Morning. Workflow GitHub akan mengganti isi file ini secara otomatis pada run berikutnya.",
+  "focus_label": "Menunggu update otomatis",
+  "focus_text": "Setelah workflow pertama berhasil, bagian ini akan terisi dari headline pasar terbaru.",
+  "top_tickers": [],
+  "price_feed": false,
+  "news": [],
+  "recommendations": []
+}
