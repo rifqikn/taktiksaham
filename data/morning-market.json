@@ -2,24 +2,37 @@
   "version": 1,
   "date": "2026-08-25",
   "display_date": "Selasa, 25 Agustus 2026",
-  "generated_at": "2026-08-25T06:58:32.525233+07:00",
-  "generated_at_wib": "25 Aug 2026 • 06:58 WIB",
-  "headline": "BEI Pantau Saham TEBE PACK BDKR dan FUJI Akibat Transaksi Tak Wajar - achmadnurhidayat.id",
+  "generated_at": "2026-08-25T09:32:38.378629+07:00",
+  "generated_at_wib": "25 Aug 2026 • 09:32 WIB",
+  "headline": "IHSG Loyo 0,37 Persen, PICO Justru Pimpin Top Gainers, Simak! - Emitennews.com",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "SWAP • FTSE • CNBC • ADHI • TEBE • PACK menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "FTSE • CNBC • BUMI • ADHI • TEBE • SWAP menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
-    "SWAP",
     "FTSE",
     "CNBC",
+    "BUMI",
     "ADHI",
     "TEBE",
-    "PACK",
-    "FUJI",
-    "BUMI"
+    "SWAP",
+    "PICO",
+    "PACK"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "IHSG Loyo 0,37 Persen, PICO Justru Pimpin Top Gainers, Simak! - Emitennews.com",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "PICO",
+      "summary": "Headline terbaru dari Emitennews.com: IHSG Loyo 0,37 Persen, PICO Justru Pimpin Top Gainers, Simak! - Emitennews.com",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Emitennews.com",
+      "time": "25 Aug 2026 • 07:30 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWFpjbVBGOXVMYVJOaDE3eTMyM2FQVUdKWWxHdUJUeWFCRUFBZjFPZ2lDUXNWN3JzVl9VOHc4dGJ1SzVPU2lNSk9DUGpUeXZlWUhPQUNHek9wZXo5eVhjc042TnR4RkwtTjVrc2lzZl9VYXliN1c0QUp4RUd4d3FZZzFNWmExR1ZHUXNSd1VtTmhmamM?oc=5"
+    },
     {
       "title": "BEI Pantau Saham TEBE PACK BDKR dan FUJI Akibat Transaksi Tak Wajar - achmadnurhidayat.id",
       "bgClass": "bg-usjobs",
@@ -30,7 +43,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "achmadnurhidayat.id",
       "time": "24 Aug 2026 • 22:57 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE05SmxhZlhiSUtZbzh3clAzWXA1cE5idGd3LWVMVVJ2UGRWNkpfelVHakY0QnpPZ1VLUkRSdmRqUHI2NUNKT1NFSGR3bDFISnJzWTVZZXI2UTFHWXFRMG1nZXNTQ1dVUl9odXhvYUxKZ2dTUQ?oc=5"
     },
     {
@@ -60,19 +73,6 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTEdIVlFjTFJJcHlzTkN0eFlWSEd5MWZZSzZOTl9EV21iQ1JOSnl3Tm5pRTlyc0J3SEx1MVhHT0JCWTdRdnFlU1BxZnA4VF9HdGItM3Jnc1RYNlFZQjgtZG9uY2k4MUx0S0xReGNFUjZoaHprTTQ5RVNySURGY3NjZEtrWXpTWWJWZWN0U3VkbGRUb29LZ2MyOUw4WWotSm12dkw0OHlCay1sSHRMRnBsN0pBTV9obHfSAbwBQVVfeXFMTTZCbi1SemF5aWUxdkIydXV5SFJrYnRIeTA5N2dTSXJOUmJyT3hUSFFjLURLZUt4RTdXOTJpeHpsVmFMZU93VlpncmhSYlFKaExVOTJPRG1GdENhMlZVWUFLSTdKd0NvMUw1Y00zNEt0akFPdWw1SWx3cTN4dEZKS0pRWnQzRUk4NTB5OW5HNERlNThNWTFrSUtKZGZnZTVGQkxNaTU0WW96QVRaX1NUQkd6YVhwM0FKWi1RM24?oc=5"
     },
     {
-      "title": "IHSG Rehat Dulu, Melemah 0,37% ke Level 6.501 - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: IHSG Rehat Dulu, Melemah 0,37% ke Level 6.501 - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "24 Aug 2026 • 16:45 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNFhTdWlmb1pYU1plOF96VzVSZTRCMnhOUTVVUHpjNktpSkl5RW9iaVg2NEt4QVJndXFULWdZUFlISVlyZFlSZmJmNG1ZTDRzLVgtYU5oVG5RNHlsSF91R1c4bVhaVnN1enQxMWUyRm5hTk9pbW56dzA4c19vcVQ3NWJrTmp1Yk9GMklCbl9sa0NVY3REbms3ZjRSR2pYWjJhYTN0M3dsZkVOcGfSAasBQVVfeXFMTzRYU3VpZm9aWFNaZThfelc1UmU0QjJ4TlE1VVB6YzZLaUpJeUVvYmlYNjRLeEFSZ3VxVC1nWVBZSElZcmRZUmZiZjRtWUw0cy1YLWFOaFRuUTR5bEhfdUdXOG1YWlZzdXp0MTFlMkZuYU5PaW1uencwOHNfb3FUNzVia05qdWJPRjJJQm5fbGtDVWN0RG5rN2Y0UkdqWFoyYWEzdDN3bGZFTnBn?oc=5"
-    },
-    {
       "title": "IHSG Berbalik Merah, BUMI Rajai Transaksi Meski Harga Turun - Emitennews.com",
       "bgClass": "bg-usjobs",
       "category": "macro",
@@ -84,19 +84,6 @@
       "time": "24 Aug 2026 • 16:33 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVUdMc2I2bDhrcTg2aDBXekhnYjlTY0Njc2NpMU1lcVdmWWdmRTcyY1dWcklSZXlrTnN3d2tMeXhwYnlzMXdmM1I3VTREaW9tR2p3MGotQjV6ZDVMc2VfbDdFSmhoOEI3NjNQZHJqUTZILVliRTMxOFpIb2VjNm5OdmhSelFtdzVldV9wQnhnNA?oc=5"
-    },
-    {
-      "title": "Profil Swayasa Prakarsa (SWAP), Perusahaan Riset UGM yang Bakal Melantai di BEI - KONTAN",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "SWAP",
-      "summary": "Headline terbaru dari KONTAN: Profil Swayasa Prakarsa (SWAP), Perusahaan Riset UGM yang Bakal Melantai di BEI - KONTAN",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "KONTAN",
-      "time": "24 Aug 2026 • 15:47 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVC00Y3d2MG8zYjJhZVRrNEJEaUEzNVZWN2JLRXBzNm5SZklZejVQMXhlWFE3SkhYcEpNLXptSHdzSW9nY180RXJmVFhtMW5Kb0RaVVFMcS1lMTVUN19VaHBtUmhXa3FDTnBNQXdIa3pITWJoT0hRd2VCdExzZS05S0FrUmRTYkZWek05STZBVFMzVXhoNTlkWHdacW5sNEJXWW13V1Z4UC1mc0ZrbGJr?oc=5"
     },
     {
       "title": "Belum Bisa Bayar Bunga Obligasi, BEI Gembok Saham ADHI - CNBC Indonesia",
@@ -125,45 +112,33 @@
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMFV4MXV6Q0NFZm1GNXBnOXg3M1JyUDJFTTJmaFBwcDRMeDhialgxTVZSRzFraS1pakVMZ0dKaV93NUVLYTlfa2s3T0Y5MTUtQW13eHJndHJiVWxyQ19KbTYxM05aVU1EM19tOG5KaGJMZG9QODhQS2c3NDYwaUxnazlzekN5QmswV2hiVDhKcWM3eGfSAZgBQVVfeXFMTV8wRjR5dklXcDgwREJMWTJrN25vOHBZcWE0QVgwQk5Gb2pxcWhpU29PNW56dWFCaXpYOE9mYWtDaVV2emJDSTVYaTRwQ0pMUDNMNWNScUhHeVJtZ3FLQzlGM3p2UGx0eExRamR2QU5HeWk4RVVVNFBHaGF1WnVKbW1iTW5BSERNckVmLTFtd0h1WEZSS0JUUzY?oc=5"
     },
     {
-      "title": "Saham SWAP Siap Melantai di Bursa: Cek Harga Penawaran, Jadwal IPO, dan Rencana Bisnisnya - merahputih.com",
+      "title": "Emiten Alat Kesehatan UGM (SWAP) Mau IPO, Bidik Dana Segini - CNBC Indonesia",
       "bgClass": "bg-usjobs",
       "category": "macro",
       "categoryLabel": "Makro & Market",
-      "tickers": "SWAP",
-      "summary": "Headline terbaru dari merahputih.com: Saham SWAP Siap Melantai di Bursa: Cek Harga Penawaran, Jadwal IPO, dan Rencana Bisnisnya - merahputih.com",
+      "tickers": "SWAP • CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Emiten Alat Kesehatan UGM (SWAP) Mau IPO, Bidik Dana Segini - CNBC Indonesia",
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "merahputih.com",
-      "time": "24 Aug 2026 • 14:32 WIB",
+      "source": "CNBC Indonesia",
+      "time": "24 Aug 2026 • 11:05 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNGo3ck1MTG9pRVB4TEQ4d2xERnBzbldWZUJNNTRCdzZ6eE03eHJzNmtubm1QS2t6UGMtVmU4YlZGTHdEZi1zVU9GRWszVGEyT2tnMHRWSWxzeExVVEdTY1NQcGlscTNJRjNwMjg5bG1hSlJaVXV3WkZnN3pjcmhfRVRiMXJhcDRhblFIVjVGSlg4SXNmZTR2eGFKZDRnaWxZWEhsckR1b01lb2Q3MGU2RTMzWTJ5T29Balh4WFg1QdIBvwFBVV95cUxPNGo3ck1MTG9pRVB4TEQ4d2xERnBzbldWZUJNNTRCdzZ6eE03eHJzNmtubm1QS2t6UGMtVmU4YlZGTHdEZi1zVU9GRWszVGEyT2tnMHRWSWxzeExVVEdTY1NQcGlscTNJRjNwMjg5bG1hSlJaVXV3WkZnN3pjcmhfRVRiMXJhcDRhblFIVjVGSlg4SXNmZTR2eGFKZDRnaWxZWEhsckR1b01lb2Q3MGU2RTMzWTJ5T29Balh4WFg1QQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR0tfazFlOW1iN09ZeHVwQ1Zia1NvZlFqZXdHVktSaDdPVTVRTkNxcWdac2R4djhjcG9CODczZ1duMmI4TE50WVdHcHIzdTFOT2lHclZESlk4MHhqU2ltLW91UlE2Um8yWHhLeGFWR21MMEI2RmlESV9MZl9wbzQ3Ulg0eDI1alFsWTBma1hlazR0Z2ZhR21pMDJrbnVyeFhnYkVDOGt4Rmp4cFBUUXJReEJ0c1dkZC1yREVGY9IBwgFBVV95cUxQSjFMYWtkYl9NRkpGZ0daR3Z5WnZFSW9SWVVRMmZqa04zdURvT3ZPSUZoeExKX2FXTDRyWnl4eUZYaHFYcm55d05oWFMxNlp3MFN5RFloSlYzc1N2cHZiUHA5TjMwTjFTSG9xemZZR2RzNXBydTNGd2dfMTlPUHVxYkg0WW0tZjd0dHBvNDVLNGMzUjBNa1hXd1BIcGVoOUEzUklGSk9nVFdmNkhMNHZ2WUhiVkkyckhKaERWbGI3WlpVZw?oc=5"
+    },
+    {
+      "title": "BUMI Akuisisi Loyal Metals dan Pertahankan Posisi Indeks MSCI - SuaraGarut.ID",
+      "bgClass": "bg-ihsg",
+      "category": "corporate-action",
+      "categoryLabel": "Corporate Action",
+      "tickers": "BUMI",
+      "summary": "Headline terbaru dari SuaraGarut.ID: BUMI Akuisisi Loyal Metals dan Pertahankan Posisi Indeks MSCI - SuaraGarut.ID",
+      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
+      "source": "SuaraGarut.ID",
+      "time": "24 Aug 2026 • 11:00 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0bURKN3pURmtfR191Sjd4dkFSMTdyMnFGUE9JNExNbFRMTVJmYjJ4YWtvVkZkeldFV1YwMWVEV3pDOTFaZGU5cGhheUhhb1lKR0VSeU1iSzhscE4zSm9RVXVsWQ?oc=5"
     }
   ],
   "recommendations": [
-    {
-      "ticker": "SWAP",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "Profil Swayasa Prakarsa (SWAP), Perusahaan Riset UGM yang Bakal Melantai di BEI - KONTAN",
-      "reasons": [
-        "📰 Profil Swayasa Prakarsa (SWAP), Perusahaan Riset UGM yang Bakal Melantai di BEI - KONTAN",
-        "🏷️ Sumber: KONTAN",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "25 Aug 2026 • 06:58 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
     {
       "ticker": "FTSE",
       "company": "Auto Detected",
@@ -185,7 +160,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "25 Aug 2026 • 06:58 WIB • AUTO DRAFT",
+      "updated": "25 Aug 2026 • 09:32 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -203,14 +178,39 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "IHSG Rehat Dulu, Melemah 0,37% ke Level 6.501 - CNBC Indonesia",
+      "whyNow": "Belum Bisa Bayar Bunga Obligasi, BEI Gembok Saham ADHI - CNBC Indonesia",
       "reasons": [
-        "📰 IHSG Rehat Dulu, Melemah 0,37% ke Level 6.501 - CNBC Indonesia",
+        "📰 Belum Bisa Bayar Bunga Obligasi, BEI Gembok Saham ADHI - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "25 Aug 2026 • 06:58 WIB • AUTO DRAFT",
+      "updated": "25 Aug 2026 • 09:32 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "BUMI",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "IHSG Berbalik Merah, BUMI Rajai Transaksi Meski Harga Turun - Emitennews.com",
+      "reasons": [
+        "📰 IHSG Berbalik Merah, BUMI Rajai Transaksi Meski Harga Turun - Emitennews.com",
+        "🏷️ Sumber: Emitennews.com",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "25 Aug 2026 • 09:32 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -235,7 +235,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "25 Aug 2026 • 06:58 WIB • AUTO DRAFT",
+      "updated": "25 Aug 2026 • 09:32 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
