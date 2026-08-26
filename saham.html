@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a36">
+<title>TaktikSaham — Saham</title>
+<style>
+:root{--navy:#071a36;--navy2:#0b315f;--orange:#ff8a00;--orange2:#ffb13b;--ink:#12213a;--muted:#69778b;--surface:#f4f7fb;--line:#dce4ee;--shadow:0 16px 44px rgba(7,26,54,.10)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--surface);color:var(--ink)}a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:100;background:#071a36;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{width:min(1180px,calc(100% - 32px));height:72px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:950;letter-spacing:.6px}.mark{width:34px;height:34px;display:grid;place-items:center}.mark svg{width:100%;height:100%;fill:#fff}.mark .arrow{fill:var(--orange)}
+.links{display:flex;gap:30px;color:#d7e0ec;font-size:12px;font-weight:900}.links a.active,.links a:hover{color:#fff}.links a.active{position:relative}.links a.active:after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:3px;border-radius:999px;background:var(--orange)}
+.hero{background:linear-gradient(135deg,#06162f,#0b315f);color:#fff;padding:66px 0 58px}.container{width:min(1180px,calc(100% - 32px));margin:auto}.hero small{color:#ffd08d;font-size:10px;font-weight:950;letter-spacing:1.2px}.hero h1{font-size:clamp(46px,7vw,78px);line-height:.98;margin:10px 0 14px;letter-spacing:-2.7px}.hero h1 span{color:var(--orange)}.hero p{max-width:720px;color:#c9d6e7;font-size:16px;line-height:1.6;margin:0}
+.subnav{position:sticky;top:72px;z-index:80;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 7px 18px rgba(7,26,54,.04)}
+.subinner{width:min(1180px,calc(100% - 32px));margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:7px 0}
+.subinner a{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:10px;color:#65748a;font-size:10px;font-weight:950;letter-spacing:.3px}
+.subinner a:hover{background:#eef3f8;color:var(--navy2)}.subinner a:first-child{background:var(--navy2);color:#fff}
+.section{padding:48px 0 70px}.section h2{font-size:32px;color:var(--navy2);margin:0 0 8px}.section>div>p{margin:0;color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);min-height:210px;display:flex;flex-direction:column}.num{font-size:10px;color:#c96800;font-weight:950;letter-spacing:1px}.card h3{font-size:27px;color:var(--navy2);margin:10px 0 8px}.card p{font-size:12px;color:var(--muted);line-height:1.65;margin:0 0 20px}.features{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:22px}.features span{padding:6px 9px;background:#f1f5f9;border-radius:999px;color:#52647a;font-size:8px;font-weight:900}.go{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;min-height:42px;padding:0 15px;border-radius:10px;background:var(--navy2);color:#fff;font-size:9px;font-weight:950}.card.live .go,.card.analysis .go{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#11223a}
+.note{margin-top:18px;border-left:3px solid var(--orange);background:#fffaf2;border-radius:10px;padding:12px 14px;color:#766a58;font-size:10px;line-height:1.6}
+@media(max-width:720px){.links{gap:17px;font-size:10px}.subinner{grid-template-columns:repeat(2,1fr)}.subnav{top:72px}.cards{grid-template-columns:1fr}.hero{padding:48px 0}.hero h1{font-size:52px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="nav">
+<a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 48 48"><path d="M8 36V25h7v11H8Zm12 0V18h7v18h-7Zm12 0V10h7v26h-7Z"/><path class="arrow" d="M7 18 18 9l8 6L40 3l2 5-16 15-8-6-8 7Z"/></svg></span><span>TAKTIKSAHAM</span></a>
+<nav class="links"><a href="index.html">HOME</a><a class="active" href="saham.html">SAHAM</a><a href="reksadana.html">REKSADANA</a></nav>
+</div></header>
+
+<section class="hero"><div class="container"><small>TAKTIKSAHAM • STOCK CENTER</small><h1>Satu menu.<br><span>Empat workspace.</span></h1><p>Rekomendasi, Screening, Analisis Fundamental, dan Live Notes tetap menjadi halaman penuh masing-masing. Tidak ada iframe atau halaman yang ditumpuk di dalam halaman lain.</p></div></section>
+
+<nav class="subnav"><div class="subinner">
+<a href="rekomendasi.html">REKOMENDASI</a>
+<a href="screening.html">SCREENING</a>
+<a href="analisis.html">ANALISIS</a>
+<a href="live.html">LIVE NOTES</a>
+</div></nav>
+
+<section class="section"><div class="container">
+<h2>Pilih workspace saham</h2><p>Semua fitur dipisahkan agar tidak saling merusak CSS, JavaScript, chart, maupun fullscreen.</p>
+<div class="cards">
+<article class="card"><span class="num">01 • DAILY IDEA</span><h3>Rekomendasi</h3><p>Morning Stock Picks, berita saham, trading plan, history rekomendasi, win rate, dan kalender rekomendasi.</p><div class="features"><span>Stock Picks</span><span>News</span><span>History</span><span>Trading Plan</span></div><a class="go" href="rekomendasi.html">BUKA REKOMENDASI →</a></article>
+<article class="card"><span class="num">02 • STOCK TOOLS</span><h3>Screening</h3><p>Ownership KSEI, Ratio Screener, Technical TradingView, Broker Flow, Smart Money, dan Ownership Network.</p><div class="features"><span>Ownership</span><span>Ratio</span><span>Technical</span><span>Broker Flow</span><span>Network</span></div><a class="go" href="screening.html">BUKA SCREENING →</a></article>
+<article class="card analysis"><span class="num">03 • FUNDAMENTAL</span><h3>Analisis</h3><p>Analisis rasio fundamental saham. Snapshot IDX tetap tersedia saat historical backend belum terhubung.</p><div class="features"><span>PER</span><span>PBV</span><span>ROE</span><span>ROA</span><span>DER</span><span>NPM</span></div><a class="go" href="analisis.html">BUKA ANALISIS →</a></article>
+<article class="card live"><span class="num">04 • LIVE STUDIO</span><h3>Live Notes</h3><p>Host Control Panel, preview, live display besar untuk penonton HP, fullscreen host, dan fullscreen display.</p><div class="features"><span>Host Control</span><span>TikTok</span><span>OBS</span><span>Fullscreen</span></div><a class="go" href="live.html">BUKA LIVE NOTES →</a></article>
+</div>
+<div class="note"><b>Perubahan penting:</b> halaman SAHAM ini tidak lagi meng-embed halaman lain. Klik workspace membuka halaman normal, sehingga tampilannya tidak bertumpuk dan fitur lama tidak bentrok.</div>
+</div></section>
+</body></html>

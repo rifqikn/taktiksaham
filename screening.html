@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a36">
+<title>TaktikSaham — Screening Saham</title>
+<script src="screening-data.js"></script>
+<style>
+:root{--navy:#071a36;--navy2:#0b315f;--navy3:#123d73;--orange:#ff8a00;--orange2:#ffb13b;--ink:#12213a;--muted:#69778b;--surface:#f4f7fb;--line:#dce4ee;--green:#139764;--red:#d84a4a;--blue:#2878ca;--shadow:0 12px 36px rgba(7,26,54,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--surface);color:var(--ink)}a{text-decoration:none;color:inherit}button,input,select{font:inherit}
+.wrap{width:min(1260px,calc(100% - 26px));margin:auto;padding:18px 0 60px}
+.hero{background:linear-gradient(135deg,#06162f,#0b315f);color:#fff;border-radius:22px;padding:22px 25px;box-shadow:var(--shadow)}
+.hero small{font-size:9px;font-weight:950;letter-spacing:1.15px;color:#ffd08d}.hero h1{margin:6px 0 5px;font-size:clamp(29px,4vw,45px);letter-spacing:-1.5px}.hero p{margin:0;color:#cbd7e7;font-size:12px}
+.tabs{position:sticky;top:0;z-index:50;display:grid;grid-template-columns:repeat(6,minmax(125px,1fr));gap:6px;overflow:auto;margin:12px 0;padding:6px;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:15px;box-shadow:0 8px 24px rgba(7,26,54,.06)}
+.tab{white-space:nowrap;min-height:42px;border:0;border-radius:10px;background:transparent;color:#65748a;font-size:9px;font-weight:950;letter-spacing:.25px;cursor:pointer}.tab:hover{background:#f0f4f8;color:var(--navy2)}.tab.active{background:var(--navy2);color:#fff}.tab.active:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);margin-right:7px}
+.panel{display:none}.panel.active{display:block}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow);margin-bottom:12px}.card h2,.card h3{color:var(--navy2);margin:0}.card h2{font-size:21px}.card h3{font-size:14px}.card p{color:var(--muted);font-size:10px;line-height:1.6;margin:4px 0 0}
+.searchbar{display:grid;grid-template-columns:minmax(160px,250px) 1fr auto;gap:9px;margin-top:14px}.control{min-height:43px;border:1px solid #d5dee9;border-radius:11px;background:#fff;padding:0 12px;color:var(--ink);outline:none}.control:focus{border-color:#72a9df;box-shadow:0 0 0 4px rgba(40,120,202,.09)}.btn{min-height:43px;border:0;border-radius:11px;padding:0 14px;background:var(--navy2);color:#fff;font-size:9px;font-weight:950;letter-spacing:.25px;cursor:pointer}.btn.orange{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#10213d}.btn.ghost{background:#eef3f8;color:#24415f}
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin-top:12px}.kpi{border:1px solid #e2e8f0;border-radius:14px;padding:12px;background:#fbfcfe;min-height:85px}.kpi small{display:block;color:#8190a3;font-size:7px;font-weight:950;text-transform:uppercase;letter-spacing:.65px}.kpi b{display:block;color:var(--navy2);font-size:19px;margin-top:5px;line-height:1.1}.kpi span{display:block;color:#8490a1;font-size:8px;margin-top:5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.subcard{border:1px solid #e2e8f0;border-radius:15px;padding:14px;background:#fff}.subhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.subhead span{font-size:8px;color:#8190a2;font-weight:850}
+.bigbar{height:16px;border-radius:999px;overflow:hidden;background:#eef2f7;display:flex}.localbar{background:#0b5eaa}.foreignbar{background:#ff9a23}.barlabels{display:flex;justify-content:space-between;font-size:9px;font-weight:900;margin-top:7px}.barlabels .l{color:#0b5eaa}.barlabels .f{color:#bf6600}
+.type-list{display:grid;gap:7px}.type-row{display:grid;grid-template-columns:38px 1fr 92px;gap:8px;align-items:center;font-size:8px}.mini-track{height:8px;background:#eef2f7;border-radius:999px;overflow:hidden}.mini-fill{height:100%;background:#2d7fd3;border-radius:999px}.type-row b{text-align:right;font-size:8px;color:#38506d}
+.tablewrap{overflow:auto;border:1px solid #e1e7ef;border-radius:13px}.tbl{border-collapse:collapse;width:100%;min-width:850px;background:#fff}.tbl th,.tbl td{padding:9px 10px;border-bottom:1px solid #edf1f5;font-size:9px;text-align:right;white-space:nowrap}.tbl th{position:sticky;top:0;background:#f7f9fc;color:#66758a;font-size:7px;text-transform:uppercase;letter-spacing:.55px;z-index:2}.tbl th:first-child,.tbl td:first-child,.tbl th:nth-child(2),.tbl td:nth-child(2){text-align:left}.tbl td:first-child{font-weight:950;color:var(--navy2)}.local{color:#0a69b6;font-weight:900}.foreign{color:#bd6400;font-weight:900}.up{color:#128357;font-weight:900}.down{color:#c43f46;font-weight:900}.pill{display:inline-flex;padding:4px 7px;border-radius:999px;background:#eef4fa;color:#315978;font-size:7px;font-weight:950}.score{display:inline-flex;min-width:35px;justify-content:center;padding:5px 7px;border-radius:999px;background:#fff1df;color:#9a5700;font-weight:950}.score.hot{background:#e9f8f1;color:#08774a}
+.network{width:100%;height:430px;border:1px solid #e1e7ef;border-radius:15px;background:radial-gradient(circle at 50% 45%,#fff 0,#f7f9fc 70%);overflow:hidden}.network svg{width:100%;height:100%}.node-label{font-size:9px;font-weight:900;pointer-events:none}.legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;color:#708096;font-size:8px}.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+.filters{display:grid;grid-template-columns:repeat(6,minmax(110px,1fr));gap:7px;margin:12px 0}.filters .control{min-height:38px;font-size:9px}
+.presetbar{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.preset{border:1px solid #dce4ee;background:#fff;color:#42556f;border-radius:999px;padding:7px 10px;font-size:8px;font-weight:900;cursor:pointer}.preset.active,.preset:hover{background:#0b315f;color:#fff;border-color:#0b315f}
+.tvbox{height:680px;border-radius:16px;overflow:hidden;background:#0b1220;border:1px solid #1d2e46}.tvbox iframe{width:100%;height:100%;border:0}
+.note{margin-top:10px;border-left:3px solid var(--orange);background:#fff9f0;border-radius:10px;padding:11px 12px;color:#726858;font-size:9px;line-height:1.55}.empty{padding:42px 15px;text-align:center;color:#8290a1;font-size:10px}
+@media(max-width:980px){.tabs{grid-template-columns:repeat(3,minmax(125px,1fr))}.kpis{grid-template-columns:repeat(3,1fr)}.two,.three{grid-template-columns:1fr}.filters{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.wrap{width:calc(100% - 14px)}.hero{padding:18px 16px}.tabs{grid-template-columns:repeat(2,minmax(120px,1fr));position:relative}.searchbar{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(2,1fr)}.network{height:360px}.tvbox{height:560px}}
+</style>
+
+<style id="ts-stock-backbar-style">
+.ts-stock-backbar{position:sticky;top:0;z-index:99999;height:42px;background:#071a36;color:#fff;display:flex;align-items:center;justify-content:center;gap:24px;border-bottom:1px solid rgba(255,255,255,.1);font:900 10px/1 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;letter-spacing:.35px}
+.ts-stock-backbar a{color:#d8e2ee;text-decoration:none}.ts-stock-backbar a:hover,.ts-stock-backbar a.current{color:#ff9a23}.ts-stock-backbar .home{margin-right:auto;margin-left:16px}.ts-stock-backbar .last{margin-right:16px}
+@media(max-width:650px){.ts-stock-backbar{gap:11px;font-size:8px;overflow:auto;justify-content:flex-start;padding:0 10px}.ts-stock-backbar .home{margin-left:0}.ts-stock-backbar .last{margin-right:0}}
+</style>
+</head>
+<body>
+<div class="ts-stock-backbar">
+<a class="home" href="saham.html">← SAHAM</a>
+<a class="" href="rekomendasi.html">REKOMENDASI</a>
+<a class="current" href="screening.html">SCREENING</a>
+<a class="" href="analisis.html">ANALISIS</a>
+<a class="last " href="live.html">LIVE NOTES</a>
+</div>
+<div class="wrap">
+<section class="hero"><small>TAKTIKSAHAM • STOCK SCREENER</small><h1>Screening Saham</h1><p>Ownership KSEI, ratio IDX, technical chart, Broker Flow, Smart Money composite, dan relationship network. Data lama dipulihkan — bukan placeholder.</p></section>
+
+<nav class="tabs">
+<button class="tab active" data-tab="ownership">OWNERSHIP</button>
+<button class="tab" data-tab="ratio">RATIO</button>
+<button class="tab" data-tab="technical">TECHNICAL</button>
+<button class="tab" data-tab="broker">BROKER FLOW</button>
+<button class="tab" data-tab="smart">SMART MONEY</button>
+<button class="tab" data-tab="network">NETWORK</button>
+</nav>
+
+<!-- OWNERSHIP -->
+<section class="panel active" data-panel="ownership">
+<div class="card">
+<h2>Ownership Monitor</h2><p>Data posisi investor KSEI 31 Jul 2026, pemegang saham publik ≥1%, dan daftar ≥5% per 11 Aug 2026.</p>
+<div class="searchbar">
+<input class="control" id="ownTicker" list="tickerList" placeholder="Ticker: AADI / BBCA">
+<input class="control" id="holderFilter" placeholder="Filter nama pemegang saham…">
+<button class="btn orange" id="ownGo">LIHAT KEPEMILIKAN</button>
+</div>
+<datalist id="tickerList"></datalist>
+<div id="ownResult"><div class="empty">Pilih ticker untuk melihat kepemilikan lengkap.</div></div>
+</div>
+</section>
+
+<!-- RATIO -->
+<section class="panel" data-panel="ratio">
+<div class="card"><h2>Ratio Screener</h2><p>961 saham dari IDX Stock Screener 12 Aug 2026. Filter PER, PBV, ROE, ROA, DER, NPM, market cap, sektor, indeks, dan momentum.</p>
+<div class="presetbar" id="ratioPresets">
+<button class="preset active" data-preset="all">SEMUA</button><button class="preset" data-preset="value">VALUE</button><button class="preset" data-preset="quality">QUALITY</button><button class="preset" data-preset="momentum">MOMENTUM</button><button class="preset" data-preset="hidden">HIDDEN GEM</button>
+</div>
+<div class="filters">
+<input class="control" id="rSearch" placeholder="Ticker / nama">
+<select class="control" id="rSector"><option value="">Semua sektor</option></select>
+<input class="control" id="rIndex" placeholder="Index: LQ45">
+<input class="control" id="rPer" type="number" step=".1" placeholder="Max PER">
+<input class="control" id="rPbv" type="number" step=".1" placeholder="Max PBV">
+<input class="control" id="rRoe" type="number" step=".1" placeholder="Min ROE %">
+<input class="control" id="rDer" type="number" step=".1" placeholder="Max DER">
+<input class="control" id="rNpm" type="number" step=".1" placeholder="Min NPM %">
+<input class="control" id="rMcap" type="number" step="1" placeholder="Max MCap T">
+<select class="control" id="rSort"><option value="score">Sort Score</option><option value="roe">ROE tertinggi</option><option value="per">PER terendah</option><option value="mcap">Market cap</option><option value="w13">13W momentum</option></select>
+</div>
+<div class="kpis" id="ratioKpis"></div>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>Company</th><th>Sector</th><th>PER</th><th>PBV</th><th>ROE</th><th>ROA</th><th>DER</th><th>NPM</th><th>MCap</th><th>4W</th><th>13W</th><th>26W</th><th>Score</th></tr></thead><tbody id="ratioBody"></tbody></table></div>
+<div class="note">Score adalah penyaring internal berbasis valuation, profitability, leverage, dan momentum. Bukan rekomendasi beli/jual.</div>
+</div>
+</section>
+
+<!-- TECHNICAL -->
+<section class="panel" data-panel="technical">
+<div class="card"><h2>Technical</h2><p>TradingView Advanced Chart untuk seluruh ticker IDX yang tersedia di TradingView.</p>
+<div class="presetbar"><input class="control" id="tvTicker" value="BBRI" maxlength="8"><button class="btn orange" id="tvLoad">LOAD CHART</button><button class="preset" data-tv="ANTM">ANTM</button><button class="preset" data-tv="BRMS">BRMS</button><button class="preset" data-tv="ESSA">ESSA</button><button class="preset" data-tv="BBCA">BBCA</button></div>
+<div class="tvbox" id="tvBox"></div></div>
+</section>
+
+<!-- BROKER -->
+<section class="panel" data-panel="broker">
+<div class="card"><h2>Broker Flow — XL + PD</h2><p>Snapshot 14 Aug 2026. XL dan PD digunakan sebagai proxy retail-heavy; score menunjukkan tekanan net sell retail dan potensi absorption, bukan identitas broker penyerap.</p>
+<div class="filters" style="grid-template-columns:1fr 220px 180px">
+<input class="control" id="bSearch" placeholder="Cari ticker">
+<select class="control" id="bPreset"><option value="all">Semua</option><option value="strong">Strong Absorption</option><option value="bothsell">XL + PD Sell</option><option value="xldump">XL Dump</option><option value="pddump">PD Dump</option><option value="buy">Retail Buy</option></select>
+<select class="control" id="bSort"><option value="score">Score</option><option value="net">Net sell terbesar</option><option value="gross">Gross activity</option></select>
+</div>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>XL Net</th><th>PD Net</th><th>Combined</th><th>Gross</th><th>Absorption Score</th></tr></thead><tbody id="brokerBody"></tbody></table></div>
+<div class="note">Untuk mengidentifikasi broker non-retail yang menyerap dibutuhkan broker summary yang lebih luas dari hanya XL + PD.</div>
+</div>
+</section>
+
+<!-- SMART -->
+<section class="panel" data-panel="smart">
+<div class="card"><h2>Smart Money Composite</h2><p>Gabungan Broker Flow + quality fundamental + momentum + struktur foreign ownership. Ini radar multi-faktor, bukan bukti pasti institutional accumulation.</p>
+<div class="filters" style="grid-template-columns:1fr 220px"><input class="control" id="sSearch" placeholder="Cari ticker"><select class="control" id="sMin"><option value="0">Semua score</option><option value="60">Score ≥ 60</option><option value="70">Score ≥ 70</option><option value="80">Score ≥ 80</option></select></div>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>Composite</th><th>Broker</th><th>Quality</th><th>Momentum</th><th>Foreign Own.</th><th>ROE</th><th>PER</th><th>13W</th></tr></thead><tbody id="smartBody"></tbody></table></div>
+<div class="note">Foreign ownership adalah posisi kepemilikan, bukan foreign flow. Karena itu bobotnya kecil dan tidak dibaca sebagai akumulasi.</div>
+</div>
+</section>
+
+<!-- NETWORK -->
+<section class="panel" data-panel="network">
+<div class="card"><h2>Ownership Network</h2><p>Cari nama investor/perusahaan untuk melihat saham apa saja yang dimiliki ≥1%, atau masukkan ticker untuk melihat jaringan pemegang sahamnya.</p>
+<div class="searchbar"><input class="control" id="netQuery" placeholder="Contoh: GARIBALDI THOHIR / AADI"><input class="control" id="netHint" placeholder="Nama investor atau ticker" disabled><button class="btn orange" id="netGo">BANGUN NETWORK</button></div>
+<div id="netResult"><div class="empty">Masukkan nama investor atau ticker.</div></div>
+</div>
+</section>
+
+</div>
+<script>
+(() => {
+const D=window.TAKTIK_SCREENING_DATA||{}, ST=D.stats||{}, BAL=D.balance||{}, H1=D.holders1||[], H5=D.holders5||[], R=D.ratios||[], B=D.brokers||[];
+const $=id=>document.getElementById(id), esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const nf=n=>Number.isFinite(+n)?(+n).toLocaleString('id-ID'):'—';
+const dec=(n,d=2)=>Number.isFinite(+n)?(+n).toLocaleString('id-ID',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+const pct=n=>Number.isFinite(+n)?dec(n,2)+'%':'—';
+const rp=n=>{n=+n;if(!Number.isFinite(n))return'—';const a=Math.abs(n),s=n<0?'-':'';if(a>=1e12)return s+'Rp'+dec(a/1e12,2)+'T';if(a>=1e9)return s+'Rp'+dec(a/1e9,2)+'B';if(a>=1e6)return s+'Rp'+dec(a/1e6,1)+'M';return s+'Rp'+nf(a)};
+const compact=n=>{n=+n;if(!Number.isFinite(n))return'—';if(Math.abs(n)>=1e12)return dec(n/1e12,2)+'T';if(Math.abs(n)>=1e9)return dec(n/1e9,2)+'B';if(Math.abs(n)>=1e6)return dec(n/1e6,1)+'M';return nf(n)};
+const norm=s=>String(s||'').toUpperCase().replace(/\b(PT|TBK|PTE|LTD|LIMITED|CORP|CORPORATION|INDONESIA)\b/g,'').replace(/[^A-Z0-9]/g,'');
+
+const ratioMap=new Map(R.map(x=>[x.c,x])), brokerMap=new Map(B.map(x=>[x.c,x]));
+const tickers=[...new Set([...Object.keys(ST),...R.map(x=>x.c),...H1.map(x=>x.c)])].sort();
+$('tickerList').innerHTML=tickers.map(t=>`<option value="${t}">${esc(ST[t]?.name||ratioMap.get(t)?.n||'')}</option>`).join('');
+
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.tab)));
+function openTab(t){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.dataset.panel===t));
+  const u=new URL(location.href);u.searchParams.set('tab',t);history.replaceState(null,'',u);
+  if(t==='ratio')renderRatio(); if(t==='broker')renderBroker(); if(t==='smart')renderSmart(); if(t==='technical')setTimeout(loadTV,30);
+}
+const qp=new URLSearchParams(location.search), init=qp.get('tab')||'ownership';
+if(document.querySelector(`.tab[data-tab="${init}"]`))openTab(init);
+if(qp.get('ticker')){$('ownTicker').value=qp.get('ticker').toUpperCase();setTimeout(renderOwnership,50)}
+
+const classNames={IS:'Insurance',CP:'Corporate',PF:'Pension Fund',IB:'Bank',ID:'Individual',MF:'Mutual Fund',SC:'Securities',FD:'Foundation',OT:'Others'};
+
+function networkSVG(center,nodes,mode='holders'){
+ const W=860,H=410,cx=W/2,cy=H/2;
+ const max=Math.max(...nodes.map(x=>+x.value||0),1);
+ let lines='',circles='';
+ nodes.slice(0,14).forEach((x,i)=>{
+   const a=(Math.PI*2*i/Math.max(nodes.length,1))-Math.PI/2;
+   const ring=i<8?135:185, nx=cx+Math.cos(a)*ring, ny=cy+Math.sin(a)*ring;
+   const rad=mode==='holders'?Math.max(18,Math.min(42,16+Math.sqrt((+x.value||0)/max)*28)):Math.max(20,Math.min(38,19+Math.sqrt((+x.value||0)/max)*22));
+   const color=x.lf==='F'?'#ff9a23':'#2d7fd3';
+   lines+=`<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="#d9e3ee" stroke-width="1.5"/>`;
+   circles+=`<g><circle cx="${nx}" cy="${ny}" r="${rad}" fill="${color}" fill-opacity=".13" stroke="${color}" stroke-width="2"/><text x="${nx}" y="${ny-2}" text-anchor="middle" fill="#163553" font-size="9" font-weight="900">${esc(String(x.label).slice(0,18))}</text><text x="${nx}" y="${ny+11}" text-anchor="middle" fill="#6f7f93" font-size="8">${mode==='holders'?dec(x.value,2)+'%':esc(String(x.sub||''))}</text></g>`;
+ });
+ return `<div class="network"><svg viewBox="0 0 ${W} ${H}">${lines}<circle cx="${cx}" cy="${cy}" r="55" fill="#071a36"/><circle cx="${cx}" cy="${cy}" r="49" fill="#0b315f"/><text x="${cx}" y="${cy-3}" text-anchor="middle" fill="#fff" font-size="15" font-weight="950">${esc(String(center).slice(0,18))}</text><text x="${cx}" y="${cy+15}" text-anchor="middle" fill="#ffb13b" font-size="9" font-weight="900">${mode==='holders'?'ISSUER':'INVESTOR'}</text>${circles}</svg></div>`;
+}
+
+function renderOwnership(){
+ const t=$('ownTicker').value.trim().toUpperCase().replace(/[^A-Z0-9]/g,''); if(!t)return;
+ const filter=$('holderFilter').value.trim().toUpperCase();
+ const st=ST[t]||{}, bal=BAL[t]||{}, hs=H1.filter(x=>x.c===t && (!filter||x.n.toUpperCase().includes(filter))).sort((a,b)=>b.p-a.p);
+ const h5=H5.filter(x=>x.c===t).sort((a,b)=>(b.p||0)-(a.p||0));
+ const lp=Number.isFinite(+st.local)?+st.local:(bal.sec?bal.lt/bal.sec*100:0), fp=Number.isFinite(+st.foreign)?+st.foreign:(bal.sec?bal.ft/bal.sec*100:0);
+ const totalDisc=hs.reduce((a,x)=>a+(+x.p||0),0), localDisc=hs.filter(x=>x.lf==='L').reduce((a,x)=>a+(+x.p||0),0), foreignDisc=hs.filter(x=>x.lf==='F').reduce((a,x)=>a+(+x.p||0),0);
+ const types=['IS','CP','PF','IB','ID','MF','SC','FD','OT'].map(k=>({k,v:(bal.local?.[k]||0)+(bal.foreign?.[k]||0)})).sort((a,b)=>b.v-a.v), maxType=Math.max(...types.map(x=>x.v),1);
+ const nodes=hs.slice(0,14).map(x=>({label:x.n,value:x.p,lf:x.lf}));
+ $('ownResult').innerHTML=`
+ <div class="kpis">
+  <div class="kpi"><small>Issuer</small><b>${esc(t)}</b><span>${esc(st.name||ratioMap.get(t)?.n||hs[0]?.issuer||'')}</span></div>
+  <div class="kpi"><small>Local Ownership</small><b>${pct(lp)}</b><span>Full position KSEI / listed statistics</span></div>
+  <div class="kpi"><small>Foreign Ownership</small><b>${pct(fp)}</b><span>Full position KSEI / listed statistics</span></div>
+  <div class="kpi"><small>Holder ≥1%</small><b>${hs.length}</b><span>Disclosed ${dec(totalDisc,2)}%</span></div>
+  <div class="kpi"><small>Holder ≥5%</small><b>${h5.length}</b><span>Per ${D.meta?.holders5Date||'11 Aug 2026'}</span></div>
+ </div>
+ <div class="two" style="margin-top:12px">
+  <div class="subcard"><div class="subhead"><h3>Local vs Foreign</h3><span>${esc(D.meta?.ownershipDate||'')}</span></div><div class="bigbar"><div class="localbar" style="width:${Math.max(0,Math.min(100,lp))}%"></div><div class="foreignbar" style="width:${Math.max(0,Math.min(100,fp))}%"></div></div><div class="barlabels"><span class="l">LOCAL ${pct(lp)}</span><span class="f">FOREIGN ${pct(fp)}</span></div><p style="margin-top:10px">Disclosed ≥1%: Local ${dec(localDisc,2)}% • Foreign ${dec(foreignDisc,2)}%</p></div>
+  <div class="subcard"><div class="subhead"><h3>Investor Type</h3><span>Local + Foreign</span></div><div class="type-list">${types.map(x=>`<div class="type-row"><strong>${x.k}</strong><div class="mini-track"><div class="mini-fill" style="width:${x.v/maxType*100}%"></div></div><b>${compact(x.v)} sh</b></div>`).join('')}</div><div class="legend">${types.slice(0,5).map(x=>`<span><b>${x.k}</b> ${classNames[x.k]}</span>`).join('')}</div></div>
+ </div>
+ <div class="subcard" style="margin-top:12px"><div class="subhead"><h3>Ownership Bubble Network</h3><span>Top holder ≥1%</span></div>${nodes.length?networkSVG(t,nodes):'<div class="empty">Tidak ada holder ≥1% pada dataset.</div>'}<div class="legend"><span><i style="background:#2d7fd3"></i>Local</span><span><i style="background:#ff9a23"></i>Foreign</span><span>Bubble lebih besar = porsi lebih besar</span></div></div>
+ <div class="subcard" style="margin-top:12px"><div class="subhead"><h3>Pemegang Saham ≥1%</h3><span>${hs.length} holder</span></div><div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>Investor</th><th>Class</th><th>L/F</th><th>Domicile</th><th>Shares</th><th>Ownership</th></tr></thead><tbody>${hs.length?hs.map(x=>`<tr><td>${esc(x.c)}</td><td>${esc(x.n)}</td><td><span class="pill">${esc(x.k||'—')}</span></td><td class="${x.lf==='F'?'foreign':'local'}">${x.lf==='F'?'FOREIGN':'LOCAL'}</td><td>${esc(x.d||x.nat||'—')}</td><td>${nf(x.sh)}</td><td><b>${dec(x.p,2)}%</b></td></tr>`).join(''):'<tr><td colspan="7">Tidak ada data</td></tr>'}</tbody></table></div></div>
+ <div class="subcard" style="margin-top:12px"><div class="subhead"><h3>Pemegang Saham ≥5%</h3><span>10 Aug → 11 Aug 2026</span></div><div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>Holder</th><th>Account Holder</th><th>L/F</th><th>Shares</th><th>Ownership</th><th>Change</th></tr></thead><tbody>${h5.length?h5.map(x=>`<tr><td>${esc(x.c)}</td><td>${esc(x.n)}</td><td>${esc(x.accountHolder||'—')}</td><td class="${x.lf==='F'?'foreign':'local'}">${x.lf==='F'?'FOREIGN':'LOCAL'}</td><td>${nf(x.shares)}</td><td>${Number.isFinite(+x.p)?dec(x.p,2)+'%':'—'}</td><td class="${+x.chg>0?'up':+x.chg<0?'down':''}">${+x.chg>0?'+':''}${nf(x.chg)}</td></tr>`).join(''):'<tr><td colspan="7">Tidak ada holder ≥5% di dataset.</td></tr>'}</tbody></table></div></div>`;
+}
+$('ownGo').onclick=renderOwnership;$('holderFilter').oninput=()=>{if($('ownTicker').value)renderOwnership()};$('ownTicker').addEventListener('keydown',e=>{if(e.key==='Enter')renderOwnership()});
+
+function ratioScore(x){
+ let s=0,w=0; const add=(cond,pts)=>{w+=pts;if(cond)s+=pts};
+ add(Number.isFinite(x.per)&&x.per>0&&x.per<=15,18);add(Number.isFinite(x.pbv)&&x.pbv>0&&x.pbv<=2,12);
+ add(Number.isFinite(x.roe)&&x.roe>=12,20);add(Number.isFinite(x.roa)&&x.roa>=5,10);add(Number.isFinite(x.der)&&x.der<=1.2,12);
+ add(Number.isFinite(x.npm)&&x.npm>=8,13);add(Number.isFinite(x.w13)&&x.w13>0,8);add(Number.isFinite(x.w26)&&x.w26>0,7);
+ return Math.round(s/w*100);
+}
+let currentPreset='all';
+document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>{currentPreset=b.dataset.preset;document.querySelectorAll('[data-preset]').forEach(x=>x.classList.toggle('active',x===b));renderRatio()});
+['rSearch','rSector','rIndex','rPer','rPbv','rRoe','rDer','rNpm','rMcap','rSort'].forEach(id=>$(id).addEventListener(id.startsWith('rS')?'change':'input',renderRatio));
+const sectors=[...new Set(R.map(x=>x.sector).filter(Boolean))].sort();$('rSector').innerHTML='<option value="">Semua sektor</option>'+sectors.map(x=>`<option>${esc(x)}</option>`).join('');
+function renderRatio(){
+ let x=R.map(z=>({...z,score:ratioScore(z)})),q=$('rSearch').value.trim().toUpperCase(),sec=$('rSector').value,idx=$('rIndex').value.trim().toUpperCase();
+ const maxPer=parseFloat($('rPer').value),maxPbv=parseFloat($('rPbv').value),minRoe=parseFloat($('rRoe').value),maxDer=parseFloat($('rDer').value),minNpm=parseFloat($('rNpm').value),maxM=parseFloat($('rMcap').value)*1e12;
+ x=x.filter(z=>(!q||(z.c+' '+z.n).toUpperCase().includes(q))&&(!sec||z.sector===sec)&&(!idx||z.index.toUpperCase().includes(idx))&&(!Number.isFinite(maxPer)||(Number.isFinite(z.per)&&z.per<=maxPer))&&(!Number.isFinite(maxPbv)||(Number.isFinite(z.pbv)&&z.pbv<=maxPbv))&&(!Number.isFinite(minRoe)||(Number.isFinite(z.roe)&&z.roe>=minRoe))&&(!Number.isFinite(maxDer)||(Number.isFinite(z.der)&&z.der<=maxDer))&&(!Number.isFinite(minNpm)||(Number.isFinite(z.npm)&&z.npm>=minNpm))&&(!Number.isFinite(maxM)||(Number.isFinite(z.mcap)&&z.mcap<=maxM)));
+ if(currentPreset==='value')x=x.filter(z=>z.per>0&&z.per<=12&&z.pbv>0&&z.pbv<=1.8&&z.roe>=10);
+ if(currentPreset==='quality')x=x.filter(z=>z.roe>=15&&z.roa>=5&&z.npm>=10&&z.der<=1);
+ if(currentPreset==='momentum')x=x.filter(z=>z.w4>0&&z.w13>0&&z.w26>0);
+ if(currentPreset==='hidden')x=x.filter(z=>z.mcap>0&&z.mcap<=10e12&&z.per>0&&z.per<=15&&z.pbv>0&&z.pbv<=2&&z.roe>=12&&z.w13>0);
+ const sort=$('rSort').value;x.sort((a,b)=>sort==='roe'?(b.roe??-999)-(a.roe??-999):sort==='per'?(a.per??9999)-(b.per??9999):sort==='mcap'?(b.mcap??0)-(a.mcap??0):sort==='w13'?(b.w13??-999)-(a.w13??-999):b.score-a.score);
+ const med=x.map(z=>z.score).sort((a,b)=>a-b), avg=x.length?x.reduce((a,z)=>a+z.score,0)/x.length:0;
+ $('ratioKpis').innerHTML=`<div class="kpi"><small>Hasil</small><b>${x.length}</b><span>dari ${R.length} saham</span></div><div class="kpi"><small>Avg Score</small><b>${dec(avg,0)}</b><span>0–100</span></div><div class="kpi"><small>ROE ≥15%</small><b>${x.filter(z=>z.roe>=15).length}</b><span>quality</span></div><div class="kpi"><small>PER ≤12x</small><b>${x.filter(z=>z.per>0&&z.per<=12).length}</b><span>positive PER</span></div><div class="kpi"><small>13W Positive</small><b>${x.filter(z=>z.w13>0).length}</b><span>momentum</span></div>`;
+ $('ratioBody').innerHTML=x.slice(0,500).map(z=>`<tr><td>${esc(z.c)}</td><td>${esc(z.n)}</td><td>${esc(z.sector)}</td><td>${dec(z.per)}</td><td>${dec(z.pbv)}</td><td>${pct(z.roe)}</td><td>${pct(z.roa)}</td><td>${dec(z.der)}</td><td>${pct(z.npm)}</td><td>${rp(z.mcap)}</td><td class="${z.w4>=0?'up':'down'}">${pct(z.w4)}</td><td class="${z.w13>=0?'up':'down'}">${pct(z.w13)}</td><td class="${z.w26>=0?'up':'down'}">${pct(z.w26)}</td><td><span class="score ${z.score>=80?'hot':''}">${z.score}</span></td></tr>`).join('')||'<tr><td colspan="14">Tidak ada saham yang lolos filter.</td></tr>';
+}
+renderRatio();
+
+function loadTV(){const t=$('tvTicker').value.trim().toUpperCase().replace(/[^A-Z0-9]/g,'')||'BBRI';$('tvTicker').value=t;$('tvBox').innerHTML=`<iframe allowfullscreen src="https://s.tradingview.com/widgetembed/?frameElementId=taktik_tv&symbol=IDX%3A${encodeURIComponent(t)}&interval=D&hidesidetoolbar=0&symboledit=1&saveimage=1&toolbarbg=f1f3f6&theme=dark&style=1&timezone=Asia%2FJakarta&withdateranges=1&hideideas=1&locale=id"></iframe>`}
+$('tvLoad').onclick=loadTV;document.querySelectorAll('[data-tv]').forEach(b=>b.onclick=()=>{$('tvTicker').value=b.dataset.tv;loadTV()});loadTV();
+
+function renderBroker(){
+ let x=[...B],q=$('bSearch').value.trim().toUpperCase(),p=$('bPreset').value,sort=$('bSort').value;if(q)x=x.filter(z=>z.c.includes(q));if(p==='strong')x=x.filter(z=>z.score>=75&&z.net<0);if(p==='bothsell')x=x.filter(z=>z.bothSell);if(p==='xldump')x=x.filter(z=>z.xl<0);if(p==='pddump')x=x.filter(z=>z.pd<0);if(p==='buy')x=x.filter(z=>z.net>0);x.sort((a,b)=>sort==='net'?a.net-b.net:sort==='gross'?b.gross-a.gross:b.score-a.score);
+ $('brokerBody').innerHTML=x.slice(0,500).map(z=>`<tr><td>${z.c}</td><td class="${z.xl<0?'down':'up'}">${rp(z.xl)}</td><td class="${z.pd<0?'down':'up'}">${rp(z.pd)}</td><td class="${z.net<0?'down':'up'}">${rp(z.net)}</td><td>${rp(z.gross)}</td><td><span class="score ${z.score>=80?'hot':''}">${z.score}</span></td></tr>`).join('');
+}
+['bSearch','bPreset','bSort'].forEach(id=>$(id).addEventListener(id==='bSearch'?'input':'change',renderBroker));renderBroker();
+
+function quality(z){if(!z)return 0;let s=0;s+=Math.max(0,Math.min(25,(z.roe||0)/20*25));s+=Math.max(0,Math.min(20,(z.npm||0)/15*20));s+=Number.isFinite(z.der)?Math.max(0,20-Math.max(0,z.der-.5)*12):0;s+=z.per>0&&z.per<=15?20:z.per>0&&z.per<=25?10:0;s+=z.pbv>0&&z.pbv<=2?15:z.pbv>0&&z.pbv<=4?7:0;return Math.round(Math.min(100,s))}
+function momentum(z){if(!z)return 0;let s=50;for(const [v,w] of [[z.w4,10],[z.w13,20],[z.w26,20]]){if(Number.isFinite(v))s+=Math.max(-w,Math.min(w,v/20*w))}return Math.round(Math.max(0,Math.min(100,s)))}
+function smartRows(){return tickers.map(c=>{const r=ratioMap.get(c),b=brokerMap.get(c),st=ST[c]||{},q=quality(r),m=momentum(r),bs=b?.score||0,fo=Math.max(0,Math.min(100,+st.foreign||0)),score=Math.round(bs*.45+q*.25+m*.20+fo*.10);return{c,r,b,st,q,m,bs,fo,score}}).filter(x=>x.r||x.b)}
+function renderSmart(){let x=smartRows(),q=$('sSearch').value.trim().toUpperCase(),min=+$('sMin').value||0;if(q)x=x.filter(z=>z.c.includes(q)||(z.r?.n||'').toUpperCase().includes(q));x=x.filter(z=>z.score>=min).sort((a,b)=>b.score-a.score);$('smartBody').innerHTML=x.slice(0,400).map(z=>`<tr><td>${z.c}</td><td><span class="score ${z.score>=80?'hot':''}">${z.score}</span></td><td>${z.bs}</td><td>${z.q}</td><td>${z.m}</td><td>${pct(z.fo)}</td><td>${pct(z.r?.roe)}</td><td>${dec(z.r?.per)}</td><td class="${(z.r?.w13||0)>=0?'up':'down'}">${pct(z.r?.w13)}</td></tr>`).join('')}
+['sSearch','sMin'].forEach(id=>$(id).addEventListener(id==='sSearch'?'input':'change',renderSmart));renderSmart();
+
+function renderNetwork(){
+ const q=$('netQuery').value.trim();if(!q)return;const uq=q.toUpperCase(),isTicker=tickers.includes(uq);
+ if(isTicker){const hs=H1.filter(x=>x.c===uq).sort((a,b)=>b.p-a.p),nodes=hs.slice(0,14).map(x=>({label:x.n,value:x.p,lf:x.lf}));$('netResult').innerHTML=`<div class="subcard" style="margin-top:12px">${networkSVG(uq,nodes)}<div class="legend"><span><i style="background:#2d7fd3"></i>Local</span><span><i style="background:#ff9a23"></i>Foreign</span></div></div>`;return}
+ const nq=norm(q);let matches=H1.filter(x=>norm(x.n).includes(nq));const grouped=new Map();matches.forEach(x=>{const k=x.c+'|'+x.n;if(!grouped.has(k))grouped.set(k,x)});matches=[...grouped.values()].sort((a,b)=>b.p-a.p);
+ if(!matches.length){$('netResult').innerHTML='<div class="empty">Investor tidak ditemukan pada dataset pemegang ≥1%.</div>';return}
+ const displayName=matches[0].n,nodes=matches.slice(0,14).map(x=>({label:x.c,value:x.p,sub:dec(x.p,2)+'%',lf:x.lf}));
+ $('netResult').innerHTML=`<div class="kpis"><div class="kpi"><small>Investor</small><b style="font-size:14px">${esc(displayName)}</b><span>search match</span></div><div class="kpi"><small>Listed Holdings</small><b>${new Set(matches.map(x=>x.c)).size}</b><span>≥1% dataset</span></div><div class="kpi"><small>Total Disclosed</small><b>${dec(matches.reduce((a,x)=>a+x.p,0),2)}%</b><span>across issuers</span></div></div><div class="subcard" style="margin-top:12px">${networkSVG(displayName,nodes,'issuers')}</div><div class="subcard" style="margin-top:12px"><div class="tablewrap"><table class="tbl"><thead><tr><th>Ticker</th><th>Issuer</th><th>Investor</th><th>L/F</th><th>Shares</th><th>Ownership</th></tr></thead><tbody>${matches.map(x=>`<tr><td>${x.c}</td><td>${esc(x.issuer)}</td><td>${esc(x.n)}</td><td class="${x.lf==='F'?'foreign':'local'}">${x.lf==='F'?'FOREIGN':'LOCAL'}</td><td>${nf(x.sh)}</td><td>${dec(x.p,2)}%</td></tr>`).join('')}</tbody></table></div></div>`;
+}
+$('netGo').onclick=renderNetwork;$('netQuery').addEventListener('keydown',e=>{if(e.key==='Enter')renderNetwork()});
+})();
+</script>
+</body></html>

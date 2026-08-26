@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TaktikSaham — Live Notes</title>
+<style>
+:root{--navy:#071a36;--navy2:#0b315f;--orange:#ff8a00;--line:#dce4ee;--muted:#718096;--surface:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--surface);color:#12213a}button,input,select,textarea{font:inherit}
+.wrap{width:min(1180px,calc(100% - 24px));margin:auto;padding:20px 0 50px}.head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:14px}.head h1{margin:0;color:var(--navy2);font-size:34px}.head p{margin:5px 0 0;color:var(--muted);font-size:12px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:10px;min-height:40px;padding:0 13px;font-size:10px;font-weight:950;cursor:pointer;background:var(--navy2);color:#fff}.btn.orange{background:var(--orange);color:#10213d}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(7,26,54,.05)}.card-head{display:flex;justify-content:space-between;align-items:center;padding:14px 17px;border-bottom:1px solid var(--line);background:#f9fbfd;font-size:11px;font-weight:950;color:var(--navy2)}.card-body{padding:17px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:grid;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:9px;text-transform:uppercase;color:#758399;font-weight:950}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:#fff}.field textarea{min-height:90px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}
+.list{display:grid;gap:8px;margin-top:12px}.item{display:grid;grid-template-columns:90px 80px 90px 1fr auto;gap:8px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px;font-size:11px}.item b{font-size:15px;color:var(--navy2)}.item button{border:0;background:#f1f4f8;border-radius:8px;padding:8px;cursor:pointer}
+.preview{background:linear-gradient(145deg,#06162f,#0d315f);color:#fff;min-height:620px;padding:25px;display:flex;flex-direction:column}.pv-top{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:18px}.pv-label{font-size:12px;font-weight:950;color:#ffd18e}.pv-title{font-size:40px;line-height:.98;font-weight:1000;margin:9px 0 6px}.pv-sub{font-size:15px;color:#cfdaea}.pv-clock{text-align:right;font-size:11px;color:#a9bbd1}.pv-clock b{display:block;color:#fff;font-size:19px}.pv-notes{display:grid;gap:13px;margin-top:18px}.pv-note{display:grid;grid-template-columns:1fr auto 1fr;grid-template-areas:"ticker stance level" "note note note";gap:10px;padding:17px;border:1px solid rgba(255,255,255,.14);border-radius:17px;background:rgba(255,255,255,.075)}.pv-ticker{grid-area:ticker;font-size:37px;font-weight:1000}.pv-stance{grid-area:stance;align-self:center;padding:8px 12px;border-radius:999px;background:#eaf3ff;color:#235f9c;font-size:13px;font-weight:950}.pv-level{grid-area:level;text-align:right;color:#ffd18e;font-size:25px;font-weight:950}.pv-text{grid-area:note;font-size:21px;line-height:1.22;font-weight:850}.empty{color:#9eb0c7;text-align:center;padding:60px 10px}
+#hostCard:fullscreen{width:100vw;height:100vh;border-radius:0;overflow:auto;background:#fff}#hostCard:fullscreen .card-head{position:sticky;top:0;z-index:3;background:#0b315f;color:#fff;padding:18px 22px}#hostCard:fullscreen .card-body{width:min(1180px,100%);margin:auto;padding:24px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.preview{min-height:560px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.item{grid-template-columns:1fr 1fr}.pv-top{display:block}.pv-clock{text-align:left;margin-top:10px}}
+</style>
+<style id="ts-stock-backbar-style">
+.ts-stock-backbar{position:sticky;top:0;z-index:99999;height:42px;background:#071a36;color:#fff;display:flex;align-items:center;justify-content:center;gap:24px;border-bottom:1px solid rgba(255,255,255,.1);font:900 10px/1 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;letter-spacing:.35px}
+.ts-stock-backbar a{color:#d8e2ee;text-decoration:none}.ts-stock-backbar a:hover,.ts-stock-backbar a.current{color:#ff9a23}.ts-stock-backbar .home{margin-right:auto;margin-left:16px}.ts-stock-backbar .last{margin-right:16px}
+@media(max-width:650px){.ts-stock-backbar{gap:11px;font-size:8px;overflow:auto;justify-content:flex-start;padding:0 10px}.ts-stock-backbar .home{margin-left:0}.ts-stock-backbar .last{margin-right:0}}
+</style>
+</head><body>
+<div class="ts-stock-backbar">
+<a class="home" href="saham.html">← SAHAM</a>
+<a class="" href="rekomendasi.html">REKOMENDASI</a>
+<a class="" href="screening.html">SCREENING</a>
+<a class="" href="analisis.html">ANALISIS</a>
+<a class="last current" href="live.html">LIVE NOTES</a>
+</div>
+<div class="wrap"><div class="head"><div><h1>LIVE NOTES</h1><p>Host Control + Live Display untuk TikTok/OBS.</p></div><div class="actions"><button class="btn" id="hostFsTop">FULL SCREEN HOST ⛶</button><button class="btn orange" id="openDisplay">BUKA DISPLAY LIVE ↗</button></div></div>
+<div class="grid">
+<section class="card" id="hostCard"><div class="card-head"><span>HOST CONTROL PANEL</span><button class="btn" id="hostFs">FULL SCREEN HOST ⛶</button></div><div class="card-body">
+<div class="fields">
+<div class="field"><label>Judul Live</label><input id="title" value="LIVE MARKET NOTES"></div>
+<div class="field"><label>Status Live</label><select id="status"><option value="live">LIVE</option><option value="break">BREAK</option><option value="offline">OFFLINE</option></select></div>
+<div class="field full"><label>Subjudul</label><input id="subtitle" value="Saham yang sedang dibahas — bukan ajakan beli/jual"></div>
+<div class="field"><label>Ticker</label><input id="ticker" placeholder="ANTM" maxlength="8"></div>
+<div class="field"><label>Status Saham</label><select id="stance"><option>WATCH</option><option>BUY</option><option>WAIT</option><option>SELL</option><option>INFO</option></select></div>
+<div class="field"><label>Harga / Level</label><input id="level" placeholder="3.130"></div>
+<div class="field full"><label>Catatan</label><textarea id="note" placeholder="Tunggu break dulu…"></textarea></div>
+</div>
+<div class="row"><button class="btn orange" id="add">+ TAMBAH KE LIVE</button><button class="btn" id="clear">HAPUS SEMUA</button></div>
+<div class="list" id="list"></div>
+</div></section>
+<section class="card"><div class="card-head"><span>PREVIEW DISPLAY</span><span id="save">● Tersimpan</span></div><div class="preview"><div class="pv-top"><div><div class="pv-label"><span id="pvStatus">LIVE</span> • TAKTIKSAHAM</div><div class="pv-title" id="pvTitle">LIVE MARKET NOTES</div><div class="pv-sub" id="pvSub"></div></div><div class="pv-clock"><b id="pvClock">--:--:-- WIB</b><span id="pvDate">--</span></div></div><div class="pv-notes" id="pvNotes"></div></div></section>
+</div></div>
+<script>
+(()=>{const KEY='taktiksaham_live_notes_v1',CHAN='taktiksaham-live-notes';const bc=('BroadcastChannel'in window)?new BroadcastChannel(CHAN):null;
+let s={title:'LIVE MARKET NOTES',subtitle:'Saham yang sedang dibahas — bukan ajakan beli/jual',status:'live',notes:[]};
+const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x)s={...s,...x}}catch(_){ } sync();render()}
+function save(){localStorage.setItem(KEY,JSON.stringify(s));if(bc)bc.postMessage(s);$('save').textContent='● Tersimpan';render()}
+function sync(){['title','subtitle','status'].forEach(k=>$(k).value=s[k]||'')}
+function render(){ $('pvStatus').textContent=(s.status||'live').toUpperCase();$('pvTitle').textContent=s.title||'LIVE MARKET NOTES';$('pvSub').textContent=s.subtitle||'';
+$('pvNotes').innerHTML=s.notes.length?s.notes.map(x=>`<div class="pv-note"><div class="pv-ticker">${esc(x.ticker)}</div><div class="pv-stance">${esc(x.stance)}</div><div class="pv-level">${esc(x.level||'—')}</div><div class="pv-text">${esc(x.note||'')}</div></div>`).join(''):'<div class="empty">Menunggu catatan dari host…</div>';
+$('list').innerHTML=s.notes.map((x,i)=>`<div class="item"><b>${esc(x.ticker)}</b><span>${esc(x.stance)}</span><span>${esc(x.level||'—')}</span><span>${esc(x.note||'')}</span><button data-del="${i}">✕</button></div>`).join('');
+document.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{s.notes.splice(+b.dataset.del,1);save()})}
+['title','subtitle','status'].forEach(k=>$(k).oninput=()=>{s[k]=$(k).value;save()});
+$('add').onclick=()=>{const t=$('ticker').value.trim().toUpperCase();if(!t)return;$('save').textContent='● Menyimpan…';s.notes.unshift({ticker:t,stance:$('stance').value,level:$('level').value.trim(),note:$('note').value.trim()});s.notes=s.notes.slice(0,8);$('ticker').value='';$('level').value='';$('note').value='';save()};
+$('clear').onclick=()=>{if(confirm('Hapus semua Live Notes?')){s.notes=[];save()}};
+$('note').addEventListener('keydown',e=>{if(e.ctrlKey&&e.key==='Enter')$('add').click()});
+$('openDisplay').onclick=()=>window.open('live-display.html','_blank');
+async function fs(){const el=$('hostCard');if(document.fullscreenElement){await document.exitFullscreen()}else{await el.requestFullscreen()}}
+$('hostFs').onclick=fs;$('hostFsTop').onclick=fs;
+function tick(){const d=new Date();$('pvClock').textContent=d.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Jakarta'}).replaceAll('.',':')+' WIB';$('pvDate').textContent=d.toLocaleDateString('id-ID',{weekday:'long',day:'2-digit',month:'long',year:'numeric',timeZone:'Asia/Jakarta'})}tick();setInterval(tick,250);load();
+})();
+</script></body></html>
