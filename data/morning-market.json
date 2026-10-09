@@ -2,24 +2,63 @@
   "version": 1,
   "date": "2026-10-09",
   "display_date": "Jumat, 9 Oktober 2026",
-  "generated_at": "2026-10-09T10:04:30.715994+07:00",
-  "generated_at_wib": "09 Oct 2026 • 10:04 WIB",
-  "headline": "Saham Emiten Haji Isam Berguguran, TEBE ARB Usai Gadai Saham untuk Akuisisi BYAN? - InvestorTrust",
+  "generated_at": "2026-10-09T14:27:45.965361+07:00",
+  "generated_at_wib": "09 Oct 2026 • 14:27 WIB",
+  "headline": "Saran Analis Buat Investor Saham RANS yang Pepet Harga IPO - Market - Bloomberg Technoz",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "TEBE • SMLE • CNBC • WBSA • PGLI • MPXL menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • TEBE • SMLE • WBSA • RANS • PGLI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
+    "CNBC",
     "TEBE",
     "SMLE",
-    "CNBC",
     "WBSA",
+    "RANS",
     "PGLI",
-    "MPXL",
-    "IFSH",
-    "GOTO"
+    "GOTO",
+    "DSSA"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Saran Analis Buat Investor Saham RANS yang Pepet Harga IPO - Market - Bloomberg Technoz",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "RANS",
+      "summary": "Headline terbaru dari Bloomberg Technoz: Saran Analis Buat Investor Saham RANS yang Pepet Harga IPO - Market - Bloomberg Technoz",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Bloomberg Technoz",
+      "time": "09 Oct 2026 • 13:26 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWkdiUk44ZjNxNnFQZ1h0aFdoaDlsYmhYaURwdkI0Um9zSGhoVjcwWGo3Zlp0czlvYVQwbWdiUElCT0ZwVlRvWXJEZVd1c2gyUjc4TVlySEJPWmEtR25PQ2JtZnEyNEhHNVVSUmp5ZzB4Xy1WM3kteGt0Z1ZSdjlUUkJiUDZRNkt0MS00UllZUEpyakNuYzFVRmdGUGRzSEVuQ3dENVF6QVUwelhrdTZz?oc=5"
+    },
+    {
+      "title": "BEI Perketat Aturan IPO Hari, Keuangan Calon Emiten Harus Sehat - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: BEI Perketat Aturan IPO Hari, Keuangan Calon Emiten Harus Sehat - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "09 Oct 2026 • 13:17 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUkszRjMyTFc0REgtUmkzQlJWVUhOTVFDalY1M0FMb1hHUFkxV2VzQktGQjVIaktwZnZUdnU0TTY1TkhPbGgtYk9kR2dzb1h5a3dfMXdjQkpHcmZSM3FlTjRJRlJDeUtQUkNiWU56cGpFVnNSS3BCdkU2WjdablA5eXNrZ3prTkNnalcwbzZxMlJ0YmVaejZNSjN0MFI0OUVZSzVrTUpoRmZjQ3lXN2Fxai1aZGROWjVhMDN2Rk1hVllUUdIBxwFBVV95cUxPa0x3VmN6M2d5dG1FVjRTZG9USENLbzlKMVVyRnB4UERCand2WU0yVUxyT3NBR1UwYWVMZkFEZlZjbWQ3N0pjUTA2ZlQ5ajg4SUxzSi1SdkRJTmFMamMtYTlrZDc1NGlMVTBkVFhCeEpVd3ZXdmFHc3B2Qm51U2dURU5HWlJBQzVjX0g2WDZCT0ZVbWVWNnBZLXJ3UkhTV2NQMXdXOXBseEFpMUNaWTE3Z1RFZmNDOWZEaUNlY2wzUW50YTRZeElj?oc=5"
+    },
+    {
+      "title": "Bank of India Indonesia (BSWD) Kaji Strategi Penuhi Free Float 15% - kontan.co.id",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "BSWD",
+      "summary": "Headline terbaru dari kontan.co.id: Bank of India Indonesia (BSWD) Kaji Strategi Penuhi Free Float 15% - kontan.co.id",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "kontan.co.id",
+      "time": "09 Oct 2026 • 11:13 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObm1wVE1OZjRoOUpsT0RVWlhZWEU2cXpyVXNSekYzQ1pJQTRLdExYQnNHbVd0VzVzTXkydS14c24zX21Vc0o3c19XVEZWQVNJNjJ1aElWNEZ3YTRaZTRyRXd2Mm5HeGxEYzJxSWs3ckdZUmtDMUhxT1A2QWVERWRzM29xYmwwQS1tcGY0RHFDTmtTT2NMRXFZaXJLOUFoc2_SAZgBQVVfeXFMTzgxS2RseHZWT0VCSU0yUkZfaWRkU3psZUZlemU1ak04U0ZVZkszbGZtaTNLV3hUMXZtWW5Ja2FFQWllNUZkQ0IwY2V6dkJ1d3lsaV9TNU02ekdRSWV2NkdJaDU0TWZoSUVmUXZBVGxrVmtsbG1zMjVic1JESHZZZEJ5Wno3eWE4LXptbnQwQ05zWWJhbFZidEM?oc=5"
+    },
     {
       "title": "Saham Emiten Haji Isam Berguguran, TEBE ARB Usai Gadai Saham untuk Akuisisi BYAN? - InvestorTrust",
       "bgClass": "bg-ihsg",
@@ -30,7 +69,7 @@
       "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
       "source": "InvestorTrust",
       "time": "09 Oct 2026 • 09:18 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV28wV2JiOV9xWHBKX2pXcUdFMnV0Z2sxb1djLVZjWlNrN0EzaV9CODlzRmRpamNVN1NoMDZUR1JrRElBcXgzZ215c1VFNnppd0hSQVVNejJUa1ctRXpNUFZMcnFoWXJSRnRTSUZBMWtKOVJGOEQ3M0RTZ2VaOGI2NkFISzVoWVJ1Qy1wN3Q2aXU2UlRUcjVUNUIyLUpJbm5QNmVkakFLX2tSMUZhSUY2bkNJTUlTRkdNWkE?oc=5"
     },
     {
@@ -45,19 +84,6 @@
       "time": "09 Oct 2026 • 09:10 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOREoySzc0bXdsaDJpOTBqVnR5Tm1iM3RoeThCU211cEtoN1phTHQtbE1jSlNlYXhCeTh6eWVVNWcwQ0FvcFFJT0JiUmFnZVVaV3pia1JRcENPX0M1MjJJeE9KdGJYSjUxT0xrLTY2czZZOW5nYm9sc1BGNE95YThHMWxUdFRmVnZqWnFnbFJ0ay1JUHZJN01HaEtQdGpCQkNCWGNHLS1n0gGrAUFVX3lxTE03TkNjbEU1VWZBOU8tc0tOY1dxM0E1SVhUTnFqX0N2YlROMlVkQW8tejB1ZmlQeV9uSVNsUnpNU3Nhc3ZfRVFzNVpES0drU2ZNV1luU0tEZUJVV1JTdWhSakduSmtCRUVucXFReEIxN0FtejJhbkJnbEhIYjFaTkhkcF9FRGlFc3JnaXhXdWF0SjhhSkxnTnd0cDdKdTZwUk1CRkpJZmlMVGc5NA?oc=5"
-    },
-    {
-      "title": "BEI Buka Suspensi 4 Saham, MPXL hingga IFSH Kembali Diperdagangkan - StockWatch.id",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "MPXL • IFSH",
-      "summary": "Headline terbaru dari StockWatch.id: BEI Buka Suspensi 4 Saham, MPXL hingga IFSH Kembali Diperdagangkan - StockWatch.id",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "StockWatch.id",
-      "time": "09 Oct 2026 • 08:59 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNGJYRWNFUVMxdG1YLVQ1dW43Vm9PaEZhQkVoM0NsWmFDZlJRTU1ZV3FSX190ZWRTZWVRYUpWVFdvTUtFcUFBUTRpaWVrWk1rbHVmUzJ0dlVScWN4Q1pwbVdKNmxVSmFrQkRYMWtTelNTc1F6Y3JMT2I1eDRQTTJScFh0bTlhSFJqU3hsVDZyWEJKUQ?oc=5"
     },
     {
       "title": "IHSG Anjlok 1,88 Persen Saat WBSA Tambah Armada Laut - ChatNews.id",
@@ -83,7 +109,7 @@
       "source": "CNBC Indonesia",
       "time": "09 Oct 2026 • 08:47 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTmRKN3BNM08zT3pST3F5SmI3dDY2Y0xVb3hYWXNDY1Z4c0dVRlBYay1XbkpBSzVwcUt3YTc2UVFmd2pqSGtRMmdEakhfeHk2ZDhoUHZBcE1PQVVCUDM3SHdEYkpkNGhuS09YanA0bUVwWW9hczJ0cEY0SVktSDJEdTM4MkFnYVc2cHlfc0liZ3QtRVFrLUpiUmxlUGpMYTZ5a3NiNDdFa0VCdHVrYjdOaFNLTzJ1Ulhx0gG-AUFVX3lxTFBkUnE0V0JSTExsT2NOanhsSkN2YUdNSkpRSkhwZFl5NHpISkcteDhPdjFsMmNWcmNuVklNNFpmZTJjVVJOU2o3b0w5ckZyTHhDQ1h1cGRhUWFGekg4TEpLeWUyNy04Zm1jNkZjMVluaHNnVDAySW1rTVd1MjlyQmNLVVh1T0tlTnhhYUNYQ3hJUVVqZElwN1FKREJCejBZUUl3TXlwbHYxZFFjTkxxR3E5VUotV2M0N0tBRE9yT3c?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZFJxNFdCUkxMbE9jTmp4bEpDdmFHTUpKUUpIcGRZeTR6SEpHLXg4T3YxbDJjVnJjblZJTTRaZmUyY1VSTlNqN29MOXJGckx4Q0NYdXBkYVFhRnpIOExKS3llMjctOGZtYzZGYzFZbmhzZ1QwMklta01XdTI5ckJjS1VYdU9LZU54YWFDWEN4SVFVamRJcDdRSkRCQnowWVFJd015cGx2MWRRY05McUdxOVVKLVdjNDdLQURPck930gG-AUFVX3lxTFBkUnE0V0JSTExsT2NOanhsSkN2YUdNSkpRSkhwZFl5NHpISkcteDhPdjFsMmNWcmNuVklNNFpmZTJjVVJOU2o3b0w5ckZyTHhDQ1h1cGRhUWFGekg4TEpLeWUyNy04Zm1jNkZjMVluaHNnVDAySW1rTVd1MjlyQmNLVVh1T0tlTnhhYUNYQ3hJUVVqZElwN1FKREJCejBZUUl3TXlwbHYxZFFjTkxxR3E5VUotV2M0N0tBRE9yT3c?oc=5"
     },
     {
       "title": "BEI Unsuspensi Saham PGLI hingga TEBE Hari Ini, Sebaliknya SMLE Dihentikan - InvestorTrust",
@@ -110,35 +136,34 @@
       "time": "09 Oct 2026 • 06:05 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZ1ZBbEtPMGFjamU3c0hKV3pyTnlHeGlmaWpfWE92VVd3cGFGRDlhNFMySkZLR3p3V1V0c3FlSVVYU2N1VDhMZWdMVDJPNVAzMlp5SmVSdHhiN01RMGFTU0FMbGNPbGNTaW5sbUVRZnZ5WlNyZkNXQVNEcExFNk5YdHhzQ3UwZXNTQXJQOURqWWJKMVN4SUduenZpRllRWjlZMXNOSFVNY3pielFOaEZVVzZDY2RPRUlLTTJ5T0pwWdIBvwFBVV95cUxOdTBnVjc5ZV9XTFZhRWQtLWlDcWdDbFJ2LVdGZ0pROHRyWmVpWFhfLUczU09yaURFMHZKQXdNM25ENWRRLTY5eWtfbFIwSWZNcnRLeFNvY01NeERYbGdxT0ZXNkZac2FJd3hnQVFQcTQ4N09Lc3RTdnc4N1lGenVqY2F0TktOSlhfVDVucUhmUWJpVTFtZVczV1ZIWkpyUE5qTVhWeGlYRFhzWXk3aTg3aEhPdWZ4SUtFZTNJV2Ffcw?oc=5"
-    },
-    {
-      "title": "Jelang Merger, 4 Saham BUMN Karya Disuspensi, Investor Ritel Harus Apa? - kontan.co.id",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "BUMN",
-      "summary": "Headline terbaru dari kontan.co.id: Jelang Merger, 4 Saham BUMN Karya Disuspensi, Investor Ritel Harus Apa? - kontan.co.id",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "kontan.co.id",
-      "time": "09 Oct 2026 • 05:19 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORVBRRFVoWlhQQ3F5OXBLWDZtVHVpN3dncHVfTjZkZDM2SGxzaEd2QmNOeXAwLW1TX2FGTF9POHQ1ZUxSODQtd2VrNlM4a3pUSDAzMFlJdnlLdm1mODg1OFNEV1ZMWjdPR0hlekN5UGlyendhQlBGODhvUUpQQ1dzOXpPVDU5WTRDcmtwMG53NkcyN1d0X1pWZFhrRFp5Um5FZUVxSWhxZ9IBnwFBVV95cUxONU5MWVZscWNhUTJCdHhRNE40VlpxamRPWlZ2OF9GQkdmVi1JMV9qWkxGSnNvcTgtcFBoenkxWGpKZ2g5b0llOGRsUGI2d2xKaUE3dmtyYmc2WmQtYVRYQjd6cDM1SGI1dzBBd3FuWXdJRGIwU2Qzd3dvc1VGVFpDWkJSaVlkdURKSXJpSU5OSXlFZHVfOXNwRW9NY3B1X0k?oc=5"
-    },
-    {
-      "title": "FTSE Pertahankan Status Indonesia di Pasar Emerging - Demokratis.co.id",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "FTSE",
-      "summary": "Headline terbaru dari Demokratis.co.id: FTSE Pertahankan Status Indonesia di Pasar Emerging - Demokratis.co.id",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Demokratis.co.id",
-      "time": "08 Oct 2026 • 19:24 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83V2Zha3NtRXk4cllVMm94Q2JKVG1EZE5fR3VIOHNpU3lxUVFsRG9ZZmtUcjVHdlgwRVAyWi1KU0VYNTgwUzVXNXVxWWZFdzZHd2p2SjdBS2NLOWRCNS1OdTNhRzBOdWVId3c?oc=5"
     }
   ],
   "recommendations": [
+    {
+      "ticker": "CNBC",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "BEI Perketat Aturan IPO Hari, Keuangan Calon Emiten Harus Sehat - CNBC Indonesia",
+      "reasons": [
+        "📰 BEI Perketat Aturan IPO Hari, Keuangan Calon Emiten Harus Sehat - CNBC Indonesia",
+        "🏷️ Sumber: CNBC Indonesia",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "09 Oct 2026 • 14:27 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
     {
       "ticker": "TEBE",
       "company": "Auto Detected",
@@ -160,7 +185,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Oct 2026 • 10:04 WIB • AUTO DRAFT",
+      "updated": "09 Oct 2026 • 14:27 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -185,32 +210,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Oct 2026 • 10:04 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "CNBC",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "Harga Saham Meroket, BEI Gembok Saham SMLE - CNBC Indonesia",
-      "reasons": [
-        "📰 Harga Saham Meroket, BEI Gembok Saham SMLE - CNBC Indonesia",
-        "🏷️ Sumber: CNBC Indonesia",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "09 Oct 2026 • 10:04 WIB • AUTO DRAFT",
+      "updated": "09 Oct 2026 • 14:27 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -235,7 +235,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Oct 2026 • 10:04 WIB • AUTO DRAFT",
+      "updated": "09 Oct 2026 • 14:27 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
