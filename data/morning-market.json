@@ -1,35 +1,85 @@
 {
   "version": 1,
-  "date": "2026-10-26",
-  "display_date": "Senin, 26 Oktober 2026",
-  "generated_at": "2026-10-26T13:22:03.649904+07:00",
-  "generated_at_wib": "26 Oct 2026 • 13:22 WIB",
-  "headline": "Saham FILM Kembali Masuk Daftar HSC BEI, Ini Daftar Lengkapnya - OWRITE",
+  "date": "2026-10-27",
+  "display_date": "Selasa, 27 Oktober 2026",
+  "generated_at": "2026-10-27T09:25:58.613331+07:00",
+  "generated_at_wib": "27 Oct 2026 • 09:25 WIB",
+  "headline": "Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • FILM • UNTR • TINS • TFCO • JPFA menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "FILM • CNBC • TFCO • KING menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
-    "CNBC",
     "FILM",
-    "UNTR",
-    "TINS",
+    "CNBC",
     "TFCO",
-    "JPFA"
+    "KING"
   ],
   "price_feed": false,
   "news": [
     {
-      "title": "Saham FILM Kembali Masuk Daftar HSC BEI, Ini Daftar Lengkapnya - OWRITE",
+      "title": "Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "TFCO • FILM",
+      "summary": "Headline terbaru dari KONTAN: Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "KONTAN",
+      "time": "27 Oct 2026 • 09:14 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZjBNTjJFRVhIYS1FT1o4MWZYc2VWY1czd3Z0ejlqT1RkRGtOOXJaREo2cEFMMExtMV9HOWw4QzVmcHhnWTl6MXFaRjVXQXZ2VDdiTnYxd1Zuak9zd1A1UkE0S0RZRW01OVViREdlWklld2JMcmV5dTFrMW5VdUxEVEw0R2hGS0ktT29YQjB0WFBNNGNDUVNXWlpHbmFTdDBQVG93N1lsTzl1NlExWkNoajU2NWo?oc=5"
+    },
+    {
+      "title": "BEI Rilis 81 Emiten HSC Keluar dari IHSG, KING Tanpa Jejak? - Emitennews.com",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "KING",
+      "summary": "Headline terbaru dari Emitennews.com: BEI Rilis 81 Emiten HSC Keluar dari IHSG, KING Tanpa Jejak? - Emitennews.com",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Emitennews.com",
+      "time": "27 Oct 2026 • 04:59 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMEhJQmg1SUhUYVN5azNuQ1d4SzFKeXNmTm9uaUpOT0lpd0FUN2lDR0syTXFPMW9jclJHaW5jYmlULUlwenhxMnV6RFJtOTVvbEJiYUx1RURkbkhZMmFwNUFFSUtBZ0RSNXlBWWljT2hRX1o5WnFsOUZqSHR1OHY0eFpINE0wc1laaGlJeW1wLUMwZGc?oc=5"
+    },
+    {
+      "title": "Video: Bos Sekuritas Sebut MSCI Bikin Kredibilitas RI Dipertanyakan - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Video: Bos Sekuritas Sebut MSCI Bikin Kredibilitas RI Dipertanyakan - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "26 Oct 2026 • 16:44 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNREpsV3k1bUViRUF6bmNsajRxSmh1NTBzWmxFN2tsVi1IbW5BOGhmaHluelA3V204X3Fmc01yaEcwVXloZ3FGUjRvVnpONHRZUHlJREF4WENvZklobVIxU2NpdHVScUxhR0VjbGtDMWFoZ2xIN3o3ZldtY0ZoQnltdnJKRHlCSjlhYzZiaWFTVlBjR1ItWkNJbFJySG5HM0ZBTkNnekhLMHhZZGNibTdFdmEzUkNQMHREWWdDWFlXbnl4UXQ3UE53?oc=5"
+    },
+    {
+      "title": "Daftar Saham HSC Terbaru Jadi 82, FILM Masuk Lagi dan TFSCO Ditambahkan - FORTUNE Indonesia",
       "bgClass": "bg-usjobs",
       "category": "macro",
       "categoryLabel": "Makro & Market",
       "tickers": "FILM",
-      "summary": "Headline terbaru dari OWRITE: Saham FILM Kembali Masuk Daftar HSC BEI, Ini Daftar Lengkapnya - OWRITE",
+      "summary": "Headline terbaru dari FORTUNE Indonesia: Daftar Saham HSC Terbaru Jadi 82, FILM Masuk Lagi dan TFSCO Ditambahkan - FORTUNE Indonesia",
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "OWRITE",
-      "time": "26 Oct 2026 • 11:57 WIB",
-      "featured": true,
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUmRzN0U4azFIUzNjdEd6dG4xTmY1SDFjRGNnRU9ubEoyaW1JMVBqMDcwT3Y2ZXgtMTNtUlFtZm1uSXhRU3duTVpwNXBlUUZxSWQ1T0pfa1NNUWZkdGY1eXBFcG9ldU95RndaVkJJdS1leUxjXzFFSEhRYy1HSzhFc0NSaV9WZ3NIaDdNeUc5NkFVTUdKQzY5TEdfOVhEalhoV3Ew?oc=5"
+      "source": "FORTUNE Indonesia",
+      "time": "26 Oct 2026 • 15:50 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb0gxQVMxVFAwTGRmUVhId2pTMkxpUElyLTVabXA5aFVjVDhfMEcyeWdfa3lHWEhTcW40SVdsUVlzbWJOYmNWQXNWaW5MWW5fOFB1Snp6TDFTODN4bEtid09iZ3YtMi1UZUU1OUs5SG1jN2U3V2UwRllVaW1vNHV3RkdOaWszUGxkSmpqWDFKTXFta3pUeVoyVURWVXpHaVU1SnBBRjNPUExxVjhDaHBXeE5YeDA?oc=5"
+    },
+    {
+      "title": "Ganti Pemilik, Emiten RI Ini Keluar Dari Pantauan Khusus BEI - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Ganti Pemilik, Emiten RI Ini Keluar Dari Pantauan Khusus BEI - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "26 Oct 2026 • 13:45 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeVhpYmJaZnhYRUJkaFM2dzJrMy0zcXZVdGdCdUpWQjRhejVoejdQbnF1VXlQUzdWWVNxRXFVeE0yczA3aFBZVXVCVUN4TlZrcW5hRDVhQmZ1LWIxZUFkVGhGLVQtS0E3UXY0elNkbVFGd292aS15bGJwUWlDbVBWMEkxWHdKT3AyTlZ5ZEpqSkhEMDQ0U04wdnpVZFN1TExMekl3dUNmbldPYnVwbWdpbzh2NnVEdWNjNXEyU3ln0gHDAUFVX3lxTE9uMWJVcUI5YWZsdnNWSEFROFRIa0RyREFVXzJiTlh5RHo0VGtBZnVYZHZsSGJpZVFDS3dkcGhHQUNsY09qNmlucUpYOHgxRm9sOUg2R3hGVmV0REpmSEFMOVVtTlFBb2JKV0Z0OHM3Zk9nZktYR3lIMFRYYnM1TWFobS1WRk1VQlFiR1JnbFVzaUFvVTJ3NVE1WGtUWGl1UXd1OEZNTzZUY3dJVTBfVHBjTERCZ2lQLWJveWpwR1hORHY3aw?oc=5"
     },
     {
       "title": "Daftar Saham HSC Tembus 82 Emiten: FILM Masuk Lagi, TFCO Ikut Ditambahkan! - Ajaib",
@@ -40,7 +90,7 @@
       "summary": "Headline terbaru dari Ajaib: Daftar Saham HSC Tembus 82 Emiten: FILM Masuk Lagi, TFCO Ikut Ditambahkan! - Ajaib",
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "Ajaib",
-      "time": "26 Oct 2026 • 11:12 WIB",
+      "time": "26 Oct 2026 • 12:01 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1DVmdOM3kwMC1hNlBTSDNpUkgzM0FUTVZVZnF1WDZPT2FZUWxqckZVSHZxX1gtbmRpZ3RDNjZrWHhrbHU0X2Z1NDRPWEZWbWZPWktOVm9ySFI2VHJZYktYdDEyS2luT3RZeXYyZ1RnQUt4TkM4NFRJ?oc=5"
     },
@@ -56,19 +106,6 @@
       "time": "26 Oct 2026 • 09:45 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQW5VamNvMnVnVTZUaWNMZXlMUUYxYWhPYm1oSjBVVXFkOFppMU95SFROZDFTMGNmOGhVd0NqX3I2U3dpQXBDVEFMTWVxc2pTT0pudXpyakZjcjhuYXNPSEJoSURYdnJMUXZ0ay16YUp2eWFFZm1jNnEtWVFfTndzYk1FekdfcHdqczNGdlJDakpjN1U4UnZNSS1VWWdyT0FUS3A0?oc=5"
-    },
-    {
-      "title": "IHSG Perlahan Pulih, OJK: Bukan Berarti Semua Tekanan Berakhir - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: IHSG Perlahan Pulih, OJK: Bukan Berarti Semua Tekanan Berakhir - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "26 Oct 2026 • 09:25 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcUxVX2NSeU8zWEdNbmZZMlNjSHlwRmZtVWc0amlnNGo0TXdtYkFHbmpZbGlmM2kyaW1jcnRNbWJ1bFNiSVI2cUx2aW9mQU9mendYYzhveHRMRlVHLWwwcEEzZGJIcjBOZDNmeGdKaF9TOHNPQnlIaW9PcTBJMDRuR0pjamJfd2p5U2gzV21sLXZTSDlWbzFDMmllMVptejhZQkUxVHAyWk56ZGx6ZWNRSUhsWEVQUmxfTEZoWWtkc2JLWmZJ0gHEAUFVX3lxTE9xTFVfY1J5TzNYR01uZlkyU2NIeXBGZm1VZzRqaWc0ajRNd21iQUduallsaWYzaTJpbWNydE1tYnVsU2JJUjZxTHZpb2ZBT2Z6d1hjOG94dExGVUctbDBwQTNkYkhyME5kM2Z4Z0poX1M4c09CeUhpb09xMEkwNG5HSmNqYl93anlTaDNXbWwtdlNIOVZvMUMyaWUxWm16OFlCRTFUcDJaTnpkbHplY1FJSGxYRVBSbF9MRmhZa2RzYktaZkk?oc=5"
     },
     {
       "title": "IHSG Sukses Menghijau Akhir Pekan, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
@@ -95,73 +132,9 @@
       "time": "26 Oct 2026 • 08:44 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWnpUSm8yOUROS3d5dk50Q0FMUXRkS0JZT0syX05SOVpaS0p2bEx6RFZHeVRUbzV3ZkdXY0txUU9HTDl0SUpiSzZoY0c1ZzU1a1FnMjhYTm5ycGY1TmREd3B2STV5UzRfMEFUQmtYbzNBSHJkVm5SSGhnQjN6U2RfWEY5NmVyckVVaWtGS3pWVFRkTjNTbXA1VkZCVnNldHd6SDhVZGtpMzltaGJNMzJETFJhSVjSAboBQVVfeXFMTlE5bHJSRy1Sb0xEM3Qxd205cUhQVldlZGRBYk1XUW1qa3otbFRMWWpBV3ZnQmpweW03X0lBYWJnVF81QjFUMzB3YlZkZ2dRalp1YjBCZXJpQnIzZ254eTJfOUpPSGQ4dnB1S011Ty1zeE0tRG9KajBDajUtSGowdldYNXo5MTY1dGlOMmJJaWpCNTUtcUI3Sl9TRWpCQlNjNEEtV2RiRW8ycF92aVBicmlMdUtWVXFYOHh3?oc=5"
-    },
-    {
-      "title": "9 Perusahaan Antre IPO, 3 Calon Emiten Beraset Jumbo - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: 9 Perusahaan Antre IPO, 3 Calon Emiten Beraset Jumbo - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "26 Oct 2026 • 06:35 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVU92WWhqeFlxNGdSQnU4VkhkTkhMYXBjTGNpdElEMXNxbll0MDU4eWJlWTRlNlR5Q3hVOVp2ZWlnN0hucjFXcENLV0RDZVg5aVQweHhlWlQwV3E0U2xONGFRTGNKQjMyTXh4MUM1cVZCS21RTjVoZElOYUFJbXVHMkNRYWFhSUFzRE85b1Q2ak5ndW4zY3BaT2Vvcjk2WjJ2dGVJWTRFVmFTV1JWNjlpZG1wZ9IBuAFBVV95cUxOcDdjbWJLT0ZROVNPYkZWUy1BNFlZSzlHWVlBWXRCQzZTSjZlTXJXbHpETjRXR3E5UDlMaXNZVzJ0bHlNc2pxTjA2VGdTVWJaZVZHaEdkQlZOVklKNHV5Vk9kcHJ1MFlCZTZiMzE0RHB3NTNLV2d0NUY1MHU0QzFJUHlGeVFJZ3RoVmlKeUk1ZFFvS0Y5ODNyc1J3S2VDS09naE9uZjZzVmY5VzZLRTVPaWVSYmE0c0w4?oc=5"
-    },
-    {
-      "title": "UNTR Pimpin Penguatan Saham dan JPFA Catat Kenaikan Tertinggi - Cirebon Times",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "UNTR • JPFA",
-      "summary": "Headline terbaru dari Cirebon Times: UNTR Pimpin Penguatan Saham dan JPFA Catat Kenaikan Tertinggi - Cirebon Times",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Cirebon Times",
-      "time": "26 Oct 2026 • 06:34 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4TlNkSXJkTDNSYktrRjd4NVpkM2F0NHhocUJqUEc5MGw3S1FmWXdpTnVBSGhaTFN4Qkh2eF9VanpkYU14S2dxVUlTbF9ySmNhNWJrQVUwYWo5T1U4WkFoanNJUjhjQ1dsT0E?oc=5"
-    },
-    {
-      "title": "Susul Emiten Lain, PT Timah (TINS) Pertimbangkan Buyback Saham - Jawa Pos",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "TINS",
-      "summary": "Headline terbaru dari Jawa Pos: Susul Emiten Lain, PT Timah (TINS) Pertimbangkan Buyback Saham - Jawa Pos",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "Jawa Pos",
-      "time": "25 Oct 2026 • 19:37 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVkpxTjBYXzg5R3lZYWp6QVhPTWJqaHVhaWEwWWltWlhPdEVEdHhScjEyWHE1Y21rNHFLS1BRNlBNZVlrcXZBemlfMUVRbk44LWVpT3hXelFySXZ2d0tTODJLVy1udE81VkxFMFdkeTlSUTFOQmtqRGtXdUZzY3NLTzlRZU81Y0xTNEJlMW9WRmRFWkpRVG45YkdYQkJ4aFlHQzFIcg?oc=5"
     }
   ],
   "recommendations": [
-    {
-      "ticker": "CNBC",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "IHSG Perlahan Pulih, OJK: Bukan Berarti Semua Tekanan Berakhir - CNBC Indonesia",
-      "reasons": [
-        "📰 IHSG Perlahan Pulih, OJK: Bukan Berarti Semua Tekanan Berakhir - CNBC Indonesia",
-        "🏷️ Sumber: CNBC Indonesia",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "26 Oct 2026 • 13:22 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
     {
       "ticker": "FILM",
       "company": "Auto Detected",
@@ -176,19 +149,19 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Saham FILM Kembali Masuk Daftar HSC BEI, Ini Daftar Lengkapnya - OWRITE",
+      "whyNow": "Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
       "reasons": [
-        "📰 Saham FILM Kembali Masuk Daftar HSC BEI, Ini Daftar Lengkapnya - OWRITE",
-        "🏷️ Sumber: OWRITE",
+        "📰 Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
+        "🏷️ Sumber: KONTAN",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Oct 2026 • 13:22 WIB • AUTO DRAFT",
+      "updated": "27 Oct 2026 • 09:25 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "UNTR",
+      "ticker": "CNBC",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -201,19 +174,19 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "UNTR Pimpin Penguatan Saham dan JPFA Catat Kenaikan Tertinggi - Cirebon Times",
+      "whyNow": "Video: Bos Sekuritas Sebut MSCI Bikin Kredibilitas RI Dipertanyakan - CNBC Indonesia",
       "reasons": [
-        "📰 UNTR Pimpin Penguatan Saham dan JPFA Catat Kenaikan Tertinggi - Cirebon Times",
-        "🏷️ Sumber: Cirebon Times",
+        "📰 Video: Bos Sekuritas Sebut MSCI Bikin Kredibilitas RI Dipertanyakan - CNBC Indonesia",
+        "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Oct 2026 • 13:22 WIB • AUTO DRAFT",
+      "updated": "27 Oct 2026 • 09:25 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "TINS",
+      "ticker": "TFCO",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -226,14 +199,39 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Susul Emiten Lain, PT Timah (TINS) Pertimbangkan Buyback Saham - Jawa Pos",
+      "whyNow": "Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
       "reasons": [
-        "📰 Susul Emiten Lain, PT Timah (TINS) Pertimbangkan Buyback Saham - Jawa Pos",
-        "🏷️ Sumber: Jawa Pos",
+        "📰 Update 82 Saham HSC BEI per 27 Oktober 2026: Ada TFCO dan FILM Masuk ke Daftar - KONTAN",
+        "🏷️ Sumber: KONTAN",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Oct 2026 • 13:22 WIB • AUTO DRAFT",
+      "updated": "27 Oct 2026 • 09:25 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "KING",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "BEI Rilis 81 Emiten HSC Keluar dari IHSG, KING Tanpa Jejak? - Emitennews.com",
+      "reasons": [
+        "📰 BEI Rilis 81 Emiten HSC Keluar dari IHSG, KING Tanpa Jejak? - Emitennews.com",
+        "🏷️ Sumber: Emitennews.com",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "27 Oct 2026 • 09:25 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
