@@ -2,23 +2,49 @@
   "version": 1,
   "date": "2026-10-30",
   "display_date": "Jumat, 30 Oktober 2026",
-  "generated_at": "2026-10-30T09:58:24.317378+07:00",
-  "generated_at_wib": "30 Oct 2026 • 09:58 WIB",
-  "headline": "Ancaman MSCI, Risiko Terburuk dan Kenapa Pasar Saham RI Tetap Menarik - CNBC Indonesia",
+  "generated_at": "2026-10-30T14:14:53.532040+07:00",
+  "generated_at_wib": "30 Oct 2026 • 14:14 WIB",
+  "headline": "Duka Pasar Modal: BEI Resmi Delisting 18 Emiten, Termasuk Legenda Sritex (SRIL) - KalderaNews",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • RAJA • VIVA • VICI • SRIL • DEWI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • RAJA • VIVA • SRIL • MSJA • DEWI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "CNBC",
     "RAJA",
     "VIVA",
-    "VICI",
     "SRIL",
+    "MSJA",
     "DEWI",
-    "CGSI"
+    "BBCA"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Duka Pasar Modal: BEI Resmi Delisting 18 Emiten, Termasuk Legenda Sritex (SRIL) - KalderaNews",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "SRIL",
+      "summary": "Headline terbaru dari KalderaNews: Duka Pasar Modal: BEI Resmi Delisting 18 Emiten, Termasuk Legenda Sritex (SRIL) - KalderaNews",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "KalderaNews",
+      "time": "30 Oct 2026 • 11:51 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSWdNZEp4bGtfZVNJWU8zNGZ2WnZJel82Q1IyZ21abTRIQ0dqZmFQY0pjWFJEXy05dTdiTURLWnZWTmE5NjBTS29tNFo2cEFNdFphMWJPXzN3el9VRElILTJSLU5zOGhadnNQendQZkRiY1JSdWJrMm85aFkwNkQ2U1EtUnZfcGRtS1JyQmNVTGxjSksxTkZtblR4Y1VKMVUtem9INVdiT3J0c0JXbHhSVndR?oc=5"
+    },
+    {
+      "title": "Telat Lapor Keuangan, 62 Saham Kena Suspensi Bursa, Ini Daftarnya - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Telat Lapor Keuangan, 62 Saham Kena Suspensi Bursa, Ini Daftarnya - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "30 Oct 2026 • 10:40 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRnJmT0QzUXBYdDZqV0lzOHdxbFZPZElSOEZDTUVyWGc2MTg3QWRpbFFaSVB6cUc0ZDV3ZGsweURHdnI4Vm5FZFFoSGhvUnI0Um1TQjZadnZxVld3dmtmN1NibXpnLVVNdWQ5SDU2RmR5TXlfTVliWmU5NnE1b1VPM29IS1h3a2JqQjk0WGJDeVhiSERYV19mTFM1b1hhUFctbXVPUHZTY2VneEVUZWxQOE0zX3A4UklBLWduR3BIZjFXQmPSAcgBQVVfeXFMTzRyLUU4dXpwOFoxMGpBc25BVWhxZGNYSGVlS0RzY3pIR2FweTVwY0lvYlI1eUFyOXFXU21QRjV2NFJKcnkxX1dDX0dubVhHNFZzVnRaMHlzMVhQSDdlMmpmSVpxQmpDQzJNNHV0OERYOUZuZWtqcEE1ZHlmazExOTRxZGVwTEh3WWJEakRkN2lEaGJNb3VwQ3BzeWFsTWpFWnNUUDd5RzFGX1Zvd21JTk1VYmJWYzQxSVozaGVUTnJ4aFNCNzFROVo?oc=5"
+    },
     {
       "title": "Ancaman MSCI, Risiko Terburuk dan Kenapa Pasar Saham RI Tetap Menarik - CNBC Indonesia",
       "bgClass": "bg-usjobs",
@@ -29,7 +55,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "CNBC Indonesia",
       "time": "30 Oct 2026 • 09:45 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQelZNczlaamdjTG5oMlY3X2t5eWtWYjdjSlhHcWxnQzJ0ejNIUGtsZzZWbzhmTklqNVJYbU85VWVnNkFZa09zWXhYYy13VW9PR2Q3TndBU3ZaYm5NbFJQRUtlamNpMzlHbFg1LTZhZEF1MVVlb3lRTEFPYlcyM2tDQ1hza2N3dndRVXA4RTA4ZVNvcW16ZnV4Q2ZLcnNoMExHMllpdGtWdmhIMkZhSjBNLUkySHM0RG5kUVdFYk50NzQxM0cxcmR4VTBn0gHPAUFVX3lxTE1ZTEYwdUdnMGE0bWstWThqQ0JBMjh1eXoyaW9KbW5heGMyLTYxdGdmUU5tZWw5ZmhFLXIwblRQaEppYUJCWWFKUHBzaEhrOXpKVExxSUN6RTJDdUpuZC1SaE5ENjJYMm40cGdacVg5R1U2Q0NLNXAxTVI0UjBiUHpBOEtlNWtfaUJ5Vlg2dDI2aklzODIwdUtlUU9TU2tVeng2eXJOUVI3elBkcEFuaDlWZFlhYUluVzY4VjFlQUhKT0pZeUxoaUZubGJOR2kycw?oc=5"
     },
     {
@@ -72,19 +98,6 @@
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcWR2b2s5ejdYTEN0OGlxY0JMMFFqWlRvVXlITm02UEFrMW9nZ3dmNldCcy16MG9iRmNtZF9hMWc5VDg5U042ZjE3NHhXQl9GT3U4eEh0ZUV5ZzFSWXV0MzMySkgxRWMxQWpuVjdQQUZ3VVdfaHZJeXJiNHVicTRMdHJiR20zZDlzNWxCY0ZNc2ZuLTJQcDdGbW85WHVsVEVWTWZGdnVWYXo?oc=5"
     },
     {
-      "title": "Jangan Campur Sentimen MSCI, OJK Ungkap Data Fundamental - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Jangan Campur Sentimen MSCI, OJK Ungkap Data Fundamental - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "30 Oct 2026 • 08:20 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYi0yUzREUzZYWHlhZG9BYmhxTGIwQVVjNmZTcVNHZ0x3bEYxNmFESzBPMVBST1F2TENiVW01V3NDQ2NKOS1kN1dPUk5JZHJ0Yy1uTENjcXdBNkZsSV9hUHFqai1KSzBHZFpJbmF3b1FBT2ZYRHhBWFpjdG8za0hYdDhNa185Sl9kbzFpN1VGT3pscjJwQ0c1UHJhdjk4M00xX2hNb1RmR05ORjZCQkFoUXNfRUU4MlNVUVdGRnV30gG-AUFVX3lxTE1iLTJTNERTNlhYeWFkb0FiaHFMYjBBVWM2ZlNxU0dnTHdsRjE2YURLME8xUFJPUXZMQ2JVbTVXc0NDY0o5LWQ3V09STklkcnRjLW5MQ2Nxd0E2RmxJX2FQcWpqLUpLMEdkWkluYXdvUUFPZlhEeEFYWmN0bzNrSFh0OE1rXzlKX2RvMWk3VUZPemxyMnBDRzVQcmF2OTgzTTFfaE1vVGZHTk5GNkJCQWhRc19FRTgyU1VRV0ZGdXc?oc=5"
-    },
-    {
       "title": "Saham RAJA dan 4 Lainnya Masuk UMA - investor.id",
       "bgClass": "bg-usjobs",
       "category": "macro",
@@ -98,43 +111,30 @@
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ja2FfMjdYVURUQmFXc1JkR0ZqZ0hIVmtUdUhSSi1XRjZGVVpDLWp1Ui1SVzh3azBBY1N0a0tDRVBpZDg3QTgzN2VHM3YycG9uMjJoSWpOS0sydXVJdEljbndKT0pLMUt5TTQ1R195NkhfQ1JVNVBN?oc=5"
     },
     {
-      "title": "BEI Delisting Sritex (SRIL) dan 17 Emiten Lain pada 10 November, Imbau Buyback - Katadata.co.id",
+      "title": "Saham MSJA Masuk Radar HSC BEI: Risiko Likuiditas Pasar Modal - https://cetro.or.id/",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "MSJA",
+      "summary": "Headline terbaru dari https://cetro.or.id/: Saham MSJA Masuk Radar HSC BEI: Risiko Likuiditas Pasar Modal - https://cetro.or.id/",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "https://cetro.or.id/",
+      "time": "30 Oct 2026 • 03:41 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORndzVmdURFdVNFVHVmhVUlNWeUpzd1ozN1dkcXdTQ0xEaUNheVY3bmlaSzhYSk5PbmIyUXhtekZ3THBQWklJSmJlYWRyTm03WVNTU2ZSb3RfcERjWXVFS19uaU1wcmVFTTRoem5PbE5DTjJDWWdFZ0xoMUZPRkd3d1NxRzlmMDh3WFlXeDFpM2ZldXEwMnh6YUFPZXJuYUEzb1dkNUJn?oc=5"
+    },
+    {
+      "title": "Mirae Asset Wanti-wanti! Pemulihan IHSG Masih Rapuh, Spekulasi Akuisisi BBCA Belum Terbukti - Pasardana",
       "bgClass": "bg-ihsg",
       "category": "corporate-action",
       "categoryLabel": "Corporate Action",
-      "tickers": "SRIL",
-      "summary": "Headline terbaru dari Katadata.co.id: BEI Delisting Sritex (SRIL) dan 17 Emiten Lain pada 10 November, Imbau Buyback - Katadata.co.id",
+      "tickers": "BBCA",
+      "summary": "Headline terbaru dari Pasardana: Mirae Asset Wanti-wanti! Pemulihan IHSG Masih Rapuh, Spekulasi Akuisisi BBCA Belum Terbukti - Pasardana",
       "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "Katadata.co.id",
-      "time": "30 Oct 2026 • 07:49 WIB",
+      "source": "Pasardana",
+      "time": "29 Oct 2026 • 11:18 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbkpYaG5mNEM2Njg3QzBPU3QzWkU1WXJCNkpWR0x2eEFnWlhvM3VuNGxiUllfdDhXYnd2VVluOHR2eDBLY2lFX2U2bFJfQUI4amVTNWdLTkZfcWU1UmZicVdjMWFTLV9KUjZPNl83R3hubzliejh4RjJ0OXlXUV9VX2VweUcwbFlwb21CUGszQ0FRTXliRlAzVjFCWTJ3NzF1SmNka0lHcml0ZXFUMHlYNjdRc1hYS2trMERVWWZoWEY2bjZuVFRv?oc=5"
-    },
-    {
-      "title": "Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "VICI • CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "30 Oct 2026 • 06:35 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZWlrcnZfdU0wLTJUdm9UZVdBNm1DN3dvNENrWFE0ZGo5QnFVS1J0R3JjSTRMd2NtRUVELVU0Z1Y0NnM4YjR0TDJUVy1TcnpKQ2E4WkxVNzctM0xoWGsxT1diQjBUaWhQWEtaZzl5US1rMV9RcEJBeEVpYmREWFAyWWt1QTY3ZkZLZ1dFZkx0N0FPeHFwUWJUOGFrMWFITDVxV216TWZ3blJiOEJ3LTM0RXoyNlhkeEdnb21jV2RfcjhGUdIBxwFBVV95cUxOdlcwOXBYSFRYck5BWkZUMUxicm9lNTN4WWYtbXp2V2k4R3FaVng1bXFWcXpiajBVRGRCcDB1X1lvVTF2ZXVZTlk4ZWNBbDU5ZHhtRDYyVkk0QXhPR1FndE93OHRKVElxRnI0TU1KNHJvNXRfLWRfeUs3T0tzVzdpVEs0OGozOU9WNmVDU0xRZEZLN0pLYkItWDE1R09KTEFUSEM0cWxtTy1GNkozUmpJeGc1VzJNeG9YcWdvT3J3QkxtOElPV2ln?oc=5"
-    },
-    {
-      "title": "CGSI Nilai Indonesia Perlu Reformasi Pasar Saham Hadapi MSCI - Limapagi",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CGSI",
-      "summary": "Headline terbaru dari Limapagi: CGSI Nilai Indonesia Perlu Reformasi Pasar Saham Hadapi MSCI - Limapagi",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Limapagi",
-      "time": "30 Oct 2026 • 06:30 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kUG1JNjRQeV9MUjNGb096LUVFZ1VBYTRzeFlYczdfWjVUUlc1dDlMd1dWR2J3TjJYYmxmQlpDTFJjVHpKN0lOM2dOZk04UTFwMGNUUlYzLVQ2eDNQY0g5dEwxcHRvelNnUUZFXw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMnZxY0t1NzBwckl2YlRSQk45dnZDZ2luNzNPdFB2Mm5DRWQ4d2JoTTJWMXVxWVpSaUNuSkFSNUdWVVl0V3BneTlIakNhbG9FeW5iS0U1QkVOTGx6aXZVb1RkbUZhS09pMlZhamlzY1lJb2t2S3ludnludG1Od2VuZkdqNG53b3Q0dFA1RUNvY2dYOGZvZExGa1VPcklONWtIbTVGd1VZdnNrLTBGd1M0bjB2MmFFajIyTW5YR3c1dFk3SHA0?oc=5"
     }
   ],
   "recommendations": [
@@ -152,14 +152,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Ancaman MSCI, Risiko Terburuk dan Kenapa Pasar Saham RI Tetap Menarik - CNBC Indonesia",
+      "whyNow": "Telat Lapor Keuangan, 62 Saham Kena Suspensi Bursa, Ini Daftarnya - CNBC Indonesia",
       "reasons": [
-        "📰 Ancaman MSCI, Risiko Terburuk dan Kenapa Pasar Saham RI Tetap Menarik - CNBC Indonesia",
+        "📰 Telat Lapor Keuangan, 62 Saham Kena Suspensi Bursa, Ini Daftarnya - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "30 Oct 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "30 Oct 2026 • 14:14 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -184,7 +184,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "30 Oct 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "30 Oct 2026 • 14:14 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -209,12 +209,12 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "30 Oct 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "30 Oct 2026 • 14:14 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "VICI",
+      "ticker": "SRIL",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -227,14 +227,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama - CNBC Indonesia",
+      "whyNow": "Duka Pasar Modal: BEI Resmi Delisting 18 Emiten, Termasuk Legenda Sritex (SRIL) - KalderaNews",
       "reasons": [
-        "📰 Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama - CNBC Indonesia",
-        "🏷️ Sumber: CNBC Indonesia",
+        "📰 Duka Pasar Modal: BEI Resmi Delisting 18 Emiten, Termasuk Legenda Sritex (SRIL) - KalderaNews",
+        "🏷️ Sumber: KalderaNews",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "30 Oct 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "30 Oct 2026 • 14:14 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
