@@ -2,21 +2,21 @@
   "version": 1,
   "date": "2026-11-06",
   "display_date": "Jumat, 6 November 2026",
-  "generated_at": "2026-11-06T10:39:50.706912+07:00",
-  "generated_at_wib": "06 Nov 2026 • 10:39 WIB",
+  "generated_at": "2026-11-06T14:58:41.391657+07:00",
+  "generated_at_wib": "06 Nov 2026 • 14:58 WIB",
   "headline": "Ini 3 Emiten yang Disuspensi BEI per 5-6 November 2026: Ada ARKO hingga MKNT - KONTAN",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • SRIL • SOUL • RNTH • MKNT • MENN menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • ARKO • TMPO • SRIL • SOUL • RNTH menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "CNBC",
+    "ARKO",
+    "TMPO",
     "SRIL",
     "SOUL",
     "RNTH",
     "MKNT",
-    "MENN",
-    "KSEI",
-    "ISSP"
+    "MENN"
   ],
   "price_feed": false,
   "news": [
@@ -32,6 +32,19 @@
       "time": "06 Nov 2026 • 10:00 WIB",
       "featured": true,
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZG52UkthbW5lczFkdU4xQ3dSTVJzSWJNUG53YS1RSzFkajhudENhMjlUVVhiTTlqOXR0QmZ6d25xeElmOHkzY1h5bHpkMUdxdUdoQXlMWWN5aVFYN2Q2OGFfdTBMZUg5YzJCWG9ac1NRZFVfdFVPUHpHUmJTUXBDZVVlZ0RRdThRNlNWbWFRaS1WeDN5VmpqTHBGQ1JqeFJSb1MteTUxWkZzS0hJNlhMMGxhNFc?oc=5"
+    },
+    {
+      "title": "Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "TMPO • ARKO • CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "06 Nov 2026 • 08:52 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWU1VdHRybEY5ZFNRTTktSUszWDgzSW9iWXhQRjdPZkpVY1RmbUVDYTllOUM5d2JfdTZxNzA2MXpvTGNXUVE4dU9KdE84RzcyczhIeEJSMVR5VnctOUFWSVdhUFRMY0ZGUjQwVUJIZFdPcGJZbjZldDV4TFRIekVfN1dVMTRnRFJyODZNdDNhRXZnUWVZUGQtOHZzOExuMDBWZEpJNm5XZlh2Uko5eno2MjhKTDjSAboBQVVfeXFMUDdVSEcwNnRmWkdyN004TkNBeTZaUnpxaFM5UkhzczRxZjBONFVxbVNBeVhnbWdiTi04MjNRcXBsdXc3LTNBUGtVRGNld2FGY3YycHdPWGdScUJnR2F0ekNDQldjWFNnd3VhQW9aamxXeFpHWVVKWGtZS1hrbl9WbUQwWmQycWRvQ1hLWWJZbjUyTloza2xSTmZESFpycUVWSEQ4azE2dlJZVTdJNl9fczF4NFZUZkk2aExB?oc=5"
     },
     {
       "title": "BEI Suspensi Saham MENN dan SOUL, Ini Penyebabnya - JournalArta",
@@ -99,19 +112,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnQ0X0hPTWVrOWVKTjFkSnY2dy1BUm9BejRXNVBEWTdkUGlWU2dyRUQ1Und3d2U0YnprdW1Pc0czWUpOaTJDLXRGS3ZlM0RiNzhrQndiZU5uWURiN1lTcmRpeWV5cWlJSzBHRGhfZkZOd3lybUpCeVRKdE5iVlkzdnlpUGpTY3E5YzNEVlh2UGlIbTFIb0ctZUVjLWY3ZElTN0NrNUtxdE5jMUxSM1NfdkFURzI0eWFzeXQ5RE9FOUnSAcYBQVVfeXFMUFFmX0dnNGJPQkRqNFlZeFhqcXc1cjJHOWNqc0dNc0pwX2tFXzJ3X2ZrMDdyVXBnQk40N2lHYl9xNTJ6aVlzbjl3RngxMVZhQ19rc1hPWDlmZjJDSzNHZVdacU0xd0xTSjRxWHpVQkdMV0RwQjdvVHhDQUdzWktVX3JEazNBaDVRbjhaa2ZWNUNueE53RXZzT1RRSnllc0MzNHpJSmtzQjVyRDdQSHFWUlVPOXlBaFhIMS1XNFN0R0R4dktWU3Nn?oc=5"
     },
     {
-      "title": "Data KSEI: 199 Emiten, Pemegang Saham Besar Kuasai 95% - Bareksa.com",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "KSEI",
-      "summary": "Headline terbaru dari Bareksa.com: Data KSEI: 199 Emiten, Pemegang Saham Besar Kuasai 95% - Bareksa.com",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Bareksa.com",
-      "time": "05 Nov 2026 • 14:07 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNFhJVzNBMHNKOElZYmtZcllUZWNtVzRqOTRRUk0xQzVabU1SZlFfM3oybTJDUW1Vek1MRnlueC1QZE5hOGVXNFlVbktWWU1oVUN6ZVFSbEdPMjBmekhMMnpXbG5qZWZleFFNbE41SXBMVk00UjRKTU1kTWl2RVAyLVN6Z21GODlYY3JQOThEc0VmQi1YUW1ocTZkdzA3WElY?oc=5"
-    },
-    {
       "title": "IHSG Melesat, Saham BRPT Justru Amblas 6% - Bloomberg Technoz",
       "bgClass": "bg-usjobs",
       "category": "macro",
@@ -125,17 +125,17 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTzNHTkoyeDN5RUxmZEp1S3hFUnRxSmRBWVlxejBmWWI3cjZWQjdfWnFZVXVkS05PaFg1MWRvd3hVUVpmUjZTS0FybGE3MFh5N2llbVdNajRZVlZZSTNYRGlGRlo0S0pnRXdveG1mcWViUDRIc1hYYWFaVjBBanowRDRvX0NsYXdYWWlURmRwQWQ2M25BMnc?oc=5"
     },
     {
-      "title": "Steel Pipe Industry of Indonesia (ISSP) Buyback Saham, Cek Anggaran yang Disiapkan - kontan.co.id",
+      "title": "Garuda Gelar Rights Issue, Danantara Setor 82,1 Miliar Saham GMFI - Katadata.co.id",
       "bgClass": "bg-ihsg",
       "category": "corporate-action",
       "categoryLabel": "Corporate Action",
-      "tickers": "ISSP",
-      "summary": "Headline terbaru dari kontan.co.id: Steel Pipe Industry of Indonesia (ISSP) Buyback Saham, Cek Anggaran yang Disiapkan - kontan.co.id",
+      "tickers": "GMFI",
+      "summary": "Headline terbaru dari Katadata.co.id: Garuda Gelar Rights Issue, Danantara Setor 82,1 Miliar Saham GMFI - Katadata.co.id",
       "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "kontan.co.id",
-      "time": "05 Nov 2026 • 13:18 WIB",
+      "source": "Katadata.co.id",
+      "time": "05 Nov 2026 • 09:24 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVFFIeEwyMVpCQ1ZfOElnSnFZMTltdkhnQWNiYW9UaGFxTzFHOTRBQUpKQzFkVEFwNkhERF9KeDJza04yZlU2VWtOeGlxeW1GWkczdnNqcjVCVjR6UklGQXJ0UXdkSlVSV2JLeXhaaHFLdjZKVFRQQWJaLUxMYnVNY0hsR2ppeTJ0VW9vRTYxU2tCM2pTT1l5QjhhaDR5T3lyV3pjZThoQ1hIaHpGdnFYRHMwY3RJd9IBrgFBVV95cUxPMjA1Tm52Rk1tVlBycFcxTnhTam5kMVNkM3FlX185d0NPaEhEU1RuSVJXSXh6QzBicWZOMzJTdWttZzYzUXNFSWtNZXlFVHMzREg3aXd4Y015NFZaWGpoUU1SOEtPeVRYUWNVVTFfeXM2S2dUMUFLa1NRcEdZNE5Wb0s0T3EzM29rMEk0OWwxME5nU2h2dGxXaGREbWJjNnhVNGpFQk0yYzEzWGkxNWc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRWJ0OUFlYkVsSXRFM1RvV045R1hrY1BKcUFkNnJHbERKcTRuOHl6WlR5emVDQkp1bFZCM2ZzZEtWZlVpVHJJdC0zdnJ1aVRwb25YTkY2czNBb0x4eWhBTklqR1hUWnQzN1dfZlFzVnE5RWlaaUI4VVpIZEVJWHJxaFNMTURLNkJjalFlUktOOENFSkVIRHFMNktkSHRXNWhKMWFteG5XMW9rMkRpUl9PVHJlOVJTRF9CQWIzVEl30gG-AUFVX3lxTE9FYnQ5QWViRWxJdEUzVG9XTjlHWGtjUEpxQWQ2ckdsREpxNG44eXpaVHl6ZUNCSnVsVkIzZnNkS1ZmVWlUckl0LTN2cnVpVHBvblhORjZzM0FvTHh5aEFOSWpHWFRadDM3V19mUXNWcTlFaVppQjhVWkhkRUlYcnFoU0xNREs2QmNqUWVSS044Q0VKRUhEcUw2S2RIdFc1aEoxYW14blcxb2syRGlSX09UcmU5UlNEX0JBYjNUSXc?oc=5"
     }
   ],
   "recommendations": [
@@ -153,14 +153,64 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah - CNBC Indonesia",
+      "whyNow": "Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
       "reasons": [
-        "📰 Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah - CNBC Indonesia",
+        "📰 Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "06 Nov 2026 • 10:39 WIB • AUTO DRAFT",
+      "updated": "06 Nov 2026 • 14:58 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "ARKO",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Ini 3 Emiten yang Disuspensi BEI per 5-6 November 2026: Ada ARKO hingga MKNT - KONTAN",
+      "reasons": [
+        "📰 Ini 3 Emiten yang Disuspensi BEI per 5-6 November 2026: Ada ARKO hingga MKNT - KONTAN",
+        "🏷️ Sumber: KONTAN",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "06 Nov 2026 • 14:58 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "TMPO",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
+      "reasons": [
+        "📰 Harga Saham Naik-Turun, TMPO & ARKO Kena Suspensi Bursa - CNBC Indonesia",
+        "🏷️ Sumber: CNBC Indonesia",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "06 Nov 2026 • 14:58 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -185,57 +235,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "06 Nov 2026 • 10:39 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "SOUL",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "BEI Suspensi Saham MENN dan SOUL, Ini Penyebabnya - JournalArta",
-      "reasons": [
-        "📰 BEI Suspensi Saham MENN dan SOUL, Ini Penyebabnya - JournalArta",
-        "🏷️ Sumber: JournalArta",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "06 Nov 2026 • 10:39 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "RNTH",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "Di Tengah Ancaman MSCI, BEI Pamer RNTH Tumbuh di Atas 10% dan Investor Melonjak - InvestorTrust",
-      "reasons": [
-        "📰 Di Tengah Ancaman MSCI, BEI Pamer RNTH Tumbuh di Atas 10% dan Investor Melonjak - InvestorTrust",
-        "🏷️ Sumber: InvestorTrust",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "06 Nov 2026 • 10:39 WIB • AUTO DRAFT",
+      "updated": "06 Nov 2026 • 14:58 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
