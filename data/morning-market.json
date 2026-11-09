@@ -2,16 +2,16 @@
   "version": 1,
   "date": "2026-11-09",
   "display_date": "Senin, 9 November 2026",
-  "generated_at": "2026-11-09T09:58:55.568948+07:00",
-  "generated_at_wib": "09 Nov 2026 • 09:58 WIB",
-  "headline": "BEI Selidiki Transaksi Saham CASA, FUJI, dan NSSS, Ini Temuan Konsentrasinya - InvestorTrust",
+  "generated_at": "2026-11-09T15:03:51.713322+07:00",
+  "generated_at_wib": "09 Nov 2026 • 15:03 WIB",
+  "headline": "Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! - CNBC Indonesia",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • MKNT • NSSS • FUJI • CASA • BRPT menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • NSSS • MKNT • FUJI • CASA • BRPT menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "CNBC",
-    "MKNT",
     "NSSS",
+    "MKNT",
     "FUJI",
     "CASA",
     "BRPT",
@@ -19,6 +19,45 @@
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! - CNBC Indonesia",
+      "bgClass": "bg-ihsg",
+      "category": "corporate-action",
+      "categoryLabel": "Corporate Action",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! - CNBC Indonesia",
+      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
+      "source": "CNBC Indonesia",
+      "time": "09 Nov 2026 • 13:00 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOT25SQm1PRXZtWHpCOVJ2QmJhaGtjOFJ1ZEhnbXJ0RFA4dzRCdE9raWtpUGRWblMxX2h2cmRqai1UWmpFeldFZEw3amY2SDVRN0ZuNUJORmFrZE1hUjlQQXV6SnRsdExYdjNYY0t0XzhYNEFPZ21vZlRMZFRZcGhFRXZiSDZYQmV0N2hSaUpsQU1OR29qRk1FYnJ2NlNWUFJfY0ZFdHJGemVVek1CZG9r0gG0AUFVX3lxTE1hMTBsOXA2WTluR05mVWlXU0RWRHJIZklkd3M5a1phN2hiRG1BdUN0VTdwdGdXQjdJWXh1amJtUTJPMC1kOVhXbjlUbElMVjB5eWxLbloxWXN3dG1INENEYS1tYnVRN1RSSnZBRkpkaWRJZHBCdGwzR2xfeE1GeUJ1ZkJFWDVpa3FwelVWYXc1WHhUZjBBWHZVVHFWNzQxUnZXdWowZWIwQnlNQm80SlZVUnlqUg?oc=5"
+    },
+    {
+      "title": "Video: Mulai 10 November 2026, BEI Delisting 18 Emiten - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "09 Nov 2026 • 12:30 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVUNjQkN5WEQzNTN1ZTVZalQ5V0x6aTlGR2Z4cmF2RTV2YU5fWmduRkpkeW50Z29maGlIV2o2V1BLWEhlMTB0NDRVYzJWZVlPdVdkZUR5bTQ4ZWQzYl9XRXdOQkp1NTRhbTVKdWNIOS0wNlRFblY5UUVKVk8xY3NwemVtUUhzLVk5MmM0WkYyUUdnMzBmdWx5STlRdHpBc2FiOVN6U0NEa3BqTklQY2ZGZm5oWlo?oc=5"
+    },
+    {
+      "title": "9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: 9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "09 Nov 2026 • 11:35 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRExhNGFSWVBPM2tKbW8zbmR0enBXSC1LSzFlcXpyRUV2V3luZUFBaGNuZ05UY3hjSWZldTRuVUk0QzduSUQ3dkZqMGpJUFc5Yk9Ec0x4dEVZcWNxc1ZNeW1IRWFmR3IxcEhVVmpJb20xTDNJajFfSkNsWlZROFlFQzdZSmVTYmY2R2hMVnVkeEd0ZlE3REhjUVVNOTNnN01pYXNoakQyVXE4WU9vVktJakc3NDJIODJYTDhDNmExWXBoaHowTVHSAcsBQVVfeXFMT3hfUDVrQUVDckd1VTlJdjZWZmVpYXlYT1BHRlNLbXJwN2UtTEswTU5HUlZieTZYZHZwcDAzODNrNGlYVE01c2lXWEdrT3FUdzkwLUNjRUJHUko2Qm0wTDFtMzIwREthYWRMeFloR0ZETHN4QzJ0dmNDUTloT2I5Y2xZLWtfZjU1endVTHhwVUloV1JGUHBkaXdRbXg2TDdJWDdjMnNRLUVIWkMtOU9NMWVzMFhyRHlDSFRwSXJRTUdVNmN3NFNzVzhLT3M?oc=5"
+    },
     {
       "title": "BEI Selidiki Transaksi Saham CASA, FUJI, dan NSSS, Ini Temuan Konsentrasinya - InvestorTrust",
       "bgClass": "bg-usjobs",
@@ -29,7 +68,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "InvestorTrust",
       "time": "09 Nov 2026 • 09:23 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUFhvV3pFcXAxQUoxNGJNdDVSZjVqcXJibENvWEtTYjNWYnAxcUhCTmhFUjNXbDhIVndyNlM1eGw5bkZxLTB3MWdDMW1reDNmVEU3RzgyN3VJZFJISFdYSHFZcW1qaEY1dDlBZ1NFQzdzQzN5R3RrR3lVZmpfTHhpZXoxY3c3eDI2T2xNTlRyWmk1aWpjUHY1Zjl5cVVZVEsyN2E0V0xCMTJMVGkwejh0eWl3?oc=5"
     },
     {
@@ -72,6 +111,19 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOVB1RjZHdEZKOUNlVkNtNEJLc2lOYXdRRG1yVm9xZEt5cVpWUmRIZnVWZHVzc0Y4Zjl2Xzl3WWgyZnhsZUFETENleEtRaDlsMTI3TGxaVFFIQkQ2dWhyYWJLSXhGR1BOU2lrT2JsMG1KWmNBSWZieFdMUU9qVHpBX2JnSDhKN2NOVjZORjlqeUQyc2QyXzk2YzhzU1pVNnFLNnBYd3J5bXVyZ3A0TWFzbkZfTVpGWkpBazFkU1ZwalBQN3BhUFA3SdIBzgFBVV95cUxNdTN0MHJXMU83eWo1QlMzM3BQY2kyRjlfdzFUU2xpRVNfMVRWN1BEVll3aTJLdjhvdlNSR1p4U1RvNWVMUTlwRXF0RU5mSGwwdXdzUE90TDBYWEJxM0QtcEdPNzh3dlRYaGp5MmtNaVBUZ2RZTmdrU3hIT0xrclVoUVRzLUlfdThQVDhBSFpOVEVVSzF2QXR6akZFTE9wVnlTVUdQSWM0cFE2Nm02QWZLVkVzUl9KZ1pUbHp1Qy1QSUZKdUJyenJBZjQxelhEUQ?oc=5"
     },
     {
+      "title": "Hitung Mundur Review MSCI Pekan Ini, Ujian Pasar Modal RI - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Hitung Mundur Review MSCI Pekan Ini, Ujian Pasar Modal RI - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "09 Nov 2026 • 06:30 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaGJMUHAxZ0Uzckg3U0NQRWlGT3pWcTd2ejdQb3E4VG5sbUViczdHMldiUE5panBXWWZ6RWt3eFYxLXdROUo0N0oyMDJPczRHX1lOUndvZlFSQjlxVkZCd3QwQWJMSTFMRS1jX3gwTVd6QVd5aXZLXzBsUnV6Y3pJdlVDbXpFT0UwVWZob1VRa1lSOWdCY0hfS2JBWHRLSmpnTEVzV3kzUkdMbXkzMzBNQjdfYkMyWTFhZlHSAb8BQVVfeXFMTWtTSHd2WFp6dWZmbF9PM0E2d1pQazJrYlRub1JoMGtudk1aXzlsZGh5aWIyX3VmbnVKeHFrOGhBSy1vUWhPekZZMElqYVZTTGN5Ri1UQ2htNlNXQWM2UEFnRmFkRGJaTGg4TWl4Q2lXenBEQkY5VGlhYmNQakZ1dDFDMlVCd0x6NXZtbFQ4U3pxUFM4S2xXRU5wcHdlelpiRmVpZjRyWUhkeUxBczdqUElidTdFTHVmd2l1bHBkaVk?oc=5"
+    },
+    {
       "title": "MSCI Indonesia November 2026: BRMS dan BRPT Terancam Keluar, Pasar Menanti Hasil Rebalancing - Aktualita.co",
       "bgClass": "bg-usjobs",
       "category": "macro",
@@ -83,58 +135,6 @@
       "time": "08 Nov 2026 • 23:58 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQTFpSzRGWnE0dUpuRXhEWjVYR3licGp0Z2xOcnRvLURES3VMdjltUHhaSGZCUllQdFc3dzBkcFo2SEhCOVlRS2J5U0RpbVpsUXhZX2pERjB3SHZBeDhvVU90TGZHTWpIT0JrRmNFRW9tRVJTLTc4ZDFSMlVuMU9ZNmRSdXNUQQ?oc=5"
-    },
-    {
-      "title": "Video: Reksa Dana & Saham Pilihan MI Hadapi Sentimen MSCI - The Fed - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Video: Reksa Dana & Saham Pilihan MI Hadapi Sentimen MSCI - The Fed - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "08 Nov 2026 • 17:00 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMThvMkFpUGxHa1VuNTdJcmREV0ZZVThoT3V6VFhmcTRJZ21OSUlBUlF4OXdLTldBOW9yUHc0Q2hWcnJJaWVUV1NBOTFxS2Jqc0RuZklKcE1mR0hqTVVUTWhZWlh5NDJNT3diYm43SHpxTFNOTVdUVFFTbXcwSzRZRF9RejBvdnU2Y3ZyS0ltUlBXOXRVaUJpVVhQS0pDNndTTmFkcjJyNlllVnRDekdDZDZVei1ZWHZ6Qm1rZnJTZnctWEU?oc=5"
-    },
-    {
-      "title": "BEI Tambah MKNT ke Daftar HSC, Cek Transaksi 3 Emiten Ini - Infobanknews",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "MKNT",
-      "summary": "Headline terbaru dari Infobanknews: BEI Tambah MKNT ke Daftar HSC, Cek Transaksi 3 Emiten Ini - Infobanknews",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Infobanknews",
-      "time": "08 Nov 2026 • 15:43 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdXN1UmRVaXlZSHo4bVZmd0Y0WE1YdEt5QUhfdmZJYmJva0liS0M3M0xBd3AzaUtrdm52VmhSRDVWY1dDR3N5OFZ0Zjlva2M4ZWRtd2h1TnFURXFkMnozVGVFZHNjbFZxdGl3UDExYjAxZ1luZjhFMkFjU1UxNlR5S2REV3RUbzct?oc=5"
-    },
-    {
-      "title": "BEI Delisting 18 Saham, Nasib Investor Minoritas jadi Sorotan - Bisnis.com - Market",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "IHSG",
-      "summary": "Headline terbaru dari Bisnis.com - Market: BEI Delisting 18 Saham, Nasib Investor Minoritas jadi Sorotan - Bisnis.com - Market",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Bisnis.com - Market",
-      "time": "09 Nov 2026 • 09:51 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRlM0T1Q3eXQtUGJFRE9WVFZFdGJiWW9nVEV2d21PMHh5SEh2c1p2bk9mWU1mR3BoWTUwSGQ5dHdJM0xyT1ZSV2xma2R0TzNfRjFlTG5qeWtTQmdBV1JxWjhmNkY3am80cGRmWjVKUmxHUmtDQWRRdjZrNjRaZDhvekRPWndqWWRmdXM2UjdDMHAtdlVWM0NFWXdzX1FqT1dSTlJxVFRGSTZLSVFRS1pZ?oc=5"
-    },
-    {
-      "title": "OJK Atur Buyback Saham bagi Emiten yang Delisting - SuaraGarut.ID",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "Market / Sector",
-      "summary": "Headline terbaru dari SuaraGarut.ID: OJK Atur Buyback Saham bagi Emiten yang Delisting - SuaraGarut.ID",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "SuaraGarut.ID",
-      "time": "09 Nov 2026 • 09:49 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZTGpzMXVkU3BVUTRGbTVjNlRDazV5c3lOTHY0dTlZMFRBRnI3Z1pfLXVfZTdGSldGemlTakZuZ1RVMFBOSnprbENaakg0WDJVRV9NaTNGU3ZJN0JrR3drU0dMUHM?oc=5"
     }
   ],
   "recommendations": [
@@ -152,39 +152,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
+      "whyNow": "Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! - CNBC Indonesia",
       "reasons": [
-        "📰 Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
+        "📰 Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Nov 2026 • 09:58 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "MKNT",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "Ini 83 Saham HSC Terbaru per 9 November 2026: MKNT Masuk dalam Daftar - KONTAN",
-      "reasons": [
-        "📰 Ini 83 Saham HSC Terbaru per 9 November 2026: MKNT Masuk dalam Daftar - KONTAN",
-        "🏷️ Sumber: KONTAN",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "09 Nov 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "09 Nov 2026 • 15:03 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -209,7 +184,32 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Nov 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "09 Nov 2026 • 15:03 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "MKNT",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Ini 83 Saham HSC Terbaru per 9 November 2026: MKNT Masuk dalam Daftar - KONTAN",
+      "reasons": [
+        "📰 Ini 83 Saham HSC Terbaru per 9 November 2026: MKNT Masuk dalam Daftar - KONTAN",
+        "🏷️ Sumber: KONTAN",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "09 Nov 2026 • 15:03 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -234,7 +234,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "09 Nov 2026 • 09:58 WIB • AUTO DRAFT",
+      "updated": "09 Nov 2026 • 15:03 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
