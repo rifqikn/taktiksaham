@@ -2,22 +2,50 @@
   "version": 1,
   "date": "2026-11-13",
   "display_date": "Jumat, 13 November 2026",
-  "generated_at": "2026-11-13T10:36:08.998359+07:00",
-  "generated_at_wib": "13 Nov 2026 • 10:36 WIB",
-  "headline": "Efek Evaluasi HSC, Ini Daftar 10 Saham Penguasa IHSG - CNBC Indonesia",
+  "generated_at": "2026-11-13T15:06:06.431679+07:00",
+  "generated_at_wib": "13 Nov 2026 • 15:06 WIB",
+  "headline": "Daftar 383 Saham Masuk HSC: Ada BREN, MAPI hingga Emiten Bank - CNN Indonesia",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • RAJA • BRPT • BRMS • WIFI • FUJI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • BRPT • BRMS • RAJA • WIFI • MAPI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "CNBC",
-    "RAJA",
     "BRPT",
     "BRMS",
+    "RAJA",
     "WIFI",
-    "FUJI"
+    "MAPI",
+    "FUJI",
+    "BREN"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Daftar 383 Saham Masuk HSC: Ada BREN, MAPI hingga Emiten Bank - CNN Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "BREN • MAPI",
+      "summary": "Headline terbaru dari CNN Indonesia: Daftar 383 Saham Masuk HSC: Ada BREN, MAPI hingga Emiten Bank - CNN Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNN Indonesia",
+      "time": "13 Nov 2026 • 13:41 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZkpCaGNMejJETWdhRHc1ZWRGYlJsSkhDX2NKcHZNNzl5M0EzcUc5NHhxd3dOQkhrYXZWWE81NndOa3BVNTN1OUZrWDg1WFhfbHN4S0hIOURoN0VfSGd6elFPcU1jbUN4TlV4anBMdldjR0twTnZCSUktT3ZCdmxqeWlvcTFVTGdERzhjZ3hLSG9kMDVzcVo1endVYzQ2TWpBZngxYXZkVUVwRHZTY1VqcXIxZ3JJTE9rQ0NHbkhHNNIBxAFBVV95cUxQSmRUUFJyeGpRVmN4aUhZWG1FcE05SVh0d3ktMXU1bDVVU0dKRkhfU3N5cjZWTXZQZlhjTWpHM3VIMkpPNnUzUENIekVRQnowdlI3SG80dDBLaS12STd1TXY3RFh2VVVNZWdja0Y3ZnZ6Y3BVM1lfdXZPeHUyb0d0cmxudnlmbE5qR2VsVjBtSjRXM05PRDBpWVNoTTgyUkZJZzNlUEZHVUxfWm5VQlp3dHZTamhSbWdiNjJCMzdkUHFKWGNM?oc=5"
+    },
+    {
+      "title": "Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "BRPT • BRMS",
+      "summary": "Headline terbaru dari Gotrade: Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Gotrade",
+      "time": "13 Nov 2026 • 13:34 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9ibzNXZU0yWU80VTc4TjdTNFNfNGtqSDlpbU5EQVVhSDZlOVdQS1ZITUpoZnlGX1Nad25xeUhiYmpEdExIWUVfbXhGYURkLWNLQkJlRnlxNW9OWkFCS0ZJM2N3WDBkb2xyRjlMaDNFd0x0NG5OMl9zcUo5MHk?oc=5"
+    },
     {
       "title": "Efek Evaluasi HSC, Ini Daftar 10 Saham Penguasa IHSG - CNBC Indonesia",
       "bgClass": "bg-usjobs",
@@ -28,7 +56,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "CNBC Indonesia",
       "time": "13 Nov 2026 • 09:40 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRWRDWkNWTm5CRkxsSXROLUdzblowaU1VOW10VktXd2hUQTZwbVpyNEJLYzZBR0NxcFVieW9JMVRoT3FMNUV0cTVxTnBrbHByZnU2QVJEUHdNdEV0NjhQbHR1VlBsUHhVaHR2SGNwTGc3OEhJM2tUWUppWkZlOUY1czd6QWtNemhuMDE1bUJjOWhMQTNtb2JqVGpoY1BCT1E3OFVuWlFtai1IaHBkMmt3WVRtVdIBuAFBVV95cUxQRGNWUUFydmpIVVI5bmV4dE1oVjc0dHlQa2Q2LVZPUjVqRUFjc29VYkEyODVTSHE5MC04YVlOOWUtWFI0YnlCOGJtc1R5bDZudFVkNURRbEZMc0dKNTZxZXcwQVNjZl94N2tGMm15RHNmV2hXLXc1ZHVwa2V5dlV0RTdPUlplRl9OWVZjcExrR1FoeFZJWTd1NGJPdkNoV19JdFV0LTE2aWNqOHlyaXpMLXlfcjZBWGRL?oc=5"
     },
     {
@@ -108,32 +136,6 @@
       "time": "12 Nov 2026 • 16:54 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOF9jc3RoX0RRTnk0TmJMRTJxSWhwUTRGQ3dSSUxkdVoyM2ZKWmZLbnh3RkI2YlgxbjlvQU1KUUViWHlvTEhFZXZtcWhEZWtEX2czZS1xaWZiM3QzNEwzd1ZpNkVDTmQxSFltSmxaOG54aU55aG5KbXJjY1hIZHV3cmlZLUx0bzlGaW85WEpQQmNuMnJ1Tm5vb2FhZUJ5cThuWHlTUGx5RlFUUHVOd3F5Rm1WYWoxeU1oOFRnQXgxdG5XNGprVnplRy1YVdIB0AFBVV95cUxNc0Jjeng3LTBYcWR5dkpnSERKQVdfSlVWR3JtWGxuRnMzMGpqTmRXZ0JtOWNvZHFmM0tHdTdoWjZYWHJ2RjhVVnJHcVlpNnhUNjFUVk9fY09TNjhmU05XTEg3VktCTEtJWC1seF93LVJsMTI5SjdpOU12dG9NSVpJQngwcDhJaFlxQ0VSU1AtLURlaVUzS1hvaVBFWXdPVllCT3ExS0RJWUc1WHVmUkpubTNjYXZMYTkzMWJWTlFTU1BYMnBNSnJFeWxQTTk2NmlJ?oc=5"
-    },
-    {
-      "title": "Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG & Rupiah? - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG & Rupiah? - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "12 Nov 2026 • 16:06 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRVN6U1c4bHNKRmlLTVJsMWEtT1llQVpVN3BmbWhuWVZOaktjd1d6QzBLbUt5QkxlbUlNdFk3VVRBeU10ampfT3lRMWNsTFJ2LWpRWEFtWG5tbmhLQWFEOHVoQUZtUUcxSFM0eDdzdWJBdndmQkJvczQxVnh3VVRXcHVldGI3V2NBZWJES3B1V2x5RmczeDRDVzF4dTBNYlVzUkxYYlNNWGNQY0hQbE90eXBZZGNfMjVlNDFMNUlpYlh2bmM?oc=5"
-    },
-    {
-      "title": "IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur & Rilis MSCI - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur & Rilis MSCI - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "12 Nov 2026 • 16:06 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd2k0dHR0UEF0ZTRXMkd3RWR2R3A0OEpNQXpiV2dYNHR5SmpiZ1I0S0FkT211Xy1XV1laNms2VVJBZGdHaUdaY3BGdXNFY1U4R0Z1RmJPOUtKSmswSi03M2QzaEdaSnZjcmRfQjZxdlFhZnlWdmJOUG5FX3JSZTAxb09nbHhab0J5MnVSMHUtcU9oZjJGRWd5NVNTb1o0WmhIbjFKeTBPeXU4emh5ZnZZd1BaeER6MHRpNGVqekJvUkfSAcYBQVVfeXFMUEpJcGVhNFprR0ZSVHhkRzdKemVEMEFEbk5PNHZBRlh2U2FxMjdacl9nN2tWcDVrZ3NjVTZrTVRlc0NKLWRfdG9UNWJGMk5zM25oNVEwOEJ4RmVUYzVjTnFHSnY0MjF6UkJ0VndReEVudjdfMzlVd01WUDZuWGhhSnppWDItU1FfVzlhTUVmUlo2Ykx3NW51RTZkZ0RjNmpWYWtSTm11bDFja0pUd25vSFZCRWJXZ19kYXdRdmZHd2tSNjJwMXNR?oc=5"
     }
   ],
   "recommendations": [
@@ -158,7 +160,57 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "13 Nov 2026 • 10:36 WIB • AUTO DRAFT",
+      "updated": "13 Nov 2026 • 15:06 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "BRPT",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+      "reasons": [
+        "📰 Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+        "🏷️ Sumber: Gotrade",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "13 Nov 2026 • 15:06 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "BRMS",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+      "reasons": [
+        "📰 Rebalancing MSCI: BRPT dan BRMS Dicoret, IHSG Naik 2,66% - Gotrade",
+        "🏷️ Sumber: Gotrade",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "13 Nov 2026 • 15:06 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -183,57 +235,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "13 Nov 2026 • 10:36 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "BRPT",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "BEI Hormati Keputusan MSCI: 8 Saham RI Didepak, BRPT dan BRMS Keluar Indeks Global - BERNAS.id",
-      "reasons": [
-        "📰 BEI Hormati Keputusan MSCI: 8 Saham RI Didepak, BRPT dan BRMS Keluar Indeks Global - BERNAS.id",
-        "🏷️ Sumber: BERNAS.id",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "13 Nov 2026 • 10:36 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "BRMS",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "Nasib Saham yang Didepak MSCI, BRMS dan RAJA Ramai Dilepas Asing - Katadata.co.id",
-      "reasons": [
-        "📰 Nasib Saham yang Didepak MSCI, BRMS dan RAJA Ramai Dilepas Asing - Katadata.co.id",
-        "🏷️ Sumber: Katadata.co.id",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "13 Nov 2026 • 10:36 WIB • AUTO DRAFT",
+      "updated": "13 Nov 2026 • 15:06 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
