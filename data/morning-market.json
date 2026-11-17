@@ -2,23 +2,50 @@
   "version": 1,
   "date": "2026-11-17",
   "display_date": "Selasa, 17 November 2026",
-  "generated_at": "2026-11-17T12:14:25.417764+07:00",
-  "generated_at_wib": "17 Nov 2026 • 12:14 WIB",
-  "headline": "Dihujat Publik Buntut Kontrak Pemerintah, RANS Kehilangan 10.883 Investor dalam Sebulan - Radar Kudus",
+  "generated_at": "2026-11-17T16:17:20.712840+07:00",
+  "generated_at_wib": "17 Nov 2026 • 16:17 WIB",
+  "headline": "Isi Pengumuman FTSE Russell Saham Indonesia, Ini 14 Emiten HSC yang Dikeluarkan - kumparan.com - kumparan",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "FTSE • BUMN • WIKA • RANS • DOOH • CNBC menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "FTSE • BUMN • WIKA • UNTR • TRIN • RANS menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "FTSE",
     "BUMN",
     "WIKA",
+    "UNTR",
+    "TRIN",
     "RANS",
     "DOOH",
-    "CNBC",
-    "ABMM"
+    "CNBC"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Isi Pengumuman FTSE Russell Saham Indonesia, Ini 14 Emiten HSC yang Dikeluarkan - kumparan.com - kumparan",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "FTSE",
+      "summary": "Headline terbaru dari kumparan: Isi Pengumuman FTSE Russell Saham Indonesia, Ini 14 Emiten HSC yang Dikeluarkan - kumparan.com - kumparan",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "kumparan",
+      "time": "17 Nov 2026 • 15:14 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTEhMaTVhMGk3ckZrNzJQVWhiVmtzdWlVR09Wb2dwbDlMUnM4R3lHOFY4OFpmMjlJNWpsNlcyU0lwMUNpSzhJRl81YzZqMWU1dHZMZUo4ZUhrRUQzamlmLWJpaE9ZNkx5WU5SOFhhbFA0dVdzMkhIdUFtdEVJMmQ2cldaRlNtNXFzck5vWUxtVHotc0dkZnBqMGFrSm9ITmRzdHJ6TlJZeE04YlJHRnVuZmtzSmNSTW1yZWFTYXRhYzJvak3SAcsBQVVfeXFMTmU4WklfcV9KWjlsdlh5cktibGhBM2ZqaEFMa2xGS0ZRbFlvVnJZQXpycDFwaUlZalFJRlJYc3J5UzVzdVROYkFoRmVqLW93Ym9HOGo2ZUd5WDNyU200czNtc2xZRXllcTRFc0hMQTNvMFJRZ1pHcmwxMmhMTXFGY2pCYjdwMmdCY1hSR25uMmhMSFJDbDZvOGJsVUZsdXpUVjRNRDhRZFlwRTd2NGN0RTVFOENGa3pjaUF0ZGR5ZlE0elFMZ3FYS0M2bnc?oc=5"
+    },
+    {
+      "title": "Saham TRIN ARA Beruntun, Intip Profil Emiten Real Estate dan Kinerja Terbarunya - KONTAN",
+      "bgClass": "bg-china",
+      "category": "earnings",
+      "categoryLabel": "Kinerja Emiten",
+      "tickers": "TRIN",
+      "summary": "Headline terbaru dari KONTAN: Saham TRIN ARA Beruntun, Intip Profil Emiten Real Estate dan Kinerja Terbarunya - KONTAN",
+      "impact": "🟡 Perhatikan perubahan laba, margin, dan respons harga setelah laporan kinerja.",
+      "source": "KONTAN",
+      "time": "17 Nov 2026 • 14:20 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObFhWMHM0RHlDQWNXTzhiQTNsVzBXU2JJaEtzQWlEeTZFZmY3X3pNQWE3XzFhT09pSVZMR3hqbGZwMmxzYnhlOXAwUnVSUHlKZ09BV1JsRTZVUUtsb3Q2UTJVYktxbmRMdXNZVGwtODZKVXdjZk9tekFlVTU2ODk4MU5IaEJTQ0dlYnUtekRtUGRMbFRIMTNTb2pHdENHUXM5QXlFVmVta1ZmT0JGZ0lWQlJXS2Y2bnlm?oc=5"
+    },
     {
       "title": "Dihujat Publik Buntut Kontrak Pemerintah, RANS Kehilangan 10.883 Investor dalam Sebulan - Radar Kudus",
       "bgClass": "bg-usjobs",
@@ -29,7 +56,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "Radar Kudus",
       "time": "17 Nov 2026 • 10:18 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVDB2OHJkNXRlNnl2TFZPVnlONEdQelc5Q3hYSUdIWVA1SFRleWZhbFlRck1kbU1aYmhTNXpVOTNNQ1l3enRZcm1kRTc4ZlpvQ2E4SkFBSkhNTFVlaFRjWWZ1VVVVZC1NTjZ5QlJZQy1Xb2NUNngyZ19KTnItRWdXV25JV3BoY3lfak0zX2gyeDEtYldXVUl6azVVeVJta2ZlMWpVb3hTWU9QcXdkb2VvZHlPRjMtTXdvMUlzeVRhRENOLXZKakRSN21tb2FUN0xwbFhfaGQ1S07SAd4BQVVfeXFMTXBjQ2VOZ2xEc3hyZGRVQzhBVDhON1A0djlkR1dnaFlBYmRSSXdTRGhsSnZ4cmNNckZCT2xRQkQ3SUsxemR5Z0ZQb3R6bDROUHZ2ZDc0bklieGlLMlRkTHI4ZEZEMklOaXJQWXNkQk9qZlVwc2RjQWxnUFJmSGpxZUFYQW9ZVUtfOXRDcmFtbVdnYWhpMGdnejlpblJGU1Z2SDQxYUY0dnl4cXota3ROU1RYUDJuSDliYTQ0X1MxNzdZdTlTbzNHRmI3Q3hnbmJtLTZmTUVpcUJIVjMzS0Fn?oc=5"
     },
     {
@@ -98,43 +125,17 @@
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vSGF1VmphLV9BRjl3NS1iRkRXaml3d3hiWEhfcUZrcFJFbGltekxUSzV1RmFTTnZyb1BMeWVtRmZQUkFFTHVjLWtZRTB4ZmRvUFp3?oc=5"
     },
     {
-      "title": "Kebijakan Porsi Negara Tekan Saham Tambang, ABMM Menguat - ChatNews.id",
+      "title": "Saham Tambang Berguguran Usai Prabowo Minta Negara Kuasai 70% Keuntungan, ABMM dan UNTR Justru Menguat - TOPIK.ID",
       "bgClass": "bg-usjobs",
       "category": "macro",
       "categoryLabel": "Makro & Market",
-      "tickers": "ABMM",
-      "summary": "Headline terbaru dari ChatNews.id: Kebijakan Porsi Negara Tekan Saham Tambang, ABMM Menguat - ChatNews.id",
+      "tickers": "ABMM • UNTR",
+      "summary": "Headline terbaru dari TOPIK.ID: Saham Tambang Berguguran Usai Prabowo Minta Negara Kuasai 70% Keuntungan, ABMM dan UNTR Justru Menguat - TOPIK.ID",
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "ChatNews.id",
-      "time": "16 Nov 2026 • 18:45 WIB",
+      "source": "TOPIK.ID",
+      "time": "16 Nov 2026 • 20:18 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DMEp0SkYzb0J5UC1iOGJtOTB5clJ2MkdXSnN2UjZmVzNaMmRoaVN5c1NSUmREbVNtRDRQamRWbktSZkhMenlLZThOeHZtZklKZ1I4Q0M0cFJhRDVzbGc?oc=5"
-    },
-    {
-      "title": "14 Saham RI Keluar dari Indeks FTSE, Seberapa Besar Risiko Outflow? - FORTUNE Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "FTSE",
-      "summary": "Headline terbaru dari FORTUNE Indonesia: 14 Saham RI Keluar dari Indeks FTSE, Seberapa Besar Risiko Outflow? - FORTUNE Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "FORTUNE Indonesia",
-      "time": "16 Nov 2026 • 18:21 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZmVJRjBib2N0a1VLa2syQWFSM1I4WXlOcVNOaWlLLXFjdlJOSDRaZE95M3lNd3poc1lZaC14U29zclhCOGJWOUdkYTFjV1lfVmxKRU1hZndNTlM4aDc3TzlNYWdEcG1iTGNDVjZaNzBwSTZPa2M5SnM3eW1jZmdnWHZVeVExVGpMVWNIZXJSX2prN2MwOGFSSmVWYXdaZzZ0WFc1Mzk3Vi1MSEY0VHFzWHJnV1F5UdIBuwFBVV95cUxNYzRNSGp6Qmc5M1VkRUtDdzdjdkZGcXYzek5jeTlKTHEwR2JJc010cHVCdGdQb29kdXpPeHBCWmxwbjBkdkx3NnNGYUVVR3h4TzVEZHpBNGVHUFh2RHlBNHMxUlYtRmhLeG5WTllVNWJQWjlZenZ4TE1IWEdTNU5Bb1VJd1UzSWpSdmtKU2hzNm1aQlJZQlBMWk5KalMzQ1JfSF9qdV9CdGRwR1FzLXVLR3UwUHJnUHhoMTRN?oc=5"
-    },
-    {
-      "title": "FTSE Russell Pertahankan Status Secondary Emerging Market RI, tetapi Coret 14 Saham dari Indeks; Ini Daftar dan Respons BEI - Digivestasi",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "FTSE",
-      "summary": "Headline terbaru dari Digivestasi: FTSE Russell Pertahankan Status Secondary Emerging Market RI, tetapi Coret 14 Saham dari Indeks; Ini Daftar dan Respons BEI - Digivestasi",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Digivestasi",
-      "time": "16 Nov 2026 • 16:47 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOR2NKOGhrTFZsN19pam90dHpNSmplaDh4cEYxOXNLb04zZ2ZnS1Z2WWNRa2ZqSlIzLUN1cFVjajVLalJkQVFzb0pGY29iSmJqaUg2U0RycXNySVZZU3d0MXVEa0tsSksySWs1RUY3TUdaWTlaU3VOMmhDVGFLZmpxenZzcDNubG44SU90bHE4MmYtOUpfc1FiWks0Tnk1VThFTzFrV3R2OTh6Z0dZbm9Nc083RzN5MndIYU5JQ0RmNjBqR1VhaDItSjNR?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc0dBdGZJWldqbkxVQW5WUjJZRnYzbXFzUFNWWjlvR21mbmtJR0t2ZG0zS0FUdzVmOTJ6Sjl0RnFQTWpMWEN4c3dvdHpiYXdhVHFiQTg3OHdvVmk1OWxvTGRxUXVUci1XVzJKaDRrNWxlQ3gwQm4zMmIxUmkxMlVPSW5ycU9LOTNlWk5IRlJYM0pPdERPMFl6bktlclYwdTlIaDdfNDB3eFhRQzJVX1NMZ3AtN1VCNlN3RVVuMjB3?oc=5"
     }
   ],
   "recommendations": [
@@ -152,14 +153,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "FTSE Russell Pertahankan Pasar Modal RI di Emerging Market, 14 Saham Didepak - economy.okezone.com",
+      "whyNow": "Isi Pengumuman FTSE Russell Saham Indonesia, Ini 14 Emiten HSC yang Dikeluarkan - kumparan.com - kumparan",
       "reasons": [
-        "📰 FTSE Russell Pertahankan Pasar Modal RI di Emerging Market, 14 Saham Didepak - economy.okezone.com",
-        "🏷️ Sumber: economy.okezone.com",
+        "📰 Isi Pengumuman FTSE Russell Saham Indonesia, Ini 14 Emiten HSC yang Dikeluarkan - kumparan.com - kumparan",
+        "🏷️ Sumber: kumparan",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "17 Nov 2026 • 12:14 WIB • AUTO DRAFT",
+      "updated": "17 Nov 2026 • 16:17 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -184,7 +185,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "17 Nov 2026 • 12:14 WIB • AUTO DRAFT",
+      "updated": "17 Nov 2026 • 16:17 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -209,12 +210,12 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "17 Nov 2026 • 12:14 WIB • AUTO DRAFT",
+      "updated": "17 Nov 2026 • 16:17 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "RANS",
+      "ticker": "UNTR",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -227,14 +228,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Dihujat Publik Buntut Kontrak Pemerintah, RANS Kehilangan 10.883 Investor dalam Sebulan - Radar Kudus",
+      "whyNow": "Saham Tambang Berguguran Usai Prabowo Minta Negara Kuasai 70% Keuntungan, ABMM dan UNTR Justru Menguat - TOPIK.ID",
       "reasons": [
-        "📰 Dihujat Publik Buntut Kontrak Pemerintah, RANS Kehilangan 10.883 Investor dalam Sebulan - Radar Kudus",
-        "🏷️ Sumber: Radar Kudus",
+        "📰 Saham Tambang Berguguran Usai Prabowo Minta Negara Kuasai 70% Keuntungan, ABMM dan UNTR Justru Menguat - TOPIK.ID",
+        "🏷️ Sumber: TOPIK.ID",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "17 Nov 2026 • 12:14 WIB • AUTO DRAFT",
+      "updated": "17 Nov 2026 • 16:17 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
