@@ -2,36 +2,75 @@
   "version": 1,
   "date": "2026-11-19",
   "display_date": "Kamis, 19 November 2026",
-  "generated_at": "2026-11-19T11:30:46.736389+07:00",
-  "generated_at_wib": "19 Nov 2026 • 11:30 WIB",
-  "headline": "Emiten Hary Tanoesoedibjo MSKY Digugat Kreditur Asing, Ini Dampaknya ke Saham Grup MNC - bataviapos.id",
+  "generated_at": "2026-11-19T15:52:00.953644+07:00",
+  "generated_at_wib": "19 Nov 2026 • 15:52 WIB",
+  "headline": "Emiten Haji Isam Bantah Mau Caplok Saham Eramet di Tambang Weda Bay - CNBC Indonesia",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • WIKA • TMPO • SSIA • RDTX • PACK menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "PACK • CNBC • WIKA • SSIA • MGLV • INDY menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
+    "PACK",
     "CNBC",
     "WIKA",
-    "TMPO",
     "SSIA",
-    "RDTX",
-    "PACK",
-    "MSKY",
-    "MGLV"
+    "MGLV",
+    "INDY",
+    "EXCL",
+    "EIDO"
   ],
   "price_feed": false,
   "news": [
     {
-      "title": "Emiten Hary Tanoesoedibjo MSKY Digugat Kreditur Asing, Ini Dampaknya ke Saham Grup MNC - bataviapos.id",
+      "title": "Emiten Haji Isam Bantah Mau Caplok Saham Eramet di Tambang Weda Bay - CNBC Indonesia",
       "bgClass": "bg-usjobs",
       "category": "macro",
       "categoryLabel": "Makro & Market",
-      "tickers": "MSKY",
-      "summary": "Headline terbaru dari bataviapos.id: Emiten Hary Tanoesoedibjo MSKY Digugat Kreditur Asing, Ini Dampaknya ke Saham Grup MNC - bataviapos.id",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Emiten Haji Isam Bantah Mau Caplok Saham Eramet di Tambang Weda Bay - CNBC Indonesia",
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "bataviapos.id",
-      "time": "19 Nov 2026 • 11:21 WIB",
+      "source": "CNBC Indonesia",
+      "time": "19 Nov 2026 • 14:47 WIB",
       "featured": true,
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNV1Z5dV9jUzl0ZEZZZU1iaTNZeEZ0c1dCcldfNTlHeVE4TjZfeTJZVEdQUjY3LUR5LS1LMll4a1ZITXpWRXZObHctSnJYczZXcE4xdVN3eTNYYTNoQjc0ZUg4Z0hIWnVSRUc3bVpMai1DSGJHSG04SDlWbmxKQzd5UTBTUjZ4SGM0Y3d0OG9pM29zekExVWhvbzk4TTBaN2pVcjB5Vy1YMmkyQmltc2hBQUx3cW9hS2Voc0pMNlRfdmNFbzlGX3hSR2F3?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTGdJSzlnWU5IWVdhU21rOEE3eVp2c1Q5ek9PMGU3TWgyVDBxZFZ6ZGhLV0EtWTNOenJ4LTc5QWZJWVVZd1g1NFF3cVF5TUZKRFFNNFZUTThjVnRZMXBvcG5CaGtSdkswa0dXNndPWXRsTkEyS085eWZicWJtZkZIeEQ4ak4wWWdmNzdQVmJieW9ub0ZqSjJrRHFtVVg1UjN0Q2pSbnlBaXVIXzUxLU8yMWU5M09MM0F2aDVZa2RTZU9TWDdiT09qTNIBzgFBVV95cUxPNVU3VkJFODV5Qjlra3M2dHdRZWhScVUzSk10VURfYnhsYkloSHpLSU44bnBrSjhDNGZfb1NKcWpnYm44al93ak1kR0hNUG0tWTFOekRrc1hST19YRlFGOGVLVWZicjJWQXpPNWhQajh0dFk3SjlhVFdadVZBbmZBcWJuVktCOGM1dmprdmVTMXlLZHdZdGZmS2E1ZldObU1rUTF0S2pZSkhJbkxYNFVaMUc0RlJ1dGRmVERBTkhKVk5Lb21wNkZqQTRZclZaQQ?oc=5"
+    },
+    {
+      "title": "Emiten Haji Isam (PACK) Bantah Incar Saham Weda Bay Nickel Milik Eramet - Warta Ekonomi",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "PACK",
+      "summary": "Headline terbaru dari Warta Ekonomi: Emiten Haji Isam (PACK) Bantah Incar Saham Weda Bay Nickel Milik Eramet - Warta Ekonomi",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Warta Ekonomi",
+      "time": "19 Nov 2026 • 13:25 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOX0JMbkhQd0RRejlPVmc2ejJISGt6S0tONXB1V0llV1JUa21OVTI5MHM3SmZ3VE9KbUI2ZXVnRzJQOG9sajN0c2tmcHR0R0JOdDRBMlNiTGl2LUpFR1V3VmZzaWlqMFNJRDlpRmRQLVNLbW1mblRVUjFTVUI2YTJyemQzc3FGei1aS0dBdkVUTkdyd1ZpazNkQlVGRndXTlFEbmFjNEh5LVJUbUHSAbABQVVfeXFMTlMzQ0ZpMjJvRkVoZEc2UXFFU1AtcXh3YWdlZjdrNUIxMmpXQmZvQVZ4NkdOemE4djBQanpkelo2NXF6a3J4WjlEYXdFVHA4NW43aWtYSDlhYjl2bEhnZC1VSTMtbk52UDlJbzIwaFJFclgzUE9WU1VVSGh1bTk4LU9KcGt0NjgyWF9PQmU0Nzl4b0V4N29rMDNSMDNaSWpDcnM2bVJLMklxOFNqZVlnU1I?oc=5"
+    },
+    {
+      "title": "IHSG Melemah ke 5.232, Asing Borong Saham BBCA dan EXCL - Limapagi",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "BBCA • EXCL",
+      "summary": "Headline terbaru dari Limapagi: IHSG Melemah ke 5.232, Asing Borong Saham BBCA dan EXCL - Limapagi",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Limapagi",
+      "time": "19 Nov 2026 • 12:20 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdjBQTWJpSktlaEwxUmdwUExkNzNpY3Q5NzhhV1ptZXAxUXB5eG1oZ0Jlei1kRF85SUgxaXlzNUViMkdLeTdXZ05vU1NCaDVGWXJXRjdSc1RvZDZKTVFkVnBGWUQtQQ?oc=5"
+    },
+    {
+      "title": "296 Saham HSC Dikeluarkan dari IHSG, Apa Dampaknya ke EIDO? - Gotrade",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "EIDO",
+      "summary": "Headline terbaru dari Gotrade: 296 Saham HSC Dikeluarkan dari IHSG, Apa Dampaknya ke EIDO? - Gotrade",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Gotrade",
+      "time": "19 Nov 2026 • 12:15 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPX3F1ai1JZnlrNmQ0WW8xZU05VDRHSVJHaGV0V2NWa2RFemF3SlVsalY1eDhBUDFzZ2NsMHplblRTMjNQby1RRUZsYktxOVFTZWFaUWhDRWhvcGVWdTZzUXhXa3I3T21rUVhrcTRDTFhGdzFob0JMaVVzOWM1U2NMbmRrbGs?oc=5"
     },
     {
       "title": "Saham WIKA Kembali Disuspensi BEI usai Tunda Bayar Bunga Obligasi dan Sukuk - Monitor Indonesia",
@@ -47,19 +86,6 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQnUwVFZsZWljNEF0OVdPZVJ5M0pmT0F1ZEJQZ1ZBajdoakdhWk1XN2lFNmlPY2E0Q0VNdTkwc0RxNjR4NWFxNHN1YXFXY0ZTNHFoRzJ3Tm82TWFHdHFSdEZBcWh0N0ZHN1FfMUEtd3BKZnBmUWV0dTMxcnFlTGRxWHlYUUlPTmpkRFlmUVkxWFlmWEt4RXB0M3BWT2xydGM4Qi00RFdLQjNGZ1UyZDJjc21KUkZINlBmdU04eF92QXpEQVhzRERkZA?oc=5"
     },
     {
-      "title": "11 Reformasi Besar Bursa Saham RI, Apa Saja yang Berubah? - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: 11 Reformasi Besar Bursa Saham RI, Apa Saja yang Berubah? - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "19 Nov 2026 • 11:00 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWjcwcENHMVhfbnNubGp1QWM5akNVYXNIT1N0Y05ZR2pZdVZzZW1MVUE2WEtUcmFXRTc5TTVqbV93ZEZidGZBVFg0bW51SGt6Y3JfdmtMbHMyc3JONHlQRUxZM0RGRXVJWG43MENUSE5HMlBhXzJ6NEZ6V29zNF8yRndNUGZKdUZJRkptaUdFWTFwbU8xbXpPTktxOGFMZVNaQy1weDRodTlTNU1mZTNYb2JJdWtuU3hyakFxQw?oc=5"
-    },
-    {
       "title": "Emiten Nikel Isam (PACK) Bantah Bidik Saham Eramet di Weda Bay Nickel - Emitennews.com",
       "bgClass": "bg-hormuz",
       "category": "sector",
@@ -71,19 +97,6 @@
       "time": "19 Nov 2026 • 11:00 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOczAxbFZTS0V6M2FEWW11NjdOQ3BqdGZlamdfNk50OElmSjhyUFA4Z1hzM2gyZ2lxUzhaRWpzUGphTUxvQ294dnBRSXFFdlBkUU91TDhXYnJqaTJrWTRHc1BaU1Y0cmNNdjE5XzdXSmUxdHpsemZ1Nk5oQVJybEtOUXU1SlpOeFRtYWE5ZENSWVd5TnUzTTlXaVhtbw?oc=5"
-    },
-    {
-      "title": "RDTX Stock Split Rasio 1:20, Cek Jadwal, Profil Emiten, hingga Kinerja Terbarunya - KONTAN",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "RDTX",
-      "summary": "Headline terbaru dari KONTAN: RDTX Stock Split Rasio 1:20, Cek Jadwal, Profil Emiten, hingga Kinerja Terbarunya - KONTAN",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "KONTAN",
-      "time": "19 Nov 2026 • 09:43 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbFFTWklpa1NXemVGV0QxR2hDcGl3dmlpcnVoQk9nbmlYZEF2M3dfeHZVMzltRmxIckpoM2NoejNTX0dNMG5YejM3QW9yMlRWRUROSmY5cDdVUjlLYWJYRXRlRGR6ZU5aVVpZRm9tYVFfa0U5STVyYWVnbElHSmlUS05WcDNCU1N1djk2MlNrdDBJT0NWVU8zUXhIZ2xDM1NwTzhoaGZUaFZ6WEFOR1MySEhRaEo?oc=5"
     },
     {
       "title": "Tata Kelola dan Transparansi NexAI (MGLV) Jadi Sorotan - Bloomberg Technoz",
@@ -112,19 +125,6 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQakx3R0lvV1pnMmlibmV3VGQ0djZZYS1aM1hrN0hDX0JDdXJJRFU4X0RKVjdqdGlpMHpnTWwwUWt2N05ISXNpTkxCYTJ4Y0YtQ2pTcHk0bnhEUU82TXlHbmppYllpb2JiR0hVUEVkd0dJUnZiTG5JZGQ3bTBZMDZNNVRYS1pGRmNfVGt3Wkk0MTV2V1pTcVlLOVpJd2NYZV9wdTgzUHAxWGhIRm9NY0VPTEV2SmF2UTdiM1hFWFFEY9IBvwFBVV95cUxQakx3R0lvV1pnMmlibmV3VGQ0djZZYS1aM1hrN0hDX0JDdXJJRFU4X0RKVjdqdGlpMHpnTWwwUWt2N05ISXNpTkxCYTJ4Y0YtQ2pTcHk0bnhEUU82TXlHbmppYllpb2JiR0hVUEVkd0dJUnZiTG5JZGQ3bTBZMDZNNVRYS1pGRmNfVGt3Wkk0MTV2V1pTcVlLOVpJd2NYZV9wdTgzUHAxWGhIRm9NY0VPTEV2SmF2UTdiM1hFWFFEYw?oc=5"
     },
     {
-      "title": "BEI Buka Kembali Suspensi Saham TMPO pada 19 November 2026 - StockWatch.id",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "TMPO",
-      "summary": "Headline terbaru dari StockWatch.id: BEI Buka Kembali Suspensi Saham TMPO pada 19 November 2026 - StockWatch.id",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "StockWatch.id",
-      "time": "19 Nov 2026 • 08:34 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTGhHQkZBWVlPaGtPX0Z6ZnF3SjN0T3ozcEhBRGdQbHBNZ3hEMms1Ujc3U2Q1dnRza2ViTVRRamlHbkFvbF9oczhBSDJMSVpRUnJ3dzZHSVNZUU9GMy0yc0RDQzlvbm1NMzFucUszWDJuUjc0T3RpOGRuWnZXT2FOdmhzNnplUXNr?oc=5"
-    },
-    {
       "title": "Laba Emiten BEI Melonjak Ribuan Persen, SSIA Catat Pertumbuhan 5.226 Persen dan INDY Tembus 4.118 Persen pada 2026 - Hallo Emiten - Hallo.id",
       "bgClass": "bg-china",
       "category": "earnings",
@@ -140,6 +140,31 @@
   ],
   "recommendations": [
     {
+      "ticker": "PACK",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Emiten Haji Isam (PACK) Bantah Incar Saham Weda Bay Nickel Milik Eramet - Warta Ekonomi",
+      "reasons": [
+        "📰 Emiten Haji Isam (PACK) Bantah Incar Saham Weda Bay Nickel Milik Eramet - Warta Ekonomi",
+        "🏷️ Sumber: Warta Ekonomi",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "19 Nov 2026 • 15:52 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
       "ticker": "CNBC",
       "company": "Auto Detected",
       "status": "wait",
@@ -153,14 +178,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "11 Reformasi Besar Bursa Saham RI, Apa Saja yang Berubah? - CNBC Indonesia",
+      "whyNow": "Emiten Haji Isam Bantah Mau Caplok Saham Eramet di Tambang Weda Bay - CNBC Indonesia",
       "reasons": [
-        "📰 11 Reformasi Besar Bursa Saham RI, Apa Saja yang Berubah? - CNBC Indonesia",
+        "📰 Emiten Haji Isam Bantah Mau Caplok Saham Eramet di Tambang Weda Bay - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "19 Nov 2026 • 11:30 WIB • AUTO DRAFT",
+      "updated": "19 Nov 2026 • 15:52 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -185,32 +210,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "19 Nov 2026 • 11:30 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "TMPO",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "BEI Buka Kembali Suspensi Saham TMPO pada 19 November 2026 - StockWatch.id",
-      "reasons": [
-        "📰 BEI Buka Kembali Suspensi Saham TMPO pada 19 November 2026 - StockWatch.id",
-        "🏷️ Sumber: StockWatch.id",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "19 Nov 2026 • 11:30 WIB • AUTO DRAFT",
+      "updated": "19 Nov 2026 • 15:52 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -235,7 +235,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "19 Nov 2026 • 11:30 WIB • AUTO DRAFT",
+      "updated": "19 Nov 2026 • 15:52 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
