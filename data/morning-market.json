@@ -2,24 +2,74 @@
   "version": 1,
   "date": "2026-11-23",
   "display_date": "Senin, 23 November 2026",
-  "generated_at": "2026-11-23T11:00:12.719352+07:00",
-  "generated_at_wib": "23 Nov 2026 • 11:00 WIB",
-  "headline": "Bakal Voluntary Delisting, BEI Gembok Saham BTPN Hari Ini - Emitennews.com",
+  "generated_at": "2026-11-23T16:11:34.139478+07:00",
+  "generated_at_wib": "23 Nov 2026 • 16:11 WIB",
+  "headline": "BEI Hentikan Perdagangan Saham BTPN Usai Rencana Delisting - SuaraGarut.ID",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "CNBC • BYAN • BRMS • PTRO • MBMA • EXCL menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "CNBC • BYAN • BTPN • PTRO • FULL • CDIA menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "CNBC",
     "BYAN",
-    "BRMS",
+    "BTPN",
     "PTRO",
-    "MBMA",
-    "EXCL",
-    "BUMI",
-    "BTPN"
+    "FULL",
+    "CDIA"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "BEI Hentikan Perdagangan Saham BTPN Usai Rencana Delisting - SuaraGarut.ID",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "BTPN",
+      "summary": "Headline terbaru dari SuaraGarut.ID: BEI Hentikan Perdagangan Saham BTPN Usai Rencana Delisting - SuaraGarut.ID",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "SuaraGarut.ID",
+      "time": "23 Nov 2026 • 15:05 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFcU5KQ09iQXM5TG5GQXRqUUtDVENBdjdyZVNubll4SkZjLVA0dzdtSmxrQUFaTjhBOFd6a2NvLTZPOWIxeWM0c2pSbU1YOUdHLW5adFlsTm14bUI4UDdlbmlnWkY2YlRh?oc=5"
+    },
+    {
+      "title": "IHSG Hijau Kala Bursa Asia Berdarah Imbas Prabowo - Bos MSCI Bicara - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: IHSG Hijau Kala Bursa Asia Berdarah Imbas Prabowo - Bos MSCI Bicara - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "23 Nov 2026 • 13:06 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVlZXTGNGRkpieVZtWl9KYVVqVWxKWGpkWHJKSU4wY0szVjhUR3NrSjFVYnEyOXdCSy1EZUUyT3dvaVg0ZTYwWXFLVFpESXFURGN6MWw2RWNMRHhrLVBtWWV3azh4RFZ6ZFJvT2U0NFBRVW1sUTVVLVc5YUZiN3hjUmxraDB4VmNTdlZrc1V3eHRrOEdCTkF0ZFZSNG0yVTNJdmltbVNMUlE5b0lFbERmblpwNU9WNjBrcFJhYVppZzc0SVd1YXl4ajk0YlDSAcwBQVVfeXFMTVZWV0xjRkZKYnlWbVpfSmFValVsSlhqZFhySklOMGNLM1Y4VEdza0oxVWJxMjl3QkstRGVFMk93b2lYNGU2MFlxS1RaRElxVERjejFsNkVjTER4ay1QbVlld2s4eERWemRSb09lNDRQUVVtbFE1VS1XOWFGYjd4Y1Jsa2gweFZjU3ZWa3NVd3h0azhHQk5BdGRWUjRtMlUzSXZpbW1TTFJROW9JRWxEZm5acDVPVjYwa3BSYWFaaWc3NElXdWF5eGo5NGJQ?oc=5"
+    },
+    {
+      "title": "[FULL] MSCI Minta RI Pidanakan Pelaku Goreng Saham, Analis Pasar Modal Soroti IHSG | KOMBIS - Kompas.tv",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "FULL",
+      "summary": "Headline terbaru dari Kompas.tv: [FULL] MSCI Minta RI Pidanakan Pelaku Goreng Saham, Analis Pasar Modal Soroti IHSG | KOMBIS - Kompas.tv",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Kompas.tv",
+      "time": "23 Nov 2026 • 12:34 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMkt1czQ0RHE1U2lBZHdxeWp4ODZ0RC1RQjlOVDhfSW1ORk9FaEZWY01VYjNuUWhZZDZ1Q2JkeURfNWFoQ1JFdXBiRDBvUlEyeHlJRkExRWZObG9fN2VZaml6VjNQNVpVTURVV1BJV1JCWU9ISFM3OGRfSlU5dXhDXzVibDczTzF4cEZUOFM0a0hVTk01T041R29GUV9jRUZ2TzloYjhmS0xVSjZIT3FhZk5JNDhCQ09iMzVRMFVJM2LSAcYBQVVfeXFMUDhaQTZGMjlyNTR4RUlKMHVGN1pGcjJJUFdOcFhRYjlBMWRPTlpNdTB5SXJFY25YdGVjZzJ2dmZrcnMteE01R0VFaW9uTnpjSnZlZzB2bGdNbTNRVWZDV2VGMTlhYkFTc3NJSm1rQ1o5T1VGS2ZkTV85ejRLMmRfendHQnV3NlN4OThRZDBtWjc4dEs0UzdPR093MTVGY2hUcFlCZUNGT3pfVU9rZG0wV1FuMVNnVmxsWHZlZER1a0Z6aE5kYmpn?oc=5"
+    },
+    {
+      "title": "IHSG Balik Melesat, Kabar Pertemuan Prabowo dan CEO MSCI Jadi Sorotan - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: IHSG Balik Melesat, Kabar Pertemuan Prabowo dan CEO MSCI Jadi Sorotan - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "23 Nov 2026 • 11:15 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaWlLcEM0YW1kQ3NfUVlWN29pRlhMRUFsbVF2ZmFhLXVTTXY5alJJYkM0MVN3SG5SZTFPeGllbVYwUS0zbW92a0dvWHlZLXUyY2liUlBFZGlXOHBFMm14X2ZzWk9mb0pfQU9CSUY5ODlJSE5sTEdNOS1MLTRicm5GVnJNNDJFdFRJbjQ4RW5NVDM2YmNHUUFvNG40MzJnU0RDRnE5QnpyTXVzaW1EQ2h5d1QzODhDdGl6LWdUMXZ1WEZ1YVJLV0NHX29R0gHPAUFVX3lxTE5mRVVhLTIyLWpUaVBtczd0WF9oYURiLWk0a2lxcm03WEVwUUlKVDVfbUVnOWlMRlNMcElORmRMS0p0VnkxWGZrX2h4MW56SXpuLXI4M0RqbU5FTlhtNWVyM1BicmNVYmZFSS1ySFd2RWxKQWxWd3lVUU1zQjVSbUJTZUZWVklyVzBpbndHVXRYRlo4ak81ZFBZWHJmM3NtYjRycnBKc3dITDhpeS1CclBCLTBTYmhKWkNZRi1teXc2U0ZDdXdPd2twLS1lTHlUMA?oc=5"
+    },
     {
       "title": "Bakal Voluntary Delisting, BEI Gembok Saham BTPN Hari Ini - Emitennews.com",
       "bgClass": "bg-usjobs",
@@ -30,7 +80,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "Emitennews.com",
       "time": "23 Nov 2026 • 09:40 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM1FGMkQxc2szSDBrMjNhQ0xzN0IxT2k0aThZY0ZtM2NLcHp6cTdHaHdXbkFYUUlKNXBUQW5qUXFCdnZXSU1HTUdvb0N5cDJnNU1adFFCMDQxbldnRHdXOEFmWmgxUDVCQUFDTFRVRWdvWlV3VEx4dHNIRFBVdW9aMUN1RnJ5MzRnak9DbUM5THNtQQ?oc=5"
     },
     {
@@ -60,30 +110,17 @@
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcHBnMnJrOUcxTnRSQlFERF9HRzdVMERrSk5jU3N2bmVYYlhkZkoyU3QxRjl5a0xlV25PVXdLSmFvZ0RVSWpSaXMzNEllSXFrOEZTZ0dsR0xhXzNvaUxMRnJCSWtPeDVia01ocHItVEhucDJWSWgxc0tPd0JrbnFITjROUm9jUDNmajJyQ2pDOFl1Rk03VEV3RUVOakVjYmRzaXgzMERUcE5vSy01R3FTNUNCb1pFdXdLQy1kWkxFNUlyQ2pQRTFwSEt1RdIBywFBVV95cUxOcHBnMnJrOUcxTnRSQlFERF9HRzdVMERrSk5jU3N2bmVYYlhkZkoyU3QxRjl5a0xlV25PVXdLSmFvZ0RVSWpSaXMzNEllSXFrOEZTZ0dsR0xhXzNvaUxMRnJCSWtPeDVia01ocHItVEhucDJWSWgxc0tPd0JrbnFITjROUm9jUDNmajJyQ2pDOFl1Rk03VEV3RUVOakVjYmRzaXgzMERUcE5vSy01R3FTNUNCb1pFdXdLQy1kWkxFNUlyQ2pQRTFwSEt1RQ?oc=5"
     },
     {
-      "title": "Sambut Awal Pekan, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Sambut Awal Pekan, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "CNBC Indonesia",
-      "time": "23 Nov 2026 • 08:51 WIB",
+      "title": "CDIA gelar buyback Rp1 triliun, susul 4 emiten Prajogo Pangestu - IDNFinancials",
+      "bgClass": "bg-ihsg",
+      "category": "corporate-action",
+      "categoryLabel": "Corporate Action",
+      "tickers": "CDIA",
+      "summary": "Headline terbaru dari IDNFinancials: CDIA gelar buyback Rp1 triliun, susul 4 emiten Prajogo Pangestu - IDNFinancials",
+      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
+      "source": "IDNFinancials",
+      "time": "23 Nov 2026 • 08:40 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObzhJcXRHZjhzM0NCeUxpTE5welZHd0VHakM0R2FBVWZtYXFoaVplbG1kakNLaE1uZE5QQXhlM01qazVGZFI5WDJneGJjWWxOMU8tcGstWHpYdjZ3UDN5X19wZlh6MDhtczZrRVZRTWhwUXJORHJzNDZwdUMwY19mV1Y1cC0tTVBrMFRYV2NvbWMzallmY3JHNkxxT21xTEt3eUcxSWNNRnk3RHJwX09uajVJLS3SAbQBQVVfeXFMTm84SXF0R2Y4czNDQnlMaUxOcHpWR3dFR2pDNEdhQVVmbWFxaGlaZWxtZGpDS2hNbmROUEF4ZTNNams1RmRSOVgyZ3hiY1lsTjFPLXBrLVh6WHY2d1AzeV9fcGZYejA4bXM2a0VWUU1ocFFyTkRyczQ2cHVDMGNfZldWNXAtLU1QazBUWFdjb21jM2pZZmNyRzZMcU9tcUxLd3lHMUljTUZ5N0RycF9Pbmo1SS0t?oc=5"
-    },
-    {
-      "title": "IHSG Melemah 0,92 Persen Saham MBMA dan EXCL Menguat - Lensa Hukum",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "MBMA • EXCL",
-      "summary": "Headline terbaru dari Lensa Hukum: IHSG Melemah 0,92 Persen Saham MBMA dan EXCL Menguat - Lensa Hukum",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Lensa Hukum",
-      "time": "23 Nov 2026 • 08:43 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQckRybFo0Yk80YU5yNzhaNGxPRTVKMGJ4Y21tRnN0WXRzU252bEdULUp4UmRXRWxMVXVWZXNTY1EzU3Y5R3NRLUhVcFlMa25CMHBWOUE1RFZJNThEeVRqSWpkaw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUUtld1BVOFNIcmM3MVZGNDl6VUM4bVpqTHl5ZGU4dncwV1hpSEFFUUFkNU9DT3N1Q3RpUlpud0NLd0hIMXQ3YmFjLXlvSGg0Mm5kTU41TWZqUWNWY2ZQb2tkYndqaGxtN0xpekhPazVBTXhyOExFSlYxNFF1dmo0Y2V3TFR6eVpBRDVMSWlBa05ELUgzRTh4djFaYjJNeWVaZlQxeTZjeUpvZw?oc=5"
     },
     {
       "title": "6 Calon Emiten Antre IPO, 2 Perusahaan Beraset Jumbo - CNBC Indonesia",
@@ -97,45 +134,6 @@
       "time": "23 Nov 2026 • 08:15 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ3pxWEtaU1VKLU0yVEVLVTVheW9sR3llVzVJWmxpOXBBYXhVTFFUdkxYaGxYdy02ZWhhaEhyNEJQWGR5TXNZQmN4R0cxbmkxWk5kU1ZZQTU5SEJUbzBYMHRDQUItcU01SDJBNEZFQ0FYbk9SeE5ObHFwbzVJekZJeXU2ME95b1VabFFqV0g4dE5LdzBfOVlQdmFTdHNZd0NLVmEtSUQ5Y3pvVE16bEtQcWtiQdIBuAFBVV95cUxQUWd3VVplV0FtM2JKVXRpTzFwMTJfU1JCWGhMWVhrM0RTZ0RQRGs5cmMxbThqTW5RY2JjUVZYOFlHdG1GemtZcTMxU3BsVDZRcFFmQzBzTEJEdkRHZjk3MTdqM3FkcFVzZUVsdEUzTGt4ZFlEdHFoR3lBNnFPOVk0SEU0VFR0OHJlX2ZWVTlvbWUxMk5CM2d5YkdXUG1yd2laOHkwbVl5YkphUjJhaWNhMGJPNHZMV0xo?oc=5"
-    },
-    {
-      "title": "Deretan Saham Masuk Cum Date Dividen Pekan Ini, Cek Daftarnya! - CNBC Indonesia",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "CNBC",
-      "summary": "Headline terbaru dari CNBC Indonesia: Deretan Saham Masuk Cum Date Dividen Pekan Ini, Cek Daftarnya! - CNBC Indonesia",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "CNBC Indonesia",
-      "time": "23 Nov 2026 • 07:20 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPenl5bTJNM0hLMExoYmlSWEtkaTRPTldleDlDWmpCc0xvSkFjQ3VkUWh6LW5ZLVVZemc0UEEycFRtd3I5MVpuaWJMZDZTM2E3QTlKcVJ6WFFXV29jTmx6UVpSMmVLUzV0WnJqLW41LWJqaW1aamtuTVNyUFNOemRHWHFoeWhJczlkZy1IVFFUcjV4UGU0d05ORHdmQTZiUERFbW9XWUUtMHR6Q1R1NElSRFI5RS1vLUFWWmRLVXZra9IBxAFBVV95cUxQaUFPaUUwYjFIb0ppUHYzUTBjZ1FXZGJucGdEMFFWWXAwYUhvNEtwcjlGeHM1eC1EZERfZlgySXZkRmk2dW9mdmtvaHNkVUlRdFlVbmJ6c0pPZUgzZlpoTHJvTHlLOVJRM1I5eHZNREVvdGZkRjhsOVZPVEpncWZCQXhUYm0yWjMwdzEyYi1xTDJfYkR5UWRKeE1tcDNsMHR0Ym5HcmprNlgwQ3BPbnUwS2t4cWZPYlo1SnFtVjBvQ1Z5RzFp?oc=5"
-    },
-    {
-      "title": "Apa itu Saham BRMS? Profil, Sektor Usaha & Sejarah Emiten - Pintu",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "BRMS",
-      "summary": "Headline terbaru dari Pintu: Apa itu Saham BRMS? Profil, Sektor Usaha & Sejarah Emiten - Pintu",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Pintu",
-      "time": "23 Nov 2026 • 06:08 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuYnFJSTJrS0dSRjhLa2VnMlUzZzZCRDE4cmVROUtVLVBTRU9WLVhXRHRWNDdsNjA0bF8wdUttYTVmLWxxUkpXblZoTQ?oc=5"
-    },
-    {
-      "title": "Investor Asing Lepas Saham BRMS dan BUMI di BEI - Demokratis.co.id",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "BRMS • BUMI",
-      "summary": "Headline terbaru dari Demokratis.co.id: Investor Asing Lepas Saham BRMS dan BUMI di BEI - Demokratis.co.id",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Demokratis.co.id",
-      "time": "22 Nov 2026 • 18:35 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwSTJRSVdiNEFsT2NENFV3ZGNua0xLM196Nm5fZjdMTHhlV3B5bVYyc0RRb2dSYm80cnlWUEdHVFE0eGxWeGU3REcxaXdJbDVFcWQwUDlCUG83UENwWVR6SmlRdTZHQzNuUFE?oc=5"
     }
   ],
   "recommendations": [
@@ -153,14 +151,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Jadwal RUPS Hari Ini: BYAN Rombak Pengurus, PTRO Bahas Rights Issue - CNBC Indonesia",
+      "whyNow": "IHSG Hijau Kala Bursa Asia Berdarah Imbas Prabowo - Bos MSCI Bicara - CNBC Indonesia",
       "reasons": [
-        "📰 Jadwal RUPS Hari Ini: BYAN Rombak Pengurus, PTRO Bahas Rights Issue - CNBC Indonesia",
+        "📰 IHSG Hijau Kala Bursa Asia Berdarah Imbas Prabowo - Bos MSCI Bicara - CNBC Indonesia",
         "🏷️ Sumber: CNBC Indonesia",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "23 Nov 2026 • 11:00 WIB • AUTO DRAFT",
+      "updated": "23 Nov 2026 • 16:11 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -185,12 +183,12 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "23 Nov 2026 • 11:00 WIB • AUTO DRAFT",
+      "updated": "23 Nov 2026 • 16:11 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "BRMS",
+      "ticker": "BTPN",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -203,14 +201,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Apa itu Saham BRMS? Profil, Sektor Usaha & Sejarah Emiten - Pintu",
+      "whyNow": "BEI Hentikan Perdagangan Saham BTPN Usai Rencana Delisting - SuaraGarut.ID",
       "reasons": [
-        "📰 Apa itu Saham BRMS? Profil, Sektor Usaha & Sejarah Emiten - Pintu",
-        "🏷️ Sumber: Pintu",
+        "📰 BEI Hentikan Perdagangan Saham BTPN Usai Rencana Delisting - SuaraGarut.ID",
+        "🏷️ Sumber: SuaraGarut.ID",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "23 Nov 2026 • 11:00 WIB • AUTO DRAFT",
+      "updated": "23 Nov 2026 • 16:11 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -235,7 +233,7 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "23 Nov 2026 • 11:00 WIB • AUTO DRAFT",
+      "updated": "23 Nov 2026 • 16:11 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
