@@ -2,24 +2,74 @@
   "version": 1,
   "date": "2026-11-26",
   "display_date": "Kamis, 26 November 2026",
-  "generated_at": "2026-11-26T12:28:25.920476+07:00",
-  "generated_at_wib": "26 Nov 2026 • 12:28 WIB",
-  "headline": "Beda Sikap Indonesia dan Turki Hadapi Ancaman MSCI - CNBC Indonesia",
+  "generated_at": "2026-11-26T16:38:44.412894+07:00",
+  "generated_at_wib": "26 Nov 2026 • 16:38 WIB",
+  "headline": "SMBC Indonesia Siapkan Go Private dan Delisting dari BEI - Lensa Hukum",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "INDY • UNTR • CNBC • WAPO • SMLE • SMBC menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "SMBC • CNBC • UNTR • TBIG • INDY • HOMI menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
-    "INDY",
-    "UNTR",
-    "CNBC",
-    "WAPO",
-    "SMLE",
     "SMBC",
-    "PANI",
-    "GPRA"
+    "CNBC",
+    "UNTR",
+    "TBIG",
+    "INDY",
+    "HOMI"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "SMBC Indonesia Siapkan Go Private dan Delisting dari BEI - Lensa Hukum",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "SMBC",
+      "summary": "Headline terbaru dari Lensa Hukum: SMBC Indonesia Siapkan Go Private dan Delisting dari BEI - Lensa Hukum",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Lensa Hukum",
+      "time": "26 Nov 2026 • 16:14 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jamhJNzVVc1hOSXVYaG44V1E0VXd6XzY1ZmcyemhSODhOVVRLMDRHcFZDYXNDM2ZEdDJZR3ZQZ3dsLXlRdHhrMW9YRGtVaFJ3T0Zpcmk4MTlNTlZnZDFCa2draU5ObFQycE12NQ?oc=5"
+    },
+    {
+      "title": "SMBC Indonesia Rencanakan Go Private dan Delisting dari BEI - Demokratis.co.id",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "SMBC",
+      "summary": "Headline terbaru dari Demokratis.co.id: SMBC Indonesia Rencanakan Go Private dan Delisting dari BEI - Demokratis.co.id",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Demokratis.co.id",
+      "time": "26 Nov 2026 • 13:49 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UbXNjc2JMbVM1cDdoSHYyZmhHSG92aVU0WmdMYmQxbi12cjJ3OHhyUFhzQlAxOHhiSEpsQ3pvek1tMmQ0S2hQNi1LZU9zeTQ1azEzdGRnaTVxWW5wanp5c19oakFUTmljNlBoRA?oc=5"
+    },
+    {
+      "title": "Daftar Lengkap Sekuritas di Kasus Manipulasi Saham HOMI dan Sanksi Keras OJK - KalderaNews",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "HOMI",
+      "summary": "Headline terbaru dari KalderaNews: Daftar Lengkap Sekuritas di Kasus Manipulasi Saham HOMI dan Sanksi Keras OJK - KalderaNews",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "KalderaNews",
+      "time": "26 Nov 2026 • 13:01 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUndEX0JDdFF5d201TE1sZW9QNTVhcGJVR29KX1RPeFBHVlN4V1BpMU5iaE1iSzlRam5Ec1FHMkdQTkNoQ09uejE0Qm9mWG5pYlpmZkhnQXNNWUtLTlQ1eEt5M1RIaVBoeFpPd3FiSlk2RXU5WENwLVhfSFpJSzhiazBtSFhGTVRvLVlmR2ktMk5Dc2tIUzEyblplTy1XYmNISGRwMm0wa0lCOGx5Z1ZfVDdmSQ?oc=5"
+    },
+    {
+      "title": "Terungkap! Ini Bocoran Isi Telepon Prabowo dengan Bos MSCI - CNBC Indonesia",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "CNBC",
+      "summary": "Headline terbaru dari CNBC Indonesia: Terungkap! Ini Bocoran Isi Telepon Prabowo dengan Bos MSCI - CNBC Indonesia",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "CNBC Indonesia",
+      "time": "26 Nov 2026 • 12:34 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMjFzRXVNdEVPN29iazlpRmNxVWp6ZkdJZkd3c2RKZl9OVGdpSWF1dzVaZ21kdldTNUFweUZSMFloQnJBdzVKR3VKaEUzTGhoVjJYQWhNREtGeEFjZFRNYmRSUllpdXRLM1hPWTBVMWxabmNyVmxmVkFXZXlfb24wN0d5cndWaEN1WktfaU92MDB6YnlncWtXc3VmM2dwVDc4aXV4Z3FwX3J3RXRFQXJNMllYal9FNFJYVUp1VWN0aULSAcABQVVfeXFMTjIxc0V1TXRFTzdvYms5aUZjcVVqemZHSWZHd3NkSmZfTlRnaUlhdXc1WmdtZHZXUzVBcHlGUjBZaEJyQXc1Skd1SmhFM0xoaFYyWEFoTURLRnhBY2RUTWJkUlJZaXV0SzNYT1kwVTFsWm5jclZsZlZBV2V5X29uMDdHeXJ3VmhDdVpLX2lPdjAwemJ5Z3FrV3N1ZjNncFQ3OGl1eGdxcF9yd0V0RUFyTTJZWGpfRTRSWFVKdVVjdGlC?oc=5"
+    },
     {
       "title": "Beda Sikap Indonesia dan Turki Hadapi Ancaman MSCI - CNBC Indonesia",
       "bgClass": "bg-usjobs",
@@ -30,7 +80,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "CNBC Indonesia",
       "time": "26 Nov 2026 • 12:07 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXZEcGxuUjVTNnlReXdaQkM3b3lQbzYyMG9Ld0t5UTE3bWxEbjctTEEydGYzMWVjX2NQTlhHNTRaV2U2VllzWTBQR3NhempwSk1SUzZPRHJVZkxzcUJVeFRlaHkzcEhNMHN3ekpvQWJtaGJ0MnFuOTR4OWIyVHRmYldNSnVTTlJZLTB1cFd5QzJ4VWx0OW1keklyWmw4M2FUTUZvM0JGV3g4Q1FrelFrUHNB0gG3AUFVX3lxTE8wVloyZ3hoci12MlkwSkV3VWpYWkhmN2pjMl9NeG5yZEtidlRPTUpNNjRjVFozQ1BjN3hCUnpVYUsyRzdJZ0pzUWZQelEzaEtPUlZLY3hZMDdIeG10YmlGVlE1R210amlWUmdNZDBVMWhSZzJzVlJSLWN1MGlySXNmWHFqM3dQWU5BTktfZVVuRGVmdXZMRGU5TjFoSWhKSGJqWXptbnl3U2Yxa3lPR1JsZ1JjR3JHdw?oc=5"
     },
     {
@@ -45,19 +95,6 @@
       "time": "26 Nov 2026 • 11:46 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbFN5U28xendReUM1bmZDcFRJQlEtd2RUMUNZNjZGS1I1UTNVT25sNEJJQUFnQW1lNlZ0TFhXRlQzV2UwcUtGM1ZOUEJsRjVacUcwc3BRTlpkV2QyR2o3c2dJck9fbWVCbThsLUJkbnpYNE9DclRxMGpLbXlrRkRhSUtIYkhXOFpIcnVXeFhNYnhnRXVfU3cwZm5kb0VJTjVJ?oc=5"
-    },
-    {
-      "title": "Bagikan Dividen Interim Rp1.170 per Saham, Intip Profil AADI hingga Kinerja Terbaru - KONTAN",
-      "bgClass": "bg-ihsg",
-      "category": "corporate-action",
-      "categoryLabel": "Corporate Action",
-      "tickers": "AADI",
-      "summary": "Headline terbaru dari KONTAN: Bagikan Dividen Interim Rp1.170 per Saham, Intip Profil AADI hingga Kinerja Terbaru - KONTAN",
-      "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "KONTAN",
-      "time": "26 Nov 2026 • 09:48 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRDZEcmxDdFFucWxRMzhUZ2lHMXU3SUxnUC1SSFRBdDczMzl2LVdtS2o3ZXhyWnRsQzk4cE9ocmh5azlTT05zTU1jemo1ZHk4amZtLVdmOE1ZUkZqOVNXeEwzTTVzcWdvR3kyOGpmVGVKenkxRVJ2LUtZWi1iQzU2VkxTQ2JPd1ZobDBLR1luUEp2amdXUlFSMGlpQ3FPUVEySTlibDhBOEhaVFdzNWFhR2dHanQyeWRHRkE?oc=5"
     },
     {
       "title": "Sahamnya Dikuasai Segelintir Pihak, 27 Bank Ini Masuk Daftar HSC - CNBC Indonesia",
@@ -86,61 +123,22 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Ra0lKUmtSRWVHSUVySF9CTHVKUThjQVoxNXdQSWtpZVQwQ3o0b2FaemxxZG9IN1F0cmNpZVZzSUlKSC1yam1PZ0dMNmpzcjN3bFNBb0VPb1JxMVFtUzBlRmR2OTY5cEcyc3c?oc=5"
     },
     {
-      "title": "IHSG Melemah, Simak Rekomendasi Saham BRIS, INDY, dan PANI untuk Kamis (26/11) - kontan.co.id",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "BRIS • INDY • PANI",
-      "summary": "Headline terbaru dari kontan.co.id: IHSG Melemah, Simak Rekomendasi Saham BRIS, INDY, dan PANI untuk Kamis (26/11) - kontan.co.id",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "kontan.co.id",
-      "time": "26 Nov 2026 • 05:15 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUFJOMmtLNTJXRzh0ZnUwQTd5ZU96bUxZUV9mTVA5VTU2MTRCVVZWZmNiTXNyODdCUXpOZVZSVWowOXZRZWhPTnZ3SE5neUpzdWxvdmU4R01ZUU5RMWlVemJ6Q0c2YWQ3UUNUbE9BN1lKXzF4Q1hqekdIYlg4THJURjBQZnp4YjM1VzFmM21USlV5WklRNHg4SmVyNENBV3R0NXBYVEc3ek55OHBE0gGkAUFVX3lxTE5ZWXNMX1BuUlpkNWstMHFYZ0V2QXdIZDR6SDBKc09taC02WEV2c1JEdHU0NjAzQmcxXzg1SjNnam5saUVIUzEyN0VvaTNkVVVaNEFkOTI1bU4zanYxQ0RsLU80cERGZXZmaFVkdmg0N1VaQ3Q1TFpiSXE0N2lBejZGbmF4RkVxb2RTXzdXci1KRUFWbDhXbDZlRlBKZzNRcENRWGRj?oc=5"
-    },
-    {
-      "title": "UNTR Pimpin Kenaikan Saham LQ45 INDY Anjlok 4,90 Persen - MediaKompeten",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "UNTR • INDY",
-      "summary": "Headline terbaru dari MediaKompeten: UNTR Pimpin Kenaikan Saham LQ45 INDY Anjlok 4,90 Persen - MediaKompeten",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "MediaKompeten",
-      "time": "26 Nov 2026 • 05:13 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5pM1A0dmhXS2ZFLVBhODRPTWpTWW1BbmlUZTJYcmJWMlYtQkxmbVNsa3hTUVQ1clpGRXlfMlJvSkRiSThINExOd0EyQlJiUkhucTlMamxyN2lZVm43UjlWNGkwOE1pTWtfeE5n?oc=5"
-    },
-    {
-      "title": "BEI Suspensi Tiga Saham SMLE ASLI dan WAPO - MediaKompeten",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "SMLE • ASLI • WAPO",
-      "summary": "Headline terbaru dari MediaKompeten: BEI Suspensi Tiga Saham SMLE ASLI dan WAPO - MediaKompeten",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "MediaKompeten",
-      "time": "26 Nov 2026 • 00:03 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mcDRsaHpNVVJHM0JtU1dmLXhub3l4SDRCbUczZGJGY2Rab3VaVThGRndXU2NjMEdnRUFZVzlsTlVpQS1FenNobndfYnJ2dmNTT0wwTWh0WVVQNjIzc21nbV9VZ2duTEd2dGlyR0RscUc3RzV5aXYtbFpiNXFHVjQ?oc=5"
-    },
-    {
-      "title": "Emiten GPRA Siapkan Dana Rp40 Miliar untuk Buyback Saham - MetroTVNews.com",
+      "title": "Akuisisi 100 Persen Saham EDOTCO, Tower Bersama (TBIG) Pastikan Ini - Emitennews.com",
       "bgClass": "bg-ihsg",
       "category": "corporate-action",
       "categoryLabel": "Corporate Action",
-      "tickers": "GPRA",
-      "summary": "Headline terbaru dari MetroTVNews.com: Emiten GPRA Siapkan Dana Rp40 Miliar untuk Buyback Saham - MetroTVNews.com",
+      "tickers": "TBIG",
+      "summary": "Headline terbaru dari Emitennews.com: Akuisisi 100 Persen Saham EDOTCO, Tower Bersama (TBIG) Pastikan Ini - Emitennews.com",
       "impact": "🟡 Corporate action masuk radar. Periksa detail keterbukaan informasi dan price action.",
-      "source": "MetroTVNews.com",
-      "time": "25 Nov 2026 • 21:19 WIB",
+      "source": "Emitennews.com",
+      "time": "25 Nov 2026 • 19:32 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT2h2anpEQi14MmtodWRBZ3R1UzUzVW5XRzFCd2VpLWMxOU0zX29NZmxfWGF0bzFtaDc0UUdodjAtM2tOQ2VCdFYzVEV0cmczVnE3YzVoeEpMdGZfSXotNEFLNkh4aWtpbzRITUc3aFhXMWo3cHF2cHFKV051YlU1Vy1PTVRtbHQ2c0ZsTnBWY21vSV9yNU5kcGtzeEFXcUk?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2hpVFc3cGVEQzNVUXBieXB0a0FzSWJOejd4dmFZZlNKRFJLNXlULUt6M1BYU044ODRWLVpiSEFsbzBKTmJaZmt3cDFpdzdLQWViWWt1bm9sUnY1TmxnVU0ydm1OUktEV29fQUdYNFdnYVFfOGQ1TURLbVRnWkprRUFhc3dmbDRZang2SnYxWGw1MWNFcjRkN1laZjg?oc=5"
     }
   ],
   "recommendations": [
     {
-      "ticker": "INDY",
+      "ticker": "SMBC",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -153,14 +151,39 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "UNTR Pimpin Penguatan Saham Saat INDY Anjlok di BEI - Demokratis.co.id",
+      "whyNow": "SMBC Indonesia Siapkan Go Private dan Delisting dari BEI - Lensa Hukum",
       "reasons": [
-        "📰 UNTR Pimpin Penguatan Saham Saat INDY Anjlok di BEI - Demokratis.co.id",
-        "🏷️ Sumber: Demokratis.co.id",
+        "📰 SMBC Indonesia Siapkan Go Private dan Delisting dari BEI - Lensa Hukum",
+        "🏷️ Sumber: Lensa Hukum",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Nov 2026 • 12:28 WIB • AUTO DRAFT",
+      "updated": "26 Nov 2026 • 16:38 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "CNBC",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Terungkap! Ini Bocoran Isi Telepon Prabowo dengan Bos MSCI - CNBC Indonesia",
+      "reasons": [
+        "📰 Terungkap! Ini Bocoran Isi Telepon Prabowo dengan Bos MSCI - CNBC Indonesia",
+        "🏷️ Sumber: CNBC Indonesia",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "26 Nov 2026 • 16:38 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -185,12 +208,12 @@
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Nov 2026 • 12:28 WIB • AUTO DRAFT",
+      "updated": "26 Nov 2026 • 16:38 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
     {
-      "ticker": "CNBC",
+      "ticker": "TBIG",
       "company": "Auto Detected",
       "status": "wait",
       "statusLabel": "Auto News Catalyst",
@@ -203,39 +226,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Beda Sikap Indonesia dan Turki Hadapi Ancaman MSCI - CNBC Indonesia",
+      "whyNow": "Akuisisi 100 Persen Saham EDOTCO, Tower Bersama (TBIG) Pastikan Ini - Emitennews.com",
       "reasons": [
-        "📰 Beda Sikap Indonesia dan Turki Hadapi Ancaman MSCI - CNBC Indonesia",
-        "🏷️ Sumber: CNBC Indonesia",
+        "📰 Akuisisi 100 Persen Saham EDOTCO, Tower Bersama (TBIG) Pastikan Ini - Emitennews.com",
+        "🏷️ Sumber: Emitennews.com",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "26 Nov 2026 • 12:28 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "WAPO",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "BEI Suspensi Tiga Saham SMLE ASLI dan WAPO - MediaKompeten",
-      "reasons": [
-        "📰 BEI Suspensi Tiga Saham SMLE ASLI dan WAPO - MediaKompeten",
-        "🏷️ Sumber: MediaKompeten",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "26 Nov 2026 • 12:28 WIB • AUTO DRAFT",
+      "updated": "26 Nov 2026 • 16:38 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
