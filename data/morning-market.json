@@ -2,24 +2,75 @@
   "version": 1,
   "date": "2026-11-27",
   "display_date": "Jumat, 27 November 2026",
-  "generated_at": "2026-11-27T12:21:45.893909+07:00",
-  "generated_at_wib": "27 Nov 2026 • 12:21 WIB",
-  "headline": "Saham KPIG Milik Hary Tanoesoedibjo Kena Suspensi BEI, Ini Penyebab dan Aturan yang Dilanggar - TOPIK.ID",
+  "generated_at": "2026-11-27T16:43:48.382594+07:00",
+  "generated_at_wib": "27 Nov 2026 • 16:43 WIB",
+  "headline": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
   "summary": "9 berita terseleksi otomatis dari headline terbaru pasar Indonesia.",
   "focus_label": "Selective / News Driven",
-  "focus_text": "KPIG • BAJA • AKKU • VIVA • TOBA • KING menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
+  "focus_text": "KPIG • FIRE • BAJA • AKKU • VIVA • KING menjadi ticker yang paling sering terdeteksi pada headline terbaru.",
   "top_tickers": [
     "KPIG",
+    "FIRE",
     "BAJA",
     "AKKU",
     "VIVA",
-    "TOBA",
     "KING",
-    "FIRE",
     "CNBC"
   ],
   "price_feed": false,
   "news": [
+    {
+      "title": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "AKKU • BAJA • FIRE • KING • KPIG",
+      "summary": "Headline terbaru dari SWA.co.id: Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "SWA.co.id",
+      "time": "27 Nov 2026 • 14:31 WIB",
+      "featured": true,
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWHdiWjJObld1aXV4Z3lESFUxMEI3Y0VTcC1Ba0tUamVTX3dYUnVhNklnTWpjQ1NobkxkS0JsN3ZqcVYzMl9YcmNjbDZNNVQ4cVQ5Q21JM1lreDZFZWV4ZmM5cHRtRlZFRkZTQjFCS3RiQXEtMGMyWTNlY1ZHd0hzTUxuWjBSc1NUc1BmRDFITFZ0Tkt4Z2RSbFZGaWN1ZFozZnBCSVI0b0pNbGxNQlE?oc=5"
+    },
+    {
+      "title": "BEI Jatuhkan Sanksi kepada Lima Emiten akibat Ketidaksesuaian Data Saham Free Float, Termasuk FIRE dan KPIG - pantau.com",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "FIRE • KPIG",
+      "summary": "Headline terbaru dari pantau.com: BEI Jatuhkan Sanksi kepada Lima Emiten akibat Ketidaksesuaian Data Saham Free Float, Termasuk FIRE dan KPIG - pantau.com",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "pantau.com",
+      "time": "27 Nov 2026 • 13:41 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZUhLM0UteENmY0ZHZEJNczRycUhlekJNN2I3dVV0SkI5Ni1NTXp2U1pIN3pFY2lNXzB1RVJ6bEVEVEVaeTdSSmxvem5adWJQZ3pMNGFJeHJXZkRTWjA1TmxrbHRmYkMwaHhfRXdhZDdOZzAtWVNHb1E1ZDVURGxGN2pzenQwOXdHckxaNVVMWllSNmF2ZmpFYVAyZ1lDdUUxNmVXckNtQjJmSkhlTENLYUNjbUJDX0NZUUV3enZ3dEt1dzRPbU1oYVhsZU1FTU5UYW5hQm5uRjE0ZUpB?oc=5"
+    },
+    {
+      "title": "Tak Koreksi Data Saham, AKKU hingga KPIG Dijatuhi Sanksi BEI - Jawa Pos",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "AKKU • KPIG",
+      "summary": "Headline terbaru dari Jawa Pos: Tak Koreksi Data Saham, AKKU hingga KPIG Dijatuhi Sanksi BEI - Jawa Pos",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Jawa Pos",
+      "time": "27 Nov 2026 • 13:23 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZWVwQlRrZjAzZVVqU01VR0owUkdrZ1JqejBhdWkzZ05EUm1LX1k2QzlHM2N4R1YzZENTT1RJSlViakhMQ3dsSFJqT3NlZzZWUEJMUGZhVnlCLUZ0WFZ6a3NHNFR2MG5lSmNXak91Ni1GUFdtM0JMVkd1MGJRMjZKckpFd3h3VGFTLU5wRWt4NlB3OFFYNWxvM3VEeGFPaUxtSEtQTQ?oc=5"
+    },
+    {
+      "title": "Data Free Float Saham Bermasalah, BEI Sanksi FIRE hingga KPIG - rayatimes.id",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "FIRE • KPIG",
+      "summary": "Headline terbaru dari rayatimes.id: Data Free Float Saham Bermasalah, BEI Sanksi FIRE hingga KPIG - rayatimes.id",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "rayatimes.id",
+      "time": "27 Nov 2026 • 12:27 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLWo2RmNMQnZpWjlKTU5GQWVDT0cwVHI5eWxfZWlGOGRLMkxYY2d4UVV0ZU1CcjE0Q1JUWGpsMlBJX3NrVHdHa1dpcHhTS09kSFg5MDQwSXlER185RTk1VEswRmhlUVlnWFpMdXZNa21OcExybmgxNU42RVBwYWQzWHRMNlNya0RTOWE1UE15S2JPQlU?oc=5"
+    },
     {
       "title": "Saham KPIG Milik Hary Tanoesoedibjo Kena Suspensi BEI, Ini Penyebab dan Aturan yang Dilanggar - TOPIK.ID",
       "bgClass": "bg-usjobs",
@@ -30,7 +81,7 @@
       "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
       "source": "TOPIK.ID",
       "time": "27 Nov 2026 • 12:17 WIB",
-      "featured": true,
+      "featured": false,
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdUdMbEw3dHpSbW1tQUlFQThGSWZCWFlaRkJBY080WEdiUWhuT3RLVnYxakZhTXBpcENRVndsYXhYd0R3bUZUU051RVVRelUwU3MwckZxT3hERDI4STZYTEV4YUo4U0NOS2RQM3Nxczdkc21sQUxEOExQOFY0ZkNlalZwUThseWNUcjk1dTlIWllQUDE2WUJ3OTBFZlAxU3NZTEJ6bUdfdzg0T2ZlbnlaMGdxUQ?oc=5"
     },
     {
@@ -44,7 +95,7 @@
       "source": "VIVA.co.id",
       "time": "27 Nov 2026 • 11:56 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPajE1WTJybmptckpLTWZRclB1VXkzS0g4eGcyYmh5dTY0YWxpLWtjZmlMY2R1MFZxbk50NkliQ3ZzdXRVam45ZXo4Z3ROYlhKRkpMclNPSFY4MTZiRzd1MVlDYS11VkJVRjg2RWhBT0Y0ZkhMZzB3ZFJBYkNXNWI1TU5hV3c5eHVmY2xBMmw3NEJTSWY1XzBzWFp1d0RFYXVQeDRfYU14bFpnQkI3d19qcnhVWkNRMnRQaXZ6cEtnZFQzZ9IBxwFBVV95cUxQVWtJYWh5aU96SVJ5MUVSZThNNTRNY3dCODBFOE9hSnVBOXlxQUVUd2Y0Wnh2YzlnWmxfTFVyR1gtU0VCYk9VSmsxUzNfalJBVEE5dmpjNS1WSFo0eG1yZ2xlUUg3aXlYS1BZZzJuWmRISVk2ckRCVUhEemoyVXE2TzRDXzlORFowMWpqVXpyaGZCaXpOTUFzTlAwTEJhLUxhNC1zTWJTdGtFdWZCNG5NTnJYdGVJM3NrT19PT2FkOGhGbG03Vnd3?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVWtJYWh5aU96SVJ5MUVSZThNNTRNY3dCODBFOE9hSnVBOXlxQUVUd2Y0Wnh2YzlnWmxfTFVyR1gtU0VCYk9VSmsxUzNfalJBVEE5dmpjNS1WSFo0eG1yZ2xlUUg3aXlYS1BZZzJuWmRISVk2ckRCVUhEemoyVXE2TzRDXzlORFowMWpqVXpyaGZCaXpOTUFzTlAwTEJhLUxhNC1zTWJTdGtFdWZCNG5NTnJYdGVJM3NrT19PT2FkOGhGbG03Vnd30gHHAUFVX3lxTFBVa0lhaHlpT3pJUnkxRVJlOE01NE1jd0I4MEU4T2FKdUE5eXFBRVR3ZjRaeHZjOWdabF9MVXJHWC1TRUJiT1VKazFTM19qUkFUQTl2amM1LVZIWjR4bXJnbGVRSDdpeVhLUFlnMm5aZEhJWTZyREJVSER6ajJVcTZPNENfOU5EWjAxampVenJoZkJpek5NQXNOUDBMQmEtTGE0LXNNYlN0a0V1ZkI0bk1Oclh0ZUkzc2tPX09PYWQ4aEZsbTdWd3c?oc=5"
     },
     {
       "title": "BEI Sanksi 5 Emiten soal Data Free Float, Ada BAJA hingga MNC Tourism (KPIG) - Warta Ekonomi",
@@ -57,7 +108,20 @@
       "source": "Warta Ekonomi",
       "time": "27 Nov 2026 • 11:50 WIB",
       "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1ZIMjh5ZFloZWdaa2hod0N1a1pMSC0zbFU0UE1jSUJnSzdzSVBwWC1paEpZQ2FldFF5aUhRVmJnbHFlbGdmeWloYkNqMzdEV1djOHp5b01JWGdCMllGbG9mSHFIa2d5b0V6V3h4eUh0cU54WHVMYjZEdUw5aDhocW94M2ZLb1pWRmYxV2ZpS2RZdUhsZ0hkdll2Ri0xZWJ1dzAyZHJWMmctT3h6bWVUZ9IBtgFBVV95cUxQZWt2c0dQaktMcEZDbm1XUGtPeTl2V2hObGJjc3Z6VkNuekNia25BaWk3eDB4dmkyRGdCaE5aTmFfQ0JKSU1fdzU2ZVZIZ3hJNjFfR3NxUTVkV2luMDdCTXdiQm13Y1VvNWRxeFkzaWJaV2Zwa0x1cHpYSVZvcmY2Rk5mWVRSd0ZRVFhXOFdpdXhBTXRMX2Fhby1ITG1EMUF5Z05LN1hQd2dweXNkUjNuSzkxZ2NuQQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1ZIMjh5ZFloZWdaa2hod0N1a1pMSC0zbFU0UE1jSUJnSzdzSVBwWC1paEpZQ2FldFF5aUhRVmJnbHFlbGdmeWloYkNqMzdEV1djOHp5b01JWGdCMllGbG9mSHFIa2d5b0V6V3h4eUh0cU54WHVMYjZEdUw5aDhocW94M2ZLb1pWRmYxV2ZpS2RZdUhsZ0hkdll2Ri0xZWJ1dzAyZHJWMmctT3h6bWVUZw?oc=5"
+    },
+    {
+      "title": "BEI Sanksi 5 Emiten Gegara Data Free Float Bermasalah, Ada KPIG - Berita Moneter",
+      "bgClass": "bg-usjobs",
+      "category": "macro",
+      "categoryLabel": "Makro & Market",
+      "tickers": "KPIG",
+      "summary": "Headline terbaru dari Berita Moneter: BEI Sanksi 5 Emiten Gegara Data Free Float Bermasalah, Ada KPIG - Berita Moneter",
+      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
+      "source": "Berita Moneter",
+      "time": "27 Nov 2026 • 11:46 WIB",
+      "featured": false,
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSWpMUU0tenBSTUcyMERmM1VDYW9JVTNhMF9Xaldkd2dEbk93UW9ReDFYWXd5T25GeGlaaWRVU0dHdEdTdmRxWEthN2F1dkFyWWt6eEIta3NmdG9vM014eld4Ql9tbW1URlEzWjVmdEJGR0phNG9FRjhiU2ZESkxPSWE0Q0wwUnVHZ1dRMXdaVlA0R1VGWmpWai1qOVA0QQ?oc=5"
     },
     {
       "title": "Tak Cuma Beri Sanksi, BEI Juga Gembok 5 Saham Ini Gegara Free Float - CNBC Indonesia",
@@ -71,71 +135,6 @@
       "time": "27 Nov 2026 • 11:35 WIB",
       "featured": false,
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWWxQTEJrUkljWC11Y3d1bGExcTduc0hrNDF4SzZ1b2g1WXBQU0F2Y182M2RvV0N6VW5DZ0FSNi1ROEVlR3FPQWtzMEY2UEx0Y3dHaW04VDBUdHdXU2J0SmpJTHFnYXBxSDk1R1N1YTN4RHp4Q3lUWVNBRTlLdi13N2t2Si1xX212TF9oeFEwUlNSNU41dHBfVi1YdW9fR0J0N3FjQWhQNUtzVnloSzJHN0pXUDhwOWN0VmZDcThqSXI3SkRqVU5z0gHMAUFVX3lxTE41MEF4LWpTWDBkWHQ5MHJqbGQ0NU80ZUx4THZrdGU2aVhvMXpNUXk0R25zWjJ6cGFpVW9VYVFxdFZKY0Q1YjF0cUtfUWJNQzNsOW9DUTIzc0E2YVk0MGt4LTVmYjkzZ2lTZjRHVDhMcnBYc1ZHcXV1cGh4RnItNnI4ZldRNGpIZ0J0TnJNWG5VNF9lN3NHcnlyenBtLUdYRWZLR0lfNjlGNTZmMmh6UmpHNUpvcHRSbWt5SE5EVmgxSEFZbGtWb1FCLXhfMQ?oc=5"
-    },
-    {
-      "title": "Kenaikan Harga Saham TOBA Jadi Sorotan, Cek Profil Emiten dan Kinerja Terkini - kontan.co.id",
-      "bgClass": "bg-china",
-      "category": "earnings",
-      "categoryLabel": "Kinerja Emiten",
-      "tickers": "TOBA",
-      "summary": "Headline terbaru dari kontan.co.id: Kenaikan Harga Saham TOBA Jadi Sorotan, Cek Profil Emiten dan Kinerja Terkini - kontan.co.id",
-      "impact": "🟡 Perhatikan perubahan laba, margin, dan respons harga setelah laporan kinerja.",
-      "source": "kontan.co.id",
-      "time": "27 Nov 2026 • 11:13 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYWEya3V2REZTbXpfLTBCYUg0V2N5Q1Z5X2VCd2FaUThNN3l2eTF3eEY0UmZrc0NxOGFiUi1zZ1kyMVg5MHItVnQ3cUhET2FZQVBIcl9UTU45TmhDRVVmZWxZUDdOOWxEM0ZfZC1iRXhNZWRLUkVZNDdTYWRjTThkTndVQnB6cld2SUtwRTA3Y3NzaXVITnJKZWRFWk9WZTVNeHJIUUxoQlhBVVpUMlZIaUln0gGqAUFVX3lxTFBMa0tTNE4tUEtuczhpSEwxdlBxSjRGaTRMVGJrdXA0N3N0Q1ozTVVOcHpERlNocHR5eXE0RXl3aHRCSmZHOEJXMUhSaTdfTjBrcGdlY2Q4Um1rUEdGNTltYWgtRmtZVE5TTzl3YmhwLUx4ZktraE5BcDJFSkp1RnBVQXpoQk9GdTdoWXRXMnhNTjdYMzRtQjg2Zm1hUmhveTNDeDBlQ3JMR25R?oc=5"
-    },
-    {
-      "title": "BEI Suspensi 5 Saham Soal Free Float, Ada KPIG dan AKKU - BeritaSatu.com",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "KPIG • AKKU",
-      "summary": "Headline terbaru dari BeritaSatu.com: BEI Suspensi 5 Saham Soal Free Float, Ada KPIG dan AKKU - BeritaSatu.com",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "BeritaSatu.com",
-      "time": "27 Nov 2026 • 10:53 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcVpWV0dIRXBEMTJrbndhYUF1S0d1akhaNkdub2RiNTFuUDV1T1BQS0J0MkxmN3dCSmdWSXBMZE1qZ29kWU85MFY5MHM0RjJDbDQ3bVRRYWxHcGdqZFdSVE1JTHlaVkF4c1M1amxPblhub0ttSEFZVlYzNjVta0I5QnVDSlZodjBMM0NfMEhsSW5vOE5EM2pNS2pvNzgtdw?oc=5"
-    },
-    {
-      "title": "MSCI Keluarkan BRPT dan Turunkan Kelas Saham BRMS - Lensa Hukum",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "BRPT • BRMS",
-      "summary": "Headline terbaru dari Lensa Hukum: MSCI Keluarkan BRPT dan Turunkan Kelas Saham BRMS - Lensa Hukum",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Lensa Hukum",
-      "time": "27 Nov 2026 • 10:51 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwNGpxdDdBcGFQYUlsbWdtUktnUDd1QVVCTmRJMVlYWnM4Vzkxd1pJX0hxZHlCR3lMRWt1M2hVMnpjZTktY3ViSkFSWVRTVVNrVWJ4Wkg1cTh3RGdSWndldXJvTzNzaDliY2c?oc=5"
-    },
-    {
-      "title": "Mengapa Jadwal IPO ANDA Molor? BEI Tunggu Konfirmasi Emiten - Validnews",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "ANDA",
-      "summary": "Headline terbaru dari Validnews: Mengapa Jadwal IPO ANDA Molor? BEI Tunggu Konfirmasi Emiten - Validnews",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "Validnews",
-      "time": "27 Nov 2026 • 10:48 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUDlwX3hGOThRYjR1QzcwS0JvWEJhUk9Qd3cwbVpFZnNOVW40Mm1pR0JvNHBfX3R3YUY1anZUampvSzB3YlA1QlZoU3ZaUEk4QkVtR1dXd0FucU1fOGNEMXBNOEVHTWZjczhIdEk2YjlmRlFOcHEya0N6QlpVS1h2WjB5eHJiYjl6aVI4Qzd2OUFvMmlQMUZ2UjBTeWcwWC1WNUlYYUZfMU14VHhQ?oc=5"
-    },
-    {
-      "title": "BEI Sanksi 5 Emiten Terkait Ketidaksesuaian Data Free Float, Ada AKKU, BAJA, FIRE, KING, dan KPIG - TOPIK.ID",
-      "bgClass": "bg-usjobs",
-      "category": "macro",
-      "categoryLabel": "Makro & Market",
-      "tickers": "AKKU • BAJA • FIRE • KING • KPIG",
-      "summary": "Headline terbaru dari TOPIK.ID: BEI Sanksi 5 Emiten Terkait Ketidaksesuaian Data Free Float, Ada AKKU, BAJA, FIRE, KING, dan KPIG - TOPIK.ID",
-      "impact": "🟡 Headline market-wide. Konfirmasi dampaknya terhadap IHSG dan sektor terkait.",
-      "source": "TOPIK.ID",
-      "time": "27 Nov 2026 • 10:30 WIB",
-      "featured": false,
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRVlIZ3RocWNYUTR3cnR3TFQzMWlKZkgySm1ETUQ0Z2lUOG04LXpqU1F4bnFTSmprZjhFSmNPZHZJd0VtUElPQzdmNDVsZUNORDRJQ1BKZmRTbTI4LTFiUVVYbTNoNnR0V1NiVjQxQ19iZlNvVWgwUHVjcEM0QWQ2OVlxenh0eHBDaFFEcE5pVGJuVkhHbExPb1NLek5ZV091NkdHVDR3RklFUUhZY2NsZmRPdw?oc=5"
     }
   ],
   "recommendations": [
@@ -153,14 +152,39 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "Saham KPIG Milik Hary Tanoesoedibjo Kena Suspensi BEI, Ini Penyebab dan Aturan yang Dilanggar - TOPIK.ID",
+      "whyNow": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
       "reasons": [
-        "📰 Saham KPIG Milik Hary Tanoesoedibjo Kena Suspensi BEI, Ini Penyebab dan Aturan yang Dilanggar - TOPIK.ID",
-        "🏷️ Sumber: TOPIK.ID",
+        "📰 Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+        "🏷️ Sumber: SWA.co.id",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "27 Nov 2026 • 12:21 WIB • AUTO DRAFT",
+      "updated": "27 Nov 2026 • 16:43 WIB • AUTO DRAFT",
+      "autoDraft": true,
+      "priceFeed": false
+    },
+    {
+      "ticker": "FIRE",
+      "company": "Auto Detected",
+      "status": "wait",
+      "statusLabel": "Auto News Catalyst",
+      "planStatus": "AUTO DRAFT — News Only",
+      "timeframe": "Watchlist",
+      "entry": "Tunggu konfirmasi teknikal",
+      "entryNum": null,
+      "tp": "—",
+      "tpNum": null,
+      "cl": "Sesuaikan setelah entry",
+      "clNum": null,
+      "riskLabel": "Review manual",
+      "whyNow": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+      "reasons": [
+        "📰 Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+        "🏷️ Sumber: SWA.co.id",
+        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
+        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
+      ],
+      "updated": "27 Nov 2026 • 16:43 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -178,14 +202,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "BEI Sanksi 5 Emiten soal Data Free Float, Ada BAJA hingga MNC Tourism (KPIG) - Warta Ekonomi",
+      "whyNow": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
       "reasons": [
-        "📰 BEI Sanksi 5 Emiten soal Data Free Float, Ada BAJA hingga MNC Tourism (KPIG) - Warta Ekonomi",
-        "🏷️ Sumber: Warta Ekonomi",
+        "📰 Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+        "🏷️ Sumber: SWA.co.id",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "27 Nov 2026 • 12:21 WIB • AUTO DRAFT",
+      "updated": "27 Nov 2026 • 16:43 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     },
@@ -203,39 +227,14 @@
       "cl": "Sesuaikan setelah entry",
       "clNum": null,
       "riskLabel": "Review manual",
-      "whyNow": "BEI Suspensi 5 Saham Soal Free Float, Ada KPIG dan AKKU - BeritaSatu.com",
+      "whyNow": "Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
       "reasons": [
-        "📰 BEI Suspensi 5 Saham Soal Free Float, Ada KPIG dan AKKU - BeritaSatu.com",
-        "🏷️ Sumber: BeritaSatu.com",
+        "📰 Pelaporan Free Float Tak Sesuai, BEI Suspensi Saham AKKU, BAJA, FIRE, KING, dan KPIG - SWA.co.id",
+        "🏷️ Sumber: SWA.co.id",
         "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
         "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
       ],
-      "updated": "27 Nov 2026 • 12:21 WIB • AUTO DRAFT",
-      "autoDraft": true,
-      "priceFeed": false
-    },
-    {
-      "ticker": "VIVA",
-      "company": "Auto Detected",
-      "status": "wait",
-      "statusLabel": "Auto News Catalyst",
-      "planStatus": "AUTO DRAFT — News Only",
-      "timeframe": "Watchlist",
-      "entry": "Tunggu konfirmasi teknikal",
-      "entryNum": null,
-      "tp": "—",
-      "tpNum": null,
-      "cl": "Sesuaikan setelah entry",
-      "clNum": null,
-      "riskLabel": "Review manual",
-      "whyNow": "BEI Jatuhkan Sanksi ke 5 Emiten, Data Saham Free Float Bermasalah Tak Kunjung Dikoreksi - VIVA.co.id",
-      "reasons": [
-        "📰 BEI Jatuhkan Sanksi ke 5 Emiten, Data Saham Free Float Bermasalah Tak Kunjung Dikoreksi - VIVA.co.id",
-        "🏷️ Sumber: VIVA.co.id",
-        "📊 Auto Draft belum membuat level BUY tanpa konfirmasi teknikal.",
-        "⚠️ Periksa chart, likuiditas, dan risiko sebelum transaksi."
-      ],
-      "updated": "27 Nov 2026 • 12:21 WIB • AUTO DRAFT",
+      "updated": "27 Nov 2026 • 16:43 WIB • AUTO DRAFT",
       "autoDraft": true,
       "priceFeed": false
     }
